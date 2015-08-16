@@ -6,7 +6,6 @@ var path = require('path');
 var inputFileJson = "output/merged.min.json";
 var inputFileJade = "autocomplete.jade";
 var outputFileTranslations = "output/translations.js";
-var outputFileOptions = "output/options.js";
 var outputFileHtml = "output/autocomplete.htm";
 
 function filterCards(parsedData) {
@@ -22,10 +21,6 @@ function getNameTranslations(parsedData) {
     result[m[1]] = m[0];
     return result;
   }, {});
-}
-
-function formatOutputOptions(optionNames) {
-  return 'var cardOptions = ' + JSON.stringify(optionNames);
 }
 
 function formatOutputTranslations(nameTranslations) {
@@ -60,25 +55,14 @@ function compileJade() {
   });
 }
 
-var state = {
-  nameTranslations: null,
-
-  on1stOutputReady: function() {
-    var optionNames = _.keys(this.nameTranslations);
-    writeToFile(outputFileOptions, formatOutputOptions(optionNames),
-      compileJade);
-  },
-
-  readJsonInput: function(err, data) {
-    if (err) throw err;
-    var parsedData = JSON.parse(data);
-    var cards = filterCards(parsedData);
-    this.nameTranslations = getNameTranslations(cards);
-    writeToFile(outputFileTranslations, formatOutputTranslations(
-      this.nameTranslations), this.on1stOutputReady);
-  }
-};
-_.bindAll(state, 'readJsonInput', 'on1stOutputReady')
+function readJsonInput(err, data) {
+  if (err) throw err;
+  var parsedData = JSON.parse(data);
+  var cards = filterCards(parsedData);
+  var nameTranslations = getNameTranslations(cards);
+  writeToFile(outputFileTranslations, formatOutputTranslations(nameTranslations),
+    compileJade);
+}
 
 console.log("Reading: " + inputFileJson);
-fs.readFile(inputFileJson, state.readJsonInput);
+fs.readFile(inputFileJson, readJsonInput);
