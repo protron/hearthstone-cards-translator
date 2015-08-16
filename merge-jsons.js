@@ -10,7 +10,9 @@ var zipFiles = [
   'sources/AllSets.enUS.json.zip',
   'sources/AllSets.esMX.json.zip'
 ];
-var langs = _.map(zipFiles, function(f) { return _.takeRight(f.split('.'), 3)[0]; });
+var langs = _.map(zipFiles, function(f) {
+  return _.takeRight(f.split('.'), 3)[0];
+});
 var cardSets = [];
 
 function writeToFile(filePath, content) {
@@ -23,14 +25,14 @@ function writeToFile(filePath, content) {
 }
 
 function write2Jsons(content) {
-  writeToFile("output/med.min.json", JSON.stringify(content));
-  writeToFile("output/med.formatted.json", JSON.stringify(content, null, 2));
+  writeToFile("output/merged.min.json", JSON.stringify(content));
+  writeToFile("output/merged.formatted.json", JSON.stringify(content, null, 2));
 }
 
 function afterCardsLoaded() {
   for (var i = 0; i < cardSets.length; i++) {
     var flattened = _.reduce(cardSets[i], function(result, n, key) {
-      var improvedN = _.map(n, function(v){
+      var improvedN = _.map(n, function(v) {
         v['deckSet'] = key;
         return v;
       });
@@ -79,7 +81,7 @@ Downloader.prototype.onData = function(chunk) {
 };
 Downloader.prototype.onEnd = function() {
   var buf = new Buffer(this.dataLen);
-  for (var i = 0, len = this.data.length, pos = 0; i < len; i++) { 
+  for (var i = 0, len = this.data.length, pos = 0; i < len; i++) {
     var part = this.data[i];
     part.copy(buf, pos);
     pos += part.length;
@@ -87,7 +89,8 @@ Downloader.prototype.onEnd = function() {
   var zip = new AdmZip(buf);
   var zipEntries = zip.getEntries();
   if (zipEntries.length != 1)
-    throw new Error('zipEntries was not 1 but ' + zipEntries.length + ' try with a for loop');
+    throw new Error('zipEntries was not 1 but ' + zipEntries.length +
+      ' try with a for loop');
   var unzipped = zip.readAsText(zipEntries[0]);
   var parsedData = JSON.parse(unzipped);
   cardSets.push(parsedData);
