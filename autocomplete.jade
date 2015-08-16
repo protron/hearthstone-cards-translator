@@ -22,12 +22,11 @@ html(lang='es')
       function initAwesomplete(optionsArray) {
         var input = document.getElementById("cardNames");
         var awesomplete = new Awesomplete(input);
-        awesomplete.minChars = 0;
+        awesomplete.minChars = 1;
         awesomplete.autoFirst = true;
         awesomplete.list = optionsArray;
         input.addEventListener("awesomplete-selectcomplete", onCardSelected, true);
       }
-      
       function init() {
         var cardOptions = [];
         for (var cardName in nameTranslations) {
@@ -37,4 +36,5 @@ html(lang='es')
         }
         initAwesomplete(cardOptions);
       }
+      
       init();
