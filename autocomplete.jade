@@ -9,7 +9,7 @@ html(lang='es')
     div#result
     script(src='https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.0.0/awesomplete.min.js')
     //- script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js')
+    //- script(src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js')
     script
       include translations.js
     script.
@@ -29,7 +29,12 @@ html(lang='es')
       }
       
       function init() {
-        var cardOptions = _.keys(nameTranslations);
+        var cardOptions = [];
+        for (var cardName in nameTranslations) {
+          if (nameTranslations.hasOwnProperty(cardName)) {
+            cardOptions.push(cardName);
+          }
+        }
         initAwesomplete(cardOptions);
       }
       init();
