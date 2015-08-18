@@ -4,9 +4,12 @@ var AdmZip = require('adm-zip');
 var http = require('http');
 var _ = require('lodash');
 
-var zipFiles = [
-  //'http://hearthstonejson.com/json/AllSets.enUS.json.zip',
-  //'http://hearthstonejson.com/json/AllSets.esMX.json.zip'
+var isSkipingDownload = process.argv[2] === '--skipdownload';
+
+var zipFiles = !isSkipingDownload ? [
+  'http://hearthstonejson.com/json/AllSets.enUS.json.zip',
+  'http://hearthstonejson.com/json/AllSets.esMX.json.zip'
+] : [
   'sources/AllSets.enUS.json.zip',
   'sources/AllSets.esMX.json.zip'
 ];
@@ -52,8 +55,11 @@ function afterCardsLoaded() {
       }
     }
   });
-  write2Jsons(mergedCardSets);
-  //console.log(mergedCardSets['CS2_065']);
+  const ordered = {};
+  Object.keys(mergedCardSets).sort().forEach(function(key) {
+    ordered[key] = mergedCardSets[key];
+  });
+  write2Jsons(ordered);
   console.log("DONE!");
 }
 
