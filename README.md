@@ -1,5 +1,5 @@
 # hearthstone-cards-translator
-Translates Hearthstone card names from Spanish into English
+Translates Hearthstone card names from Spanish into English using cards data from [Hearthstone JSON](http://hearthstonejson.com/).
 
 ## Usage
 Compile the html file using:
