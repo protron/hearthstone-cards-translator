@@ -1,8 +1,8 @@
 {
-  "name": "hearthstone-translator",
+  "name": "hearthstone-cards-translator",
   "version": "0.1.0",
   "scripts": {
-    "start": "node hearthstonejson.js"
+    "start": "node merge-jsons.js && node format-html-from-merged.js"
   },
   "dependencies": {
     "adm-zip": "^0.4.7",
