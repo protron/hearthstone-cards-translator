@@ -4,7 +4,7 @@ var AdmZip = require('adm-zip');
 var http = require('http');
 var _ = require('lodash');
 
-var isSkipingDownload = process.argv[2] === '--skipdownload';
+var isSkipingDownload = false; //process.argv[2] === '--skipdownload';
 
 var zipFiles = !isSkipingDownload ? [
   'http://hearthstonejson.com/json/AllSets.enUS.json.zip',
