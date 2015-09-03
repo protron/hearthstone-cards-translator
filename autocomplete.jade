@@ -1,12 +1,18 @@
 doctype html
+- var title = 'Traductor de cartas de HearthStone v' + version
 html(lang='es')
   head
     meta(charset='utf-8')
-    title Traductor de cartas de HearthStone
+    title= title
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.0.0/awesomplete.min.css')
   body
-    input#cardNames.awesomplete(placeholder='Nombre de la carta a traducir', size='25')
-    div#result
+    div= title
+    table
+      tr
+        td
+          input#cardNames.awesomplete(placeholder='Nombre de la carta a traducir', size='25')
+        td
+          div#result
     script(src='https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.0.0/awesomplete.min.js')
     //- script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js')
     //- script(src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js')
@@ -36,5 +42,4 @@ html(lang='es')
         }
         initAwesomplete(cardOptions);
       }
-      
       init();

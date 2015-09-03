@@ -2,6 +2,7 @@ var jade = require('jade');
 var fs = require('fs');
 var _ = require('lodash');
 var path = require('path');
+var pjson = require('./package.json');
 
 var inputFileJson = "output/merged.min.json";
 var inputFileJade = "autocomplete.jade";
@@ -47,8 +48,12 @@ function compileJade() {
   console.log("Compiling: " + inputFileJade);
   var tempJadePath = path.resolve(__dirname, 'output', inputFileJade);
   copyFile(inputFileJade, tempJadePath, function() {
-    var fn = jade.compileFile(tempJadePath, {});
-    var html = fn();
+    var fn = jade.compileFile(tempJadePath, {
+      pretty: true
+    });
+    var html = fn({
+      version: pjson.version
+    });
     fs.writeFileSync(outputFileHtml, html);
     fs.unlinkSync(tempJadePath);
     console.log("DONE!");

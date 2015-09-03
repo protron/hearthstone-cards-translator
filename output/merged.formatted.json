@@ -1,4 +1,4343 @@
 {
+  "AT_001": {
+    "id": "AT_001",
+    "name": {
+      "enUS": "Flame Lance",
+      "esMX": "Lanza flamígera"
+    },
+    "type": "Spell",
+    "rarity": "Common",
+    "cost": 5,
+    "text": {
+      "enUS": "Deal $8 damage to a minion.",
+      "esMX": "Inflige $8 de daño a un esbirro."
+    },
+    "flavor": {
+      "enUS": "It's on the rack next to ice lance, acid lance, and English muffin lance.",
+      "esMX": "Está en el mismo estante que Lanza de hielo, Lanza de ácido y Lanza de jengibre."
+    },
+    "artist": "Nutthapon Petchthai",
+    "collectible": true,
+    "playerClass": "Mage",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_002": {
+    "id": "AT_002",
+    "name": {
+      "enUS": "Effigy",
+      "esMX": "Efigie"
+    },
+    "type": "Spell",
+    "rarity": "Rare",
+    "cost": 3,
+    "text": {
+      "enUS": "<b>Secret:</b> When a friendly minion dies, summon a random minion with the same Cost.",
+      "esMX": "<b>Secreto:</b> cuando un esbirro aliado muere, invoca un esbirro aleatorio del mismo costo."
+    },
+    "flavor": {
+      "enUS": "Burning man, brah.",
+      "esMX": "¡Estás que ardes, manito!"
+    },
+    "artist": "Tooth",
+    "collectible": true,
+    "playerClass": "Mage",
+    "mechanics": [
+      "Secret"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_003": {
+    "id": "AT_003",
+    "name": {
+      "enUS": "Fallen Hero",
+      "esMX": "Héroe caído"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 2,
+    "attack": 3,
+    "health": 2,
+    "text": {
+      "enUS": "Your Hero Power deals 1 extra damage.",
+      "esMX": "Tu Poder de héroe inflige 1 más de daño."
+    },
+    "flavor": {
+      "enUS": "And he can't get up.",
+      "esMX": "\"Tropezón no es caída\", le decían de niño."
+    },
+    "artist": "Arthur Bozonnet",
+    "collectible": true,
+    "playerClass": "Mage",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_004": {
+    "id": "AT_004",
+    "name": {
+      "enUS": "Arcane Blast",
+      "esMX": "Explosión arcana"
+    },
+    "type": "Spell",
+    "rarity": "Epic",
+    "cost": 1,
+    "text": {
+      "enUS": "Deal $2 damage to a minion. This spell gets double bonus from <b>Spell Damage</b>.",
+      "esMX": "Inflige $2 de daño a un esbirro. Este hechizo recibe doble bonificación del <b>Daño de hechizo</b>."
+    },
+    "flavor": {
+      "enUS": "Now with 100% more blast!",
+      "esMX": "¡Mismo precio, 100% más de explosión!"
+    },
+    "artist": "Gabor Szikszai",
+    "collectible": true,
+    "playerClass": "Mage",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_005": {
+    "id": "AT_005",
+    "name": {
+      "enUS": "Polymorph: Boar",
+      "esMX": "Polimorfia: Jabalí"
+    },
+    "type": "Spell",
+    "rarity": "Rare",
+    "cost": 3,
+    "text": {
+      "enUS": "Transform a minion into a 4/2 Boar with <b>Charge</b>.",
+      "esMX": "Transforma a un esbirro en un Jabalí 4/2 con <b>Carga</b>."
+    },
+    "flavor": {
+      "enUS": "It's always Huffer.",
+      "esMX": "No tiene muchos amigos porque se la pasa bufando."
+    },
+    "artist": "Mike Sass",
+    "collectible": true,
+    "playerClass": "Mage",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_005t": {
+    "id": "AT_005t",
+    "name": {
+      "enUS": "Boar",
+      "esMX": "Jabalí"
+    },
+    "type": "Minion",
+    "cost": 3,
+    "attack": 4,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Charge</b>",
+      "esMX": "<b>Carga</b>"
+    },
+    "race": "Beast",
+    "mechanics": [
+      "Charge"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_006": {
+    "id": "AT_006",
+    "name": {
+      "enUS": "Dalaran Aspirant",
+      "esMX": "Aspirante de Dalaran"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 4,
+    "attack": 3,
+    "health": 5,
+    "text": {
+      "enUS": "<b>Inspire:</b> Gain <b>Spell Damage +1</b>.",
+      "esMX": "<b>Inspirar:</b> obtiene <b>Daño de hechizo +1</b>."
+    },
+    "flavor": {
+      "enUS": "Is he aspiring or inspiring?  Make up your mind!",
+      "esMX": "¿Aspira o inspira? ¡Ya no entiendo nada!"
+    },
+    "artist": "Dan Scott",
+    "collectible": true,
+    "playerClass": "Mage",
+    "mechanics": [
+      "Inspire"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_006e": {
+    "id": "AT_006e",
+    "name": {
+      "enUS": "Power of Dalaran",
+      "esMX": "Poder de Dalaran"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Increased Spell Damage.",
+      "esMX": "Mayor Daño de hechizo."
+    },
+    "playerClass": "Mage",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_007": {
+    "id": "AT_007",
+    "name": {
+      "enUS": "Spellslinger",
+      "esMX": "Traficante de hechizos"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 3,
+    "attack": 3,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Add a random spell to each player's hand.",
+      "esMX": "<b>Grito de batalla:</b> agrega un hechizo aleatorio a la mano de cada jugador."
+    },
+    "flavor": {
+      "enUS": "Does he sling spells, or do his spells linger about.  Who can say?",
+      "esMX": "Se le había ocurrido ser traficante de ilusiones... hasta que alguien le robó la idea."
+    },
+    "artist": "Erik Ko",
+    "collectible": true,
+    "playerClass": "Mage",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_008": {
+    "id": "AT_008",
+    "name": {
+      "enUS": "Coldarra Drake",
+      "esMX": "Draco de Gelidar"
+    },
+    "type": "Minion",
+    "rarity": "Epic",
+    "cost": 6,
+    "attack": 6,
+    "health": 6,
+    "text": {
+      "enUS": "You can use your Hero Power any number of times.",
+      "esMX": "Puedes usar tu Poder de héroe todas las veces que quieras."
+    },
+    "flavor": {
+      "enUS": "The Grand Tournament has a \"No dragons allowed\" policy, but it's rarely enforced.",
+      "esMX": "En El Gran Torneo está prohibido el ingreso con dragones, pero es una política que casi nunca se pone en práctica."
+    },
+    "artist": "Christopher Moeller",
+    "collectible": true,
+    "race": "Dragon",
+    "playerClass": "Mage",
+    "mechanics": [
+      "Aura"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_009": {
+    "id": "AT_009",
+    "name": "Rhonin",
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 8,
+    "attack": 7,
+    "health": 7,
+    "text": {
+      "enUS": "<b>Deathrattle:</b> Add 3 copies of Arcane Missiles to your hand.",
+      "esMX": "<b>Estertor:</b> agrega 3 copias de Misiles arcanos a tu mano."
+    },
+    "flavor": {
+      "enUS": "A masterless shamurai.",
+      "esMX": "Un shamurai shin maeshtro."
+    },
+    "artist": "Zoltan & Gabor",
+    "collectible": true,
+    "elite": true,
+    "playerClass": "Mage",
+    "mechanics": [
+      "Deathrattle"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_010": {
+    "id": "AT_010",
+    "name": {
+      "enUS": "Ram Wrangler",
+      "esMX": "Domador de carneros"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 5,
+    "attack": 3,
+    "health": 3,
+    "text": {
+      "enUS": "<b>Battlecry:</b> If you have a Beast, summon a\nrandom Beast.",
+      "esMX": "<b>Grito de batalla:</b> si tienes una Bestia, invoca una\nBestia aleatoria."
+    },
+    "flavor": {
+      "enUS": "Not getting trampled is really the trick here.",
+      "esMX": "Lo más importante del trabajo es no morir aplastado."
+    },
+    "artist": "Brandon Kitkouski",
+    "collectible": true,
+    "playerClass": "Hunter",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_011": {
+    "id": "AT_011",
+    "name": {
+      "enUS": "Holy Champion",
+      "esMX": "Campeona sagrada"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 4,
+    "attack": 3,
+    "health": 5,
+    "text": {
+      "enUS": "Whenever a character is healed, gain +2 Attack.",
+      "esMX": "Cada vez que se sana a un personaje, obtiene +2 de Ataque."
+    },
+    "flavor": {
+      "enUS": "She really likes seeing people get better.  That's why she hurts them in the first place.",
+      "esMX": "Su mayor anhelo es sanar a la gente. Pero para eso, primero tiene que lastimarlos, ¿no?"
+    },
+    "artist": "Alex Garner",
+    "collectible": true,
+    "playerClass": "Priest",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_011e": {
+    "id": "AT_011e",
+    "name": {
+      "enUS": "Light's Blessing",
+      "esMX": "Bendición de la Luz"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Increased Attack.",
+      "esMX": "Ataque aumentado."
+    },
+    "mechanics": [
+      "Aura"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_012": {
+    "id": "AT_012",
+    "name": {
+      "enUS": "Spawn of Shadows",
+      "esMX": "Engendro de las sombras"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 4,
+    "attack": 5,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Inspire:</b> Deal 4 damage to each hero.",
+      "esMX": "<b>Inspirar:</b> inflige 4 de daño a cada héroe."
+    },
+    "flavor": {
+      "enUS": "What did you expect to happen?  He's a Spawn.  Of Shadows.",
+      "esMX": "¿Qué esperabas? Es un engendro. De las sombras."
+    },
+    "artist": "Dave Allsop",
+    "collectible": true,
+    "playerClass": "Priest",
+    "mechanics": [
+      "Inspire"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_013": {
+    "id": "AT_013",
+    "name": {
+      "enUS": "Power Word: Glory",
+      "esMX": "Palabra de poder: Gloria"
+    },
+    "type": "Spell",
+    "rarity": "Common",
+    "cost": 1,
+    "text": {
+      "enUS": "Choose a minion. Whenever it attacks, restore 4 Health to\nyour hero.",
+      "esMX": "Elige un esbirro. Cada vez que ese esbirro ataca, restaura 4 de Salud a\ntu héroe."
+    },
+    "flavor": {
+      "enUS": "The promise of glory is a powerful tool to get minions to do your bidding.  Only slightly less powerful than the promise of an ice cream bar!",
+      "esMX": "Las promesas de gloria son una herramienta muy persuasiva para que los esbirros se sumen a tu causa. ¡Solo un poco menos persuasivas que la promesa de un refrescante helado!"
+    },
+    "artist": "Mike Sass",
+    "collectible": true,
+    "playerClass": "Priest",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_013e": {
+    "id": "AT_013e",
+    "name": {
+      "enUS": "Power Word: Glory",
+      "esMX": "Palabra de poder: Gloria"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "When this attacks, restore 4 Health to the hero of the player who buffed it.",
+      "esMX": "Cuando este esbirro ataca, restaura 4 de Salud al héroe del jugador que lo potenció."
+    },
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_014": {
+    "id": "AT_014",
+    "name": {
+      "enUS": "Shadowfiend",
+      "esMX": "Maligno de las sombras"
+    },
+    "type": "Minion",
+    "rarity": "Epic",
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "text": {
+      "enUS": "Whenever you draw a card, reduce its Cost by (1).",
+      "esMX": "Cada vez que robas una carta, reduce su costo en (1)."
+    },
+    "flavor": {
+      "enUS": "Hopes to be promoted to \"Shadowfriend\" someday.",
+      "esMX": "Siempre tuvo un sueño: convertirse en \"Bondadoso de las sombras\" o \"Maligno de la Luz\". Cualquiera de las dos lo haría feliz."
+    },
+    "artist": "Warren Mahy",
+    "collectible": true,
+    "playerClass": "Priest",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_014e": {
+    "id": "AT_014e",
+    "name": {
+      "enUS": "Shadowfiended",
+      "esMX": "Ensombrecido"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Costs (1) less.",
+      "esMX": "Cuesta (1) menos."
+    },
+    "playerClass": "Priest",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_015": {
+    "id": "AT_015",
+    "name": {
+      "enUS": "Convert",
+      "esMX": "Conversión"
+    },
+    "type": "Spell",
+    "rarity": "Rare",
+    "cost": 2,
+    "text": {
+      "enUS": "Put a copy of an enemy minion into your hand.",
+      "esMX": "Pone una copia de un esbirro enemigo en tu mano."
+    },
+    "flavor": {
+      "enUS": "\"Are you interested in... HEALTH benefits?!\"",
+      "esMX": "Buen día, ¿alguna vez oíste hablar de... ¡estos increíbles beneficios de salud!?"
+    },
+    "artist": "Dan Dos Santos",
+    "collectible": true,
+    "playerClass": "Priest",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_016": {
+    "id": "AT_016",
+    "name": {
+      "enUS": "Confuse",
+      "esMX": "Confusión"
+    },
+    "type": "Spell",
+    "rarity": "Epic",
+    "cost": 2,
+    "text": {
+      "enUS": "Swap the Attack and Health of all minions.",
+      "esMX": "Intercambia el Ataque y la Salud de todos los esbirros."
+    },
+    "flavor": {
+      "enUS": "This minion is really powerful!",
+      "esMX": "¡Este esbirro es muy poderoso!"
+    },
+    "artist": "Sean O'Danield",
+    "collectible": true,
+    "playerClass": "Priest",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_016e": {
+    "id": "AT_016e",
+    "name": {
+      "enUS": "Confused",
+      "esMX": "Confundido"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Swapped Attack and Health.",
+      "esMX": "Ataque y Salud intercambiados."
+    },
+    "playerClass": "Priest",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_017": {
+    "id": "AT_017",
+    "name": {
+      "enUS": "Twilight Guardian",
+      "esMX": "Guardián crepuscular"
+    },
+    "type": "Minion",
+    "rarity": "Epic",
+    "cost": 4,
+    "attack": 2,
+    "health": 6,
+    "text": {
+      "enUS": "<b>Battlecry:</b> If you're holding a Dragon, gain +1 Attack and <b>Taunt</b>.",
+      "esMX": "<b>Grito de batalla:</b> si tienes un Dragón en tu mano, obtiene +1 de Ataque y <b>Provocación</b>."
+    },
+    "flavor": {
+      "enUS": "A result of magical experiments carried out by the Black Dragonflight, it's not his fault that he's a vicious killer.",
+      "esMX": "Es el resultado de los experimentos mágicos del Vuelo Negro. ¡¿Qué culpa tiene de ser un asesino despiadado?!"
+    },
+    "artist": "Slawomir Maniak",
+    "collectible": true,
+    "race": "Dragon",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_017e": {
+    "id": "AT_017e",
+    "name": {
+      "enUS": "Twilight's Embrace",
+      "esMX": "Abrazo crepuscular"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "+1 Attack and <b>Taunt</b>.",
+      "esMX": "+1 de Ataque y <b>Provocación</b>."
+    },
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_018": {
+    "id": "AT_018",
+    "name": {
+      "enUS": "Confessor Paletress",
+      "esMX": "Confesora Cabelloclaro"
+    },
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 7,
+    "attack": 5,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Inspire:</b> Summon a random <b>Legendary</b> minion.",
+      "esMX": "<b>Inspirar:</b> invoca un esbirro <b>Legendario</b> aleatorio."
+    },
+    "flavor": {
+      "enUS": "She sees into your past and makes you face your fears.  Most common fear:  Getting Majordomo out of Sneed's Old Shredder.",
+      "esMX": "Ella ve tu pasado y te obliga a enfrentar tus peores miedos. ¿El más común? Que cuando muera tu Vieja trituradora de Sneed... ¡aparezca el Mayordomo Executus!"
+    },
+    "artist": "Chris Rahn",
+    "collectible": true,
+    "elite": true,
+    "playerClass": "Priest",
+    "mechanics": [
+      "Inspire"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_019": {
+    "id": "AT_019",
+    "name": {
+      "enUS": "Dreadsteed",
+      "esMX": "Corcel nefasto"
+    },
+    "type": "Minion",
+    "rarity": "Epic",
+    "cost": 4,
+    "attack": 1,
+    "health": 1,
+    "text": {
+      "enUS": "<b>Deathrattle:</b> Summon a Dreadsteed.",
+      "esMX": "<b>Estertor:</b> invoca un Corcel nefasto."
+    },
+    "flavor": {
+      "enUS": "Crescendo himself summoned this steed, riding it to victory in the Grand Tournament.  Wherever he rides, an army of riders ride behind him, supporting the legendary champion.",
+      "esMX": "El mismísimo Crescendo invocó este corcel y lo cabalgó hacia la victoria en el Gran Torneo. Un ejército sigue al campeón y lo apoya en todo momento, sin importar a dónde vaya."
+    },
+    "artist": "Alex Horley Orlandelli",
+    "collectible": true,
+    "race": "Demon",
+    "playerClass": "Warlock",
+    "mechanics": [
+      "Deathrattle"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_020": {
+    "id": "AT_020",
+    "name": {
+      "enUS": "Fearsome Doomguard",
+      "esMX": "Guardia apocalíptico temerario"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 7,
+    "attack": 6,
+    "health": 8,
+    "flavor": {
+      "enUS": "They were originally called Cuddleguards, but they were not inspiring the proper amount of fear.",
+      "esMX": "Claro, porque con los Guardias apocalípticos simples no era suficiente, ¿no?"
+    },
+    "artist": "Anton Zemskov",
+    "collectible": true,
+    "race": "Demon",
+    "playerClass": "Warlock",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_021": {
+    "id": "AT_021",
+    "name": {
+      "enUS": "Tiny Knight of Evil",
+      "esMX": "Minicaballero del mal"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 2,
+    "attack": 3,
+    "health": 2,
+    "text": {
+      "enUS": "Whenever you discard a card, gain +1/+1.",
+      "esMX": "Cada vez que descartas una carta, obtiene +1/+1."
+    },
+    "flavor": {
+      "enUS": "\"No, no, no. I asked for a tiny JESTER of evil.\"",
+      "esMX": "\"No, no, no. ¡Yo pedí un MINIBUFÓN del mal!\"."
+    },
+    "artist": "Raymond Swanland",
+    "collectible": true,
+    "race": "Demon",
+    "playerClass": "Warlock",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_021e": {
+    "id": "AT_021e",
+    "name": {
+      "enUS": "Felrage",
+      "esMX": "Ira vil"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Increased stats.",
+      "esMX": "Estadísticas aumentadas."
+    },
+    "playerClass": "Warlock",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_022": {
+    "id": "AT_022",
+    "name": {
+      "enUS": "Fist of Jaraxxus",
+      "esMX": "Puño de Jaraxxus"
+    },
+    "type": "Spell",
+    "rarity": "Rare",
+    "cost": 4,
+    "text": {
+      "enUS": "When you play or discard this, deal $4 damage to a random enemy.",
+      "esMX": "Cuando juegas o descartas esta carta, inflige $4 de daño a un enemigo aleatorio."
+    },
+    "flavor": {
+      "enUS": "* Not actually Jaraxxus' fist.",
+      "esMX": "* La imagen es solo a modo ilustrativo. NO ES el verdadero puño de Jaraxxus."
+    },
+    "artist": "Matt Dixon",
+    "collectible": true,
+    "playerClass": "Warlock",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_023": {
+    "id": "AT_023",
+    "name": {
+      "enUS": "Void Crusher",
+      "esMX": "Triturador del vacío"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 6,
+    "attack": 5,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Inspire:</b> Destroy a random minion for each player.",
+      "esMX": "<b>Inspirar:</b> destruye un esbirro aleatorio de cada jugador."
+    },
+    "flavor": {
+      "enUS": "We like to call him \"Wesley\".",
+      "esMX": "Para nosotros será siempre \"Osito\"."
+    },
+    "artist": "Skan Srisuwan",
+    "collectible": true,
+    "race": "Demon",
+    "playerClass": "Warlock",
+    "mechanics": [
+      "Inspire"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_024": {
+    "id": "AT_024",
+    "name": {
+      "enUS": "Demonfuse",
+      "esMX": "Infusión demoníaca"
+    },
+    "type": "Spell",
+    "rarity": "Common",
+    "cost": 2,
+    "text": {
+      "enUS": "Give a Demon +3/+3. Give your opponent a Mana Crystal.",
+      "esMX": "Otorga +3/+3 a un Demonio y un Cristal de maná a tu adversario."
+    },
+    "flavor": {
+      "enUS": "Very dangerous when attached to a demonbomb.",
+      "esMX": "Colocar el producto en un recipiente y verter agua a punto de ebullición. Dejar reposar 5 minutos. Efectos secundarios: todos."
+    },
+    "artist": "Kevin Chen",
+    "collectible": true,
+    "race": "Demon",
+    "playerClass": "Warlock",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_024e": {
+    "id": "AT_024e",
+    "name": {
+      "enUS": "Dark Fusion",
+      "esMX": "Fusión lóbrega"
+    },
+    "type": "Enchantment",
+    "text": "+3/+3.",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_025": {
+    "id": "AT_025",
+    "name": {
+      "enUS": "Dark Bargain",
+      "esMX": "Oferta oscura"
+    },
+    "type": "Spell",
+    "rarity": "Epic",
+    "cost": 6,
+    "text": {
+      "enUS": "Destroy 2 random enemy minions. Discard 2 random cards.",
+      "esMX": "Destruye 2 esbirros enemigos aleatorios. Descarta 2 cartas al azar."
+    },
+    "flavor": {
+      "enUS": "A prime example of lose-lose negotiating.",
+      "esMX": "El ejemplo perfecto de una negociación perjudicial para ambas partes."
+    },
+    "artist": "Paul Mafayon",
+    "collectible": true,
+    "playerClass": "Warlock",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_026": {
+    "id": "AT_026",
+    "name": {
+      "enUS": "Wrathguard",
+      "esMX": "Guardia de cólera"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 2,
+    "attack": 4,
+    "health": 3,
+    "text": {
+      "enUS": "Whenever this minion takes damage, also deal that amount to your hero.",
+      "esMX": "Cada vez que este esbirro recibe daño, tu héroe recibe la misma cantidad de daño."
+    },
+    "flavor": {
+      "enUS": "After playing against 5 Annoy-O-Trons, any normal guard will become a Wrathguard.",
+      "esMX": "Después de tener que lidiar con cinco Molestrones, cualquier guardia normal pasa a ser un guardia de cólera."
+    },
+    "artist": "Sojin Hwang",
+    "collectible": true,
+    "race": "Demon",
+    "playerClass": "Warlock",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_027": {
+    "id": "AT_027",
+    "name": {
+      "enUS": "Wilfred Fizzlebang",
+      "esMX": "Wilfred Chispobang"
+    },
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 6,
+    "attack": 4,
+    "health": 4,
+    "text": {
+      "enUS": "Cards you draw from your Hero Power cost (0).",
+      "esMX": "Las cartas que robas con tu Poder de héroe cuestan (0)."
+    },
+    "flavor": {
+      "enUS": "He can summon anything, even a FEARSOME DOOMGUARD*.\n\n*He's pretty sure this is going to work out.",
+      "esMX": "Puede invocar lo que sea. Incluso un GUARDIA APOCALÍPTICO TEMERARIO*.\n\n*Está completamente seguro de que va a salir todo bien."
+    },
+    "artist": "Tooth",
+    "collectible": true,
+    "elite": true,
+    "playerClass": "Warlock",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_027e": {
+    "id": "AT_027e",
+    "name": {
+      "enUS": "Master Summoner",
+      "esMX": "Maestro invocador"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Costs (0).",
+      "esMX": "Cuesta (0)."
+    },
+    "playerClass": "Warlock",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_028": {
+    "id": "AT_028",
+    "name": {
+      "enUS": "Shado-Pan Rider",
+      "esMX": "Jinete del Shadopan"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 5,
+    "attack": 3,
+    "health": 7,
+    "text": {
+      "enUS": "<b>Combo:</b> Gain +3 Attack.",
+      "esMX": "<b>Combo:</b> obtiene +3 de Ataque."
+    },
+    "flavor": {
+      "enUS": "He needed a break after that business in the Vale of Eternal Blossoms. Naturally, he chose to spend his vacation in an icy snowscape killing monsters.",
+      "esMX": "Necesitaba un buen descanso después de sus andanzas en el Valle de la Flor Eterna. Obviamente, decidió pasar sus vacaciones en un paraje nevado matando monstruos."
+    },
+    "artist": "Ryan Metcaff",
+    "collectible": true,
+    "playerClass": "Rogue",
+    "mechanics": [
+      "Combo"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_028e": {
+    "id": "AT_028e",
+    "name": {
+      "enUS": "Chi Lance",
+      "esMX": "Lanza de chi"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "+3 Attack.",
+      "esMX": "+3 de Ataque."
+    },
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_029": {
+    "id": "AT_029",
+    "name": {
+      "enUS": "Buccaneer",
+      "esMX": "Bucanero"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 1,
+    "attack": 2,
+    "health": 1,
+    "text": {
+      "enUS": "Whenever you equip a weapon, give it +1 Attack.",
+      "esMX": "Cada vez que te equipas un arma, obtiene +1 de Ataque."
+    },
+    "flavor": {
+      "enUS": "The best part of buccaneering is the pants.",
+      "esMX": "Lo más divertido de ser un bucanero son los pantalones."
+    },
+    "artist": "Matt Dixon",
+    "collectible": true,
+    "race": "Pirate",
+    "playerClass": "Rogue",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_029e": {
+    "id": "AT_029e",
+    "name": {
+      "enUS": "Extra Stabby",
+      "esMX": "Bien afilado"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "+1 Attack",
+      "esMX": "+1 de Ataque."
+    },
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_030": {
+    "id": "AT_030",
+    "name": {
+      "enUS": "Undercity Valiant",
+      "esMX": "Valeroso de Entrañas"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 2,
+    "attack": 3,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Combo:</b> Deal 1 damage.",
+      "esMX": "<b>Combo:</b> inflige 1 de daño."
+    },
+    "flavor": {
+      "enUS": "Almost went to play for Stormwind before signing with Undercity.",
+      "esMX": "Antes de firmar con Entrañas, casi se anota para jugar con Ventormenta."
+    },
+    "artist": "Zoltan Boros",
+    "collectible": true,
+    "playerClass": "Rogue",
+    "mechanics": [
+      "Combo"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_031": {
+    "id": "AT_031",
+    "name": {
+      "enUS": "Cutpurse",
+      "esMX": "Ratero"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "text": {
+      "enUS": "Whenever this minion attacks a hero, add the Coin to your hand.",
+      "esMX": "Cada vez que este esbirro ataca a un héroe, agrega la Moneda a tu mano."
+    },
+    "flavor": {
+      "enUS": "He has a giant collection of purses now.  One for every outfit!",
+      "esMX": "A esta altura tiene una colección gigante de bolsos. ¡Uno para cada ocasión!"
+    },
+    "artist": "Alex Horley Orlandelli",
+    "collectible": true,
+    "playerClass": "Rogue",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_032": {
+    "id": "AT_032",
+    "name": {
+      "enUS": "Shady Dealer",
+      "esMX": "Vendedor sospechoso"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 3,
+    "attack": 4,
+    "health": 3,
+    "text": {
+      "enUS": "<b>Battlecry:</b> If you have a Pirate, gain +1/+1.",
+      "esMX": "<b>Grito de batalla:</b> si tienes un Pirata, obtiene +1/+1."
+    },
+    "flavor": {
+      "enUS": "I have great deal for you... for 4 damage to your face!",
+      "esMX": "Tengo el negocio perfecto para ti... ¡4 de daño en la cara, muejeje!"
+    },
+    "artist": "Tooth",
+    "collectible": true,
+    "playerClass": "Rogue",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_032e": {
+    "id": "AT_032e",
+    "name": {
+      "enUS": "Shady Deals",
+      "esMX": "Negocios turbios"
+    },
+    "type": "Enchantment",
+    "text": "+1/+1.",
+    "playerClass": "Rogue",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_033": {
+    "id": "AT_033",
+    "name": {
+      "enUS": "Burgle",
+      "esMX": "Hurto"
+    },
+    "type": "Spell",
+    "rarity": "Rare",
+    "cost": 3,
+    "text": {
+      "enUS": "Add 2 random class cards to your hand <i>(from your opponent's class)</i>.",
+      "esMX": "Agrega 2 cartas aleatorias a tu mano <i>(de la clase de tu adversario)</i>."
+    },
+    "flavor": {
+      "enUS": "Yoink!",
+      "esMX": "¡Matanga!"
+    },
+    "artist": "Matt Dixon",
+    "collectible": true,
+    "playerClass": "Rogue",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_034": {
+    "id": "AT_034",
+    "name": {
+      "enUS": "Poisoned Blade",
+      "esMX": "Hoja envenenada"
+    },
+    "type": "Weapon",
+    "rarity": "Epic",
+    "cost": 4,
+    "attack": 1,
+    "durability": 3,
+    "text": {
+      "enUS": "Your Hero Power gives this weapon +1 Attack instead of replacing it.",
+      "esMX": "Tu Poder de héroe le otorga +1 de Ataque a esta arma en vez de reemplazarla."
+    },
+    "flavor": {
+      "enUS": "How much more poisoned can a blade get?  The answer is a lot.  A lot more poisoned.",
+      "esMX": "¿Soy yo o estos pícaros están ligeramente obsesionados con el veneno?"
+    },
+    "artist": "Nutthapon Petchthai",
+    "collectible": true,
+    "playerClass": "Rogue",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_034e": {
+    "id": "AT_034e",
+    "name": {
+      "enUS": "Laced",
+      "esMX": "Envenenada"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Increased Attack.",
+      "esMX": "Ataque aumentado."
+    },
+    "playerClass": "Rogue",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_035": {
+    "id": "AT_035",
+    "name": {
+      "enUS": "Beneath the Grounds",
+      "esMX": "Ataque subterráneo"
+    },
+    "type": "Spell",
+    "rarity": "Epic",
+    "cost": 3,
+    "text": {
+      "enUS": "Shuffle 3 Ambushes into your opponent's deck. When drawn, you summon a 4/4 Nerubian.",
+      "esMX": "Coloca 3 cartas de Emboscada en el mazo de tu adversario. Cuando él las robe, tú invocas un Nerubiano 4/4."
+    },
+    "flavor": {
+      "enUS": "Can you hold these eggs for just a second?  I promise they're not full of giant enraged undead spider things.",
+      "esMX": "¿Puedes sostener estos huevos un momentito? Te prometo que no están llenos de arañas gigantes y venenosas con sed de sangre."
+    },
+    "artist": "Daren Bader",
+    "collectible": true,
+    "playerClass": "Rogue",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_035t": {
+    "id": "AT_035t",
+    "name": {
+      "enUS": "Ambush!",
+      "esMX": "¡Emboscada!"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "When you draw this, summon a 4/4 Nerubian for your opponent. Draw a card.",
+      "esMX": "Cuando robas estas cartas, tu adversario invoca un Nerubiano 4/4. Roba una carta."
+    },
+    "playerClass": "Rogue",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_036": {
+    "id": "AT_036",
+    "name": "Anub'arak",
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 9,
+    "attack": 8,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Deathrattle:</b> Return this to your hand and summon a 4/4 Nerubian.",
+      "esMX": "<b>Estertor:</b> regresa esta carta a tu mano e invoca un Nerubiano 4/4."
+    },
+    "flavor": {
+      "enUS": "Was actually a pretty nice guy before, you know, the whole Lich King thing.",
+      "esMX": "Era un buen tipo antes del episodio... ya sabes, todo ese lío con el Rey Exánime."
+    },
+    "artist": "Eric Braddock",
+    "collectible": true,
+    "elite": true,
+    "playerClass": "Rogue",
+    "mechanics": [
+      "Deathrattle"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_036t": {
+    "id": "AT_036t",
+    "name": {
+      "enUS": "Nerubian",
+      "esMX": "Nerubiano"
+    },
+    "type": "Minion",
+    "cost": 3,
+    "attack": 4,
+    "health": 4,
+    "playerClass": "Rogue",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_037": {
+    "id": "AT_037",
+    "name": {
+      "enUS": "Living Roots",
+      "esMX": "Raíces vivas"
+    },
+    "type": "Spell",
+    "rarity": "Common",
+    "cost": 1,
+    "text": {
+      "enUS": "<b>Choose One</b> - Deal $2 damage; or Summon two 1/1 Saplings.",
+      "esMX": "<b>Elige una opción:</b> inflige $2 de daño o invoca dos Retoños 1/1."
+    },
+    "flavor": {
+      "enUS": "2 out of 2 saplings recommend that you summon the saplings.",
+      "esMX": "2 de cada 2 Retoños recomiendan que invoques a los Retoños."
+    },
+    "artist": "Dan Brereton",
+    "collectible": true,
+    "playerClass": "Druid",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_037a": {
+    "id": "AT_037a",
+    "name": {
+      "enUS": "Living Roots",
+      "esMX": "Raíces vivas"
+    },
+    "type": "Spell",
+    "text": {
+      "enUS": "Deal $2 damage.",
+      "esMX": "Inflige $2 de daño."
+    },
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_037b": {
+    "id": "AT_037b",
+    "name": {
+      "enUS": "Living Roots",
+      "esMX": "Raíces vivas"
+    },
+    "type": "Spell",
+    "text": {
+      "enUS": "Summon two 1/1 Saplings.",
+      "esMX": "Invoca dos Retoños 1/1."
+    },
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_037t": {
+    "id": "AT_037t",
+    "name": {
+      "enUS": "Sapling",
+      "esMX": "Retoño"
+    },
+    "type": "Minion",
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_038": {
+    "id": "AT_038",
+    "name": {
+      "enUS": "Darnassus Aspirant",
+      "esMX": "Aspirante de Darnassus"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 2,
+    "attack": 2,
+    "health": 3,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Gain an empty Mana Crystal.\n<b>Deathrattle:</b> Lose a Mana Crystal.",
+      "esMX": "<b>Grito de batalla:</b> obtienes un Cristal de maná vacío.\n<b>Estertor:</b> pierdes un Cristal de maná."
+    },
+    "flavor": {
+      "enUS": "She loves mana crystals, she hates mana crystals.   So fickle!",
+      "esMX": "Ama los cristales de maná, odia los cristales de maná. Los ama, los odia. Los ama, los odia. ¡Qué caprichosa!"
+    },
+    "artist": "Laurel Austin",
+    "collectible": true,
+    "playerClass": "Druid",
+    "mechanics": [
+      "Battlecry",
+      "Deathrattle"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_039": {
+    "id": "AT_039",
+    "name": {
+      "enUS": "Savage Combatant",
+      "esMX": "Combatiente salvaje"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 4,
+    "attack": 5,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Inspire:</b> Give your hero\n+2 Attack this turn.",
+      "esMX": "<b>Inspirar:</b> otorga a tu héroe\n+2 de Ataque en este turno."
+    },
+    "flavor": {
+      "enUS": "Maybe if you whistle a tune it will soothe him.  Yeah...  Try that.",
+      "esMX": "Quizá si le silbas una melodía lo tranquilizas. ¿Por qué no pruebas y después me cuentas?"
+    },
+    "artist": "Alex Pascenko",
+    "collectible": true,
+    "race": "Beast",
+    "playerClass": "Druid",
+    "mechanics": [
+      "Inspire"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_039e": {
+    "id": "AT_039e",
+    "name": {
+      "enUS": "Savage",
+      "esMX": "Salvaje"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "+2 Attack this turn.",
+      "esMX": "+2 de Ataque en este turno."
+    },
+    "playerClass": "Druid",
+    "mechanics": [
+      "OneTurnEffect"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_040": {
+    "id": "AT_040",
+    "name": {
+      "enUS": "Wildwalker",
+      "esMX": "Surcaselvas"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 4,
+    "attack": 4,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Give a friendly Beast +3 Health.",
+      "esMX": "<b>Grito de batalla:</b> otorga +3 de Salud a una Bestia aliada."
+    },
+    "flavor": {
+      "enUS": "She was born to be something.  She is just not quite sure what yet...",
+      "esMX": "Caminante no hay camino, se hace camino al surcar."
+    },
+    "artist": "James Ryman",
+    "collectible": true,
+    "playerClass": "Druid",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_040e": {
+    "id": "AT_040e",
+    "name": {
+      "enUS": "Kindred Spirit",
+      "esMX": "Espíritu afín"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "+3 Health.",
+      "esMX": "+3 de Salud."
+    },
+    "playerClass": "Druid",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_041": {
+    "id": "AT_041",
+    "name": {
+      "enUS": "Knight of the Wild",
+      "esMX": "Caballero de la naturaleza"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 7,
+    "attack": 6,
+    "health": 6,
+    "text": {
+      "enUS": "Whenever you summon a Beast, reduce the Cost of this card by (1).",
+      "esMX": "Cada vez que invocas a una Bestia, el costo de esta carta se reduce en (1)."
+    },
+    "flavor": {
+      "enUS": "He gets a discount on the tournament entry fee because he is his own horse.",
+      "esMX": "Siempre le hacen descuento en la entrada del torneo porque viene con corcel incorporado."
+    },
+    "artist": "Ralph Horsley",
+    "collectible": true,
+    "playerClass": "Druid",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_041e": {
+    "id": "AT_041e",
+    "name": {
+      "enUS": "Call of the Wild",
+      "esMX": "Llamado de la naturaleza"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Cost reduced.",
+      "esMX": "Costo reducido."
+    },
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_042": {
+    "id": "AT_042",
+    "name": {
+      "enUS": "Druid of the Saber",
+      "esMX": "Druida del sable"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 2,
+    "attack": 2,
+    "health": 1,
+    "text": {
+      "enUS": "<b>Choose One -</b> Transform to gain <b>Charge</b>; or +1/+1 and <b>Stealth</b>.",
+      "esMX": "<b>Elige una opción:</b> Transfórmala para obtener <b>Carga</b> o para obtener +1/+1 y <b>Sigilo</b>."
+    },
+    "flavor": {
+      "enUS": "That's saberTEETH, not like curved pirate blades.  That's a different kind of druid.  Druid of the Curved Pirate Blades.",
+      "esMX": "Cuando decimos 'sables' nos referimos a los dientes, no a las espadas curvas pirata. Ese otro druida ya existe y tiene su propio nombre: 'Druida de las Espadas Curvas Pirata'."
+    },
+    "artist": "Arthur Gimaldinov",
+    "collectible": true,
+    "playerClass": "Druid",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_042a": {
+    "id": "AT_042a",
+    "name": {
+      "enUS": "Lion Form",
+      "esMX": "Forma de león"
+    },
+    "type": "Spell",
+    "rarity": "Common",
+    "text": {
+      "enUS": "<b>Charge</b>",
+      "esMX": "<b>Carga</b>"
+    },
+    "playerClass": "Druid",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_042b": {
+    "id": "AT_042b",
+    "name": {
+      "enUS": "Panther Form",
+      "esMX": "Forma de pantera"
+    },
+    "type": "Spell",
+    "rarity": "Common",
+    "text": {
+      "enUS": "+1/+1 and <b>Stealth</b>",
+      "esMX": "+1/+1 y <b>Sigilo</b>"
+    },
+    "playerClass": "Druid",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_042t": {
+    "id": "AT_042t",
+    "name": {
+      "enUS": "Sabertooth Lion",
+      "esMX": "León dientes de sable"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 2,
+    "attack": 2,
+    "health": 1,
+    "text": {
+      "enUS": "<b>Charge</b>",
+      "esMX": "<b>Carga</b>"
+    },
+    "race": "Beast",
+    "playerClass": "Druid",
+    "mechanics": [
+      "Charge"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_042t2": {
+    "id": "AT_042t2",
+    "name": {
+      "enUS": "Sabertooth Panther",
+      "esMX": "Pantera dientes de sable"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 2,
+    "attack": 3,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Stealth</b>",
+      "esMX": "<b>Sigilo</b>"
+    },
+    "race": "Beast",
+    "playerClass": "Druid",
+    "mechanics": [
+      "Stealth"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_043": {
+    "id": "AT_043",
+    "name": {
+      "enUS": "Astral Communion",
+      "esMX": "Comunión astral"
+    },
+    "type": "Spell",
+    "rarity": "Epic",
+    "cost": 4,
+    "text": {
+      "enUS": "Gain 10 Mana Crystals. Discard your hand.",
+      "esMX": "Obtienes 10 Cristales de maná. Descarta tu mano."
+    },
+    "flavor": {
+      "enUS": "Hey!  Moon!  Can I have some mana crystals?",
+      "esMX": "¡Eh! ¡Lunita! ¿Me alcanzas unos cristales de maná?"
+    },
+    "artist": "Christopher Moeller",
+    "collectible": true,
+    "playerClass": "Druid",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_044": {
+    "id": "AT_044",
+    "name": {
+      "enUS": "Mulch",
+      "esMX": "Abono"
+    },
+    "type": "Spell",
+    "rarity": "Epic",
+    "cost": 3,
+    "text": {
+      "enUS": "Destroy a minion.\nAdd a random minion to your opponent's hand.",
+      "esMX": "Destruye un esbirro.\nAgrega un esbirro aleatorio a la mano de tu adversario."
+    },
+    "flavor": {
+      "enUS": "Is this a noun or a verb?  We will never know.",
+      "esMX": "De alguna forma tiene que fertilizar los suelos del Claro de la Luna, ¿no?"
+    },
+    "artist": "Dan Scott",
+    "collectible": true,
+    "playerClass": "Druid",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_045": {
+    "id": "AT_045",
+    "name": "Aviana",
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 9,
+    "attack": 5,
+    "health": 5,
+    "text": {
+      "enUS": "Your minions cost (1).",
+      "esMX": "Tus esbirros cuestan (1)."
+    },
+    "flavor": {
+      "enUS": "Call her \"Tweety\".  She'll find it real funny.  I PROMISE.",
+      "esMX": "Dile \"Tweety\". Le va a parecer graciosísimo. TE LO PROMETO."
+    },
+    "artist": "Velvet Engine",
+    "collectible": true,
+    "elite": true,
+    "playerClass": "Druid",
+    "mechanics": [
+      "Aura"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_045e": {
+    "id": "AT_045e",
+    "name": {
+      "enUS": "Empowering Mist",
+      "esMX": "Niebla potenciadora"
+    },
+    "type": "Enchantment",
+    "text": "+1/+1.",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_045ee": {
+    "id": "AT_045ee",
+    "name": {
+      "enUS": "Mistcaller Deck Ench",
+      "esMX": "Potenciado por el Clamaneblina"
+    },
+    "type": "Enchantment",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_046": {
+    "id": "AT_046",
+    "name": {
+      "enUS": "Tuskarr Totemic",
+      "esMX": "Totemista colmillarr"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 3,
+    "attack": 3,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Summon ANY random Totem.",
+      "esMX": "<b>Grito de batalla:</b> invoca un tótem aleatorio."
+    },
+    "flavor": {
+      "enUS": "Turns out the tuskarr aren't real choosy about their totems.",
+      "esMX": "Resulta que los colmillarr no son demasiado exigentes con sus tótems."
+    },
+    "artist": "Eva Widermann",
+    "collectible": true,
+    "playerClass": "Shaman",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_047": {
+    "id": "AT_047",
+    "name": {
+      "enUS": "Draenei Totemcarver",
+      "esMX": "Grabatótems draenei"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 4,
+    "attack": 4,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Gain +1/+1 for each friendly Totem.",
+      "esMX": "<b>Grito de batalla:</b> obtiene +1/+1 por cada tótem aliado."
+    },
+    "flavor": {
+      "enUS": "It's nice to find a real craftsman in this day and age of mass-produced totems.",
+      "esMX": "En una era donde los tótems se producen en masa, es bueno encontrar una artesana de verdad."
+    },
+    "artist": "RK Post",
+    "collectible": true,
+    "playerClass": "Shaman",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_047e": {
+    "id": "AT_047e",
+    "name": {
+      "enUS": "Experienced",
+      "esMX": "Veterana"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Increased stats.",
+      "esMX": "Estadísticas aumentadas."
+    },
+    "playerClass": "Shaman",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_048": {
+    "id": "AT_048",
+    "name": {
+      "enUS": "Healing Wave",
+      "esMX": "Ola de sanación"
+    },
+    "type": "Spell",
+    "rarity": "Rare",
+    "cost": 3,
+    "text": {
+      "enUS": "Restore #7 Health. Reveal a minion in each deck. If yours costs more, Restore #14 instead.",
+      "esMX": "Recupera #7 de Salud. Revela un esbirro de cada mazo. Si el tuyo cuesta más, recupera #14 de Salud."
+    },
+    "flavor": {
+      "enUS": "Favored by shaman who study the art of restoration and healing, this spell would feel smug, if it had feelings.",
+      "esMX": "Se cuenta que, originalmente, se llamaba \"Tsunami de sanación\" pero lo usaron tanto, tanto... que se gastó."
+    },
+    "artist": "Luca Zontini",
+    "collectible": true,
+    "playerClass": "Shaman",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_049": {
+    "id": "AT_049",
+    "name": {
+      "enUS": "Thunder Bluff Valiant",
+      "esMX": "Valeroso de Cima del Trueno"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 5,
+    "attack": 3,
+    "health": 6,
+    "text": {
+      "enUS": "<b>Inspire:</b> Give your Totems +2 Attack.",
+      "esMX": "<b>Inspirar:</b> otorga +2 de ataque a tus tótems."
+    },
+    "flavor": {
+      "enUS": "Allowing totems to attack is not cheating.  I mean, there isn't anything in the rule books about it.",
+      "esMX": "Hacer que los tótems ataquen no es trampa. ¡En serio! Si no nos crees, fíjate en las reglas del juego."
+    },
+    "artist": "Sean McNally",
+    "collectible": true,
+    "playerClass": "Shaman",
+    "mechanics": [
+      "Inspire"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_049e": {
+    "id": "AT_049e",
+    "name": {
+      "enUS": "Power of the Bluff",
+      "esMX": "Poder de la Cima"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Increased Attack.",
+      "esMX": "Ataque aumentado."
+    },
+    "playerClass": "Shaman",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_050": {
+    "id": "AT_050",
+    "name": {
+      "enUS": "Charged Hammer",
+      "esMX": "Martillo cargado"
+    },
+    "type": "Weapon",
+    "rarity": "Epic",
+    "cost": 4,
+    "attack": 2,
+    "durability": 4,
+    "text": {
+      "enUS": "<b>Deathrattle:</b> Your Hero Power becomes 'Deal 2 damage.'",
+      "esMX": "<b>Estertor:</b> tu poder de héroe se convierte en \"Inflige 2 de daño\"."
+    },
+    "flavor": {
+      "enUS": "You can only pick it up if you are worthy.",
+      "esMX": "Solo los dignos pueden levantarlo."
+    },
+    "artist": "Peet Cooper",
+    "collectible": true,
+    "playerClass": "Shaman",
+    "mechanics": [
+      "Deathrattle"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_050t": {
+    "id": "AT_050t",
+    "name": {
+      "enUS": "Lightning Jolt",
+      "esMX": "Impacto eléctrico"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nDeal $2 damage.",
+      "esMX": "<b>Poder de héroe</b>\nInflige $2 de daño."
+    },
+    "playerClass": "Shaman",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_051": {
+    "id": "AT_051",
+    "name": {
+      "enUS": "Elemental Destruction",
+      "esMX": "Destrucción elemental"
+    },
+    "type": "Spell",
+    "rarity": "Epic",
+    "cost": 3,
+    "text": {
+      "enUS": "Deal $4-$5 damage to all minions. <b>Overload: (5)</b>",
+      "esMX": "Inflige $4-$5 de daño a todos los esbirros. <b>Sobrecarga: (5)</b>"
+    },
+    "flavor": {
+      "enUS": "I'm not a shaman or anything, but isn't Elemental Destruction the opposite of what they want to do?",
+      "esMX": "Yo no soy chamán ni nada de eso, pero se me hace que la destrucción elemental es exactamente lo opuesto a lo que estos muchachos quieren lograr."
+    },
+    "artist": "Tyler Walpole",
+    "collectible": true,
+    "playerClass": "Shaman",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_052": {
+    "id": "AT_052",
+    "name": {
+      "enUS": "Totem Golem",
+      "esMX": "Gólem totémico"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 2,
+    "attack": 3,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Overload: (1)</b>",
+      "esMX": "<b>Sobrecarga: (1)</b>"
+    },
+    "flavor": {
+      "enUS": "What happens when you glue a buncha totems together.",
+      "esMX": "¿Alguna vez te imaginaste qué pasaría si atas a un montón de tótems juntos? ¡Aquí tienes la respuesta!"
+    },
+    "artist": "Steve Prescott",
+    "collectible": true,
+    "race": "Totem",
+    "playerClass": "Shaman",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_053": {
+    "id": "AT_053",
+    "name": {
+      "enUS": "Ancestral Knowledge",
+      "esMX": "Sabiduría ancestral"
+    },
+    "type": "Spell",
+    "rarity": "Common",
+    "cost": 2,
+    "text": {
+      "enUS": "Draw 2 cards. <b>Overload: (2)</b>",
+      "esMX": "Roba 2 cartas. <b>Sobrecarga: (2)</b>"
+    },
+    "flavor": {
+      "enUS": "MOMMMMMYYYYYYYYY!!!",
+      "esMX": "¿Mami? Nunca grité \"mami\". Lo que dije fue: MOMIA. Habrán oído mal..."
+    },
+    "artist": "Zoltan & Gabor",
+    "collectible": true,
+    "playerClass": "Shaman",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_054": {
+    "id": "AT_054",
+    "name": {
+      "enUS": "The Mistcaller",
+      "esMX": "El Clamaneblina"
+    },
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 6,
+    "attack": 4,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Give all minions in your hand and deck +1/+1.",
+      "esMX": "<b>Grito de batalla:</b> otorga +1/+1 a todos los esbirros de tu mano y tu mazo."
+    },
+    "flavor": {
+      "enUS": "Calling the mist doesn't sound all that great.  \"Ooooh, it is slightly damp now!\"",
+      "esMX": "Siempre se sintió marginado. Mientras todos sus amigos hacían rituales para invocar a la lluvia, él solo podía llamar a la niebla. Qué triste..."
+    },
+    "artist": "Wei Wang",
+    "collectible": true,
+    "elite": true,
+    "playerClass": "Shaman",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_055": {
+    "id": "AT_055",
+    "name": {
+      "enUS": "Flash Heal",
+      "esMX": "Sanación relámpago"
+    },
+    "type": "Spell",
+    "rarity": "Common",
+    "cost": 1,
+    "text": {
+      "enUS": "Restore #5 Health.",
+      "esMX": "Recupera #5 de Salud."
+    },
+    "flavor": {
+      "enUS": "Flash!  Ahhhhhhh~",
+      "esMX": "Re-rápida, re-ágil, re-lámpago."
+    },
+    "artist": "Marcelo Vignali",
+    "collectible": true,
+    "playerClass": "Priest",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_056": {
+    "id": "AT_056",
+    "name": {
+      "enUS": "Powershot",
+      "esMX": "Disparo potenciado"
+    },
+    "type": "Spell",
+    "rarity": "Rare",
+    "cost": 3,
+    "text": {
+      "enUS": "Deal $2 damage to a minion and the minions next to it.",
+      "esMX": "Inflige $2 de daño a un esbirro y a los esbirros adyacentes."
+    },
+    "flavor": {
+      "enUS": "pow POW pow",
+      "esMX": "¡pum PAM pum!"
+    },
+    "artist": "Jonboy Meyers",
+    "collectible": true,
+    "playerClass": "Hunter",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_057": {
+    "id": "AT_057",
+    "name": {
+      "enUS": "Stablemaster",
+      "esMX": "Maestra del establo"
+    },
+    "type": "Minion",
+    "rarity": "Epic",
+    "cost": 3,
+    "attack": 4,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Give a friendly Beast <b>Immune</b> this turn.",
+      "esMX": "<b>Grito de batalla:</b> vuelve <b>Inmune</b> a una bestia aliada en este turno."
+    },
+    "flavor": {
+      "enUS": "Takes way better care of her pets than her brother, Unstablemaster.",
+      "esMX": "Su odio hacia Hemet es tan grande como su amor por las bestias."
+    },
+    "artist": "Tyson Murphy",
+    "collectible": true,
+    "playerClass": "Hunter",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_057o": {
+    "id": "AT_057o",
+    "name": {
+      "enUS": "Groomed",
+      "esMX": "Cepillado"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "<b>Immune</b> this turn.",
+      "esMX": "<b>Inmune</b> en este turno."
+    },
+    "playerClass": "Hunter",
+    "mechanics": [
+      "OneTurnEffect"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_058": {
+    "id": "AT_058",
+    "name": {
+      "enUS": "King's Elekk",
+      "esMX": "Elekk del rey"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 2,
+    "attack": 3,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Reveal a minion in each deck. If yours costs more, draw it.",
+      "esMX": "<b>Grito de batalla:</b> revela un esbirro de cada mazo. Si el tuyo cuesta más, róbalo."
+    },
+    "flavor": {
+      "enUS": "Elekk jousting is AWESOME.",
+      "esMX": "Las justas de los elekk son INCREÍBLES."
+    },
+    "artist": "James Zhang",
+    "collectible": true,
+    "race": "Beast",
+    "playerClass": "Hunter",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_059": {
+    "id": "AT_059",
+    "name": {
+      "enUS": "Brave Archer",
+      "esMX": "Arquera valiente"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 1,
+    "attack": 2,
+    "health": 1,
+    "text": {
+      "enUS": "<b>Inspire:</b> If your hand is empty, deal 2 damage to the enemy hero.",
+      "esMX": "<b>Inspirar:</b> si tu mano está vacía, inflige 2 de daño al héroe enemigo."
+    },
+    "flavor": {
+      "enUS": "This is a \"bearly\" concealed reference.",
+      "esMX": "Pelirroja, arquera, valiente... ¿No te suena?"
+    },
+    "artist": "Eva Widermann",
+    "collectible": true,
+    "playerClass": "Hunter",
+    "mechanics": [
+      "Inspire"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_060": {
+    "id": "AT_060",
+    "name": {
+      "enUS": "Bear Trap",
+      "esMX": "Trampa para osos"
+    },
+    "type": "Spell",
+    "rarity": "Common",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Secret:</b> After your hero is attacked, summon a 3/3 Bear with <b>Taunt</b>.",
+      "esMX": "<b>Secreto:</b> cuando atacan a tu héroe, invoca un Oso 3/3 con <b>Provocación</b>."
+    },
+    "flavor": {
+      "enUS": "You'll never guess what's in that conveniently bear-sized, bear-smelling box.",
+      "esMX": "¿A que no te imaginas lo que hay en esa caja tamaño oso que apesta a oso?"
+    },
+    "artist": "Richard Wright",
+    "collectible": true,
+    "playerClass": "Hunter",
+    "mechanics": [
+      "Secret"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_061": {
+    "id": "AT_061",
+    "name": {
+      "enUS": "Lock and Load",
+      "esMX": "Hasta la vista"
+    },
+    "type": "Spell",
+    "rarity": "Epic",
+    "cost": 2,
+    "text": {
+      "enUS": "Each time you cast a spell this turn, add a random Hunter card to your hand.",
+      "esMX": "Cada vez que lanzas un hechizo en este turno, agrega una carta de Cazador aleatoria a tu mano."
+    },
+    "flavor": {
+      "enUS": "Rexxar narrowed his eyes, grabbed his machine gun, and said: \"It's go time.  Lock and load.\"\n\nThis card pays homage to that special moment.",
+      "esMX": "Rexxar entrecerró los ojos, tomó su ametralladora y dijo: \"Hasta la vista, baby\".\n\nEsta carta es un homenaje a ese momento tan especial."
+    },
+    "artist": "Matt Dixon",
+    "collectible": true,
+    "playerClass": "Hunter",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_061e": {
+    "id": "AT_061e",
+    "name": {
+      "enUS": "Lock and Load",
+      "esMX": "Listo para la acción"
+    },
+    "type": "Enchantment",
+    "playerClass": "Hunter",
+    "mechanics": [
+      "OneTurnEffect"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_062": {
+    "id": "AT_062",
+    "name": {
+      "enUS": "Ball of Spiders",
+      "esMX": "Bola arácnida"
+    },
+    "type": "Spell",
+    "rarity": "Rare",
+    "cost": 6,
+    "text": {
+      "enUS": "Summon three 1/1 Webspinners.",
+      "esMX": "Invoca tres Tejerredes 1/1."
+    },
+    "flavor": {
+      "enUS": "\"THEY'RE EVERYWHERE GET THEM OFF!!!\" - Everyone",
+      "esMX": "\"¡E-ESSTÁN PORTODOSLADOSMÁTENLAS!\" —Todo el mundo."
+    },
+    "artist": "Skan Srisuwan",
+    "collectible": true,
+    "playerClass": "Hunter",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_063": {
+    "id": "AT_063",
+    "name": {
+      "enUS": "Acidmaw",
+      "esMX": "Fauceácida"
+    },
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 7,
+    "attack": 4,
+    "health": 2,
+    "text": {
+      "enUS": "Whenever another minion takes damage, destroy it.",
+      "esMX": "Cada vez que otro esbirro reciba daño, destrúyelo."
+    },
+    "flavor": {
+      "enUS": "With the help of his trusty sidekick Dreadscale, the giant jormungar Acidmaw is ready to face any knight!",
+      "esMX": "Con la ayuda de su confiable secuaz Aterraescama, el jormungar gigante Fauceácida está listo para enfrentarse a cualquier caballero."
+    },
+    "artist": "Andrew Hou",
+    "collectible": true,
+    "elite": true,
+    "race": "Beast",
+    "playerClass": "Hunter",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_063t": {
+    "id": "AT_063t",
+    "name": {
+      "enUS": "Dreadscale",
+      "esMX": "Aterraescama"
+    },
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 3,
+    "attack": 4,
+    "health": 2,
+    "text": {
+      "enUS": "At the end of your turn, deal 1 damage to all other minions.",
+      "esMX": "Al final de tu turno, inflige 1 de daño a todos los demás esbirros."
+    },
+    "flavor": {
+      "enUS": "Let's be clear about this:  ACIDMAW is the sidekick.",
+      "esMX": "Aclaremos algo: FAUCEÁCIDA es el secuaz."
+    },
+    "artist": "Zoltan Boros",
+    "collectible": true,
+    "elite": true,
+    "race": "Beast",
+    "playerClass": "Hunter",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_064": {
+    "id": "AT_064",
+    "name": {
+      "enUS": "Bash",
+      "esMX": "Azote"
+    },
+    "type": "Spell",
+    "rarity": "Common",
+    "cost": 3,
+    "text": {
+      "enUS": "Deal $3 damage.\nGain 3 Armor.",
+      "esMX": "Inflige $3 de daño.\nObtienes 3 de Armadura."
+    },
+    "flavor": {
+      "enUS": "You might think bashing doesn't take a lot of practice.  It doesn't.",
+      "esMX": "Quizá pienses que no se necesita mucha práctica para ir azotando a todos por ahí. Y estás en lo cierto."
+    },
+    "artist": "Dany Orizio",
+    "collectible": true,
+    "playerClass": "Warrior",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_065": {
+    "id": "AT_065",
+    "name": {
+      "enUS": "King's Defender",
+      "esMX": "Defensor del rey"
+    },
+    "type": "Weapon",
+    "rarity": "Rare",
+    "cost": 3,
+    "attack": 3,
+    "durability": 2,
+    "text": {
+      "enUS": "<b>Battlecry</b>: If you have a minion with <b>Taunt</b>,  gain +1 Durability.",
+      "esMX": "<b>Grito de batalla</b>: si tienes un esbirro con <b>Provocación</b>, obtiene +1 de Durabilidad."
+    },
+    "flavor": {
+      "enUS": "\"King's Attacker\" is a shield.  Funny, huh?",
+      "esMX": "\"Atacante del rey\" es un escudo. Curioso, ¿no crees?"
+    },
+    "artist": "Michael Franchina",
+    "collectible": true,
+    "playerClass": "Warrior",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_065e": {
+    "id": "AT_065e",
+    "name": {
+      "enUS": "King's Defender",
+      "esMX": "Defensor del rey"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "+1 Durability.",
+      "esMX": "+1 de Durabilidad."
+    },
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_066": {
+    "id": "AT_066",
+    "name": {
+      "enUS": "Orgrimmar Aspirant",
+      "esMX": "Aspirante de Orgrimmar"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "text": {
+      "enUS": "<b>Inspire:</b> Give your weapon +1 Attack.",
+      "esMX": "<b>Inspirar:</b> otorga +1 de Ataque a tu arma."
+    },
+    "flavor": {
+      "enUS": "\"Four out of three orcs struggle with math.\" - Angry Zurge",
+      "esMX": "\"Cuatro de cada tres orcos tienen problemas con las matemáticas\". —Zurge el Enfadado"
+    },
+    "artist": "Hideaki Takamura",
+    "collectible": true,
+    "playerClass": "Warrior",
+    "mechanics": [
+      "Inspire"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_066e": {
+    "id": "AT_066e",
+    "name": {
+      "enUS": "Forges of Orgrimmar",
+      "esMX": "Forjas de Orgrimmar"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Increased Attack.",
+      "esMX": "Ataque aumentado."
+    },
+    "playerClass": "Warrior",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_067": {
+    "id": "AT_067",
+    "name": {
+      "enUS": "Magnataur Alpha",
+      "esMX": "Magnatauro alfa"
+    },
+    "type": "Minion",
+    "rarity": "Epic",
+    "cost": 4,
+    "attack": 5,
+    "health": 3,
+    "text": {
+      "enUS": "Also damages the minions next to whomever\nhe attacks.",
+      "esMX": "También daña a los esbirros adyacentes\nal objetivo que ataca."
+    },
+    "flavor": {
+      "enUS": "Playing him also gets you into the Magnataur Beta.",
+      "esMX": "Si lo juegas, también tendrás acceso a la versión beta de Magnatauro."
+    },
+    "artist": "Alex Horley Orlandelli",
+    "collectible": true,
+    "playerClass": "Warrior",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_068": {
+    "id": "AT_068",
+    "name": {
+      "enUS": "Bolster",
+      "esMX": "Estímulo"
+    },
+    "type": "Spell",
+    "rarity": "Common",
+    "cost": 2,
+    "text": {
+      "enUS": "Give your <b>Taunt</b> minions +2/+2.",
+      "esMX": "Otorga +2/+2 a tus esbirros con <b>Provocación</b>."
+    },
+    "flavor": {
+      "enUS": "The best offense is a good defense.",
+      "esMX": "El mejor ataque es una buena defensa."
+    },
+    "artist": "Mishi McCaig",
+    "collectible": true,
+    "playerClass": "Warrior",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_068e": {
+    "id": "AT_068e",
+    "name": {
+      "enUS": "Bolstered",
+      "esMX": "Estimulado"
+    },
+    "type": "Enchantment",
+    "text": "+2/+2.",
+    "playerClass": "Warrior",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_069": {
+    "id": "AT_069",
+    "name": {
+      "enUS": "Sparring Partner",
+      "esMX": "Compañero de entrenamiento"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 2,
+    "attack": 3,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Taunt</b>\n<b>Battlecry:</b> Give a\nminion <b>Taunt</b>.",
+      "esMX": "<b>Provocación</b>\n<b>Grito de batalla:</b> otorga\n<b>Provocación</b> a un esbirro."
+    },
+    "flavor": {
+      "enUS": "Come at me, bro.",
+      "esMX": "Tira un golpe, amiguito."
+    },
+    "artist": "Jim Nelson",
+    "collectible": true,
+    "playerClass": "Warrior",
+    "mechanics": [
+      "Battlecry",
+      "Taunt"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_069e": {
+    "id": "AT_069e",
+    "name": {
+      "enUS": "Training Complete",
+      "esMX": "Entrenamiento completado"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "<b>Taunt</b>",
+      "esMX": "<b>Provocación</b>."
+    },
+    "playerClass": "Warrior",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_070": {
+    "id": "AT_070",
+    "name": {
+      "enUS": "Skycap'n Kragg",
+      "esMX": "Capitán celestial kragg"
+    },
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 7,
+    "attack": 4,
+    "health": 6,
+    "text": {
+      "enUS": "<b>Charrrrrge</b>\nCosts (1) less for each friendly Pirate.",
+      "esMX": "<b>Carrrrrrrrga</b>\nCuesta (1) menos por cada Pirata aliado."
+    },
+    "flavor": {
+      "enUS": "What's more boss than riding a parrot with a jawbone for a shoulderpad while wielding a giant hook-lance-thing and wearing a pirate hat?  NOTHING.",
+      "esMX": "¿Un señor verde a lomos de un loro, con una mandíbula de hombrera, un garfio gigante de arma y un sombrero pirata? ¿No será demasiado?"
+    },
+    "artist": "Alex Horley Orlandelli",
+    "collectible": true,
+    "elite": true,
+    "race": "Pirate",
+    "mechanics": [
+      "Charge"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_071": {
+    "id": "AT_071",
+    "name": {
+      "enUS": "Alexstrasza's Champion",
+      "esMX": "Campeona de Alexstrasza"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 2,
+    "attack": 2,
+    "health": 3,
+    "text": {
+      "enUS": "<b>Battlecry:</b> If you're holding a Dragon, gain +1 Attack and <b>Charge</b>.",
+      "esMX": "<b>Grito de batalla:</b> si tienes un Dragón en tu mano, obtiene +1 de Ataque y <b>Carga</b>."
+    },
+    "flavor": {
+      "enUS": "\"Put more spikes on her.  No, more spikes.  What part of 'more spikes' do you not understand?  MORE SPIKES!\" - Alexstrasza",
+      "esMX": "\"Pónganle más púas. No, más púas. ¿Qué parte de 'más púas' no entienden? ¡MÁS PÚAS!\". —Alexstrasza"
+    },
+    "artist": "Evgeniy Zagumennyy",
+    "collectible": true,
+    "playerClass": "Warrior",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_071e": {
+    "id": "AT_071e",
+    "name": {
+      "enUS": "Alexstrasza's Boon",
+      "esMX": "Favor de Alexstrasza"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "+1 Attack and <b>Charge</b>.",
+      "esMX": "+1 de Ataque y <b>Carga</b>."
+    },
+    "playerClass": "Warrior",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_072": {
+    "id": "AT_072",
+    "name": "Varian Wrynn",
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 10,
+    "attack": 7,
+    "health": 7,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Draw 3 cards.\nPut any minions you drew directly into the battlefield.",
+      "esMX": "<b>Grito de batalla:</b> roba 3 cartas.\nSi robas algún esbirro, colócalo directamente en el campo de batalla."
+    },
+    "flavor": {
+      "enUS": "Leader of the Alliance!  Father of Anduin!  Also he likes to play Arena, and he averages 12 wins.",
+      "esMX": "¡Líder de la Alianza! ¡Padre de Anduin! Y fanático de la Arena. Generalmente llega a las 12 victorias."
+    },
+    "artist": "Wei Wang",
+    "collectible": true,
+    "elite": true,
+    "playerClass": "Warrior",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_073": {
+    "id": "AT_073",
+    "name": {
+      "enUS": "Competitive Spirit",
+      "esMX": "Espíritu competitivo"
+    },
+    "type": "Spell",
+    "rarity": "Rare",
+    "cost": 1,
+    "text": {
+      "enUS": "<b>Secret:</b> When your turn starts, give your minions +1/+1.",
+      "esMX": "<b>Secreto:</b> cuando empieza tu turno, otorga +1/+1 a tus esbirros."
+    },
+    "flavor": {
+      "enUS": "Competition can be an inspiration to improve oneself.  Or kill all the competitors.",
+      "esMX": "La competencia sirve como inspiración para autosuperarse. O para matar a todos los demás competidores."
+    },
+    "artist": "Jim Nelson",
+    "collectible": true,
+    "playerClass": "Paladin",
+    "mechanics": [
+      "Secret"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_073e": {
+    "id": "AT_073e",
+    "name": {
+      "enUS": "Competitive Spirit",
+      "esMX": "Espíritu competitivo"
+    },
+    "type": "Enchantment",
+    "text": "+1/+1.",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_074": {
+    "id": "AT_074",
+    "name": {
+      "enUS": "Seal of Champions",
+      "esMX": "Sello de campeones"
+    },
+    "type": "Spell",
+    "rarity": "Common",
+    "cost": 3,
+    "text": {
+      "enUS": "Give a minion\n+3 Attack and <b>Divine Shield</b>.",
+      "esMX": "Otorga\n+3 de Ataque y <b>Escudo divino</b> a un esbirro."
+    },
+    "flavor": {
+      "enUS": "\"Arf! Arf! Arf!\" - Seal of Champions",
+      "esMX": "Con un poco de ayuda, cualquiera es campeón."
+    },
+    "artist": "Jonboy Meyers",
+    "collectible": true,
+    "playerClass": "Paladin",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_074e2": {
+    "id": "AT_074e2",
+    "name": {
+      "enUS": "Seal of Champions",
+      "esMX": "Sello de campeones"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "+3 Attack and <b>Divine Shield</b>.",
+      "esMX": "+3 de Ataque y <b>Escudo divino</b>."
+    },
+    "playerClass": "Paladin",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_075": {
+    "id": "AT_075",
+    "name": {
+      "enUS": "Warhorse Trainer",
+      "esMX": "Entrenador de corceles"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 3,
+    "attack": 2,
+    "health": 4,
+    "text": {
+      "enUS": "Your Silver Hand Recruits have +1 Attack.",
+      "esMX": "Tus Reclutas de la Mano de Plata tienen +1 de Ataque."
+    },
+    "flavor": {
+      "enUS": "He doesn't even get Sundays off.  Every day he's hostling.",
+      "esMX": "No se toma domingos ni feriados y no tiene vacaciones. El trabajo del caballerizo es muy sacrificado."
+    },
+    "artist": "Zoltan & Gabor",
+    "collectible": true,
+    "playerClass": "Paladin",
+    "mechanics": [
+      "Aura"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_075e": {
+    "id": "AT_075e",
+    "name": {
+      "enUS": "Might of the Hostler",
+      "esMX": "Fuerza del caballerizo"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Warhorse Trainer is granting this minion +1 Attack.",
+      "esMX": "Entrenador de corceles le otorga +1 de Ataque a este esbirro."
+    },
+    "playerClass": "Paladin",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_076": {
+    "id": "AT_076",
+    "name": {
+      "enUS": "Murloc Knight",
+      "esMX": "Caballero múrloc"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 4,
+    "attack": 3,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Inspire:</b> Summon a random Murloc.",
+      "esMX": "<b>Inspirar:</b> invoca un múrloc aleatorio."
+    },
+    "flavor": {
+      "enUS": "Hee hee!  Look at his cute little feet.",
+      "esMX": "¡Mírale las patitas! ¡Son adorables!"
+    },
+    "artist": "Sam Nielsen",
+    "collectible": true,
+    "race": "Murloc",
+    "playerClass": "Paladin",
+    "mechanics": [
+      "Inspire"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_077": {
+    "id": "AT_077",
+    "name": {
+      "enUS": "Argent Lance",
+      "esMX": "Lanza argenta"
+    },
+    "type": "Weapon",
+    "rarity": "Rare",
+    "cost": 2,
+    "attack": 2,
+    "durability": 2,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Reveal a minion in each deck. If yours costs more, +1 Durability.",
+      "esMX": "<b>Grito de batalla:</b> revela un esbirro de cada mazo. Si el tuyo cuesta más, obtiene +1 de durabilidad."
+    },
+    "flavor": {
+      "enUS": "The stripes make it look like a candy cane, but we recommend against licking it.",
+      "esMX": "Por las rayas, se parece a un bastón de caramelo, pero no te recomendamos lamerla."
+    },
+    "artist": "Joe Wilson",
+    "collectible": true,
+    "playerClass": "Paladin",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_077e": {
+    "id": "AT_077e",
+    "name": {
+      "enUS": "Extra Poke",
+      "esMX": "Estocada adicional"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "+1 Durability.",
+      "esMX": "+1 de Durabilidad."
+    },
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_078": {
+    "id": "AT_078",
+    "name": {
+      "enUS": "Enter the Coliseum",
+      "esMX": "Batalla en el coliseo"
+    },
+    "type": "Spell",
+    "rarity": "Epic",
+    "cost": 6,
+    "text": {
+      "enUS": "Destroy all minions except each player's highest Attack minion.",
+      "esMX": "Destruye a todos los esbirros, excepto a los que tienen más Ataque de cada jugador."
+    },
+    "flavor": {
+      "enUS": "You have to get past the vendors first.  So many are lost to shopping...",
+      "esMX": "El primer desafío para entrar al coliseo es sortear a los mercaderes. Si supieras cuántos campeones han caído ante las compras..."
+    },
+    "artist": "Mauricio Herrera",
+    "collectible": true,
+    "playerClass": "Paladin",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_079": {
+    "id": "AT_079",
+    "name": {
+      "enUS": "Mysterious Challenger",
+      "esMX": "Rival misterioso"
+    },
+    "type": "Minion",
+    "rarity": "Epic",
+    "cost": 6,
+    "attack": 6,
+    "health": 6,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Put one of each <b>Secret</b> from your deck into the battlefield.",
+      "esMX": "<b>Grito de batalla:</b> coloca un <b>Secreto</b> de cada tipo de los que tengas en tu mazo en el campo de batalla."
+    },
+    "flavor": {
+      "enUS": "He may sound surly and antisocial, but he's actually just really shy.",
+      "esMX": "Puede parecer un poco arisco y antisocial, pero en realidad es solo timidez."
+    },
+    "artist": "Zoltan Boros",
+    "collectible": true,
+    "playerClass": "Paladin",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_080": {
+    "id": "AT_080",
+    "name": {
+      "enUS": "Garrison Commander",
+      "esMX": "Comandante de la fortaleza"
+    },
+    "type": "Minion",
+    "rarity": "Epic",
+    "cost": 2,
+    "attack": 2,
+    "health": 3,
+    "text": {
+      "enUS": "You can use your Hero Power twice a turn.",
+      "esMX": "Puedes usar tu Poder de héroe dos veces por turno."
+    },
+    "flavor": {
+      "enUS": "He'll never admit it, but he pushes you hard because he really cares about you.",
+      "esMX": "Jamás lo va a admitir, pero la razón por la que te presiona tanto es porque se preocupa por ti."
+    },
+    "artist": "Jesper Ejsing",
+    "collectible": true,
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_081": {
+    "id": "AT_081",
+    "name": {
+      "enUS": "Eadric the Pure",
+      "esMX": "Eadric el Puro"
+    },
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 7,
+    "attack": 3,
+    "health": 7,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Change all enemy minions'\nAttack to 1.",
+      "esMX": "<b>Grito de batalla:</b> cambia el Ataque de todos\nlos esbirros enemigos a 1."
+    },
+    "flavor": {
+      "enUS": "Nobody rocks a monocle like Eadric.",
+      "esMX": "A nadie en todo Azeroth le podría quedar mejor un monóculo."
+    },
+    "artist": "James Ryman",
+    "collectible": true,
+    "elite": true,
+    "playerClass": "Paladin",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_081e": {
+    "id": "AT_081e",
+    "name": {
+      "enUS": "Purified",
+      "esMX": "Purificado"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Attack changed to 1.",
+      "esMX": "Ataque disminuido a 1."
+    },
+    "playerClass": "Paladin",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_082": {
+    "id": "AT_082",
+    "name": {
+      "enUS": "Lowly Squire",
+      "esMX": "Escudero humilde"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 1,
+    "attack": 1,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Inspire:</b> Gain +1 Attack.",
+      "esMX": "<b>Inspirar:</b> obtiene +1 de Ataque."
+    },
+    "flavor": {
+      "enUS": "But not the lowliest!",
+      "esMX": "Humilde, ¡pero nunca miserable!"
+    },
+    "artist": "Ron Spears",
+    "collectible": true,
+    "mechanics": [
+      "Inspire"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_082e": {
+    "id": "AT_082e",
+    "name": {
+      "enUS": "Training",
+      "esMX": "Entrenamiento"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Increased Attack.",
+      "esMX": "Ataque aumentado."
+    },
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_083": {
+    "id": "AT_083",
+    "name": {
+      "enUS": "Dragonhawk Rider",
+      "esMX": "Jinete de dracohalcón"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "text": {
+      "enUS": "<b>Inspire:</b> Gain <b>Windfury</b>\nthis turn.",
+      "esMX": "<b>Inspirar:</b> obtiene <b>Viento furioso</b>\ndurante este turno."
+    },
+    "flavor": {
+      "enUS": "Check it out.  You can do barrel rolls on this thing.",
+      "esMX": "¿Por qué no lo pruebas? Es apto para cualquier tipo de pirueta."
+    },
+    "artist": "Anton Zemskov",
+    "collectible": true,
+    "mechanics": [
+      "Inspire"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_083e": {
+    "id": "AT_083e",
+    "name": {
+      "enUS": "Dragonhawkery",
+      "esMX": "Gran domador"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "<b>Windfury</b> this turn.",
+      "esMX": "<b>Viento furioso</b> en este turno."
+    },
+    "mechanics": [
+      "OneTurnEffect"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_084": {
+    "id": "AT_084",
+    "name": {
+      "enUS": "Lance Carrier",
+      "esMX": "Lancero"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 2,
+    "attack": 1,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Give a friendly minion +2 Attack.",
+      "esMX": "<b>Grito de batalla:</b> otorga +2 de Ataque a un esbirro aleatorio."
+    },
+    "flavor": {
+      "enUS": "Lance Carrier is an obscure entry level position in orcish armies.  A mystery, since orcs don't generally use lances.",
+      "esMX": "La posición de lancero es bastante turbia dentro del mundo bélico de los orcos. Un misterio, dirían algunos, ya que los orcos no suelen usar lanzas."
+    },
+    "artist": "Tyson Murphy",
+    "collectible": true,
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_084e": {
+    "id": "AT_084e",
+    "name": {
+      "enUS": "Equipped",
+      "esMX": "Equipado"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "+2 Attack.",
+      "esMX": "+2 de Ataque."
+    },
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_085": {
+    "id": "AT_085",
+    "name": {
+      "enUS": "Maiden of the Lake",
+      "esMX": "Doncella del lago"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 4,
+    "attack": 2,
+    "health": 6,
+    "text": {
+      "enUS": "Your Hero Power costs (1).",
+      "esMX": "Tu poder de héroe cuesta (1)."
+    },
+    "flavor": {
+      "enUS": "Not a good basis for a system of government.",
+      "esMX": "¿Del lago? ¿Te parece una buena base para un sistema de gobierno?"
+    },
+    "artist": "Froilan Gardner",
+    "collectible": true,
+    "mechanics": [
+      "Aura"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_086": {
+    "id": "AT_086",
+    "name": {
+      "enUS": "Saboteur",
+      "esMX": "Saboteador"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 3,
+    "attack": 4,
+    "health": 3,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Your opponent's Hero Power costs (5) more next turn.",
+      "esMX": "<b>Grito de batalla:</b> el poder de héroe del adversario cuesta (5) más el próximo turno."
+    },
+    "flavor": {
+      "enUS": "Listen all y'all it's a saboteur!",
+      "esMX": "Se presentó al casting de Sabotaje, pero increíblemente no le dieron el papel."
+    },
+    "artist": "Greg Staples",
+    "collectible": true,
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_086e": {
+    "id": "AT_086e",
+    "name": {
+      "enUS": "Villainy",
+      "esMX": "Fechoría"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Your Hero Power costs (5) more this turn.",
+      "esMX": "Tu poder de héroe cuesta (5) más en este turno."
+    },
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_087": {
+    "id": "AT_087",
+    "name": {
+      "enUS": "Argent Horserider",
+      "esMX": "Caballero argento"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 3,
+    "attack": 2,
+    "health": 1,
+    "text": {
+      "enUS": "<b>Charge</b>\n<b>Divine Shield</b>",
+      "esMX": "<b>Carga</b>\n<b>Escudo divino</b>."
+    },
+    "flavor": {
+      "enUS": "His horse's name is Betsy.",
+      "esMX": "Estaba entre Rocinante, Bucéfalo y Plata, pero se decidió por Negrita."
+    },
+    "artist": "Evgeniy Zagumennyy",
+    "collectible": true,
+    "mechanics": [
+      "Charge",
+      "Divine Shield"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_088": {
+    "id": "AT_088",
+    "name": {
+      "enUS": "Mogor's Champion",
+      "esMX": "Campeón de Mogor"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 6,
+    "attack": 8,
+    "health": 5,
+    "text": {
+      "enUS": "50% chance to attack the wrong enemy.",
+      "esMX": "50% de probabilidades de atacar al enemigo equivocado."
+    },
+    "flavor": {
+      "enUS": "This champion has learned from the best.  Except for his target selection.",
+      "esMX": "Este campeón ha aprendido del mejor. Salvo cuando se trata de elegir a su objetivo."
+    },
+    "artist": "Steve Prescott",
+    "collectible": true,
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_089": {
+    "id": "AT_089",
+    "name": {
+      "enUS": "Boneguard Lieutenant",
+      "esMX": "Teniente guardahuesos"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 2,
+    "attack": 3,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Inspire:</b> Gain +1 Health.",
+      "esMX": "<b>Inspirar:</b> obtiene +1 de Salud."
+    },
+    "flavor": {
+      "enUS": "Underneath all that impressive armor, he's just skin and bones.  Okay, maybe just bones.",
+      "esMX": "Debajo de esa impresionante armadura, es piel y huesos. O solo huesos..."
+    },
+    "artist": "Slawomir Maniak",
+    "collectible": true,
+    "mechanics": [
+      "Inspire"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_089e": {
+    "id": "AT_089e",
+    "name": {
+      "enUS": "Boneguarded",
+      "esMX": "Protección ósea"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Increased Health.",
+      "esMX": "Salud aumentada."
+    },
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_090": {
+    "id": "AT_090",
+    "name": {
+      "enUS": "Mukla's Champion",
+      "esMX": "Campeón de Mukla"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 5,
+    "attack": 4,
+    "health": 3,
+    "text": {
+      "enUS": "<b>Inspire:</b> Give your other minions +1/+1.",
+      "esMX": "<b>Inspirar:</b> otorga +1/+1 a tus otros esbirros."
+    },
+    "flavor": {
+      "enUS": "An elegant gorilla, for a more civilized age.",
+      "esMX": "Un gorila elegante para una época más civilizada."
+    },
+    "artist": "Andrew Hou",
+    "collectible": true,
+    "race": "Beast",
+    "mechanics": [
+      "Inspire"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_090e": {
+    "id": "AT_090e",
+    "name": {
+      "enUS": "Might of the Monkey",
+      "esMX": "Fuerza del mono"
+    },
+    "type": "Enchantment",
+    "text": "+1/+1.",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_091": {
+    "id": "AT_091",
+    "name": {
+      "enUS": "Tournament Medic",
+      "esMX": "Médico del torneo"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 4,
+    "attack": 1,
+    "health": 8,
+    "text": {
+      "enUS": "<b>Inspire:</b> Restore 2 Health to your hero.",
+      "esMX": "<b>Inspirar:</b> restaura 2 de Salud a tu héroe."
+    },
+    "flavor": {
+      "enUS": "The medic tournament is less entertaining than the Grand Tournament.",
+      "esMX": "El Torneo de los Médicos es mucho más aburrido que el Gran Torneo."
+    },
+    "artist": "Sean McNally",
+    "collectible": true,
+    "mechanics": [
+      "Inspire"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_092": {
+    "id": "AT_092",
+    "name": {
+      "enUS": "Ice Rager",
+      "esMX": "Furibundo gélido"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 3,
+    "attack": 5,
+    "health": 2,
+    "flavor": {
+      "enUS": "He's a lot cooler than Magma Rager.",
+      "esMX": "Solía ser amigo del Furibundo de magma, pero la relación se enfrió un poco."
+    },
+    "artist": "Anton Zemskov",
+    "collectible": true,
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_093": {
+    "id": "AT_093",
+    "name": {
+      "enUS": "Frigid Snobold",
+      "esMX": "Snóbold glacial"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 4,
+    "attack": 2,
+    "health": 6,
+    "text": {
+      "enUS": "<b>Spell Damage +1</b>",
+      "esMX": "<b>Daño de hechizo +1</b>"
+    },
+    "flavor": {
+      "enUS": "Ironically, the natural enemy of the snobold is THE CANDLE.",
+      "esMX": "Irónicamente, el enemigo natural del snóbold es LA VELA."
+    },
+    "artist": "Matt Dixon",
+    "collectible": true,
+    "mechanics": [
+      "Spellpower"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_094": {
+    "id": "AT_094",
+    "name": {
+      "enUS": "Flame Juggler",
+      "esMX": "Malabarista de llamas"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 2,
+    "attack": 2,
+    "health": 3,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Deal 1 damage to a random enemy.",
+      "esMX": "<b>Grito de batalla:</b> inflige 1 de daño a un enemigo aleatorio."
+    },
+    "flavor": {
+      "enUS": "At first he liked juggling chain saws, but then he thought, \"Flames are better!  Because FIRE!\"",
+      "esMX": "¿Quién dijo que con el fuego no se juega?"
+    },
+    "artist": "James Zhang",
+    "collectible": true,
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_095": {
+    "id": "AT_095",
+    "name": {
+      "enUS": "Silent Knight",
+      "esMX": "Caballero silencioso"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 3,
+    "attack": 2,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Stealth</b>\n<b>Divine Shield</b>",
+      "esMX": "<b>Sigilo</b>.\n<b>Escudo divino</b>."
+    },
+    "flavor": {
+      "enUS": "He used to be a librarian.  Old habits die hard.",
+      "esMX": "En sus años mozos, fue bibliotecario. Las viejas costumbres nunca mueren..."
+    },
+    "artist": "Esad Ribic",
+    "collectible": true,
+    "mechanics": [
+      "Divine Shield",
+      "Stealth"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_096": {
+    "id": "AT_096",
+    "name": {
+      "enUS": "Clockwork Knight",
+      "esMX": "Caballero de cuerda"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 5,
+    "attack": 5,
+    "health": 5,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Give a friendly Mech +1/+1.",
+      "esMX": "<b>Grito de batalla:</b> otorga +1/+1 a un Meca aliado."
+    },
+    "flavor": {
+      "enUS": "It takes a lot to wind him up.",
+      "esMX": "Lo más difícil de todo es darle cuerda."
+    },
+    "artist": "Skan Srisuwan",
+    "collectible": true,
+    "race": "Mech",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_096e": {
+    "id": "AT_096e",
+    "name": {
+      "enUS": "Wound Up",
+      "esMX": "Puesto a punto"
+    },
+    "type": "Enchantment",
+    "text": "+1/+1.",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_097": {
+    "id": "AT_097",
+    "name": {
+      "enUS": "Tournament Attendee",
+      "esMX": "Espectador del torneo"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 1,
+    "attack": 2,
+    "health": 1,
+    "text": {
+      "enUS": "<b>Taunt</b>",
+      "esMX": "<b>Provocación</b>."
+    },
+    "flavor": {
+      "enUS": "He was so excited to get season tickets to this year's Grand Tournament.  He normally doesn't get them at first and has to buy them from Ogre scalpers.",
+      "esMX": "Cuando consiguió los boletos para esta temporada del Gran Torneo no lo podía creer. Le suele suceder que no llega a tiempo y termina comprándoles a los revendedores ogros."
+    },
+    "artist": "Adam Byrne",
+    "collectible": true,
+    "mechanics": [
+      "Taunt"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_098": {
+    "id": "AT_098",
+    "name": {
+      "enUS": "Sideshow Spelleater",
+      "esMX": "Tragahechizos de reparto"
+    },
+    "type": "Minion",
+    "rarity": "Epic",
+    "cost": 6,
+    "attack": 6,
+    "health": 5,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Copy your opponent's Hero Power.",
+      "esMX": "<b>Grito de batalla:</b> copia el poder de héroe de tu adversario."
+    },
+    "flavor": {
+      "enUS": "Hey!  Let me try that...",
+      "esMX": "¡Ey! Yo también quiero probar un bocado..."
+    },
+    "artist": "Wayne Reynolds",
+    "collectible": true,
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_099": {
+    "id": "AT_099",
+    "name": {
+      "enUS": "Kodorider",
+      "esMX": "Jinete de kodos"
+    },
+    "type": "Minion",
+    "rarity": "Epic",
+    "cost": 6,
+    "attack": 3,
+    "health": 5,
+    "text": {
+      "enUS": "<b>Inspire:</b> Summon a 3/5 War Kodo.",
+      "esMX": "<b>Inspirar:</b> invoca un kodo de guerra 3/5."
+    },
+    "flavor": {
+      "enUS": "Someone called her a Rhinorider, and she's NOT HAPPY.",
+      "esMX": "Los que le dijeron \"Jinete de rinocerontes\" no vivieron para contarlo."
+    },
+    "artist": "Ben Wootten",
+    "collectible": true,
+    "mechanics": [
+      "Inspire"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_099t": {
+    "id": "AT_099t",
+    "name": {
+      "enUS": "War Kodo",
+      "esMX": "Kodo de guerra"
+    },
+    "type": "Minion",
+    "cost": 5,
+    "attack": 3,
+    "health": 5,
+    "race": "Beast",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_100": {
+    "id": "AT_100",
+    "name": {
+      "enUS": "Silver Hand Regent",
+      "esMX": "Regente de la Mano de Plata"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "text": {
+      "enUS": "<b>Inspire:</b> Summon a 1/1 Silver Hand Recruit.",
+      "esMX": "<b>Inspirar:</b> invoca un Recluta de la Mano de Plata 1/1."
+    },
+    "flavor": {
+      "enUS": "The Silver Hand is the best paladin organization.  The Argent Crusaders are super jealous.",
+      "esMX": "La Mano de Plata es la mejor organización de los paladines. Y los de la Cruzada Argenta se mueren de celos."
+    },
+    "artist": "John Polidora",
+    "collectible": true,
+    "mechanics": [
+      "Inspire"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_101": {
+    "id": "AT_101",
+    "name": {
+      "enUS": "Pit Fighter",
+      "esMX": "Luchadora de la fosa"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 5,
+    "attack": 5,
+    "health": 6,
+    "flavor": {
+      "enUS": "What did the pits ever do to you?",
+      "esMX": "¿Qué demonios te hicieron en esa fosa?"
+    },
+    "artist": "Alex Horley Orlandelli",
+    "collectible": true,
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_102": {
+    "id": "AT_102",
+    "name": {
+      "enUS": "Captured Jormungar",
+      "esMX": "Jormungar capturado"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 7,
+    "attack": 5,
+    "health": 9,
+    "flavor": {
+      "enUS": "You can keep him, but you have to promise to feed him and clean out his tank every day!",
+      "esMX": "Te puedes quedar con él, pero tienes que prometerme que le darás de comer y que limpiarás su jaula todos los días."
+    },
+    "artist": "Gonzalo Ordonez",
+    "collectible": true,
+    "race": "Beast",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_103": {
+    "id": "AT_103",
+    "name": {
+      "enUS": "North Sea Kraken",
+      "esMX": "Kraken del Mar del Norte"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 9,
+    "attack": 9,
+    "health": 7,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Deal 4 damage.",
+      "esMX": "<b>Grito de batalla:</b> inflige 4 de daño."
+    },
+    "flavor": {
+      "enUS": "You have no idea how tired this guy is of being released.",
+      "esMX": "Está cansado de que le hagan quedar como el malo en todas las películas."
+    },
+    "artist": "Seamus Gallagher",
+    "collectible": true,
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_104": {
+    "id": "AT_104",
+    "name": {
+      "enUS": "Tuskarr Jouster",
+      "esMX": "Duelista colmillarr"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 5,
+    "attack": 5,
+    "health": 5,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Reveal a minion in each deck. If yours costs more, restore 7 Health to your hero.",
+      "esMX": "<b>Grito de batalla:</b> revela un esbirro de cada mazo. Si el tuyo cuesta más, restaura 7 de salud a tu héroe."
+    },
+    "flavor": {
+      "enUS": "Just could not be talked out of using his turtle for the joust...",
+      "esMX": "Lo intentaron por todos los medios, pero nadie pudo convencerlo de cambiar su tortuga por un caballo para las justas."
+    },
+    "artist": "Skan Srisuwan",
+    "collectible": true,
+    "playerClass": "Paladin",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_105": {
+    "id": "AT_105",
+    "name": {
+      "enUS": "Injured Kvaldir",
+      "esMX": "Kvaldir herido"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 1,
+    "attack": 2,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Deal 3 damage to this minion.",
+      "esMX": "<b>Grito de batalla:</b> inflige 3 de daño a este esbirro."
+    },
+    "flavor": {
+      "enUS": "Don't worry.  With a little skin cream he's going to clear right up.",
+      "esMX": "No te preocupes. Solo dale un poco de crema hidratante y estará bien."
+    },
+    "artist": "Zoltan Boros",
+    "collectible": true,
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_106": {
+    "id": "AT_106",
+    "name": {
+      "enUS": "Light's Champion",
+      "esMX": "Campeón de la luz"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 3,
+    "attack": 4,
+    "health": 3,
+    "text": {
+      "enUS": "<b>Battlecry:</b> <b>Silence</b> a Demon.",
+      "esMX": "<b>Grito de batalla:</b> <b>Silencia</b> a un Demonio."
+    },
+    "flavor": {
+      "enUS": "When there's something strange (say, a gibbering demon) in your neighborhood, who are you going to call?",
+      "esMX": "La solución perfecta para ese horrible momento en que te topas con algo extraño por el barrio (digamos... un demonio balbuceante)."
+    },
+    "artist": "Andrea Uderzo",
+    "collectible": true,
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_108": {
+    "id": "AT_108",
+    "name": {
+      "enUS": "Armored Warhorse",
+      "esMX": "Corcel de guerra blindado"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 4,
+    "attack": 5,
+    "health": 3,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Reveal a minion in each deck. If yours costs more, gain <b>Charge</b>.",
+      "esMX": "<b>Grito de batalla:</b> revela un esbirro de cada mazo. Si el tuyo cuesta más, obtiene <b>Carga</b>."
+    },
+    "flavor": {
+      "enUS": "Yep.  It's a horse... wearing armor... going to war.",
+      "esMX": "Sí. Es un caballo... con armadura... que va a la guerra... sin jinete."
+    },
+    "artist": "Edouard Guiton & Tony Washington",
+    "collectible": true,
+    "race": "Beast",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_109": {
+    "id": "AT_109",
+    "name": {
+      "enUS": "Argent Watchman",
+      "esMX": "Velador argento"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 2,
+    "attack": 2,
+    "health": 4,
+    "text": {
+      "enUS": "Can't attack.\n<b>Inspire:</b> Can attack as normal this turn.",
+      "esMX": "No ataca.\n<b>Inspirar:</b> puede atacar durante este turno."
+    },
+    "flavor": {
+      "enUS": "Who argent watches the Argent Watchman?",
+      "esMX": "¿Nunca te preguntaste quién vela por los veladores?"
+    },
+    "artist": "Ben Zhang",
+    "collectible": true,
+    "mechanics": [
+      "Inspire"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_109e": {
+    "id": "AT_109e",
+    "name": {
+      "enUS": "Inspired",
+      "esMX": "Inspirado"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Can attack this turn.",
+      "esMX": "Puede atacar durante este turno."
+    },
+    "mechanics": [
+      "OneTurnEffect"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_110": {
+    "id": "AT_110",
+    "name": {
+      "enUS": "Coliseum Manager",
+      "esMX": "Encargado del torneo"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 3,
+    "attack": 2,
+    "health": 5,
+    "text": {
+      "enUS": "<b>Inspire:</b> Return this minion to your hand.",
+      "esMX": "<b>Inspirar:</b> regresa este esbirro a tu mano."
+    },
+    "flavor": {
+      "enUS": "Meets monthly with the gladiators to discuss career goals.",
+      "esMX": "Todos los meses se junta con los gladiadores para debatir sobre sus metas."
+    },
+    "artist": "Dan Scott",
+    "collectible": true,
+    "mechanics": [
+      "Inspire"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_111": {
+    "id": "AT_111",
+    "name": {
+      "enUS": "Refreshment Vendor",
+      "esMX": "Vendedor de víveres"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 4,
+    "attack": 3,
+    "health": 5,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Restore 4 Health to each hero.",
+      "esMX": "<b>Grito de batalla:</b> restaura 4 de Salud a cada héroe."
+    },
+    "flavor": {
+      "enUS": "Menu:  Funnel cakes, carrots, popcorn, jormungar steaks.  It's hard serving a diverse clientele.",
+      "esMX": "Menú: churros, zanahorias, palomitas de maíz, bife de jormungar... Es difícil mantener contenta a una clientela tan diversa."
+    },
+    "artist": "Ron Spears",
+    "collectible": true,
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_112": {
+    "id": "AT_112",
+    "name": {
+      "enUS": "Master Jouster",
+      "esMX": "Duelista maestro"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 6,
+    "attack": 5,
+    "health": 6,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Reveal a minion in each deck. If yours costs more, gain <b>Taunt</b> and <b>Divine Shield</b>.",
+      "esMX": "<b>Grito de batalla:</b> revela un esbirro de cada mazo. Si el tuyo cuesta más, obtiene <b>Provocación</b> y <b>Escudo divino</b>."
+    },
+    "flavor": {
+      "enUS": "Needs just a few more ratings points to become Grandmaster Jouster.",
+      "esMX": "Está a unos pocos puntos de convertirse en Duelista Gran Maestro."
+    },
+    "artist": "Penny Arcade",
+    "collectible": true,
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_113": {
+    "id": "AT_113",
+    "name": {
+      "enUS": "Recruiter",
+      "esMX": "Reclutador"
+    },
+    "type": "Minion",
+    "rarity": "Epic",
+    "cost": 5,
+    "attack": 5,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Inspire:</b> Add a 2/2 Squire to your hand.",
+      "esMX": "<b>Inspirar:</b> agrega un Escudero 2/2 a tu mano."
+    },
+    "flavor": {
+      "enUS": "Join the Argent Crusade!  We have attractive tabards and you get to carry really nice swords!",
+      "esMX": "¡Únete a la Cruzada Argenta! Tenemos tabardos hermosos, ¡y tendrán la oportunidad de usar espadas relucientes!"
+    },
+    "artist": "Jim Nelson",
+    "collectible": true,
+    "mechanics": [
+      "Inspire"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_114": {
+    "id": "AT_114",
+    "name": {
+      "enUS": "Evil Heckler",
+      "esMX": "Abucheador malvado"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 4,
+    "attack": 5,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Taunt</b>",
+      "esMX": "<b>Provocación</b>."
+    },
+    "flavor": {
+      "enUS": "To be honest, heckling is not the most effective form of evil.",
+      "esMX": "Seamos honestos... abuchear no es la forma más efectiva de maldad."
+    },
+    "artist": "Dan Scott",
+    "collectible": true,
+    "mechanics": [
+      "Taunt"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_115": {
+    "id": "AT_115",
+    "name": {
+      "enUS": "Fencing Coach",
+      "esMX": "Instructor de esgrima"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 3,
+    "attack": 2,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Battlecry:</b> The next time you use your Hero Power, it costs (2) less.",
+      "esMX": "<b>Grito de batalla:</b> la próxima vez que uses tu poder de héroe, cuesta (2) menos."
+    },
+    "flavor": {
+      "enUS": "Good fencers make good neighbors, right?",
+      "esMX": "Solía ser instructor de laúd, pero no llegaba a fin de mes."
+    },
+    "artist": "Howard Lyon",
+    "collectible": true,
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_115e": {
+    "id": "AT_115e",
+    "name": {
+      "enUS": "Fencing Practice",
+      "esMX": "Práctica de esgrima"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Your Hero Power costs (2) less.",
+      "esMX": "Tu poder de héroe cuesta (2) menos."
+    },
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_116": {
+    "id": "AT_116",
+    "name": {
+      "enUS": "Wyrmrest Agent",
+      "esMX": "Agente del Reposo del Dragón"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 2,
+    "attack": 1,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Battlecry:</b> If you're holding a Dragon, gain +1 Attack and <b>Taunt</b>.",
+      "esMX": "<b>Grito de batalla:</b> si tienes un Dragón en tu mano, obtiene +1 de Ataque y <b>Provocación</b>."
+    },
+    "flavor": {
+      "enUS": "Keeping tabs on the Grand Tournament is priority #1 for the five mighty Dragonflights!",
+      "esMX": "¡La prioridad número 1 de los cinco poderosos Vuelos es estar al tanto del Gran Torneo!"
+    },
+    "artist": "Jeff Easley",
+    "collectible": true,
+    "playerClass": "Priest",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_116e": {
+    "id": "AT_116e",
+    "name": {
+      "enUS": "Bring it on!",
+      "esMX": "¡Veamos qué tienes!"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "+1 Attack and <b>Taunt</b>.",
+      "esMX": "+1 de Ataque y <b>Provocación</b>."
+    },
+    "playerClass": "Priest",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_117": {
+    "id": "AT_117",
+    "name": {
+      "enUS": "Master of Ceremonies",
+      "esMX": "Maestra de ceremonias"
+    },
+    "type": "Minion",
+    "rarity": "Epic",
+    "cost": 3,
+    "attack": 4,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Battlecry:</b> If you have a minion with <b>Spell Damage</b>, gain +2/+2.",
+      "esMX": "<b>Grito de batalla:</b> si tienes un esbirro con <b>Daño de hechizo</b>, obtiene +2/+2."
+    },
+    "flavor": {
+      "enUS": "Goes by \"MC ElfyElf\".",
+      "esMX": "Se hace llamar \"MC Elfi-Elf\"."
+    },
+    "artist": "Jesper Ejsing",
+    "collectible": true,
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_117e": {
+    "id": "AT_117e",
+    "name": {
+      "enUS": "Ceremony",
+      "esMX": "Ceremonia"
+    },
+    "type": "Enchantment",
+    "text": "+2/+2.",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_118": {
+    "id": "AT_118",
+    "name": {
+      "enUS": "Grand Crusader",
+      "esMX": "Gran cruzada"
+    },
+    "type": "Minion",
+    "rarity": "Epic",
+    "cost": 6,
+    "attack": 5,
+    "health": 5,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Add a random Paladin card to your hand.",
+      "esMX": "<b>Grito de batalla:</b> agrega una carta de Paladín aleatoria a tu mano."
+    },
+    "flavor": {
+      "enUS": "A veteran of a number of crusades, she is a force for light and goodness.  Her latest crusade is against goblin telemarketers.",
+      "esMX": "Veterana de muchas cruzadas, fuerza de luz y bondad. Su última causa fue la erradicación de los telemarketers goblin."
+    },
+    "artist": "Todd Lockwood",
+    "collectible": true,
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_119": {
+    "id": "AT_119",
+    "name": {
+      "enUS": "Kvaldir Raider",
+      "esMX": "Asaltante kvaldir"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 5,
+    "attack": 4,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Inspire:</b> Gain +2/+2.",
+      "esMX": "<b>Inspirar:</b> obtiene +2/+2."
+    },
+    "flavor": {
+      "enUS": "Coming soon... to a tuskarr village near you!",
+      "esMX": "Próximamente... ¡En la aldea colmillarr más cercana!"
+    },
+    "artist": "Trent Kaniuga",
+    "collectible": true,
+    "mechanics": [
+      "Inspire"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_119e": {
+    "id": "AT_119e",
+    "name": {
+      "enUS": "Inspired",
+      "esMX": "Inspirado"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Increased Stats.",
+      "esMX": "Estadísticas aumentadas."
+    },
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_120": {
+    "id": "AT_120",
+    "name": {
+      "enUS": "Frost Giant",
+      "esMX": "Gigante de escarcha"
+    },
+    "type": "Minion",
+    "rarity": "Epic",
+    "cost": 10,
+    "attack": 8,
+    "health": 8,
+    "text": {
+      "enUS": "Costs (1) less for each time you used your Hero Power this game.",
+      "esMX": "Cuesta (1) menos por cada vez que hayas usado tu poder de héroe en esta partida."
+    },
+    "flavor": {
+      "enUS": "Don't ask him about the beard.  JUST DON'T.",
+      "esMX": "No le digas nada sobre la barba. NI SE TE OCURRA."
+    },
+    "artist": "Greg Staples",
+    "collectible": true,
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_121": {
+    "id": "AT_121",
+    "name": {
+      "enUS": "Crowd Favorite",
+      "esMX": "Favorito del público"
+    },
+    "type": "Minion",
+    "rarity": "Epic",
+    "cost": 4,
+    "attack": 4,
+    "health": 4,
+    "text": {
+      "enUS": "Whenever you play a card with <b>Battlecry</b>, gain +1/+1.",
+      "esMX": "Cada vez que juegas una carta con <b>Grito de batalla</b>, obtiene +1/+1."
+    },
+    "flavor": {
+      "enUS": "The crowd ALWAYS yells lethal.",
+      "esMX": "El público SIEMPRE grita 'letal'."
+    },
+    "artist": "Jakub Kasper",
+    "collectible": true,
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_121e": {
+    "id": "AT_121e",
+    "name": {
+      "enUS": "Huge Ego",
+      "esMX": "Egocéntrico"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Increased stats.",
+      "esMX": "Estadísticas aumentadas."
+    },
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_122": {
+    "id": "AT_122",
+    "name": {
+      "enUS": "Gormok the Impaler",
+      "esMX": "Gormok el Empalador"
+    },
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 4,
+    "attack": 4,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Battlecry:</b> If you have at least 4 other minions, deal 4 damage.",
+      "esMX": "<b>Grito de batalla:</b> si tienes, al menos, 4 esbirros más, inflige 4 de daño."
+    },
+    "flavor": {
+      "enUS": "Gormok has been giving impaling lessons in a small tent near the tournament grounds.  For only 25g you too could learn the fine art of impaling!",
+      "esMX": "Gormok está dando clases de empalamiento en una pequeña tienda en las inmediaciones del torneo. Por solo 25 de oro, ¡tú también puedes convertirte en un empalador legendario!"
+    },
+    "artist": "Nutthapon Petchthai",
+    "collectible": true,
+    "elite": true,
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_123": {
+    "id": "AT_123",
+    "name": {
+      "enUS": "Chillmaw",
+      "esMX": "Yertafauce"
+    },
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 7,
+    "attack": 6,
+    "health": 6,
+    "text": {
+      "enUS": "<b>Taunt</b>\n<b>Deathrattle:</b> If you're holding a Dragon, deal 3 damage to all minions.",
+      "esMX": "<b>Provocación</b>\n<b>Estertor:</b> si tienes un Dragón en tu mano, inflige 3 de daño a todos los esbirros."
+    },
+    "flavor": {
+      "enUS": "Chillmaw keeps trying to ruin the Grand Tournament, and she would've done it too, if it weren't for those dang kids!",
+      "esMX": "Yertafauce siempre intenta arruinar el Gran Torneo. ¡Y lo habría logrado, de no ser por esos malditos mocosos!"
+    },
+    "artist": "Raymond Swanland",
+    "collectible": true,
+    "elite": true,
+    "race": "Dragon",
+    "mechanics": [
+      "Deathrattle",
+      "Taunt"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_124": {
+    "id": "AT_124",
+    "name": {
+      "enUS": "Bolf Ramshield",
+      "esMX": "Bolf Cabroquel"
+    },
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 6,
+    "attack": 3,
+    "health": 9,
+    "text": {
+      "enUS": "Whenever your hero takes damage, this minion takes it instead.",
+      "esMX": "El daño que recibe tu héroe se redirige a este esbirro."
+    },
+    "flavor": {
+      "enUS": "Bolf keeps coming in 2nd at the Grand Tournament.  It might be his year this year, if Lebron doesn't enter.",
+      "esMX": "Bolf no deja de salir segundo en el Gran Torneo. ¡Quizá este sea su año! Siempre y cuando no se inscriba Lebron, claro."
+    },
+    "artist": "Wayne Reynolds",
+    "collectible": true,
+    "elite": true,
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_125": {
+    "id": "AT_125",
+    "name": {
+      "enUS": "Icehowl",
+      "esMX": "Aullahielo"
+    },
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 9,
+    "attack": 10,
+    "health": 10,
+    "text": {
+      "enUS": "<b>Charge</b>\nCan't attack heroes.",
+      "esMX": "<b>Carga</b>\nNo puede atacar héroes."
+    },
+    "flavor": {
+      "enUS": "This massive yeti just closes his eyes and charges at the nearest target.  The nearest Target is a couple blocks away and has sick deals on skateboards.",
+      "esMX": "Solía ser un yeti muy pacífico, pero empezó a cargar contra todo lo que se le cruzaba luego de que le crecieran esos cuernotes. Aún busca al culpable..."
+    },
+    "artist": "John Polidora",
+    "collectible": true,
+    "elite": true,
+    "mechanics": [
+      "Charge"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_127": {
+    "id": "AT_127",
+    "name": {
+      "enUS": "Nexus-Champion Saraad",
+      "esMX": "Saraad, campeón del Nexo"
+    },
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 5,
+    "attack": 4,
+    "health": 5,
+    "text": {
+      "enUS": "<b>Inspire:</b> Add a random spell to your hand.",
+      "esMX": "<b>Inspirar:</b> agrega un hechizo aleatorio a tu mano."
+    },
+    "flavor": {
+      "enUS": "The ethereals have their own jousting tournament, and Saraad is the reigning champion.  Also he won the ethereal hot dog eating contest.",
+      "esMX": "Los etéreos tienen su propio torneo de justas, y Saraad es el actual campeón. Ah, y también ostenta el récord de haber comido más perros calientes etéreos."
+    },
+    "artist": "Marcleo Vignali",
+    "collectible": true,
+    "elite": true,
+    "mechanics": [
+      "Inspire"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_128": {
+    "id": "AT_128",
+    "name": {
+      "enUS": "The Skeleton Knight",
+      "esMX": "El Caballero esqueleto"
+    },
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 6,
+    "attack": 7,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Deathrattle:</b> Reveal a minion in each deck. If yours costs more, return this to your hand.",
+      "esMX": "<b>Estertor:</b> revela un esbirro de cada mazo. Si el tuyo cuesta más, regresa este esbirro a tu mano."
+    },
+    "flavor": {
+      "enUS": "Apparently it really was just a flesh wound.",
+      "esMX": "Se dice que es el primo hermano de Leoric."
+    },
+    "artist": "Mike Sass",
+    "collectible": true,
+    "elite": true,
+    "mechanics": [
+      "Deathrattle"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_129": {
+    "id": "AT_129",
+    "name": {
+      "enUS": "Fjola Lightbane",
+      "esMX": "Fjola Penívea"
+    },
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 3,
+    "attack": 3,
+    "health": 4,
+    "text": {
+      "enUS": "Whenever <b>you</b> target this minion with a spell, gain <b>Divine Shield.</b>",
+      "esMX": "Cada vez que haces objetivo a este esbirro con un hechizo, obtiene <b>Escudo divino</b>."
+    },
+    "flavor": {
+      "enUS": "LOVES being called \"the wonder twins\".",
+      "esMX": "Le ENCANTA que la confundan con la de los gemelos fantásticos."
+    },
+    "artist": "Mark Zug",
+    "collectible": true,
+    "elite": true,
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_130": {
+    "id": "AT_130",
+    "name": {
+      "enUS": "Sea Reaver",
+      "esMX": "Atracamar"
+    },
+    "type": "Minion",
+    "rarity": "Epic",
+    "cost": 6,
+    "attack": 6,
+    "health": 7,
+    "text": {
+      "enUS": "When you draw this, deal 1 damage to your minions.",
+      "esMX": "Cuando robas esta carta, inflige 1 de daño a tus esbirros."
+    },
+    "flavor": {
+      "enUS": "A little better than Sea Minus Reaver.",
+      "esMX": "Bastante mejor que Atracalaguna."
+    },
+    "artist": "James Ryman",
+    "collectible": true,
+    "playerClass": "Warrior",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_131": {
+    "id": "AT_131",
+    "name": {
+      "enUS": "Eydis Darkbane",
+      "esMX": "Eydis Penaumbra"
+    },
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 3,
+    "attack": 3,
+    "health": 4,
+    "text": {
+      "enUS": "Whenever <b>you</b> target this minion with a spell, deal 3 damage to a random enemy.",
+      "esMX": "Cada vez que haces objetivo a este esbirro con un hechizo, inflige 3 de daño a un enemigo aleatorio."
+    },
+    "flavor": {
+      "enUS": "HATES being called \"the wonder twins\".",
+      "esMX": "ODIA que la confundan con la de los gemelos fantásticos."
+    },
+    "artist": "Ben Thompson",
+    "collectible": true,
+    "elite": true,
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_132": {
+    "id": "AT_132",
+    "name": {
+      "enUS": "Justicar Trueheart",
+      "esMX": "Justicar Corazón Veraz"
+    },
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 6,
+    "attack": 6,
+    "health": 3,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Replace your starting Hero Power with a better one.",
+      "esMX": "<b>Grito de batalla:</b> reemplaza tu poder de héroe inicial con uno mejor."
+    },
+    "flavor": {
+      "enUS": "It's like putting racing stripes and a giant spoiler on your hero power.",
+      "esMX": "Es como ponerle turbo, llantas de aluminio y un alerón gigante a tu poder de héroe."
+    },
+    "artist": "Jomaro Kindred",
+    "collectible": true,
+    "elite": true,
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_132_DRUID": {
+    "id": "AT_132_DRUID",
+    "name": {
+      "enUS": "Dire Shapeshift",
+      "esMX": "Cambio de forma temible"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nGain 2 Armor and +2 Attack this turn.",
+      "esMX": "<b>Poder de héroe</b>\nOtorga 2 de Armadura y +2 de Ataque en este turno."
+    },
+    "playerClass": "Druid",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_132_DRUIDe": {
+    "id": "AT_132_DRUIDe",
+    "name": {
+      "enUS": "Dire Claws",
+      "esMX": "Garras temibles"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "+2 Attack this turn.",
+      "esMX": "+2 de Ataque en este turno."
+    },
+    "playerClass": "Druid",
+    "mechanics": [
+      "OneTurnEffect"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_132_HUNTER": {
+    "id": "AT_132_HUNTER",
+    "name": {
+      "enUS": "Ballista Shot",
+      "esMX": "Disparo de ballesta"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nDeal $3 damage to the enemy hero.",
+      "esMX": "<b>Poder de héroe</b>\nInflige $3 de daño al héroe enemigo."
+    },
+    "playerClass": "Hunter",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_132_MAGE": {
+    "id": "AT_132_MAGE",
+    "name": {
+      "enUS": "Fireblast Rank 2",
+      "esMX": "Explosión de fuego rango 2"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nDeal $2 damage.",
+      "esMX": "<b>Poder de héroe</b>\nInflige $2 de daño."
+    },
+    "playerClass": "Mage",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_132_PALADIN": {
+    "id": "AT_132_PALADIN",
+    "name": {
+      "enUS": "The Silver Hand",
+      "esMX": "La Mano de Plata"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nSummon two 1/1 Recruits.",
+      "esMX": "<b>Poder de héroe</b>\nInvoca dos Reclutas 1/1."
+    },
+    "playerClass": "Paladin",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_132_PRIEST": {
+    "id": "AT_132_PRIEST",
+    "name": {
+      "enUS": "Heal",
+      "esMX": "Sanación"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nRestore #4 Health.",
+      "esMX": "<b>Poder de héroe</b>\nRestaura #4 de Salud."
+    },
+    "playerClass": "Priest",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_132_ROGUE": {
+    "id": "AT_132_ROGUE",
+    "name": {
+      "enUS": "Poisoned Daggers",
+      "esMX": "Dagas envenenadas"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nEquip a 2/2 Weapon.",
+      "esMX": "<b>Poder de héroe</b>\nEquipa un arma 2/2."
+    },
+    "playerClass": "Rogue",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_132_ROGUEt": {
+    "id": "AT_132_ROGUEt",
+    "name": {
+      "enUS": "Poisoned Dagger",
+      "esMX": "Daga envenenada"
+    },
+    "type": "Weapon",
+    "cost": 1,
+    "attack": 2,
+    "durability": 2,
+    "playerClass": "Rogue",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_132_SHAMAN": {
+    "id": "AT_132_SHAMAN",
+    "name": {
+      "enUS": "Totemic Slam",
+      "esMX": "Embate totémico"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nSummon a Totem of your choice.",
+      "esMX": "<b>Poder de héroe</b>\nInvoca el tótem que quieras."
+    },
+    "playerClass": "Shaman",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_132_SHAMANa": {
+    "id": "AT_132_SHAMANa",
+    "name": {
+      "enUS": "Healing Totem",
+      "esMX": "Tótem sanador"
+    },
+    "type": "Minion",
+    "attack": 0,
+    "health": 2,
+    "text": {
+      "enUS": "At the end of your turn, restore 1 Health to all friendly minions.",
+      "esMX": "Al final de tu turno, restaura 1 de Salud a todos los esbirros aliados."
+    },
+    "playerClass": "Shaman",
+    "cost": 0,
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_132_SHAMANb": {
+    "id": "AT_132_SHAMANb",
+    "name": {
+      "enUS": "Searing Totem",
+      "esMX": "Tótem abrasador"
+    },
+    "type": "Minion",
+    "attack": 1,
+    "health": 1,
+    "playerClass": "Shaman",
+    "cost": 0,
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_132_SHAMANc": {
+    "id": "AT_132_SHAMANc",
+    "name": {
+      "enUS": "Stoneclaw Totem",
+      "esMX": "Tótem garra de piedra"
+    },
+    "type": "Minion",
+    "attack": 0,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Taunt</b>",
+      "esMX": "<b>Provocación</b>."
+    },
+    "playerClass": "Shaman",
+    "cost": 0,
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_132_SHAMANd": {
+    "id": "AT_132_SHAMANd",
+    "name": {
+      "enUS": "Wrath of Air Totem",
+      "esMX": "Tótem cólera de aire"
+    },
+    "type": "Minion",
+    "attack": 0,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Spell Damage +1</b>",
+      "esMX": "<b>Daño de hechizo +1</b>"
+    },
+    "playerClass": "Shaman",
+    "cost": 0,
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_132_WARLOCK": {
+    "id": "AT_132_WARLOCK",
+    "name": {
+      "enUS": "Soul Tap",
+      "esMX": "Transfusión de alma"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nDraw a card.",
+      "esMX": "<b>Poder de héroe</b>\nRoba una carta."
+    },
+    "playerClass": "Warlock",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_132_WARRIOR": {
+    "id": "AT_132_WARRIOR",
+    "name": {
+      "enUS": "Tank Up!",
+      "esMX": "¡Modo tanque!"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nGain 4 Armor.",
+      "esMX": "<b>Poder de héroe</b>\nObtienes 4 de Armadura."
+    },
+    "playerClass": "Warrior",
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_133": {
+    "id": "AT_133",
+    "name": {
+      "enUS": "Gadgetzan Jouster",
+      "esMX": "Duelista de Gadgetzan"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 1,
+    "attack": 1,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Reveal a minion in each deck. If yours costs more, gain +1/+1.",
+      "esMX": "<b>Grito de batalla:</b> revela un esbirro de cada mazo. Si el tuyo cuesta más, obtiene +1/+1."
+    },
+    "flavor": {
+      "enUS": "It's not HER fault you didn't put a spinning saw blade on your horse.",
+      "esMX": "¿Qué culpa tiene ella de que tú no le hayas puesto una sierra giratoria a tu caballo?"
+    },
+    "artist": "Skan Srisuwan",
+    "collectible": true,
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "The Grand Tournament"
+  },
+  "AT_133e": {
+    "id": "AT_133e",
+    "name": {
+      "enUS": "Victory!",
+      "esMX": "¡Has ganado!"
+    },
+    "type": "Enchantment",
+    "text": "+1/+1.",
+    "deckSet": "The Grand Tournament"
+  },
   "BRMA01_1": {
     "id": "BRMA01_1",
     "name": {
@@ -2253,7 +6592,7 @@
   "BRMC_84": {
     "id": "BRMC_84",
     "name": {
-      "enUS": "Dragonkin Hatcher",
+      "enUS": "Dragonkin Spellcaster",
       "esMX": "Taumaturgo dragonante"
     },
     "type": "Minion",
@@ -2261,7 +6600,7 @@
     "attack": 4,
     "health": 6,
     "text": {
-      "enUS": "<b>Battlecry</b> Summon two 2/2 Whelps.",
+      "enUS": "<b>Battlecry:</b> Summon two 2/2 Whelps.",
       "esMX": "<b>Grito de batalla:</b> invoca dos Crías 2/2."
     },
     "race": "Dragon",
@@ -3445,7 +7784,7 @@
     "attack": 3,
     "health": 5,
     "text": {
-      "enUS": "Whenever you target this minion with a spell, gain +1/+1.",
+      "enUS": "Whenever <b>you</b> target this minion with a spell, gain +1/+1.",
       "esMX": "Cada vez que usas un hechizo en este esbirro, obtiene +1/+1."
     },
     "flavor": {
@@ -3690,8 +8029,8 @@
     "type": "Hero Power",
     "cost": 2,
     "text": {
-      "enUS": "<b>Hero Power</b>\nDeal 8 damage to a random enemy.",
-      "esMX": "<b>Poder de héroe</b>\nInflige 8 de daño a un enemigo aleatorio."
+      "enUS": "<b>Hero Power</b>\nDeal $8 damage to a random enemy.",
+      "esMX": "<b>Poder de héroe</b>\nInflige $8 de daño a un enemigo aleatorio."
     },
     "deckSet": "Blackrock Mountain"
   },
@@ -3704,8 +8043,8 @@
     "type": "Hero Power",
     "cost": 2,
     "text": {
-      "enUS": "<b>Hero Power</b>\nDeal 8 damage to a random enemy. TWICE.",
-      "esMX": "<b>Poder de héroe</b>\nInflige 8 de daño a un enemigo aleatorio. DOS VECES."
+      "enUS": "<b>Hero Power</b>\nDeal $8 damage to a random enemy. TWICE.",
+      "esMX": "<b>Poder de héroe</b>\nInflige $8 de daño a un enemigo aleatorio. DOS VECES."
     },
     "deckSet": "Blackrock Mountain"
   },
@@ -4285,8 +8624,8 @@
     "attack": 6,
     "health": 5,
     "text": {
-      "enUS": "<b>Battlecry:</b> Your emotes are now spoken in \"Radio Voice\".",
-      "esMX": "<b>Grito de batalla:</b> ahora todas tus emociones tienen voz de locutor."
+      "enUS": "<b>Battlecry:</b> Your emotes are now spoken in \"Radio Voice.\"",
+      "esMX": "<b>Grito de batalla:</b> ahora todas tus emociones se reproducen con voz de locutor."
     },
     "elite": true,
     "deckSet": "Credits"
@@ -4852,8 +9191,8 @@
     "rarity": "Free",
     "cost": 2,
     "text": {
-      "enUS": "<b>Hero Power</b>\nRestore 2 Health.",
-      "esMX": "<b>Poder de héroe</b>\nRestaura 2 de Salud."
+      "enUS": "<b>Hero Power</b>\nRestore #2 Health.",
+      "esMX": "<b>Poder de héroe</b>\nRestaura #2 de Salud."
     },
     "playerClass": "Priest",
     "deckSet": "Basic"
@@ -5624,8 +9963,8 @@
     "rarity": "Free",
     "cost": 2,
     "text": {
-      "enUS": "<b>Hero Power</b>\nDeal 1 damage.",
-      "esMX": "<b>Poder de héroe</b>\nInflige 1 de daño."
+      "enUS": "<b>Hero Power</b>\nDeal $1 damage.",
+      "esMX": "<b>Poder de héroe</b>\nInflige $1 de daño."
     },
     "playerClass": "Mage",
     "deckSet": "Basic"
@@ -5640,8 +9979,23 @@
     "rarity": "Free",
     "cost": 2,
     "text": {
-      "enUS": "<b>Hero Power</b>\nDeal 1 damage.",
-      "esMX": "<b>Poder de héroe</b>\nInflige 1 de daño."
+      "enUS": "<b>Hero Power</b>\nDeal $1 damage.",
+      "esMX": "<b>Poder de héroe</b>\nInflige $1 de daño."
+    },
+    "playerClass": "Mage",
+    "deckSet": "Hero Skins"
+  },
+  "CS2_034_H1_AT_132": {
+    "id": "CS2_034_H1_AT_132",
+    "name": {
+      "enUS": "Fireblast Rank 2",
+      "esMX": "Explosión de fuego rango 2"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nDeal $2 damage.",
+      "esMX": "<b>Poder de héroe</b>\nInflige $2 de daño."
     },
     "playerClass": "Mage",
     "deckSet": "Hero Skins"
@@ -6056,8 +10410,8 @@
     "rarity": "Free",
     "cost": 2,
     "text": {
-      "enUS": "<b>Hero Power</b>\nDraw a card and take 2 damage.",
-      "esMX": "<b>Poder de héroe</b>\nRoba una carta y recibe 2 de daño."
+      "enUS": "<b>Hero Power</b>\nDraw a card and take $2 damage.",
+      "esMX": "<b>Poder de héroe</b>\nRoba una carta y recibe $2 de daño."
     },
     "playerClass": "Warlock",
     "deckSet": "Basic"
@@ -6108,10 +10462,6 @@
     "text": {
       "enUS": "<b>Stealth</b>. At the end of your turn, give another random friendly minion +1 Health.",
       "esMX": "<b>Sigilo</b>. Al final de tu turno, otorga +1 de Salud a otro esbirro aliado aleatorio."
-    },
-    "inPlayText": {
-      "enUS": "Blood Pact",
-      "esMX": ""
     },
     "flavor": {
       "enUS": "Imps are content to hide and viciously taunt everyone nearby.",
@@ -7022,6 +11372,21 @@
     "playerClass": "Warrior",
     "deckSet": "Hero Skins"
   },
+  "CS2_102_H1_AT_132": {
+    "id": "CS2_102_H1_AT_132",
+    "name": {
+      "enUS": "Tank Up!",
+      "esMX": "¡Modo tanque!"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nGain 4 Armor.",
+      "esMX": "<b>Poder de héroe</b>\nObtienes 4 de Armadura."
+    },
+    "playerClass": "Warrior",
+    "deckSet": "Hero Skins"
+  },
   "CS2_103": {
     "id": "CS2_103",
     "name": {
@@ -7411,10 +11776,6 @@
     "text": {
       "enUS": "Your other minions have +1 Attack.",
       "esMX": "Tus otros esbirros tienen +1 de Ataque."
-    },
-    "inPlayText": {
-      "enUS": "Lead",
-      "esMX": ""
     },
     "flavor": {
       "enUS": "\"That's a 50 DKP minus!\"",
@@ -8495,10 +12856,6 @@
       "enUS": "<b>Battlecry:</b> Gain +1/+1 for each other friendly minion on the battlefield.",
       "esMX": "<b>Grito de batalla:</b> obtiene +1/+1 por cada uno de los demás esbirros aliados en el campo de batalla."
     },
-    "inPlayText": {
-      "enUS": "Warlord",
-      "esMX": ""
-    },
     "flavor": {
       "enUS": "The Frostwolves are locked in combat with the Stormpike Expedition over control of Alterac Valley.  Every attempt at peace-talks has ended with Captain Galvangar killing the mediator.",
       "esMX": "Los Lobo gélido están trabados en combate con la Expedición Pico tormenta por el control del Valle de Alterac. Todos los intentos de tregua han terminado con la muerte del mediador a manos del Capitán Galvangar."
@@ -8542,10 +12899,6 @@
     "text": {
       "enUS": "Your minions cost (3) more.",
       "esMX": "Tus esbirros cuestan (3) más."
-    },
-    "inPlayText": {
-      "enUS": "Power",
-      "esMX": ""
     },
     "flavor": {
       "enUS": "No Job is too big.  No fee is too big.",
@@ -9275,8 +13628,8 @@
     "rarity": "Free",
     "cost": 2,
     "text": {
-      "enUS": "<b>Hero Power</b>\nDeal 2 damage to the enemy hero.",
-      "esMX": "<b>Poder de héroe</b>\nInflige 2 de daño al héroe enemigo."
+      "enUS": "<b>Hero Power</b>\nDeal $2 damage to the enemy hero.",
+      "esMX": "<b>Poder de héroe</b>\nInflige $2 de daño al héroe enemigo."
     },
     "playerClass": "Hunter",
     "deckSet": "Basic"
@@ -9291,8 +13644,23 @@
     "rarity": "Free",
     "cost": 2,
     "text": {
-      "enUS": "<b>Hero Power</b>\nDeal 2 damage to the enemy hero.",
-      "esMX": "<b>Poder de héroe</b>\nInflige 2 de daño al héroe enemigo."
+      "enUS": "<b>Hero Power</b>\nDeal $2 damage to the enemy hero.",
+      "esMX": "<b>Poder de héroe</b>\nInflige $2 de daño al héroe enemigo."
+    },
+    "playerClass": "Hunter",
+    "deckSet": "Hero Skins"
+  },
+  "DS1h_292_H1_AT_132": {
+    "id": "DS1h_292_H1_AT_132",
+    "name": {
+      "enUS": "Ballista Shot",
+      "esMX": "Disparo de ballesta"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nDeal $3 damage to the enemy hero.",
+      "esMX": "<b>Poder de héroe</b>\nInflige $3 de daño al héroe enemigo."
     },
     "playerClass": "Hunter",
     "deckSet": "Hero Skins"
@@ -9310,7 +13678,7 @@
     "health": 2,
     "text": {
       "enUS": "Whenever a character is healed, gain +2 Attack.",
-      "esMX": "Cada vez que se sana a un personaje, obtiene +2 de Ataque."
+      "esMX": "Cada vez que un personaje es sanado, obtiene +2 de Ataque."
     },
     "flavor": {
       "enUS": "She’s smaller than her sisters Mediumwarden and Heavywarden.",
@@ -10119,7 +14487,7 @@
     "attack": 4,
     "health": 5,
     "text": {
-      "enUS": "Can't Attack.",
+      "enUS": "Can't attack.",
       "esMX": "No puede atacar."
     },
     "flavor": {
@@ -10409,10 +14777,6 @@
       "enUS": "<b>Charge</b>. Has +1 Attack for each other Murloc on the battlefield.",
       "esMX": "<b>Carga</b>. Tiene +1 de Ataque por cada otro múrloc en el campo de batalla."
     },
-    "inPlayText": {
-      "enUS": "Marglahg",
-      "esMX": ""
-    },
     "flavor": {
       "enUS": "He's a legend among murlocs.  \"Mrghllghghllghg!\", they say.",
       "esMX": "Es una leyenda entre los múrlocs. \"¡Mrghllghghllghg!\", dicen todos."
@@ -10422,8 +14786,8 @@
     "elite": true,
     "race": "Murloc",
     "howToGet": {
-      "enUS": "Unlocked when you have all the Murlocs from the Expert Set.",
-      "esMX": "Se desbloquea cuando tienes a todos los múrlocs del kit experto."
+      "enUS": "Unlocked when you have all the Murlocs from the Classic Set.",
+      "esMX": "Se desbloquea cuando tienes todos los múrlocs del kit clásico."
     },
     "howToGetGold": {
       "enUS": "Unlocked when you have all the Golden Murlocs from the Expert and Basic Sets.",
@@ -10478,8 +14842,8 @@
     "attack": 4,
     "health": 2,
     "text": {
-      "enUS": "<b>Charge</b>, <b>Divine Shield</b>",
-      "esMX": "<b>Carga</b>, <b>Escudo divino</b>"
+      "enUS": "<b>Charge</b>\n<b>Divine Shield</b>",
+      "esMX": "<b>Carga</b>\n<b>Escudo divino</b>"
     },
     "flavor": {
       "enUS": "The Argent Dawn stands vigilant against the Scourge, as well as people who cut in line at coffee shops.",
@@ -10539,10 +14903,6 @@
     "text": {
       "enUS": "Whenever a <b>Secret</b> is played, gain +1/+1.",
       "esMX": "Cada vez que se juega un <b>Secreto</b>, obtiene +1/+1."
-    },
-    "inPlayText": {
-      "enUS": "Firey",
-      "esMX": ""
     },
     "flavor": {
       "enUS": "She promises not to tell anyone about that thing you did last night with that one person.",
@@ -10889,10 +15249,6 @@
       "enUS": "Whenever a player casts a spell, put a copy into the other player’s hand.",
       "esMX": "Cada vez que un jugador lanza un hechizo, pon una copia en la mano del otro jugador."
     },
-    "inPlayText": {
-      "enUS": "Meditate",
-      "esMX": ""
-    },
     "flavor": {
       "enUS": "Lorewalker Cho archives and shares tales from the land of Pandaria, but his favorite story is the one where Joey and Phoebe go on a road trip.",
       "esMX": "Eremita Cho escribe y cuenta historias de Pandaria, pero sus anécdotas preferidas son las de Phoebe cantando en Central Perk."
@@ -10917,10 +15273,6 @@
     "text": {
       "enUS": "At the start of your turn, deal 2 damage to a random enemy.",
       "esMX": "Al comienzo de tu turno, inflige 2 de daño a un enemigo aleatorio."
-    },
-    "inPlayText": {
-      "enUS": "Catapult",
-      "esMX": ""
     },
     "flavor": {
       "enUS": "Laying siege isn't fun for anyone.  It's not even all that effective, now that everyone has a flying mount.",
@@ -12453,7 +16805,7 @@
     "cost": 3,
     "text": {
       "enUS": "Summon two 2/3 Spirit Wolves with <b>Taunt</b>. <b>Overload:</b> (2)",
-      "esMX": "Invoca dos Espíritus de lobo 2/3 con <b>Provocación</b>. <b>Sobrecarga:</b> (2)"
+      "esMX": "Invoca dos Espíritu de lobo 2/3 con <b>Provocación</b>. <b>Sobrecarga:</b> (2)"
     },
     "flavor": {
       "enUS": "Spirit wolves are like regular wolves with pom-poms.",
@@ -12946,7 +17298,7 @@
     "attack": 8,
     "health": 8,
     "text": {
-      "enUS": "Can't Attack. At the end of your turn, deal 8 damage to a random enemy.",
+      "enUS": "Can't attack. At the end of your turn, deal 8 damage to a random enemy.",
       "esMX": "No puede atacar. Al final de tu turno, inflige 8 de daño a un enemigo aleatorio."
     },
     "flavor": {
@@ -13602,10 +17954,6 @@
     "text": {
       "enUS": "At the start of your turn, restore 3 Health to a damaged friendly character.",
       "esMX": "Al comienzo de tu turno, restaura 3 de Salud a un personaje aliado dañado."
-    },
-    "inPlayText": {
-      "enUS": "Healing",
-      "esMX": ""
     },
     "flavor": {
       "enUS": "It isn't clear if people ignore the Lightwell, or if it is just invisible.",
@@ -14768,10 +19116,6 @@
       "enUS": "ALL other Murlocs have +1 Attack.",
       "esMX": "TODOS los otros múrlocs tienen +1 de Ataque."
     },
-    "inPlayText": {
-      "enUS": "Argalagblbl",
-      "esMX": ""
-    },
     "flavor": {
       "enUS": "These are the brainy murlocs.  It turns out that doesn’t mean much.",
       "esMX": "Estos son los múrlocs más inteligentes. Bueno, en este caso \"inteligentes\" es una forma de decir."
@@ -14783,9 +19127,6 @@
       "enUS": "Unlocked at Warlock Level 53.",
       "esMX": "Se desbloquea en nivel 53 de Brujo."
     },
-    "mechanics": [
-      "Aura"
-    ],
     "deckSet": "Basic"
   },
   "EX1_508o": {
@@ -15350,10 +19691,6 @@
     "text": {
       "enUS": "Whenever you cast a spell, add a 'Fireball' spell to your hand.",
       "esMX": "Cada vez que lanzas un hechizo, agrega un hechizo \"Bola de Fuego\" a tu mano."
-    },
-    "inPlayText": {
-      "enUS": "Grand Magus",
-      "esMX": ""
     },
     "flavor": {
       "enUS": "Antonidas was the Grand Magus of the Kirin Tor, and Jaina's mentor.  This was a big step up from being Grand Magus of Jelly Donuts.",
@@ -16566,7 +20903,7 @@
     },
     "flavor": {
       "enUS": "The Kirin Tor reside in the floating city of Dalaran.  How do you make a Dalaran float?  Two scoops of ice cream, one scoop of Dalaran.",
-      "esMX": "El Kirin Tor se encuentra en la ciudad flotante de Dalaran. ¿Cómo logran que flote? Baten siete claras a punto nieve y agregan una pizca de Dalaran."
+      "esMX": "El Kirin Tor vive en la ciudad flotante de Dalaran. ¿Cómo logran que flote? Baten siete claras a punto nieve y agregan una pizca de Dalaran."
     },
     "artist": "Popo Wei",
     "collectible": true,
@@ -16627,8 +20964,8 @@
     },
     "type": "Enchantment",
     "text": {
-      "enUS": "This minion has increased Attack and Health.",
-      "esMX": "Este esbirro tiene Ataque y Salud aumentados."
+      "enUS": "Increased stats.",
+      "esMX": "Estadísticas aumentadas."
     },
     "playerClass": "Rogue",
     "deckSet": "Classic"
@@ -16927,8 +21264,8 @@
     "type": "Hero Power",
     "cost": 2,
     "text": {
-      "enUS": "<b>Hero Power</b>\nDeal 2 damage.",
-      "esMX": "<b>Poder de héroe</b>\nInflige 2 de daño."
+      "enUS": "<b>Hero Power</b>\nDeal $2 damage.",
+      "esMX": "<b>Poder de héroe</b>\nInflige $2 de daño."
     },
     "playerClass": "Priest",
     "deckSet": "Classic"
@@ -16942,8 +21279,8 @@
     "type": "Hero Power",
     "cost": 2,
     "text": {
-      "enUS": "<b>Hero Power</b>\nDeal 3 damage.",
-      "esMX": "<b>Poder de héroe</b>\nInflige 3 de daño."
+      "enUS": "<b>Hero Power</b>\nDeal $3 damage.",
+      "esMX": "<b>Poder de héroe</b>\nInflige $3 de daño."
     },
     "playerClass": "Priest",
     "deckSet": "Classic"
@@ -17817,7 +22154,7 @@
       "esMX": "<b>Secreto:</b> cuando uno de tus esbirros muere, otorga +3/+2 a un esbirro aliado aleatorio."
     },
     "flavor": {
-      "enUS": "Several paladins have joined together to deliver justice under the name \"Justice Force.\"  Their lawyer talked them out of calling themselves the Justice League.",
+      "enUS": "Several paladins have joined together to deliver justice under the name \"Justice Force\".  Their lawyer talked them out of calling themselves the Justice League.",
       "esMX": "Varios paladines se han unido con el nombre \"Fuerza de la Justicia\". El abogado los convenció de que \"Liga de la Justicia\" no era la mejor opción."
     },
     "artist": "Zoltan & Gabor",
@@ -18787,7 +23124,7 @@
     "attack": 8,
     "health": 8,
     "text": {
-      "enUS": "Whenever your opponent plays a card, discard the top 3 cards of your deck.",
+      "enUS": "Whenever your opponent plays a card, remove the top 3 cards of your deck.",
       "esMX": "Cada vez que tu adversario juega una carta, descarta las 3 primeras de tu mazo."
     },
     "flavor": {
@@ -20584,7 +24921,7 @@
     "health": 3,
     "text": {
       "enUS": "Whenever a character is healed, deal 1 damage to a random enemy.",
-      "esMX": "Cada vez que se sana a un personaje, inflige 1 de daño a un enemigo aleatorio."
+      "esMX": "Cada vez que sanan a un personaje, inflige 1 de daño a un enemigo aleatorio."
     },
     "flavor": {
       "enUS": "Punching is its primary function. Also, its secondary function.",
@@ -22262,10 +26599,6 @@
       "enUS": "At the end of your turn, restore 6 Health to a damaged character.",
       "esMX": "Al final de tu turno, restaura 6 de Salud a un personaje dañado."
     },
-    "inPlayText": {
-      "enUS": "Repairin'",
-      "esMX": ""
-    },
     "race": "Mech",
     "deckSet": "Promotion"
   },
@@ -22284,10 +26617,6 @@
     "text": {
       "enUS": "At the end of your turn, give a random minion +1/+1.",
       "esMX": "Al final de tu turno, otorga +1/+1 a un esbirro aleatorio."
-    },
-    "inPlayText": {
-      "enUS": "Emboldening",
-      "esMX": ""
     },
     "race": "Mech",
     "deckSet": "Promotion"
@@ -22320,10 +26649,6 @@
     "text": {
       "enUS": "At the start of your turn, transform a random minion into a 1/1 Chicken.",
       "esMX": "Al comienzo de tu turno, transforma a un esbirro aleatorio en un Pollo 1/1."
-    },
-    "inPlayText": {
-      "enUS": "Poultryizing",
-      "esMX": ""
     },
     "race": "Mech",
     "deckSet": "Promotion"
@@ -24299,8 +28624,8 @@
     "collectible": true,
     "race": "Beast",
     "howToGet": {
-      "enUS": "Unlocked when you have all the Pirates from the Expert Set.",
-      "esMX": "Se desbloquea cuando tienes a todos los piratas del kit experto."
+      "enUS": "Unlocked when you have all the Pirates from the Classic Set.",
+      "esMX": "Se desbloquea cuando tienes todos los piratas del kit clásico."
     },
     "howToGetGold": {
       "enUS": "Unlocked when you have all the Golden Pirates from the Expert Set.",
@@ -24405,10 +28730,6 @@
     "text": {
       "enUS": "After you summon a minion, deal 1 damage to a random enemy.",
       "esMX": "Después de invocar un esbirro, inflige 1 de daño a un enemigo aleatorio."
-    },
-    "inPlayText": {
-      "enUS": "Juggler",
-      "esMX": ""
     },
     "flavor": {
       "enUS": "Ambitious Knife Jugglers sometimes graduate to Bomb Jugglers.    They never last long enough to make it onto a card though.",
@@ -24909,10 +29230,6 @@
       "enUS": "At the end of your turn, give another random friendly minion +1 Attack.",
       "esMX": "Al final de tu turno, otorga +1 de Ataque a otro esbirro aliado aleatorio."
     },
-    "inPlayText": {
-      "enUS": "Smithing",
-      "esMX": ""
-    },
     "flavor": {
       "enUS": "He's currently trying to craft a \"flail-axe\", but all the other swordsmiths say it can't be done.",
       "esMX": "Está intentando forjar un hacha-mayal, pero los demás forjadores de espadas no le tienen fe."
@@ -25316,7 +29633,7 @@
     "type": "Hero Power",
     "cost": 2,
     "text": {
-      "enUS": "<b>Hero Power</b>\nAdd a random spell from any class into your hand. It costs (0).",
+      "enUS": "<b>Hero Power</b>\nAdd a random spell from any class to your hand. It costs (0).",
       "esMX": "<b>Poder de héroe</b>\nAgrega un hechizo aleatorio de cualquier clase a tu mano. Cuesta (0)."
     },
     "deckSet": "Tavern Brawl"
@@ -25333,6 +29650,107 @@
       "enUS": "<b>Hero Power</b>\nSummon a 5/1 Magma Rager.",
       "esMX": "<b>Poder de héroe</b>\nInvoca un Furibundo de magma 5/1."
     },
+    "deckSet": "Tavern Brawl"
+  },
+  "TBST_001": {
+    "id": "TBST_001",
+    "name": "OLDN3wb Tank",
+    "type": "Minion",
+    "cost": 1,
+    "attack": 2,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Taunt</b>",
+      "esMX": "<b>Provocación</b>"
+    },
+    "mechanics": [
+      "Taunt"
+    ],
+    "deckSet": "Tavern Brawl"
+  },
+  "TBST_002": {
+    "id": "TBST_002",
+    "name": "OLDN3wb Mage",
+    "type": "Minion",
+    "cost": 1,
+    "attack": 2,
+    "health": 1,
+    "text": {
+      "enUS": "At the end of your turn, deal 1 damage to random enemy minion.",
+      "esMX": "Al final de tu turno, inflige 1 de daño a un esbirro enemigo aleatorio."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TBST_003": {
+    "id": "TBST_003",
+    "name": "OLDN3wb Healer",
+    "type": "Minion",
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "text": {
+      "enUS": "At the end of your turn, heal 2 damage from adjacent minions.",
+      "esMX": "Al final de tu turno, sana 2 de daño a los esbirros adyacentes."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TBST_004": {
+    "id": "TBST_004",
+    "name": "OLDLegit Healer",
+    "type": "Minion",
+    "cost": 3,
+    "attack": 2,
+    "health": 2,
+    "text": {
+      "enUS": "At the end of your turn, summon a random friendly minion that died this turn.",
+      "esMX": "Al final de tu turno, invoca un esbirro aliado aleatorio que haya muerto este turno."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TBST_005": {
+    "id": "TBST_005",
+    "name": "OLDPvP Rogue",
+    "type": "Minion",
+    "cost": 3,
+    "attack": 3,
+    "health": 6,
+    "text": {
+      "enUS": "<b>Stealth</b>\nRegain <b>Stealth</b> when PvP Rogue kills a minion.",
+      "esMX": "<b>Sigilo</b>\nVuelve a obtener <b>Sigilo</b> cuando mata a un esbirro."
+    },
+    "mechanics": [
+      "Stealth"
+    ],
+    "deckSet": "Tavern Brawl"
+  },
+  "TBST_006": {
+    "id": "TBST_006",
+    "name": "OLDTBST Push Common Card",
+    "type": "Enchantment",
+    "cost": 0,
+    "text": {
+      "enUS": "push a common card into player's hand",
+      "esMX": "pone una carta común en la mano del jugador"
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TBUD_1": {
+    "id": "TBUD_1",
+    "name": "TBUD Summon Early Minion",
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Each turn, if you have less health then a your opponent, summon a free minion",
+      "esMX": "Cada turno, si tienes menos Salud que tu adversario, invocas un esbirro aleatorio."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_001": {
+    "id": "TB_001",
+    "name": {
+      "enUS": "Boss HP Swapper",
+      "esMX": "Intercambiador de salud de jefe"
+    },
+    "type": "Enchantment",
     "deckSet": "Tavern Brawl"
   },
   "TB_006": {
@@ -25407,6 +29825,107 @@
     "mechanics": [
       "AffectedBySpellPower"
     ],
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_009": {
+    "id": "TB_009",
+    "name": {
+      "enUS": "Create 15 Secrets",
+      "esMX": "Crea 15 Secretos"
+    },
+    "type": "Enchantment",
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_010": {
+    "id": "TB_010",
+    "name": {
+      "enUS": "Deckbuilding Enchant",
+      "esMX": "Encantamiento de armado de mazos"
+    },
+    "type": "Enchantment",
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_010e": {
+    "id": "TB_010e",
+    "name": {
+      "enUS": "Choose One of Three",
+      "esMX": "Elige uno de tres"
+    },
+    "type": "Enchantment",
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_011": {
+    "id": "TB_011",
+    "name": {
+      "enUS": "Tarnished Coin",
+      "esMX": "Moneda deteriorada"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "Gain 1 Mana Crystal this turn only.",
+      "esMX": "Obtienes 1 Cristal de maná solo en este turno."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_012": {
+    "id": "TB_012",
+    "name": {
+      "enUS": "Choose a New Card!",
+      "esMX": "¡Elige una carta nueva!"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "Look at 3 random cards. Choose one and shuffle it into your deck.",
+      "esMX": "Mira 3 cartas aleatorias. Elige una y colócala en tu mazo."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_013": {
+    "id": "TB_013",
+    "name": {
+      "enUS": "Player Choice Enchant",
+      "esMX": "Encantamiento a la carta"
+    },
+    "type": "Enchantment",
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_014": {
+    "id": "TB_014",
+    "name": {
+      "enUS": "Choose a New Card!",
+      "esMX": "¡Elige una carta nueva!"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "Look at 3 random cards. Choose one and put it into your hand.",
+      "esMX": "Mira 3 cartas aleatorias. Elige una y colócala en tu mano."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_015": {
+    "id": "TB_015",
+    "name": {
+      "enUS": "Pirate",
+      "esMX": "Pirata"
+    },
+    "type": "Minion",
+    "cost": 2,
+    "attack": 2,
+    "health": 3,
+    "race": "Pirate",
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_EndlessMinions01": {
+    "id": "TB_EndlessMinions01",
+    "name": {
+      "enUS": "Endless Enchantment",
+      "esMX": "Encantamiento infinito"
+    },
+    "type": "Enchantment",
+    "text": "+2/+2.",
     "deckSet": "Tavern Brawl"
   },
   "TB_Pilot1": {
@@ -26724,13 +31243,13 @@
   "XXX_059": {
     "id": "XXX_059",
     "name": {
-      "enUS": "Destroy All",
+      "enUS": "Destroy Hero's Stuff",
       "esMX": ""
     },
     "type": "Spell",
     "cost": 0,
     "text": {
-      "enUS": "Destroy Hero Power, Destory Deck, and Discard Hand.",
+      "enUS": "Destroy target hero's hero power, weapon, deck, hand, minions, and secrets.",
       "esMX": ""
     },
     "deckSet": "Debug"
