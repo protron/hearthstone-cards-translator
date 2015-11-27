@@ -12,6 +12,6 @@ This generates the output html: [autocomplete.htm](./output/autocomplete.htm)<br
 
 ## Usage
 
-Open `output/autocomplete.htm` in your web browser, or go to the [last cached version at rawgit](https://cdn.rawgit.com/protron/hearthstone-cards-translator/a21d95c2b5276cb66413bf348ba65d76224d1bbc/output/autocomplete.htm)
+Open `output/autocomplete.htm` in your web browser, or go to the [last cached version at rawgit](https://cdn.rawgit.com/protron/hearthstone-cards-translator/6b40bfbff46479939bcd647b546da732342c44a0/output/autocomplete.htm)
 
 You will be presented with an autocomplete input ([awesomplete](https://leaverou.github.io/awesomplete/)) to search for the Latin America Spanish name of that card. Once selected, the page will show the English name of that selected card.
