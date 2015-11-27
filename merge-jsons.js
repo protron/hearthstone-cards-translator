@@ -1,14 +1,14 @@
 var request = require('request');
 var fs = require('fs');
 var AdmZip = require('adm-zip');
-var http = require('http');
+var https = require('https');
 var _ = require('lodash');
 
-var isSkipingDownload = false; //process.argv[2] === '--skipdownload';
+var isSkipingDownload = process.argv[2] === '--skipdownload';
 
 var zipFiles = !isSkipingDownload ? [
-  'http://hearthstonejson.com/json/AllSets.enUS.json.zip',
-  'http://hearthstonejson.com/json/AllSets.esMX.json.zip'
+  'https://hearthstonejson.com/json/AllSets.enUS.json.zip',
+  'https://hearthstonejson.com/json/AllSets.esMX.json.zip'
 ] : [
   'sources/AllSets.enUS.json.zip',
   'sources/AllSets.esMX.json.zip'
@@ -67,7 +67,7 @@ function Downloader(file_url) {
   this.data = [];
   this.dataLen = 0;
   if (file_url.indexOf('http') === 0) {
-    http.get(file_url, this.attachHttp.bind(this));
+    https.get(file_url, this.attachHttp.bind(this));
   } else {
     fs.readFile(file_url, this.readFile.bind(this));
   }

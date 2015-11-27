@@ -194,7 +194,7 @@
       "enUS": "Does he sling spells, or do his spells linger about.  Who can say?",
       "esMX": "Se le había ocurrido ser traficante de ilusiones... hasta que alguien le robó la idea."
     },
-    "artist": "Erik Ko",
+    "artist": "Andrew Hou",
     "collectible": true,
     "playerClass": "Mage",
     "mechanics": [
@@ -705,7 +705,6 @@
     },
     "artist": "Kevin Chen",
     "collectible": true,
-    "race": "Demon",
     "playerClass": "Warlock",
     "deckSet": "The Grand Tournament"
   },
@@ -782,8 +781,8 @@
       "esMX": "Las cartas que robas con tu Poder de héroe cuestan (0)."
     },
     "flavor": {
-      "enUS": "He can summon anything, even a FEARSOME DOOMGUARD*.\n\n*He's pretty sure this is going to work out.",
-      "esMX": "Puede invocar lo que sea. Incluso un GUARDIA APOCALÍPTICO TEMERARIO*.\n\n*Está completamente seguro de que va a salir todo bien."
+      "enUS": "He can summon anything, even a FEARSOME DOOMGUARD*.\n*He's pretty sure this is going to work out.",
+      "esMX": "Puede invocar lo que sea. Incluso un GUARDIA APOCALÍPTICO TEMERARIO*.\n*Está completamente seguro de que va a salir todo bien."
     },
     "artist": "Tooth",
     "collectible": true,
@@ -858,7 +857,7 @@
     "health": 1,
     "text": {
       "enUS": "Whenever you equip a weapon, give it +1 Attack.",
-      "esMX": "Cada vez que te equipas un arma, obtiene +1 de Ataque."
+      "esMX": "Cada vez que te equipas un arma, el arma obtiene +1 de Ataque."
     },
     "flavor": {
       "enUS": "The best part of buccaneering is the pants.",
@@ -1165,6 +1164,7 @@
     "cost": 1,
     "attack": 1,
     "health": 1,
+    "playerClass": "Druid",
     "deckSet": "The Grand Tournament"
   },
   "AT_038": {
@@ -1697,6 +1697,9 @@
     "artist": "Tyler Walpole",
     "collectible": true,
     "playerClass": "Shaman",
+    "mechanics": [
+      "Overload"
+    ],
     "deckSet": "The Grand Tournament"
   },
   "AT_052": {
@@ -1722,6 +1725,9 @@
     "collectible": true,
     "race": "Totem",
     "playerClass": "Shaman",
+    "mechanics": [
+      "Overload"
+    ],
     "deckSet": "The Grand Tournament"
   },
   "AT_053": {
@@ -1744,6 +1750,9 @@
     "artist": "Zoltan & Gabor",
     "collectible": true,
     "playerClass": "Shaman",
+    "mechanics": [
+      "Overload"
+    ],
     "deckSet": "The Grand Tournament"
   },
   "AT_054": {
@@ -1956,8 +1965,8 @@
       "esMX": "Cada vez que lanzas un hechizo en este turno, agrega una carta de Cazador aleatoria a tu mano."
     },
     "flavor": {
-      "enUS": "Rexxar narrowed his eyes, grabbed his machine gun, and said: \"It's go time.  Lock and load.\"\n\nThis card pays homage to that special moment.",
-      "esMX": "Rexxar entrecerró los ojos, tomó su ametralladora y dijo: \"Hasta la vista, baby\".\n\nEsta carta es un homenaje a ese momento tan especial."
+      "enUS": "Rexxar narrowed his eyes, grabbed his machine gun, and said: \"It's go time.  Lock and load.\"\nThis card pays homage to that special moment.",
+      "esMX": "Rexxar entrecerró los ojos, tomó su ametralladora y dijo: \"Hasta la vista, baby\".\nEsta carta es un homenaje a ese momento tan especial."
     },
     "artist": "Matt Dixon",
     "collectible": true,
@@ -2478,7 +2487,7 @@
       "enUS": "Hee hee!  Look at his cute little feet.",
       "esMX": "¡Mírale las patitas! ¡Son adorables!"
     },
-    "artist": "Sam Nielsen",
+    "artist": "Sam Nielson",
     "collectible": true,
     "race": "Murloc",
     "playerClass": "Paladin",
@@ -2597,6 +2606,9 @@
     },
     "artist": "Jesper Ejsing",
     "collectible": true,
+    "mechanics": [
+      "Aura"
+    ],
     "deckSet": "The Grand Tournament"
   },
   "AT_081": {
@@ -2735,7 +2747,7 @@
     "health": 2,
     "text": {
       "enUS": "<b>Battlecry:</b> Give a friendly minion +2 Attack.",
-      "esMX": "<b>Grito de batalla:</b> otorga +2 de Ataque a un esbirro aleatorio."
+      "esMX": "<b>Grito de batalla:</b> otorga +2 de Ataque a un esbirro aliado."
     },
     "flavor": {
       "enUS": "Lance Carrier is an obscure entry level position in orcish armies.  A mystery, since orcs don't generally use lances.",
@@ -3286,7 +3298,7 @@
     },
     "flavor": {
       "enUS": "You have no idea how tired this guy is of being released.",
-      "esMX": "Está cansado de que le hagan quedar como el malo en todas las películas."
+      "esMX": "Está cansado de que lo hagan quedar como el malo en todas las películas."
     },
     "artist": "Seamus Gallagher",
     "collectible": true,
@@ -4386,6 +4398,20 @@
     },
     "deckSet": "Blackrock Mountain"
   },
+  "BRMA01_2H_2_TB": {
+    "id": "BRMA01_2H_2_TB",
+    "name": {
+      "enUS": "Pile On!!!",
+      "esMX": "¡Fiestón!"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nPut a minion from each deck into the battlefield.",
+      "esMX": "<b>Poder de héroe</b>\nColoca un esbirro de cada mazo en el campo de batalla."
+    },
+    "deckSet": "Tavern Brawl"
+  },
   "BRMA01_3": {
     "id": "BRMA01_3",
     "name": {
@@ -4482,6 +4508,34 @@
       "esMX": "<b>Poder de héroe</b>\nInvoca un Observador 1/1 con <b>Provocación</b>."
     },
     "deckSet": "Blackrock Mountain"
+  },
+  "BRMA02_2_2_TB": {
+    "id": "BRMA02_2_2_TB",
+    "name": {
+      "enUS": "Jeering Crowd",
+      "esMX": "Público difícil"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nSummon a 1/1 Spectator with <b>Taunt</b>.",
+      "esMX": "<b>Poder de héroe</b>\nInvoca un Observador 1/1 con <b>Provocación</b>."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "BRMA02_2_2c_TB": {
+    "id": "BRMA02_2_2c_TB",
+    "name": {
+      "enUS": "Jeering Crowd",
+      "esMX": "Público difícil"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "Summon a 1/1 Spectator with <b>Taunt</b>.",
+      "esMX": "Invoca un Observador 1/1 con <b>Provocación</b>."
+    },
+    "deckSet": "Tavern Brawl"
   },
   "BRMA02_2t": {
     "id": "BRMA02_2t",
@@ -4652,6 +4706,9 @@
       "enUS": "Summon 3 Firesworn. <b>Overload:</b> (2)",
       "esMX": "Invoca 3 Jurafuegos. <b>Sobrecarga:</b> (2)"
     },
+    "mechanics": [
+      "Overload"
+    ],
     "deckSet": "Blackrock Mountain"
   },
   "BRMA04_4H": {
@@ -4666,6 +4723,9 @@
       "enUS": "Summon 3 Firesworn. <b>Overload:</b> (2)",
       "esMX": "Invoca 3 Jurafuegos. <b>Sobrecarga:</b> (2)"
     },
+    "mechanics": [
+      "Overload"
+    ],
     "deckSet": "Blackrock Mountain"
   },
   "BRMA05_1": {
@@ -4818,6 +4878,20 @@
     },
     "deckSet": "Blackrock Mountain"
   },
+  "BRMA06_2H_TB": {
+    "id": "BRMA06_2H_TB",
+    "name": {
+      "enUS": "The Majordomo",
+      "esMX": "El mayordomo"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nSummon a 3/3 Flamewaker Acolyte.",
+      "esMX": "<b>Poder de héroe</b>\nInvoca un Acólito despiertallamas 3/3."
+    },
+    "deckSet": "Tavern Brawl"
+  },
   "BRMA06_3": {
     "id": "BRMA06_3",
     "name": {
@@ -4909,6 +4983,34 @@
       "esMX": "<b>Poder de héroe</b>\nDestruye un esbirro enemigo aleatorio."
     },
     "deckSet": "Blackrock Mountain"
+  },
+  "BRMA07_2_2_TB": {
+    "id": "BRMA07_2_2_TB",
+    "name": {
+      "enUS": "ME SMASH",
+      "esMX": "¡YO APLASTAR!"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nDestroy a random enemy minion.",
+      "esMX": "<b>Poder de héroe</b>\nDestruye un esbirro enemigo dañado aleatorio."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "BRMA07_2_2c_TB": {
+    "id": "BRMA07_2_2c_TB",
+    "name": {
+      "enUS": "ME SMASH",
+      "esMX": "¡YO APLASTAR!"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "Destroy a random enemy minion.",
+      "esMX": "Destruye un esbirro enemigo aleatorio."
+    },
+    "deckSet": "Tavern Brawl"
   },
   "BRMA07_3": {
     "id": "BRMA07_3",
@@ -5038,6 +5140,20 @@
     "health": 2,
     "race": "Dragon",
     "deckSet": "Blackrock Mountain"
+  },
+  "BRMA09_2_TB": {
+    "id": "BRMA09_2_TB",
+    "name": {
+      "enUS": "Open the Gates",
+      "esMX": "Abran las puertas"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nSummon three 1/1 Whelps.",
+      "esMX": "<b>Poder de héroe</b>\nInvoca tres Crías 1/1."
+    },
+    "deckSet": "Tavern Brawl"
   },
   "BRMA09_2t": {
     "id": "BRMA09_2t",
@@ -5775,6 +5891,20 @@
     },
     "deckSet": "Blackrock Mountain"
   },
+  "BRMA13_4_2_TB": {
+    "id": "BRMA13_4_2_TB",
+    "name": {
+      "enUS": "Wild Magic",
+      "esMX": "Magia salvaje"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nPut a random spell from your opponent's class into your hand.",
+      "esMX": "<b>Poder de héroe</b>\nColoca un hechizo aleatorio de la clase de tu adversario en tu mano."
+    },
+    "deckSet": "Tavern Brawl"
+  },
   "BRMA13_5": {
     "id": "BRMA13_5",
     "name": {
@@ -5886,6 +6016,20 @@
       "esMX": "<b>Poder de héroe</b>\nActiva un Tron aleatorio."
     },
     "deckSet": "Blackrock Mountain"
+  },
+  "BRMA14_10H_TB": {
+    "id": "BRMA14_10H_TB",
+    "name": {
+      "enUS": "Activate!",
+      "esMX": "¡Activado!"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nActivate a random Tron.",
+      "esMX": "<b>Poder de héroe</b>\nActiva un Tron aleatorio."
+    },
+    "deckSet": "Tavern Brawl"
   },
   "BRMA14_11": {
     "id": "BRMA14_11",
@@ -6450,6 +6594,20 @@
       "esMX": "<b>Poder de héroe</b>\nInvoca dos Ensamblajes osarios 4/2."
     },
     "deckSet": "Blackrock Mountain"
+  },
+  "BRMA17_5_TB": {
+    "id": "BRMA17_5_TB",
+    "name": {
+      "enUS": "Bone Minions",
+      "esMX": "Esbirros óseos"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nSummon two 2/1 Bone Constructs.",
+      "esMX": "<b>Poder de héroe</b>\nInvoca dos Ensamblajes osarios 2/1."
+    },
+    "deckSet": "Tavern Brawl"
   },
   "BRMA17_6": {
     "id": "BRMA17_6",
@@ -7502,7 +7660,8 @@
       "esMX": "Puede crearse luego de derrotar a Lord Victor Nefarius en la Guarida de Alanegra."
     },
     "mechanics": [
-      "Battlecry"
+      "Battlecry",
+      "Overload"
     ],
     "deckSet": "Blackrock Mountain"
   },
@@ -9928,10 +10087,7 @@
       "enUS": "<b>Freeze</b> any character damaged by this minion.",
       "esMX": "<b>Congela</b> a cualquier personaje dañado por este esbirro."
     },
-    "inPlayText": {
-      "enUS": "Frostbolt",
-      "esMX": ""
-    },
+    "inPlayText": "Frostbolt",
     "flavor": {
       "enUS": "Don't summon a water elemental at a party.  It'll dampen the mood.",
       "esMX": "No invites a un elemental de agua a tu cumpleaños. Te aguará la fiesta."
@@ -12399,10 +12555,7 @@
       "enUS": "<b>Battlecry:</b> Deal 4 damage to HIMSELF.",
       "esMX": "<b>Grito de batalla:</b> se AUTOINFLIGE 4 de daño."
     },
-    "inPlayText": {
-      "enUS": "Weakened",
-      "esMX": ""
-    },
+    "inPlayText": "Weakened",
     "flavor": {
       "enUS": "He claims it is an old war wound, but we think he just cut himself shaving.",
       "esMX": "Dice que es una vieja herida de guerra, pero nosotros estamos seguros de que se cortó mientras se afeitaba."
@@ -12764,10 +12917,7 @@
       "enUS": "<b>Enrage:</b> Your weapon has +2 Attack.",
       "esMX": "<b>Enfurecer:</b> tu arma tiene +2 de Ataque."
     },
-    "inPlayText": {
-      "enUS": "Summoning",
-      "esMX": ""
-    },
+    "inPlayText": "Summoning",
     "flavor": {
       "enUS": "She'll craft you a sword, but you'll need to bring her 5 Steel Ingots, 3 Motes of Earth, and the scalp of her last customer.",
       "esMX": "Te forjará una espada, pero tendrás que llevarle cinco lingotes de acero, tres motas de tierra y el cuero cabelludo de su último cliente."
@@ -12808,10 +12958,7 @@
       "enUS": "Your other minions have +1/+1.",
       "esMX": "Tus otros esbirros tienen +1/+1."
     },
-    "inPlayText": {
-      "enUS": "For the Alliance!",
-      "esMX": ""
-    },
+    "inPlayText": "For the Alliance!",
     "flavor": {
       "enUS": "When Deathwing assaulted the capital, this soldier was the only member of his squad to survive. Now he's all bitter and stuff.",
       "esMX": "Cuando Alamuerte atacó la capital, este soldado fue el único de su escuadrón que sobrevivió. Y ahora es un viejo amargado."
@@ -13117,10 +13264,7 @@
       "enUS": "Whenever you summon a Beast, draw a card.",
       "esMX": "Cada vez que invocas a una Bestia, roba una carta."
     },
-    "inPlayText": {
-      "enUS": "Soaring",
-      "esMX": ""
-    },
+    "inPlayText": "Soaring",
     "flavor": {
       "enUS": "If you feed him, he loses his whole <i>identity</i>.",
       "esMX": "Si la alimentas, pierde por completo su <i>identidad</i>."
@@ -13205,10 +13349,7 @@
       "enUS": "Can't be targeted by spells or Hero Powers.",
       "esMX": "No puede ser objetivo de Hechizos ni Poderes de héroe."
     },
-    "inPlayText": {
-      "enUS": "Quick",
-      "esMX": ""
-    },
+    "inPlayText": "Quick",
     "playerClass": "Dream",
     "deckSet": "Classic"
   },
@@ -13331,10 +13472,7 @@
       "enUS": "<b>Battlecry:</b> Give a friendly Beast +2/+2 and <b>Taunt</b>.",
       "esMX": "<b>Grito de batalla:</b> otorga +2/+2 y <b>Provocación</b> a una Bestia aliada."
     },
-    "inPlayText": {
-      "enUS": "Beastmaster",
-      "esMX": ""
-    },
+    "inPlayText": "Beastmaster",
     "flavor": {
       "enUS": "\"Who let the dogs out?\" he asks.  It's rhetorical.",
       "esMX": "\"¿Quién dejó salir al perro?\", se pregunta... retóricamente."
@@ -14449,10 +14587,7 @@
       "enUS": "Whenever you play a card, gain +1/+1.",
       "esMX": "Cada vez que juegas una carta, obtiene +1/+1."
     },
-    "inPlayText": {
-      "enUS": "Questing",
-      "esMX": ""
-    },
+    "inPlayText": "Questing",
     "flavor": {
       "enUS": "\"Does anyone have some extra Boar Pelts?\"",
       "esMX": "\"¿A alguien le sobra una pelambre de jabalí?\"."
@@ -14639,10 +14774,7 @@
       "enUS": "Whenever you cast a spell, gain +2 Attack this turn.",
       "esMX": "Cada vez que lanzas un hechizo, obtiene +2 de Ataque en este turno."
     },
-    "inPlayText": {
-      "enUS": "Addicted",
-      "esMX": ""
-    },
+    "inPlayText": "Addicted",
     "flavor": {
       "enUS": "She’s trying to kick the habit, but still takes some mana whenever she has a stressful day.",
       "esMX": "Está tratando de dejar el hábito. Pero todavía toma un poco de maná de vez en cuando, si tiene un día difícil."
@@ -14790,7 +14922,7 @@
       "esMX": "Se desbloquea cuando tienes todos los múrlocs del kit clásico."
     },
     "howToGetGold": {
-      "enUS": "Unlocked when you have all the Golden Murlocs from the Expert and Basic Sets.",
+      "enUS": "Unlocked when you have all the Golden Murlocs from the Classic and Basic Sets.",
       "esMX": "Se desbloquea cuando tienes a todos los múrlocs dorados de los kits experto y básico."
     },
     "mechanics": [
@@ -14873,10 +15005,7 @@
       "enUS": "The first minion you play each turn costs (1) less.",
       "esMX": "El primer esbirro que juegas en cada turno cuesta (1) menos."
     },
-    "inPlayText": {
-      "enUS": "Ritual",
-      "esMX": ""
-    },
+    "inPlayText": "Ritual",
     "flavor": {
       "enUS": "She's quite jealous of the Gallon-Sized Summoner.",
       "esMX": "A la hora del amor, su peor competencia es la Invocadora tamaño galón."
@@ -14993,8 +15122,8 @@
     "attack": 2,
     "health": 3,
     "text": {
-      "enUS": "Whenever you summon a minion with 3 or less Attack, give it <b>Charge</b>.",
-      "esMX": "Cada vez que invocas a un esbirro con 3 de Ataque o menos, le otorga <b>Carga</b>."
+      "enUS": "Your <b>Charge</b> minions have +1 Attack.",
+      "esMX": "Tus esbirros con <b>Carga</b> tienen +1 de Ataque."
     },
     "flavor": {
       "enUS": "The Warsong clan is <i>such drama</i>. It's really not worth it to become a commander.",
@@ -15011,6 +15140,9 @@
       "enUS": "Unlocked at Level 36.",
       "esMX": "Se desbloquea en nivel 36."
     },
+    "mechanics": [
+      "Aura"
+    ],
     "deckSet": "Basic"
   },
   "EX1_084e": {
@@ -15021,8 +15153,8 @@
     },
     "type": "Enchantment",
     "text": {
-      "enUS": "This minion has <b>Charge</b>.",
-      "esMX": "Este esbirro tiene <b>Carga</b>."
+      "enUS": "Warsong Commander is granting this minion +1 Attack.",
+      "esMX": "El Comandante Grito de guerra le otorga +1 de Ataque a este esbirro."
     },
     "playerClass": "Warrior",
     "deckSet": "Basic"
@@ -15166,10 +15298,7 @@
       "enUS": "Whenever you cast a spell, draw a card.",
       "esMX": "Cada vez que lanzas un hechizo, roba una carta."
     },
-    "inPlayText": {
-      "enUS": "Auctioning",
-      "esMX": ""
-    },
+    "inPlayText": "Auctioning",
     "flavor": {
       "enUS": "He used to run the black market auction house, but there was just too much violence and he had to move.",
       "esMX": "Alguna vez fue el encargado de la casa de subastas del mercado negro, pero el lugar era tan violento que al final tuvo que irse."
@@ -16156,10 +16285,7 @@
       "enUS": "Adjacent minions have +1 Attack.",
       "esMX": "Los esbirros adyacentes tienen +1 de Ataque."
     },
-    "inPlayText": {
-      "enUS": "Alpha Dog",
-      "esMX": ""
-    },
+    "inPlayText": "Alpha Dog",
     "flavor": {
       "enUS": "We are pretty excited about the upcoming release of Dire Wolf Beta, just repost this sign for a chance at a key.",
       "esMX": "Estamos muy contentos de anunciar el lanzamiento de Lobo beta temible. Compartan este mensaje y tendrán la posibilidad de ganarse una clave."
@@ -16445,10 +16571,7 @@
       "enUS": "Destroy any minion damaged by this minion.",
       "esMX": "Destruye cualquier esbirro dañado por este esbirro."
     },
-    "inPlayText": {
-      "enUS": "Fanged",
-      "esMX": ""
-    },
+    "inPlayText": "Fanged",
     "flavor": {
       "enUS": "The Sholazar Basin is home to a lot of really horrible things. If you're going to visit, wear bug spray.  And plate armor.",
       "esMX": "En la Cuenca de Sholazar hay muchas cosas horrendas. Si vas a visitarla, usa repelente. Y armadura."
@@ -16596,6 +16719,9 @@
     "artist": "Daarken",
     "collectible": true,
     "playerClass": "Shaman",
+    "mechanics": [
+      "Overload"
+    ],
     "deckSet": "Classic"
   },
   "EX1_241": {
@@ -16619,6 +16745,9 @@
     "artist": "Dan Scott",
     "collectible": true,
     "playerClass": "Shaman",
+    "mechanics": [
+      "Overload"
+    ],
     "deckSet": "Classic"
   },
   "EX1_243": {
@@ -16645,6 +16774,7 @@
     "collectible": true,
     "playerClass": "Shaman",
     "mechanics": [
+      "Overload",
       "Windfury"
     ],
     "deckSet": "Classic"
@@ -16791,6 +16921,9 @@
     "artist": "Nate Bowden",
     "collectible": true,
     "playerClass": "Shaman",
+    "mechanics": [
+      "Overload"
+    ],
     "deckSet": "Classic"
   },
   "EX1_248": {
@@ -16814,6 +16947,9 @@
     "artist": "Clint Langley",
     "collectible": true,
     "playerClass": "Shaman",
+    "mechanics": [
+      "Overload"
+    ],
     "deckSet": "Classic"
   },
   "EX1_249": {
@@ -16865,6 +17001,7 @@
     "collectible": true,
     "playerClass": "Shaman",
     "mechanics": [
+      "Overload",
       "Taunt"
     ],
     "deckSet": "Classic"
@@ -16890,6 +17027,9 @@
     "artist": "Ralph Horsley",
     "collectible": true,
     "playerClass": "Shaman",
+    "mechanics": [
+      "Overload"
+    ],
     "deckSet": "Classic"
   },
   "EX1_258": {
@@ -16952,6 +17092,9 @@
     "artist": "Christopher Moeller",
     "collectible": true,
     "playerClass": "Shaman",
+    "mechanics": [
+      "Overload"
+    ],
     "deckSet": "Classic"
   },
   "EX1_274": {
@@ -17628,10 +17771,7 @@
       "enUS": "Your minions cost (2) less, but not less than (1).",
       "esMX": "Tus esbirros cuestan (2) menos, pero no menos de (1)."
     },
-    "inPlayText": {
-      "enUS": "Summoning",
-      "esMX": ""
-    },
+    "inPlayText": "Summoning",
     "flavor": {
       "enUS": "NOT LESS THAN 1!  Don't get any ideas!",
       "esMX": "¡NO MENOS DE 1! ¡Ni se te ocurra pensarlo!"
@@ -18740,10 +18880,7 @@
       "enUS": "Whenever a friendly minion takes damage, gain 1 Armor.",
       "esMX": "Cuando un esbirro aliado recibe daño, obtienes 1 de Armadura."
     },
-    "inPlayText": {
-      "enUS": "Smithing",
-      "esMX": ""
-    },
+    "inPlayText": "Smithing",
     "flavor": {
       "enUS": "She accepts guild funds for repairs!",
       "esMX": "¡Acepta fondos de la hermandad para reparaciones!"
@@ -19193,10 +19330,7 @@
       "enUS": "<b>Stealth</b>. Destroy any minion damaged by this minion.",
       "esMX": "<b>Sigilo</b>. Destruye cualquier esbirro dañado por este esbirro."
     },
-    "inPlayText": {
-      "enUS": "Sharpening",
-      "esMX": ""
-    },
+    "inPlayText": "Sharpening",
     "flavor": {
       "enUS": "He’s not really that patient. It just takes a while for someone to walk by that he can actually reach.",
       "esMX": "En realidad no es tan paciente. Es que tiene que esperar mucho hasta que aparece alguno que le quede al alcance."
@@ -19225,10 +19359,7 @@
       "enUS": "Whenever a friendly Beast dies, gain +2/+1.",
       "esMX": "Cada vez que muere una Bestia aliada, obtiene +2/+1."
     },
-    "inPlayText": {
-      "enUS": "Scavenging",
-      "esMX": ""
-    },
+    "inPlayText": "Scavenging",
     "flavor": {
       "enUS": "Hyenas prefer the bones of kodos or windserpents, but they'll eat pretty much anything.  Even Brussels sprouts.",
       "esMX": "Las hienas prefieren huesos de kodos o serpientes aladas, pero en realidad comen cualquier cosa. Incluso brócoli."
@@ -19294,10 +19425,7 @@
       "enUS": "<b>Deathrattle:</b> Summon two 2/2 Hyenas.",
       "esMX": "<b>Estertor:</b> invoca 2 Hienas 2/2."
     },
-    "inPlayText": {
-      "enUS": "Master",
-      "esMX": ""
-    },
+    "inPlayText": "Master",
     "flavor": {
       "enUS": "In the jungle, the mighty jungle, the lion gets slowly consumed by hyenas.",
       "esMX": "En la jungla, tan imponente, las hienas se comen al león, bocado a bocado."
@@ -19638,10 +19766,7 @@
       "enUS": "At the start of your turn, you have a 50% chance to draw an extra card.",
       "esMX": "Al comienzo de tu turno, tienes un 50 % de probabilidad de robar una carta adicional."
     },
-    "inPlayText": {
-      "enUS": "Fishing",
-      "esMX": ""
-    },
+    "inPlayText": "Fishing",
     "flavor": {
       "enUS": "Nat Pagle, Azeroth's premier fisherman!  He invented the Auto-Angler 3000, the Extendo-Pole 3000, and the Lure-o-matic 2099 (still in testing).",
       "esMX": "Nat Pagle, el mejor pescador de Azeroth. Inventor de la Autopesca 3000, el Extendecañas 3000, el Encarnamatic 2099 (actualmente en fase de prueba)."
@@ -19715,10 +19840,7 @@
       "enUS": "Players only have 15 seconds to take their turns.",
       "esMX": "Los jugadores solo tienen 15 segundos para tomar su turno."
     },
-    "inPlayText": {
-      "enUS": "Aspect of Time",
-      "esMX": ""
-    },
+    "inPlayText": "Aspect of Time",
     "flavor": {
       "enUS": "Time to write some flavor text.",
       "esMX": "El tiempo justo para escribir un chiste."
@@ -19863,10 +19985,7 @@
       "enUS": "Adjacent minions have +2 Attack.",
       "esMX": "Los esbirros adyacentes tienen +2 de Ataque."
     },
-    "inPlayText": {
-      "enUS": "Flametongue",
-      "esMX": ""
-    },
+    "inPlayText": "Flametongue",
     "flavor": {
       "enUS": "Totemsmiths like to use the rarest woods for their totems.  There are even rumors of totems made of Ironbark Protectors.",
       "esMX": "A los creadores de tótems les gusta usar las maderas más exóticas para sus creaciones. Incluso se dice que existen tótems creados con madera de protectores cortezaférrea."
@@ -19927,6 +20046,7 @@
     "collectible": true,
     "playerClass": "Shaman",
     "mechanics": [
+      "Overload",
       "Windfury"
     ],
     "deckSet": "Classic"
@@ -20028,10 +20148,6 @@
     "text": {
       "enUS": "<b>Choose One</b> - Give your other minions +2/+2; or Summon two 2/2 Treants with <b>Taunt</b>.",
       "esMX": "<b>Elige una opción:</b> otorga +2/+2 a tus otros esbirros o invoca dos Antárboles 2/2 con <b>Provocación</b>."
-    },
-    "inPlayText": {
-      "enUS": "Demigod",
-      "esMX": ""
     },
     "flavor": {
       "enUS": "Yes, he's a demigod. No, he doesn't need to wear a shirt.",
@@ -20517,10 +20633,7 @@
       "enUS": "Whenever one of your other minions dies, draw a card.",
       "esMX": "Cada vez que muere uno de tus otros esbirros, roba una carta."
     },
-    "inPlayText": {
-      "enUS": "Cultist",
-      "esMX": ""
-    },
+    "inPlayText": "Cultist",
     "flavor": {
       "enUS": "She may be an evil cult master, but she still calls her parents once a week.",
       "esMX": "Será una maestra de la secta maligna, sí... pero todavía llama a sus padres una vez por semana."
@@ -20585,10 +20698,7 @@
       "enUS": "At the end of your turn, deal 1 damage to this minion and summon a 1/1 Imp.",
       "esMX": "Al final de tu turno, inflige 1 de daño a este esbirro e invoca un Diablillo 1/1."
     },
-    "inPlayText": {
-      "enUS": "Imp Master",
-      "esMX": ""
-    },
+    "inPlayText": "Imp Master",
     "flavor": {
       "enUS": "She would enjoy the job a lot more if she just could get the imps to QUIT BITING HER.",
       "esMX": "Disfrutaría mucho más del trabajo si pudiera lograr que los diablillos DEJARAN DE MORDERLA."
@@ -20670,10 +20780,7 @@
       "enUS": "Whenever a minion takes damage, gain +1 Attack.",
       "esMX": "Cada vez que un esbirro recibe daño, obtiene +1 de Ataque."
     },
-    "inPlayText": {
-      "enUS": "Berserk",
-      "esMX": ""
-    },
+    "inPlayText": "Berserk",
     "flavor": {
       "enUS": "He used to work as an accountant before he tried his hand at Berserkering.",
       "esMX": "Antes era contador, hasta que descubrió su talento como rabioso."
@@ -23463,8 +23570,8 @@
       "esMX": "Al final de tu turno, otorga +2/+2 a otro Meca aliado."
     },
     "flavor": {
-      "enUS": "Mechs like learning from him because he really speaks their language.\n\n0110100001101001",
-      "esMX": "Es el maestro favorito de los Mecas porque habla su mismo idioma.\n\n0110100001101001"
+      "enUS": "Mechs like learning from him because he really speaks their language.\n0110100001101001",
+      "esMX": "Es el maestro favorito de los Mecas porque habla su mismo idioma.\n0110100001101001"
     },
     "artist": "Brian Despain",
     "collectible": true,
@@ -23865,6 +23972,9 @@
     "artist": "Warren Mahy",
     "collectible": true,
     "playerClass": "Shaman",
+    "mechanics": [
+      "Overload"
+    ],
     "deckSet": "Goblins vs Gnomes"
   },
   "GVG_039": {
@@ -23915,6 +24025,9 @@
     "collectible": true,
     "race": "Murloc",
     "playerClass": "Shaman",
+    "mechanics": [
+      "Overload"
+    ],
     "deckSet": "Goblins vs Gnomes"
   },
   "GVG_041": {
@@ -24002,7 +24115,8 @@
     "elite": true,
     "playerClass": "Shaman",
     "mechanics": [
-      "Battlecry"
+      "Battlecry",
+      "Overload"
     ],
     "deckSet": "Goblins vs Gnomes"
   },
@@ -24745,6 +24859,7 @@
     "collectible": true,
     "playerClass": "Shaman",
     "mechanics": [
+      "Overload",
       "Windfury"
     ],
     "deckSet": "Goblins vs Gnomes"
@@ -25181,8 +25296,8 @@
       "esMX": "<b>Sigilo</b>"
     },
     "flavor": {
-      "enUS": "\"Shhh, I think I hear something.\"\n\n\"Ah, it's probably nothing.\" - Every Henchman",
-      "esMX": "\"Shhh, creo que oí algo.\n\nBah, no debe de ser nada\". —Cualquier secuaz"
+      "enUS": "\"Shhh, I think I hear something.\"\n\"Ah, it's probably nothing.\" - Every Henchman",
+      "esMX": "\"Shhh, creo que oí algo.\nBah, no debe de ser nada\". —Cualquier secuaz"
     },
     "artist": "Seamus Gallagher",
     "collectible": true,
@@ -25403,7 +25518,7 @@
     "attack": 2,
     "health": 4,
     "text": {
-      "enUS": "If you control a <b>Secret</b> at the end of your turn, restore 4 health to your hero.",
+      "enUS": "If you control a <b>Secret</b> at the end of your turn, restore 4 Health to your hero.",
       "esMX": "Si al final de tu turno controlas un <b>Secreto</b>, restaura 4 de Salud a tu héroe."
     },
     "flavor": {
@@ -26560,6 +26675,4069 @@
     "playerClass": "Priest",
     "deckSet": "Basic"
   },
+  "HRW02_1e": {
+    "id": "HRW02_1e",
+    "name": {
+      "enUS": "Overclock",
+      "esMX": "A equiparse"
+    },
+    "type": "Enchantment",
+    "cost": 1,
+    "text": {
+      "enUS": "Increased Attack.",
+      "esMX": "Ataque aumentado."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "LOEA01_01": {
+    "id": "LOEA01_01",
+    "name": {
+      "enUS": "Sun Raider Phaerix",
+      "esMX": "Asaltasoles Phaerix"
+    },
+    "type": "Hero",
+    "health": 30,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA01_01h": {
+    "id": "LOEA01_01h",
+    "name": {
+      "enUS": "Heroic Phaerix",
+      "esMX": "Phaerix heroico"
+    },
+    "type": "Hero",
+    "health": 30,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA01_02": {
+    "id": "LOEA01_02",
+    "name": {
+      "enUS": "Blessings of the Sun",
+      "esMX": "Bendiciones del sol"
+    },
+    "type": "Hero Power",
+    "text": {
+      "enUS": "<b>Passive Hero Power</b>\nWhoever controls the Rod of the Sun is <b>Immune.</b>",
+      "esMX": "<b>Poder de héroe pasivo</b>\nQuien controle la vara del sol será <b>Inmune.</b>"
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA01_02h": {
+    "id": "LOEA01_02h",
+    "name": {
+      "enUS": "Blessings of the Sun",
+      "esMX": "Bendiciones del sol"
+    },
+    "type": "Hero Power",
+    "text": {
+      "enUS": "<b>Passive Hero Power</b>\n Phaerix is <b>Immune</b> while he controls the Rod of the Sun.",
+      "esMX": "<b>Poder de héroe pasivo</b>\nPhaerix es <b>Inmune</b> mientras controla la vara del sol."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA01_11": {
+    "id": "LOEA01_11",
+    "name": {
+      "enUS": "Rod of the Sun",
+      "esMX": "Vara del sol"
+    },
+    "type": "Minion",
+    "cost": 0,
+    "attack": 0,
+    "health": 5,
+    "text": {
+      "enUS": "<b>Deathrattle:</b> Surrender this to your opponent.",
+      "esMX": "<b>Estertor:</b> tu enemigo se queda con esta carta."
+    },
+    "mechanics": [
+      "Deathrattle"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOEA01_11h": {
+    "id": "LOEA01_11h",
+    "name": {
+      "enUS": "Rod of the Sun",
+      "esMX": "Vara del sol"
+    },
+    "type": "Minion",
+    "cost": 0,
+    "attack": 0,
+    "health": 5,
+    "text": {
+      "enUS": "<b>Deathrattle:</b> Surrender this to your opponent.",
+      "esMX": "<b>Estertor:</b> tu enemigo se queda con esta carta."
+    },
+    "mechanics": [
+      "Deathrattle"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOEA01_11he": {
+    "id": "LOEA01_11he",
+    "name": {
+      "enUS": "Heroic Mode",
+      "esMX": "Modo heroico"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "+3/+3 if Phaerix controls the Rod.",
+      "esMX": "+3/+3 si Phaerix controla la vara."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA01_12": {
+    "id": "LOEA01_12",
+    "name": {
+      "enUS": "Tol'vir Hoplite",
+      "esMX": "Hoplita tol'vir"
+    },
+    "type": "Minion",
+    "cost": 3,
+    "attack": 5,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Deathrattle:</b> Deal 5 damage to both heroes.",
+      "esMX": "<b>Estertor:</b> inflige 5 de daño a ambos héroes."
+    },
+    "mechanics": [
+      "Deathrattle"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOEA01_12h": {
+    "id": "LOEA01_12h",
+    "name": {
+      "enUS": "Tol'vir Hoplite",
+      "esMX": "Hoplita tol'vir"
+    },
+    "type": "Minion",
+    "cost": 3,
+    "attack": 5,
+    "health": 5,
+    "text": {
+      "enUS": "<b>Deathrattle:</b> Deal 5 damage to both heroes.",
+      "esMX": "<b>Estertor:</b> inflige 5 de daño a ambos héroes."
+    },
+    "mechanics": [
+      "Deathrattle"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOEA02_01": {
+    "id": "LOEA02_01",
+    "name": "Zinaar",
+    "type": "Hero",
+    "health": 30,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA02_01h": {
+    "id": "LOEA02_01h",
+    "name": {
+      "enUS": "Heroic Zinaar",
+      "esMX": "Zinaar heroico"
+    },
+    "type": "Hero",
+    "health": 30,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA02_02": {
+    "id": "LOEA02_02",
+    "name": {
+      "enUS": "Djinn’s Intuition",
+      "esMX": "Intuición del djinn"
+    },
+    "type": "Hero Power",
+    "cost": 0,
+    "text": {
+      "enUS": "Draw a card.\nGive your opponent a Wish.",
+      "esMX": "Roba una carta.\nLe otorgas un Deseo a tu adversario."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA02_02h": {
+    "id": "LOEA02_02h",
+    "name": {
+      "enUS": "Djinn’s Intuition",
+      "esMX": "Intuición del djinn"
+    },
+    "type": "Hero Power",
+    "cost": 0,
+    "text": {
+      "enUS": "Draw a card. Gain a Mana Crystal. Give your opponent a Wish.",
+      "esMX": "Roba una carta. Obtienes un Cristal de maná. Le otorgas un Deseo a tu adversario."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA02_03": {
+    "id": "LOEA02_03",
+    "name": {
+      "enUS": "Wish for Power",
+      "esMX": "Deseo de poder"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "<b>Discover</b> a spell.",
+      "esMX": "<b>Devela</b> un hechizo."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA02_04": {
+    "id": "LOEA02_04",
+    "name": {
+      "enUS": "Wish for Valor",
+      "esMX": "Deseo de valor"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "<b>Discover</b> a (4)-Cost card.",
+      "esMX": "<b>Devela</b> una carta de costo (4)."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA02_05": {
+    "id": "LOEA02_05",
+    "name": {
+      "enUS": "Wish for Glory",
+      "esMX": "Deseo de gloria"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "<b>Discover</b> a minion.",
+      "esMX": "<b>Devela</b> un esbirro."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA02_06": {
+    "id": "LOEA02_06",
+    "name": {
+      "enUS": "Wish for More Wishes",
+      "esMX": "Deseo de más deseos"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "Gain 2 Wishes.",
+      "esMX": "Obtienes 2 Deseos."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA02_10": {
+    "id": "LOEA02_10",
+    "name": {
+      "enUS": "Wish for Companionship",
+      "esMX": "Deseo de compañía"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "<b>Discover</b> a Companion.",
+      "esMX": "<b>Devela</b> un Compañero."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA02_10a": {
+    "id": "LOEA02_10a",
+    "name": "Leokk",
+    "type": "Minion",
+    "attack": 2,
+    "health": 4,
+    "text": {
+      "enUS": "Your minions have +1 Attack.",
+      "esMX": "Tus esbirros tienen +1 de Ataque."
+    },
+    "race": "Beast",
+    "playerClass": "Hunter",
+    "cost": 0,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA02_10c": {
+    "id": "LOEA02_10c",
+    "name": "Misha",
+    "type": "Minion",
+    "attack": 4,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Taunt</b>",
+      "esMX": "<b>Provocación</b>"
+    },
+    "race": "Beast",
+    "playerClass": "Hunter",
+    "cost": 0,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_01": {
+    "id": "LOEA04_01",
+    "name": {
+      "enUS": "Temple Escape",
+      "esMX": "Escape del templo"
+    },
+    "type": "Hero",
+    "health": 100,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_01e": {
+    "id": "LOEA04_01e",
+    "name": {
+      "enUS": "Temple Escape Enchant",
+      "esMX": "Encantamiento de Escape del templo"
+    },
+    "type": "Enchantment",
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_01eh": {
+    "id": "LOEA04_01eh",
+    "name": {
+      "enUS": "Temple Escape Enchant",
+      "esMX": "Encantamiento de Escape del templo"
+    },
+    "type": "Enchantment",
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_01h": {
+    "id": "LOEA04_01h",
+    "name": {
+      "enUS": "Heroic Escape",
+      "esMX": "Escape heroico"
+    },
+    "type": "Hero",
+    "health": 100,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_02": {
+    "id": "LOEA04_02",
+    "name": {
+      "enUS": "Escape!",
+      "esMX": "¡Escapar!"
+    },
+    "type": "Hero Power",
+    "rarity": "Free",
+    "cost": 0,
+    "text": {
+      "enUS": "Encounter new obstacles!",
+      "esMX": "¡Enfrentar nuevos obstáculos!"
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_02h": {
+    "id": "LOEA04_02h",
+    "name": {
+      "enUS": "Escape!",
+      "esMX": "¡Escapar!"
+    },
+    "type": "Hero Power",
+    "cost": 0,
+    "text": {
+      "enUS": "Encounter new obstacles!",
+      "esMX": "¡Enfrentar nuevos obstáculos!"
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_06": {
+    "id": "LOEA04_06",
+    "name": {
+      "enUS": "Pit of Spikes",
+      "esMX": "Trampa de púas"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "<b>Choose Your Path!</b>",
+      "esMX": "<b>¡Elige tu camino!</b>"
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_06a": {
+    "id": "LOEA04_06a",
+    "name": {
+      "enUS": "Swing Across",
+      "esMX": "Cruzar de un salto"
+    },
+    "type": "Spell",
+    "text": {
+      "enUS": "Take 10 damage or no damage, at random.",
+      "esMX": "Recibes 10 o nada de daño al azar."
+    },
+    "mechanics": [
+      "ImmuneToSpellpower"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_06b": {
+    "id": "LOEA04_06b",
+    "name": {
+      "enUS": "Walk Across Gingerly",
+      "esMX": "Cruzar con mucho cuidado"
+    },
+    "type": "Spell",
+    "text": {
+      "enUS": "Take 5 damage.",
+      "esMX": "Recibes 5 de daño."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_13bt": {
+    "id": "LOEA04_13bt",
+    "name": {
+      "enUS": "Orsis Guard",
+      "esMX": "Guardia de Orsis"
+    },
+    "type": "Minion",
+    "cost": 4,
+    "attack": 7,
+    "health": 5,
+    "text": {
+      "enUS": "<b>Divine Shield</b>",
+      "esMX": "<b>Escudo divino</b>"
+    },
+    "mechanics": [
+      "Divine Shield"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_13bth": {
+    "id": "LOEA04_13bth",
+    "name": {
+      "enUS": "Orsis Guard",
+      "esMX": "Guardia de Orsis"
+    },
+    "type": "Minion",
+    "cost": 4,
+    "attack": 8,
+    "health": 8,
+    "text": {
+      "enUS": "<b>Divine Shield</b>",
+      "esMX": "<b>Escudo divino</b>"
+    },
+    "mechanics": [
+      "Divine Shield"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_23": {
+    "id": "LOEA04_23",
+    "name": {
+      "enUS": "Giant Insect",
+      "esMX": "Insecto gigante"
+    },
+    "type": "Minion",
+    "cost": 7,
+    "attack": 10,
+    "health": 3,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_23h": {
+    "id": "LOEA04_23h",
+    "name": {
+      "enUS": "Giant Insect",
+      "esMX": "Insecto gigante"
+    },
+    "type": "Minion",
+    "cost": 7,
+    "attack": 10,
+    "health": 6,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_24": {
+    "id": "LOEA04_24",
+    "name": {
+      "enUS": "Anubisath Temple Guard",
+      "esMX": "Guardia del templo anubisath"
+    },
+    "type": "Minion",
+    "cost": 8,
+    "attack": 5,
+    "health": 10,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_24h": {
+    "id": "LOEA04_24h",
+    "name": {
+      "enUS": "Anubisath Temple Guard",
+      "esMX": "Guardia del templo anubisath"
+    },
+    "type": "Minion",
+    "cost": 8,
+    "attack": 6,
+    "health": 15,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_25": {
+    "id": "LOEA04_25",
+    "name": {
+      "enUS": "Seething Statue",
+      "esMX": "Estatua ardiente"
+    },
+    "type": "Minion",
+    "cost": 8,
+    "attack": 0,
+    "health": 9,
+    "text": {
+      "enUS": "At the end of your turn, deal 2 damage to all enemies.",
+      "esMX": "Al final de tu turno, inflige 2 de daño a todos los enemigos."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_25h": {
+    "id": "LOEA04_25h",
+    "name": {
+      "enUS": "Seething Statue",
+      "esMX": "Estatua ardiente"
+    },
+    "type": "Minion",
+    "cost": 8,
+    "attack": 5,
+    "health": 9,
+    "text": {
+      "enUS": "At the end of your turn, deal 5 damage to all enemies.",
+      "esMX": "Al final de tu turno, inflige 5 de daño a todos los enemigos."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_27": {
+    "id": "LOEA04_27",
+    "name": {
+      "enUS": "Animated Statue",
+      "esMX": "Estatua animada"
+    },
+    "type": "Minion",
+    "cost": 1,
+    "attack": 10,
+    "health": 10,
+    "text": {
+      "enUS": "You've disturbed the ancient statue...",
+      "esMX": "Has perturbado a la estatua ancestral..."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_28": {
+    "id": "LOEA04_28",
+    "name": {
+      "enUS": "A Glowing Pool",
+      "esMX": "Poza brillante"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "<b>Drink?</b>",
+      "esMX": "<b>¿Quieres beber?</b>"
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_28a": {
+    "id": "LOEA04_28a",
+    "name": {
+      "enUS": "Drink Deeply",
+      "esMX": "Beber un buen trago"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "Draw a card.",
+      "esMX": "Roba una carta."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_28b": {
+    "id": "LOEA04_28b",
+    "name": {
+      "enUS": "Wade Through",
+      "esMX": "Vadear"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "Gain a Mana Crystal",
+      "esMX": "Obtienes un Cristal de maná."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_29": {
+    "id": "LOEA04_29",
+    "name": {
+      "enUS": "The Eye",
+      "esMX": "El ojo"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "<b>Choose Your Path!</b>",
+      "esMX": "<b>¡Elige tu camino!</b>"
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_29a": {
+    "id": "LOEA04_29a",
+    "name": {
+      "enUS": "Touch It",
+      "esMX": "Tocarlo"
+    },
+    "type": "Spell",
+    "text": {
+      "enUS": "Restore 10 Health to your hero.",
+      "esMX": "Restaura 10 de Salud a tu héroe."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_29b": {
+    "id": "LOEA04_29b",
+    "name": {
+      "enUS": "Investigate the Runes",
+      "esMX": "Investigar las runas"
+    },
+    "type": "Spell",
+    "text": {
+      "enUS": "Draw 2 cards.",
+      "esMX": "Roba 2 cartas."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_30": {
+    "id": "LOEA04_30",
+    "name": {
+      "enUS": "The Darkness",
+      "esMX": "La oscuridad"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "<b>Take the Shortcut?</b>",
+      "esMX": "<b>¿Quieres tomar el atajo?</b>"
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_30a": {
+    "id": "LOEA04_30a",
+    "name": {
+      "enUS": "Take the Shortcut",
+      "esMX": "Tomar el atajo"
+    },
+    "type": "Spell",
+    "text": {
+      "enUS": "Get 1 turn closer to the Exit! Encounter a 7/7 War Golem.",
+      "esMX": "¡Te acercas 1 turno a la salida! Te topas con un Gólem de guerra 7/7."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA04_31b": {
+    "id": "LOEA04_31b",
+    "name": {
+      "enUS": "No Way!",
+      "esMX": "¡Imposible!"
+    },
+    "type": "Spell",
+    "text": {
+      "enUS": "Do nothing.",
+      "esMX": "No hacer nada."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA05_01": {
+    "id": "LOEA05_01",
+    "name": {
+      "enUS": "Chieftain Scarvash",
+      "esMX": "Gran Jefe Scarvash"
+    },
+    "type": "Hero",
+    "health": 30,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA05_01h": {
+    "id": "LOEA05_01h",
+    "name": {
+      "enUS": "Heroic Scarvash",
+      "esMX": "Scarvash heroico"
+    },
+    "type": "Hero",
+    "health": 30,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA05_02": {
+    "id": "LOEA05_02",
+    "name": {
+      "enUS": "Trogg Hate Minions!",
+      "esMX": "¡Trogg odia esbirros!"
+    },
+    "type": "Hero Power",
+    "text": {
+      "enUS": "<b>Passive Hero Power</b>\n Enemy minions cost (2) more. Swap at the start of your turn.",
+      "esMX": "<b>Poder de héroe pasivo</b>\nLos esbirros enemigos cuestan (2) más. Cambia al comienzo del turno."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA05_02a": {
+    "id": "LOEA05_02a",
+    "name": {
+      "enUS": "Trogg Hate Minions!",
+      "esMX": "¡Trogg odia esbirros!"
+    },
+    "type": "Hero Power",
+    "text": {
+      "enUS": "<b>Passive Hero Power</b>\n Enemy minions cost (2) more. Swap at the start of your turn.",
+      "esMX": "<b>Poder de héroe pasivo</b>\nLos esbirros enemigos cuestan (2) más. Cambia al comienzo del turno."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA05_02h": {
+    "id": "LOEA05_02h",
+    "name": {
+      "enUS": "Trogg Hate Minions!",
+      "esMX": "¡Trogg odia esbirros!"
+    },
+    "type": "Hero Power",
+    "text": {
+      "enUS": "<b>Passive Hero Power</b>\n Enemy minions cost (11). Swap at the start of your turn.",
+      "esMX": "<b>Poder de héroe pasivo</b>\nLos esbirros enemigos cuestan (11) más. Cambia al comienzo del turno."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA05_02ha": {
+    "id": "LOEA05_02ha",
+    "name": {
+      "enUS": "Trogg Hate Minions!",
+      "esMX": "¡Trogg odia esbirros!"
+    },
+    "type": "Hero Power",
+    "text": {
+      "enUS": "<b>Passive Hero Power</b>\n Enemy minions cost (11). Swap at the start of your turn.",
+      "esMX": "<b>Poder de héroe pasivo</b>\nLos esbirros enemigos cuestan (11) más. Cambia al comienzo del turno."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA05_03": {
+    "id": "LOEA05_03",
+    "name": {
+      "enUS": "Trogg Hate Spells!",
+      "esMX": "¡Trogg odia hechizos!"
+    },
+    "type": "Hero Power",
+    "text": {
+      "enUS": "<b>Passive Hero Power</b>\n Enemy spells cost (2) more. Swap at the start of your turn.",
+      "esMX": "<b>Poder de héroe pasivo</b>\nLos hechizos enemigos cuestan (2) más. Cambia al comienzo del turno."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA05_03h": {
+    "id": "LOEA05_03h",
+    "name": {
+      "enUS": "Trogg Hate Spells!",
+      "esMX": "¡Trogg odia hechizos!"
+    },
+    "type": "Hero Power",
+    "text": {
+      "enUS": "<b>Passive Hero Power</b>\n Enemy spells cost (11). Swap at the start of your turn.",
+      "esMX": "<b>Poder de héroe pasivo</b>\nLos hechizos enemigos cuestan (11) más. Cambia al comienzo del turno."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA06_02": {
+    "id": "LOEA06_02",
+    "name": {
+      "enUS": "Stonesculpting",
+      "esMX": "Grabado en piedra"
+    },
+    "type": "Hero Power",
+    "cost": 1,
+    "text": {
+      "enUS": "<b>Hero Power</b>\n Summon a 0/2 Statue for both players.",
+      "esMX": "<b>Poder de héroe</b>\nInvoca una Estatua 0/2 para ambos jugadores."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA06_02h": {
+    "id": "LOEA06_02h",
+    "name": {
+      "enUS": "Stonesculpting",
+      "esMX": "Grabado en piedra"
+    },
+    "type": "Hero Power",
+    "cost": 1,
+    "text": {
+      "enUS": "<b>Hero Power</b>\n Summon a Statue for both players.",
+      "esMX": "<b>Poder de héroe</b>\nInvoca una Estatua para ambos jugadores."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA06_02t": {
+    "id": "LOEA06_02t",
+    "name": {
+      "enUS": "Earthen Statue",
+      "esMX": "Estatua terránea"
+    },
+    "type": "Minion",
+    "cost": 1,
+    "attack": 0,
+    "health": 2,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA06_02th": {
+    "id": "LOEA06_02th",
+    "name": {
+      "enUS": "Earthen Statue",
+      "esMX": "Estatua terránea"
+    },
+    "type": "Minion",
+    "cost": 1,
+    "attack": 0,
+    "health": 5,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA06_03": {
+    "id": "LOEA06_03",
+    "name": {
+      "enUS": "Animate Earthen",
+      "esMX": "Animar terráneo"
+    },
+    "type": "Spell",
+    "cost": 2,
+    "text": {
+      "enUS": "Give your minions +1/+1 and <b>Taunt</b>.",
+      "esMX": "Otorga +1/+1 y <b>Provocación</b> a tus esbirros."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA06_03e": {
+    "id": "LOEA06_03e",
+    "name": {
+      "enUS": "Animated",
+      "esMX": "Animado"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "+1/+1 and <b>Taunt</b>.",
+      "esMX": "+1/+1 y <b>Provocación</b>."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA06_03eh": {
+    "id": "LOEA06_03eh",
+    "name": {
+      "enUS": "Animated",
+      "esMX": "Animado"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "+3/+3 and <b>Taunt</b>.",
+      "esMX": "+3/+3 y <b>Provocación</b>."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA06_03h": {
+    "id": "LOEA06_03h",
+    "name": {
+      "enUS": "Animate Earthen",
+      "esMX": "Animar terráneo"
+    },
+    "type": "Spell",
+    "cost": 2,
+    "text": {
+      "enUS": "Give your minions +3/+3 and <b>Taunt</b>.",
+      "esMX": "Otorga +3/+3 y <b>Provocación</b> a tus esbirros."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA06_04": {
+    "id": "LOEA06_04",
+    "name": {
+      "enUS": "Shattering Spree",
+      "esMX": "Ola de destrucción"
+    },
+    "type": "Spell",
+    "cost": 2,
+    "text": {
+      "enUS": "Destroy all Statues. For each destroyed, deal $1 damage.",
+      "esMX": "Destruye todas las estatuas. Por cada estatua destruida, inflige $1 de daño."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA06_04h": {
+    "id": "LOEA06_04h",
+    "name": {
+      "enUS": "Shattering Spree",
+      "esMX": "Ola de destrucción"
+    },
+    "type": "Spell",
+    "cost": 2,
+    "text": {
+      "enUS": "Destroy all Statues. For each destroyed, deal $3 damage.",
+      "esMX": "Destruye todas las estatuas. Por cada estatua destruida, inflige $3 de daño."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA07_01": {
+    "id": "LOEA07_01",
+    "name": {
+      "enUS": "Mine Cart",
+      "esMX": "Carro minero"
+    },
+    "type": "Hero",
+    "health": 30,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA07_02": {
+    "id": "LOEA07_02",
+    "name": {
+      "enUS": "Mine Shaft",
+      "esMX": "Pozo de la mina"
+    },
+    "type": "Hero",
+    "health": 80,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA07_02h": {
+    "id": "LOEA07_02h",
+    "name": {
+      "enUS": "Heroic Mine Shaft",
+      "esMX": "Túnel de la mina heroico"
+    },
+    "type": "Hero",
+    "health": 80,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA07_03": {
+    "id": "LOEA07_03",
+    "name": {
+      "enUS": "Flee the Mine!",
+      "esMX": "¡Escapa de la mina!"
+    },
+    "type": "Hero Power",
+    "cost": 0,
+    "text": {
+      "enUS": "Escape the Troggs!",
+      "esMX": "¡Escapa de los troggs!"
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA07_03h": {
+    "id": "LOEA07_03h",
+    "name": {
+      "enUS": "Flee the Mine!",
+      "esMX": "¡Escapa de la mina!"
+    },
+    "type": "Hero Power",
+    "cost": 0,
+    "text": {
+      "enUS": "Escape the Troggs!",
+      "esMX": "¡Escapa de los troggs!"
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA07_09": {
+    "id": "LOEA07_09",
+    "name": {
+      "enUS": "Chasing Trogg",
+      "esMX": "Trogg perseguidor"
+    },
+    "type": "Minion",
+    "cost": 4,
+    "attack": 2,
+    "health": 6,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA07_11": {
+    "id": "LOEA07_11",
+    "name": {
+      "enUS": "Debris",
+      "esMX": "Escombros"
+    },
+    "type": "Minion",
+    "cost": 1,
+    "attack": 0,
+    "health": 3,
+    "text": {
+      "enUS": "<b>Taunt.</b>",
+      "esMX": "<b>Provocación</b>."
+    },
+    "mechanics": [
+      "Taunt"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOEA07_12": {
+    "id": "LOEA07_12",
+    "name": {
+      "enUS": "Earthen Pursuer",
+      "esMX": "Perseguidor terráneo"
+    },
+    "type": "Minion",
+    "cost": 5,
+    "attack": 4,
+    "health": 6,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA07_14": {
+    "id": "LOEA07_14",
+    "name": {
+      "enUS": "Lumbering Golem",
+      "esMX": "Gólem torpe"
+    },
+    "type": "Minion",
+    "cost": 6,
+    "attack": 6,
+    "health": 6,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA07_18": {
+    "id": "LOEA07_18",
+    "name": {
+      "enUS": "Dynamite",
+      "esMX": "Dinamita"
+    },
+    "type": "Spell",
+    "cost": 1,
+    "text": {
+      "enUS": "Deal $10 damage.",
+      "esMX": "Inflige $10 de daño."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA07_20": {
+    "id": "LOEA07_20",
+    "name": {
+      "enUS": "Boom!",
+      "esMX": "¡Bum!"
+    },
+    "type": "Spell",
+    "cost": 1,
+    "text": {
+      "enUS": "Deal 3 damage to all enemy minions.",
+      "esMX": "Inflige 3 de daño a todos los esbirros enemigos."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA07_21": {
+    "id": "LOEA07_21",
+    "name": {
+      "enUS": "Barrel Forward",
+      "esMX": "Como un tiro"
+    },
+    "type": "Spell",
+    "cost": 1,
+    "text": {
+      "enUS": "Get 1 turn closer to the Exit!",
+      "esMX": "¡Te acercas 1 turno a la salida!"
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA07_24": {
+    "id": "LOEA07_24",
+    "name": {
+      "enUS": "Spiked Decoy",
+      "esMX": "Señuelo con pinchos"
+    },
+    "type": "Minion",
+    "cost": 1,
+    "attack": 3,
+    "health": 6,
+    "text": {
+      "enUS": "<b>Taunt</b>\nCan't attack.",
+      "esMX": "<b>Provocación</b>.\nNo puede atacar."
+    },
+    "race": "Mech",
+    "mechanics": [
+      "Taunt"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOEA07_25": {
+    "id": "LOEA07_25",
+    "name": {
+      "enUS": "Mechanical Parrot",
+      "esMX": "Loro mecánico"
+    },
+    "type": "Minion",
+    "cost": 1,
+    "attack": 3,
+    "health": 6,
+    "race": "Mech",
+    "deckSet": "League of Explorers"
+  },
+  "LOEA07_26": {
+    "id": "LOEA07_26",
+    "name": {
+      "enUS": "Consult Brann",
+      "esMX": "Consultar a Brann"
+    },
+    "type": "Spell",
+    "cost": 1,
+    "text": {
+      "enUS": "Draw 3 cards.",
+      "esMX": "Roba 3 cartas."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA07_28": {
+    "id": "LOEA07_28",
+    "name": {
+      "enUS": "Repairs",
+      "esMX": "Reparaciones"
+    },
+    "type": "Spell",
+    "cost": 1,
+    "text": {
+      "enUS": "Restore 10 Health.",
+      "esMX": "Restaura 10 de Salud."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA07_29": {
+    "id": "LOEA07_29",
+    "name": {
+      "enUS": "Throw Rocks",
+      "esMX": "Lanzar rocas"
+    },
+    "type": "Hero Power",
+    "cost": 1,
+    "text": {
+      "enUS": "<b>Hero Power</b>\n Deal 3 damage to a random enemy minion.",
+      "esMX": "<b>Poder de héroe</b>\nInflige 3 de daño a un esbirro enemigo aleatorio."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA08_01": {
+    "id": "LOEA08_01",
+    "name": "Archaedas",
+    "type": "Hero",
+    "health": 30,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA08_01h": {
+    "id": "LOEA08_01h",
+    "name": {
+      "enUS": "Heroic Archaedas",
+      "esMX": "Archaedas heroico"
+    },
+    "type": "Hero",
+    "health": 30,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_1": {
+    "id": "LOEA09_1",
+    "name": {
+      "enUS": "Lord Slitherspear",
+      "esMX": "Lord Ofidiana"
+    },
+    "type": "Hero",
+    "health": 30,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_10": {
+    "id": "LOEA09_10",
+    "name": {
+      "enUS": "Hungry Naga",
+      "esMX": "Naga hambriento"
+    },
+    "type": "Minion",
+    "cost": 2,
+    "attack": 2,
+    "health": 1,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_11": {
+    "id": "LOEA09_11",
+    "name": {
+      "enUS": "Hungry Naga",
+      "esMX": "Naga hambriento"
+    },
+    "type": "Minion",
+    "cost": 3,
+    "attack": 1,
+    "health": 1,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_12": {
+    "id": "LOEA09_12",
+    "name": {
+      "enUS": "Hungry Naga",
+      "esMX": "Naga hambriento"
+    },
+    "type": "Minion",
+    "cost": 4,
+    "attack": 2,
+    "health": 1,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_13": {
+    "id": "LOEA09_13",
+    "name": {
+      "enUS": "Hungry Naga",
+      "esMX": "Naga hambriento"
+    },
+    "type": "Minion",
+    "cost": 5,
+    "attack": 5,
+    "health": 1,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_1H": {
+    "id": "LOEA09_1H",
+    "name": {
+      "enUS": "Heroic Slitherspear",
+      "esMX": "Ofidiana heroico"
+    },
+    "type": "Hero",
+    "health": 30,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_2": {
+    "id": "LOEA09_2",
+    "name": {
+      "enUS": "Enraged!",
+      "esMX": "¡Enfurecido!"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "Give your hero +2 attack this turn.",
+      "esMX": "Otorga +2 de Ataque a tu héroe en este turno."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_2H": {
+    "id": "LOEA09_2H",
+    "name": {
+      "enUS": "Enraged!",
+      "esMX": "¡Enfurecido!"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "Give your hero +5 attack this turn.",
+      "esMX": "Otorga +5 de Ataque a tu héroe en este turno."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_2e": {
+    "id": "LOEA09_2e",
+    "name": {
+      "enUS": "Enraged",
+      "esMX": "Enfurecido"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "+2 Attack",
+      "esMX": "+2 de Ataque."
+    },
+    "mechanics": [
+      "OneTurnEffect"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_2eH": {
+    "id": "LOEA09_2eH",
+    "name": {
+      "enUS": "Enraged",
+      "esMX": "Enfurecido"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "+5 Attack",
+      "esMX": "+5 de Ataque"
+    },
+    "mechanics": [
+      "OneTurnEffect"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_3": {
+    "id": "LOEA09_3",
+    "name": {
+      "enUS": "Getting Hungry",
+      "esMX": "El hambre ataca"
+    },
+    "type": "Hero Power",
+    "cost": 0,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nSummon a Hungry Naga.",
+      "esMX": "<b>Poder de héroe</b>\nInvoca un Naga hambriento aleatorio."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_3H": {
+    "id": "LOEA09_3H",
+    "name": {
+      "enUS": "Endless Hunger",
+      "esMX": "Hambre infinita"
+    },
+    "type": "Hero Power",
+    "cost": 0,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nSummon a Hungry Naga.",
+      "esMX": "<b>Poder de héroe</b>\nInvoca un Naga hambriento aleatorio."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_3a": {
+    "id": "LOEA09_3a",
+    "name": {
+      "enUS": "Famished",
+      "esMX": "Famélico"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Quite Hungry.",
+      "esMX": "Muy hambriento."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_3aH": {
+    "id": "LOEA09_3aH",
+    "name": {
+      "enUS": "Famished",
+      "esMX": "Famélico"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Quite Hungry.",
+      "esMX": "Muy hambriento."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_3b": {
+    "id": "LOEA09_3b",
+    "name": {
+      "enUS": "Getting Hungry",
+      "esMX": "El hambre ataca"
+    },
+    "type": "Hero Power",
+    "cost": 0,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nSummon a 1/1 Hungry Naga.",
+      "esMX": "<b>Poder de héroe</b>\nInvoca un Naga hambriento 1/1."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_3c": {
+    "id": "LOEA09_3c",
+    "name": {
+      "enUS": "Getting Hungry",
+      "esMX": "El hambre ataca"
+    },
+    "type": "Hero Power",
+    "cost": 0,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nSummon a 2/1 Hungry Naga.",
+      "esMX": "<b>Poder de héroe</b>\nInvoca un Naga hambriento 2/1."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_3d": {
+    "id": "LOEA09_3d",
+    "name": {
+      "enUS": "Getting Hungry",
+      "esMX": "El hambre ataca"
+    },
+    "type": "Hero Power",
+    "cost": 0,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nSummon a 5/1 Hungry Naga.",
+      "esMX": "<b>Poder de héroe</b>\nInvoca un Naga hambriento 5/1."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_4": {
+    "id": "LOEA09_4",
+    "name": {
+      "enUS": "Rare Spear",
+      "esMX": "Lanza rara"
+    },
+    "type": "Weapon",
+    "cost": 1,
+    "attack": 1,
+    "durability": 2,
+    "text": {
+      "enUS": "Whenever your opponent plays a Rare card, gain +1/+1.",
+      "esMX": "Cada vez que tu adversario juega una carta Rara, obtiene +1/+1."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_4H": {
+    "id": "LOEA09_4H",
+    "name": {
+      "enUS": "Rare Spear",
+      "esMX": "Lanza rara"
+    },
+    "type": "Weapon",
+    "cost": 1,
+    "attack": 1,
+    "durability": 2,
+    "text": {
+      "enUS": "Whenever your opponent plays a Rare card, gain +1/+1.",
+      "esMX": "Cada vez que tu adversario juega una carta Rara, obtiene +1/+1."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_5": {
+    "id": "LOEA09_5",
+    "name": {
+      "enUS": "Hungry Naga",
+      "esMX": "Naga hambriento"
+    },
+    "type": "Minion",
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_5H": {
+    "id": "LOEA09_5H",
+    "name": {
+      "enUS": "Hungry Naga",
+      "esMX": "Naga hambriento"
+    },
+    "type": "Minion",
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_6": {
+    "id": "LOEA09_6",
+    "name": {
+      "enUS": "Slithering Archer",
+      "esMX": "Arquero serpenteante"
+    },
+    "type": "Minion",
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Deal 1 damage.",
+      "esMX": "<b>Grito de batalla:</b> inflige 1 de daño."
+    },
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_6H": {
+    "id": "LOEA09_6H",
+    "name": {
+      "enUS": "Slithering Archer",
+      "esMX": "Arquero serpenteante"
+    },
+    "type": "Minion",
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Deal 2 damage to all enemy minions.",
+      "esMX": "<b>Grito de batalla:</b> inflige 2 de daño a todos los esbirros enemigos."
+    },
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_7": {
+    "id": "LOEA09_7",
+    "name": {
+      "enUS": "Cauldron",
+      "esMX": "Caldero"
+    },
+    "type": "Minion",
+    "cost": 0,
+    "attack": 0,
+    "health": 5,
+    "text": {
+      "enUS": "<b>Taunt</b>\n<b>Deathrattle:</b> Save Sir Finley and stop the Naga onslaught!",
+      "esMX": "<b>Provocación</b>\n<b>Estertor:</b> ¡Salva a Sir Aletardo y detiene el asalto naga!"
+    },
+    "mechanics": [
+      "Deathrattle",
+      "Taunt"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_7H": {
+    "id": "LOEA09_7H",
+    "name": {
+      "enUS": "Cauldron",
+      "esMX": "Caldero"
+    },
+    "type": "Minion",
+    "cost": 0,
+    "attack": 0,
+    "health": 10,
+    "text": {
+      "enUS": "<b>Taunt</b>\n<b>Deathrattle:</b> Save Sir Finley!",
+      "esMX": "<b>Provocación</b>\n<b>Estertor:</b> ¡Salva a Sir Aletardo!"
+    },
+    "mechanics": [
+      "Deathrattle",
+      "Taunt"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_7e": {
+    "id": "LOEA09_7e",
+    "name": {
+      "enUS": "Cauldron",
+      "esMX": "Caldero"
+    },
+    "type": "Enchantment",
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_8": {
+    "id": "LOEA09_8",
+    "name": {
+      "enUS": "Slithering Guard",
+      "esMX": "Guardia serpenteante"
+    },
+    "type": "Minion",
+    "cost": 5,
+    "attack": 3,
+    "health": 6,
+    "text": {
+      "enUS": "<b>Taunt</b>",
+      "esMX": "<b>Provocación</b>"
+    },
+    "mechanics": [
+      "Taunt"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_8H": {
+    "id": "LOEA09_8H",
+    "name": {
+      "enUS": "Slithering Guard",
+      "esMX": "Guardia serpenteante"
+    },
+    "type": "Minion",
+    "cost": 5,
+    "attack": 5,
+    "health": 7,
+    "text": {
+      "enUS": "<b>Taunt</b>",
+      "esMX": "<b>Provocación</b>"
+    },
+    "mechanics": [
+      "Taunt"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_9": {
+    "id": "LOEA09_9",
+    "name": {
+      "enUS": "Naga Repellent",
+      "esMX": "Repelente contra nagas"
+    },
+    "type": "Spell",
+    "cost": 1,
+    "text": {
+      "enUS": "Destroy all Hungry Naga.",
+      "esMX": "Destruye a todos los Naga hambrientos."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA09_9H": {
+    "id": "LOEA09_9H",
+    "name": {
+      "enUS": "Naga Repellent",
+      "esMX": "Repelente contra nagas"
+    },
+    "type": "Spell",
+    "cost": 1,
+    "text": {
+      "enUS": "Change the Attack of all Hungry Naga to 1.",
+      "esMX": "Cambia el ataque de todos los Nagas hambrientos a 1."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA10_1": {
+    "id": "LOEA10_1",
+    "name": {
+      "enUS": "Giantfin",
+      "esMX": "Granaleta"
+    },
+    "type": "Hero",
+    "health": 30,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA10_1H": {
+    "id": "LOEA10_1H",
+    "name": {
+      "enUS": "Heroic Giantfin",
+      "esMX": "Granaleta heroico"
+    },
+    "type": "Hero",
+    "health": 30,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA10_2": {
+    "id": "LOEA10_2",
+    "name": {
+      "enUS": "Mrglmrgl MRGL!",
+      "esMX": "¡Mrglmrgl ¡MRGL!"
+    },
+    "type": "Hero Power",
+    "cost": 0,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nDraw cards until you have as many in hand as your opponent.",
+      "esMX": "<b>Poder de héroe</b>\nRoba cartas hasta que tengas la misma cantidad que tu adversario."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA10_2H": {
+    "id": "LOEA10_2H",
+    "name": {
+      "enUS": "Mrglmrgl MRGL!",
+      "esMX": "¡Mrglmrgl ¡MRGL!"
+    },
+    "type": "Hero Power",
+    "cost": 0,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nDraw 2 cards.",
+      "esMX": "<b>Poder de héroe</b>\nRoba 2 cartas."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA10_3": {
+    "id": "LOEA10_3",
+    "name": {
+      "enUS": "Murloc Tinyfin",
+      "esMX": "Minialeta múrloc"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 0,
+    "attack": 1,
+    "health": 1,
+    "flavor": {
+      "enUS": "High mortality rate, from often being hugged to death.",
+      "esMX": "Tasa de mortalidad elevada. Principal causa: exceso de abrazos asfixiantes."
+    },
+    "artist": "Oliver Chipping",
+    "collectible": true,
+    "race": "Murloc",
+    "deckSet": "League of Explorers"
+  },
+  "LOEA10_5": {
+    "id": "LOEA10_5",
+    "name": "Mrgl Mrgl Nyah Nyah",
+    "type": "Spell",
+    "rarity": "Common",
+    "cost": 5,
+    "text": {
+      "enUS": "Summon 3 Murlocs that died this game.",
+      "esMX": "Invoca a 3 Múrlocs que hayan muerto durante esta partida."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA10_5H": {
+    "id": "LOEA10_5H",
+    "name": "Mrgl Mrgl Nyah Nyah",
+    "type": "Spell",
+    "rarity": "Common",
+    "cost": 3,
+    "text": {
+      "enUS": "Summon 5 Murlocs that died this game.",
+      "esMX": "Invoca a 5 Múrlocs que hayan muerto durante esta partida."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA12_1": {
+    "id": "LOEA12_1",
+    "name": "Lady Naz'jar",
+    "type": "Hero",
+    "health": 30,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA12_1H": {
+    "id": "LOEA12_1H",
+    "name": {
+      "enUS": "Heroic Naz'jar",
+      "esMX": "Naz'jar heroico"
+    },
+    "type": "Hero",
+    "health": 30,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA12_2": {
+    "id": "LOEA12_2",
+    "name": {
+      "enUS": "Pearl of the Tides",
+      "esMX": "Perla de las mareas"
+    },
+    "type": "Hero Power",
+    "text": {
+      "enUS": "At the end of your turn, replace all minions with new ones that cost (1) more.",
+      "esMX": "Al final de tu turno, reemplaza a todos los esbirros por otros nuevos que cuestan (1) más."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA12_2H": {
+    "id": "LOEA12_2H",
+    "name": {
+      "enUS": "Pearl of the Tides",
+      "esMX": "Perla de las mareas"
+    },
+    "type": "Hero Power",
+    "text": {
+      "enUS": "At the end of your turn, replace all minions with new ones. Yours cost (1) more.",
+      "esMX": "Al final de tu turno, reemplaza a todos los esbirros por otros nuevos. Los tuyos cuestan (1) más."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA13_1": {
+    "id": "LOEA13_1",
+    "name": {
+      "enUS": "Skelesaurus Hex",
+      "esMX": "Esquelesaurus facticius"
+    },
+    "type": "Hero",
+    "health": 30,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA13_1h": {
+    "id": "LOEA13_1h",
+    "name": {
+      "enUS": "Heroic Skelesaurus",
+      "esMX": "Esquelesaurus heroico"
+    },
+    "type": "Hero",
+    "health": 30,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA13_2": {
+    "id": "LOEA13_2",
+    "name": {
+      "enUS": "Ancient Power",
+      "esMX": "Poder antiguo"
+    },
+    "type": "Hero Power",
+    "cost": 0,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nGive each player a random card. It costs (0).",
+      "esMX": "<b>Poder de héroe</b>\nOtorga a cada jugador una carta aleatoria. Cuesta (0)."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA13_2H": {
+    "id": "LOEA13_2H",
+    "name": {
+      "enUS": "Ancient Power",
+      "esMX": "Poder antiguo"
+    },
+    "type": "Hero Power",
+    "cost": 0,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nAdd a random card to your hand. It costs (0).",
+      "esMX": "<b>Poder de héroe</b>\nAgrega una carta aleatoria a tu mano. Cuesta (0)."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA14_1": {
+    "id": "LOEA14_1",
+    "name": {
+      "enUS": "The Steel Sentinel",
+      "esMX": "El centinela de acero"
+    },
+    "type": "Hero",
+    "health": 30,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA14_1H": {
+    "id": "LOEA14_1H",
+    "name": {
+      "enUS": "Heroic Sentinel",
+      "esMX": "Centinela heroico"
+    },
+    "type": "Hero",
+    "health": 30,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA14_2": {
+    "id": "LOEA14_2",
+    "name": {
+      "enUS": "Platemail Armor",
+      "esMX": "Armadura de malla de placas"
+    },
+    "type": "Hero Power",
+    "text": {
+      "enUS": "<b>Passive Hero Power</b>\nYour Hero can only take 1 damage at a time.",
+      "esMX": "<b>Poder de héroe pasivo</b>\nTu héroe solo puede recibir 1 de daño a la vez."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA14_2H": {
+    "id": "LOEA14_2H",
+    "name": {
+      "enUS": "Platemail Armor",
+      "esMX": "Armadura de malla de placas"
+    },
+    "type": "Hero Power",
+    "text": {
+      "enUS": "<b>Passive Hero Power</b>\nYour Hero and your minions can only take 1 damage at a time.",
+      "esMX": "<b>Poder de héroe pasivo</b>\nTu héroe y tus esbirros solo pueden recibir 1 de daño a la vez."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA15_1": {
+    "id": "LOEA15_1",
+    "name": "Rafaam",
+    "type": "Hero",
+    "health": 30,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA15_1H": {
+    "id": "LOEA15_1H",
+    "name": {
+      "enUS": "Heroic Rafaam",
+      "esMX": "Rafaam heroico"
+    },
+    "type": "Hero",
+    "health": 30,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA15_2": {
+    "id": "LOEA15_2",
+    "name": {
+      "enUS": "Unstable Portal",
+      "esMX": "Portal inestable"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nAdd a random minion to your hand. It costs (3) less.",
+      "esMX": "<b>Poder de héroe</b>\nAgrega un esbirro aleatorio a tu mano. Cuesta (3) menos."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA15_2H": {
+    "id": "LOEA15_2H",
+    "name": {
+      "enUS": "Unstable Portal",
+      "esMX": "Portal inestable"
+    },
+    "type": "Hero Power",
+    "cost": 0,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nAdd a random minion to your hand. It costs (3) less.",
+      "esMX": "<b>Poder de héroe</b>\nAgrega un esbirro aleatorio a tu mano. Cuesta (3) menos."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA15_3": {
+    "id": "LOEA15_3",
+    "name": {
+      "enUS": "Boneraptor",
+      "esMX": "Osteoraptor"
+    },
+    "type": "Minion",
+    "cost": 3,
+    "attack": 2,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Battlecry:</b>Take control of your opponent's weapon.",
+      "esMX": "<b>Grito de batalla:</b> toma el control del arma de tu adversario."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA15_3H": {
+    "id": "LOEA15_3H",
+    "name": {
+      "enUS": "Boneraptor",
+      "esMX": "Osteoraptor"
+    },
+    "type": "Minion",
+    "cost": 3,
+    "attack": 2,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Battlecry:</b>Take control of your opponent's weapon.",
+      "esMX": "<b>Grito de batalla:</b> toma el control del arma de tu adversario."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_1": {
+    "id": "LOEA16_1",
+    "name": "Rafaam",
+    "type": "Hero",
+    "health": 30,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_10": {
+    "id": "LOEA16_10",
+    "name": {
+      "enUS": "Hakkari Blood Goblet",
+      "esMX": "Cáliz sangriento hakkari"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "Transform a minion into a 2/1 Pit Snake.",
+      "esMX": "Transforma a un esbirro en una Culebra del foso 2/1."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_11": {
+    "id": "LOEA16_11",
+    "name": {
+      "enUS": "Crown of Kael'thas",
+      "esMX": "Corona de Kael'thas"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "Deal $10 damage randomly split among ALL characters.",
+      "esMX": "Inflige $10 de daño dividido aleatoriamente entre TODOS los personajes."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_12": {
+    "id": "LOEA16_12",
+    "name": {
+      "enUS": "Medivh's Locket",
+      "esMX": "Relicario de Medivh"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "Replace your hand with Unstable Portals.",
+      "esMX": "Reemplaza tu mano con Portales inestables."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_13": {
+    "id": "LOEA16_13",
+    "name": {
+      "enUS": "Eye of Orsis",
+      "esMX": "Ojo de Orsis"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "<b>Discover</b> a minion and gain 3 copies of it.",
+      "esMX": "<b>Devela</b> un esbirro y te otorga 3 copias."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_14": {
+    "id": "LOEA16_14",
+    "name": {
+      "enUS": "Khadgar's Pipe",
+      "esMX": "Pipa de Khadgar"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "Put a random spell into each player's hand.  Yours costs (0).",
+      "esMX": "Coloca un hechizo aleatorio en la mano de cada jugador. El tuyo cuesta (0)."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_15": {
+    "id": "LOEA16_15",
+    "name": {
+      "enUS": "Ysera's Tear",
+      "esMX": "Lágrima de Ysera"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "Gain 4 Mana Crystals this turn only.",
+      "esMX": "Obtienes 4 Cristales de maná solo por este turno."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_16": {
+    "id": "LOEA16_16",
+    "name": {
+      "enUS": "Rummage",
+      "esMX": "Hurgar"
+    },
+    "type": "Hero Power",
+    "cost": 0,
+    "text": {
+      "enUS": "Find an artifact.",
+      "esMX": "Encuentra un artefacto."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_16H": {
+    "id": "LOEA16_16H",
+    "name": {
+      "enUS": "Rummage",
+      "esMX": "Hurgar"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "Find an artifact.",
+      "esMX": "Encuentra un artefacto."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_17": {
+    "id": "LOEA16_17",
+    "name": {
+      "enUS": "Animated Statue",
+      "esMX": "Estatua animada"
+    },
+    "type": "Minion",
+    "cost": 10,
+    "attack": 10,
+    "health": 10,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_18": {
+    "id": "LOEA16_18",
+    "name": "Zinaar",
+    "type": "Minion",
+    "cost": 5,
+    "attack": 5,
+    "health": 5,
+    "text": {
+      "enUS": "At the end of your turn, gain a wish.",
+      "esMX": "Al final de tu turno, obtienes un Deseo."
+    },
+    "elite": true,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_18H": {
+    "id": "LOEA16_18H",
+    "name": "Zinaar",
+    "type": "Minion",
+    "cost": 10,
+    "attack": 10,
+    "health": 10,
+    "text": {
+      "enUS": "At the end of your turn, gain a wish.",
+      "esMX": "Al final de tu turno, obtienes un Deseo."
+    },
+    "elite": true,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_19": {
+    "id": "LOEA16_19",
+    "name": {
+      "enUS": "Sun Raider Phaerix",
+      "esMX": "Asaltasoles Phaerix"
+    },
+    "type": "Minion",
+    "cost": 5,
+    "attack": 5,
+    "health": 5,
+    "text": {
+      "enUS": "At the end of your turn, add a Blessing of the Sun to your hand.",
+      "esMX": "Al final de tu turno, agrega una Bendición del Sol a tu mano."
+    },
+    "elite": true,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_19H": {
+    "id": "LOEA16_19H",
+    "name": {
+      "enUS": "Sun Raider Phaerix",
+      "esMX": "Asaltasoles Phaerix"
+    },
+    "type": "Minion",
+    "cost": 10,
+    "attack": 10,
+    "health": 10,
+    "text": {
+      "enUS": "Your other minions are <b>Immune</b>.",
+      "esMX": "Tus otros esbirros son <b>Inmunes</b>."
+    },
+    "elite": true,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_1H": {
+    "id": "LOEA16_1H",
+    "name": {
+      "enUS": "Heroic Rafaam",
+      "esMX": "Rafaam heroico"
+    },
+    "type": "Hero",
+    "health": 30,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_2": {
+    "id": "LOEA16_2",
+    "name": {
+      "enUS": "Staff of Origination",
+      "esMX": "Báculo de los orígenes"
+    },
+    "type": "Hero Power",
+    "text": {
+      "enUS": "<b>Passive Hero Power</b>\nYour hero is <b>Immune</b> while the staff charges.",
+      "esMX": "<b>Poder de héroe pasivo</b>\nTu héroe es <b>Inmune</b> mientras se carga el báculo."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_20": {
+    "id": "LOEA16_20",
+    "name": {
+      "enUS": "Blessing of the Sun",
+      "esMX": "Bendición del Sol"
+    },
+    "type": "Spell",
+    "cost": 1,
+    "text": {
+      "enUS": "Give a minion <b>Immune</b> this turn.",
+      "esMX": "Otorga <b>Inmunidad</b> a un esbirro durante este turno."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_20H": {
+    "id": "LOEA16_20H",
+    "name": {
+      "enUS": "Blessing of the Sun",
+      "esMX": "Bendición del Sol"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "<b>Immune</b>.",
+      "esMX": "<b>Inmune</b>."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_20e": {
+    "id": "LOEA16_20e",
+    "name": {
+      "enUS": "Blessed",
+      "esMX": "Bendecido"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "<b>Immune</b> this turn.",
+      "esMX": "<b>Inmune</b> en este turno."
+    },
+    "mechanics": [
+      "OneTurnEffect"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_21": {
+    "id": "LOEA16_21",
+    "name": {
+      "enUS": "Chieftain Scarvash",
+      "esMX": "Gran Jefe Scarvash"
+    },
+    "type": "Minion",
+    "cost": 5,
+    "attack": 5,
+    "health": 5,
+    "text": {
+      "enUS": "Enemy cards cost (1) more.",
+      "esMX": "Las cartas enemigas cuestan (1) más."
+    },
+    "elite": true,
+    "mechanics": [
+      "Aura"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_21H": {
+    "id": "LOEA16_21H",
+    "name": {
+      "enUS": "Chieftain Scarvash",
+      "esMX": "Gran Jefe Scarvash"
+    },
+    "type": "Minion",
+    "cost": 10,
+    "attack": 10,
+    "health": 10,
+    "text": {
+      "enUS": "Enemy cards cost (2) more.",
+      "esMX": "Las cartas enemigas cuestan (2) más."
+    },
+    "elite": true,
+    "mechanics": [
+      "Aura"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_22": {
+    "id": "LOEA16_22",
+    "name": "Archaedas",
+    "type": "Minion",
+    "cost": 5,
+    "attack": 5,
+    "health": 5,
+    "text": {
+      "enUS": "At the end of your turn, turn a random enemy minion into a 0/2 Statue.",
+      "esMX": "Al final de tu turno, convierte a un esbirro enemigo aleatorio en una Estatua 0/2."
+    },
+    "elite": true,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_22H": {
+    "id": "LOEA16_22H",
+    "name": "Archaedas",
+    "type": "Minion",
+    "cost": 10,
+    "attack": 10,
+    "health": 10,
+    "text": {
+      "enUS": "At the end of your turn, turn a random enemy minion into a 0/2 Statue.",
+      "esMX": "Al final de tu turno, convierte a un esbirro enemigo aleatorio en una Estatua 0/2."
+    },
+    "elite": true,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_23": {
+    "id": "LOEA16_23",
+    "name": {
+      "enUS": "Lord Slitherspear",
+      "esMX": "Lord Ofidiana"
+    },
+    "type": "Minion",
+    "cost": 5,
+    "attack": 5,
+    "health": 5,
+    "text": {
+      "enUS": "At the end of your turn, summon 1/1 Hungry Naga for each enemy minion.",
+      "esMX": "Al final de tu turno, invoca un Naga hambriento 1/1 por cada esbirro enemigo."
+    },
+    "elite": true,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_23H": {
+    "id": "LOEA16_23H",
+    "name": {
+      "enUS": "Lord Slitherspear",
+      "esMX": "Lord Ofidiana"
+    },
+    "type": "Minion",
+    "cost": 10,
+    "attack": 10,
+    "health": 10,
+    "text": {
+      "enUS": "At the end of your turn, summon 1/1 Hungry Naga for each enemy minion.",
+      "esMX": "Al final de tu turno, invoca un Naga hambriento 1/1 por cada esbirro enemigo."
+    },
+    "elite": true,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_24": {
+    "id": "LOEA16_24",
+    "name": {
+      "enUS": "Giantfin",
+      "esMX": "Granaleta"
+    },
+    "type": "Minion",
+    "cost": 5,
+    "attack": 5,
+    "health": 5,
+    "text": {
+      "enUS": "At the end of your turn, draw until you have as many cards as your opponent.",
+      "esMX": "Al final de tu turno, roba cartas hasta que tengas la misma cantidad que tu adversario."
+    },
+    "elite": true,
+    "race": "Murloc",
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_24H": {
+    "id": "LOEA16_24H",
+    "name": {
+      "enUS": "Giantfin",
+      "esMX": "Granaleta"
+    },
+    "type": "Minion",
+    "cost": 10,
+    "attack": 10,
+    "health": 10,
+    "text": {
+      "enUS": "At the end of your turn, draw 2 cards.",
+      "esMX": "Al final de tu turno, roba 2 cartas."
+    },
+    "elite": true,
+    "race": "Murloc",
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_25": {
+    "id": "LOEA16_25",
+    "name": "Lady Naz'jar",
+    "type": "Minion",
+    "cost": 5,
+    "attack": 5,
+    "health": 5,
+    "text": {
+      "enUS": "At the end of your turn, replace all other minions with new ones of the same Cost.",
+      "esMX": "Al final de tu turno, reemplaza todos los demás esbirros con otros nuevos del mismo costo."
+    },
+    "elite": true,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_25H": {
+    "id": "LOEA16_25H",
+    "name": "Lady Naz'jar",
+    "type": "Minion",
+    "cost": 10,
+    "attack": 10,
+    "health": 10,
+    "text": {
+      "enUS": "At the end of your turn, replace all other minions with new ones of the same Cost.",
+      "esMX": "Al final de tu turno, reemplaza todos los demás esbirros con otros nuevos del mismo costo."
+    },
+    "elite": true,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_26": {
+    "id": "LOEA16_26",
+    "name": {
+      "enUS": "Skelesaurus Hex",
+      "esMX": "Esquelesaurus facticius"
+    },
+    "type": "Minion",
+    "cost": 5,
+    "attack": 5,
+    "health": 5,
+    "text": {
+      "enUS": "At the end of your turn, give each player a random card. It costs (0).",
+      "esMX": "Al final de tu turno, otorga una carta aleatoria a cada jugador. Cuesta (0)."
+    },
+    "elite": true,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_26H": {
+    "id": "LOEA16_26H",
+    "name": {
+      "enUS": "Skelesaurus Hex",
+      "esMX": "Esquelesaurus facticius"
+    },
+    "type": "Minion",
+    "cost": 10,
+    "attack": 10,
+    "health": 10,
+    "text": {
+      "enUS": "At the end of your turn, put a random card in your hand. It costs (0).",
+      "esMX": "Al final de tu turno, coloca una carta aleatoria en tu mano. Cuesta (0)."
+    },
+    "elite": true,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_27": {
+    "id": "LOEA16_27",
+    "name": {
+      "enUS": "The Steel Sentinel",
+      "esMX": "El centinela de acero"
+    },
+    "type": "Minion",
+    "cost": 5,
+    "attack": 5,
+    "health": 5,
+    "text": {
+      "enUS": "This minion can only take 1 damage at a time.",
+      "esMX": "Este esbirro solo puede recibir 1 de daño a la vez."
+    },
+    "elite": true,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_27H": {
+    "id": "LOEA16_27H",
+    "name": {
+      "enUS": "The Steel Sentinel",
+      "esMX": "El centinela de acero"
+    },
+    "type": "Minion",
+    "cost": 10,
+    "attack": 10,
+    "health": 10,
+    "text": {
+      "enUS": "This minion can only take 1 damage at a time.",
+      "esMX": "Este esbirro solo puede recibir 1 de daño a la vez."
+    },
+    "elite": true,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_2H": {
+    "id": "LOEA16_2H",
+    "name": {
+      "enUS": "Staff of Origination",
+      "esMX": "Báculo de los orígenes"
+    },
+    "type": "Hero Power",
+    "text": {
+      "enUS": "<b>Passive Hero Power</b>\nYour hero is <b>Immune</b>.",
+      "esMX": "<b>Poder de héroe pasivo</b>\nTu héroe es <b>Inmune</b>."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_3": {
+    "id": "LOEA16_3",
+    "name": {
+      "enUS": "Lantern of Power",
+      "esMX": "Farol de poder"
+    },
+    "type": "Spell",
+    "cost": 10,
+    "text": {
+      "enUS": "Give a minion +10/+10.",
+      "esMX": "Otorga +10/+10 a un esbirro."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_3e": {
+    "id": "LOEA16_3e",
+    "name": {
+      "enUS": "Lantern of Power",
+      "esMX": "Farol de poder"
+    },
+    "type": "Enchantment",
+    "text": "+10/+10.",
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_4": {
+    "id": "LOEA16_4",
+    "name": {
+      "enUS": "Timepiece of Horror",
+      "esMX": "Reloj del horror"
+    },
+    "type": "Spell",
+    "cost": 10,
+    "text": {
+      "enUS": "Deal $10 damage randomly split among all enemies.",
+      "esMX": "Inflige $10 de daño dividido aleatoriamente entre todos los enemigos."
+    },
+    "mechanics": [
+      "ImmuneToSpellpower"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_5": {
+    "id": "LOEA16_5",
+    "name": {
+      "enUS": "Mirror of Doom",
+      "esMX": "Espejo de la perdición"
+    },
+    "type": "Spell",
+    "cost": 10,
+    "text": {
+      "enUS": "Fill your board with 3/3 Mummy Zombies.",
+      "esMX": "Llena tu tablero con Momias zombi 3/3."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_5t": {
+    "id": "LOEA16_5t",
+    "name": {
+      "enUS": "Mummy Zombie",
+      "esMX": "Momia zombi"
+    },
+    "type": "Minion",
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_6": {
+    "id": "LOEA16_6",
+    "name": {
+      "enUS": "Shard of Sulfuras",
+      "esMX": "Fragmento de Sulfuras"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "Deal $5 damage to ALL characters.",
+      "esMX": "Inflige $5 de daño a TODOS los personajes."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_7": {
+    "id": "LOEA16_7",
+    "name": {
+      "enUS": "Benediction Splinter",
+      "esMX": "Trozo de Oración"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "Restore #10 Health to ALL characters.",
+      "esMX": "Restaura #10 de Salud a TODOS los personajes."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_8": {
+    "id": "LOEA16_8",
+    "name": {
+      "enUS": "Putress' Vial",
+      "esMX": "Vial de Putress"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "Destroy a random enemy minion.",
+      "esMX": "Destruye un esbirro enemigo aleatorio."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_8a": {
+    "id": "LOEA16_8a",
+    "name": {
+      "enUS": "Putressed",
+      "esMX": "Putressfacción"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Attack and Health swapped.",
+      "esMX": "Ataque y Salud intercambiados."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA16_9": {
+    "id": "LOEA16_9",
+    "name": {
+      "enUS": "Lothar's Left Greave",
+      "esMX": "Greba izquierda de Lothar"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "Deal 3 damage to all enemies.",
+      "esMX": "Inflige 3 de daño a todos los enemigos."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA_01": {
+    "id": "LOEA_01",
+    "name": {
+      "enUS": "Looming Presence",
+      "esMX": "Presencia amenazante"
+    },
+    "type": "Spell",
+    "cost": 3,
+    "text": {
+      "enUS": "Draw 2 cards. Gain 4 Armor.",
+      "esMX": "Roba 2 cartas. Obtienes 4 de Armadura."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOEA_01H": {
+    "id": "LOEA_01H",
+    "name": {
+      "enUS": "Looming Presence",
+      "esMX": "Presencia amenazante"
+    },
+    "type": "Spell",
+    "cost": 3,
+    "text": {
+      "enUS": "Draw 3 cards. Gain 6 Armor.",
+      "esMX": "Roba 3 cartas. Obtienes 6 de Armadura."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOE_002": {
+    "id": "LOE_002",
+    "name": {
+      "enUS": "Forgotten Torch",
+      "esMX": "Antorcha olvidada"
+    },
+    "type": "Spell",
+    "rarity": "Common",
+    "cost": 3,
+    "text": {
+      "enUS": "Deal $3 damage. Shuffle a 'Roaring Torch' into your deck that deals 6 damage.",
+      "esMX": "Inflige $3 de daño. Coloca en tu mazo una Antorcha ardiente que inflige 6 de daño."
+    },
+    "flavor": {
+      "enUS": "Why does a forgotten torch turn into a roaring torch with no provocation?  It's one of life's many mysteries.",
+      "esMX": "¿Por qué una antorcha olvidada se convierte en una antorcha ardiente sin provocación alguna? Es uno de los tantos misterios de la vida."
+    },
+    "artist": "Richard Wright",
+    "collectible": true,
+    "playerClass": "Mage",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_002t": {
+    "id": "LOE_002t",
+    "name": {
+      "enUS": "Roaring Torch",
+      "esMX": "Antorcha ardiente"
+    },
+    "type": "Spell",
+    "cost": 3,
+    "text": {
+      "enUS": "Deal $6 damage.",
+      "esMX": "Inflige $6 de daño."
+    },
+    "artist": "Richard Wright",
+    "playerClass": "Mage",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_003": {
+    "id": "LOE_003",
+    "name": {
+      "enUS": "Ethereal Conjurer",
+      "esMX": "Conjurador etéreo"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 5,
+    "attack": 6,
+    "health": 3,
+    "text": {
+      "enUS": "<b>Battlecry: Discover</b> a spell.",
+      "esMX": "<b>Grito de batalla: Devela</b> un hechizo."
+    },
+    "flavor": {
+      "enUS": "Despite the name, he's a solid conjurer.",
+      "esMX": "No te dejes engañar por el nombre: sus conocimientos mágicos son muy sólidos."
+    },
+    "artist": "Ben Zhang",
+    "collectible": true,
+    "playerClass": "Mage",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_006": {
+    "id": "LOE_006",
+    "name": {
+      "enUS": "Museum Curator",
+      "esMX": "Curador del museo"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 2,
+    "attack": 1,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Battlecry: Discover</b> a <b>Deathrattle</b> card.",
+      "esMX": "<b>Grito de batalla: Devela</b> una carta con <b>Estertor</b>."
+    },
+    "flavor": {
+      "enUS": "He is forever cursing the kids who climb on the rails and the evil archeologists who animate the exhibits.",
+      "esMX": "Sus principales enemigos son los niños que manosean las vidrieras y los arqueólogos locos que andan por ahí animando las piezas de exhibición."
+    },
+    "artist": "Steve Prescott",
+    "collectible": true,
+    "playerClass": "Priest",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_007": {
+    "id": "LOE_007",
+    "name": {
+      "enUS": "Curse of Rafaam",
+      "esMX": "Maldición de Rafaam"
+    },
+    "type": "Spell",
+    "rarity": "Common",
+    "cost": 2,
+    "text": {
+      "enUS": "Give your opponent a 'Cursed!' card.\nWhile they hold it, they take 2 damage on their turn.",
+      "esMX": "Otorga a tu adversario la carta ¡Maldito!\nMientras la tenga en la mano, recibe 2 de daño durante su turno."
+    },
+    "flavor": {
+      "enUS": "This is what happens when Rafaam stubs his toe unexpectedly.",
+      "esMX": "Lo que sucede cuando Rafaam se golpea el dedito del pie."
+    },
+    "artist": "Alex Horley Orlandelli",
+    "collectible": true,
+    "playerClass": "Warlock",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_007t": {
+    "id": "LOE_007t",
+    "name": {
+      "enUS": "Cursed!",
+      "esMX": "¡Maldito!"
+    },
+    "type": "Spell",
+    "cost": 2,
+    "text": {
+      "enUS": "While this is in your hand, take 2 damage at the start of your turn.",
+      "esMX": "Mientras está en tu mano, recibes 2 de daño al comienzo de tu turno."
+    },
+    "artist": "Jim Nelson",
+    "playerClass": "Warlock",
+    "mechanics": [
+      "ImmuneToSpellpower"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_008": {
+    "id": "LOE_008",
+    "name": {
+      "enUS": "Eye of Hakkar",
+      "esMX": "Ojo de Hakkar"
+    },
+    "type": "Spell",
+    "cost": 1,
+    "text": {
+      "enUS": "Take a secret from your opponent's deck and put it into the battlefield.",
+      "esMX": "Toma un secreto del mazo de tu adversario y colócalo en el campo de batalla."
+    },
+    "flavor": "-",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_008H": {
+    "id": "LOE_008H",
+    "name": {
+      "enUS": "Eye of Hakkar",
+      "esMX": "Ojo de Hakkar"
+    },
+    "type": "Spell",
+    "cost": 1,
+    "text": {
+      "enUS": "Take a secret from your opponent's deck and put it into the battlefield.",
+      "esMX": "Toma un secreto del mazo de tu adversario y colócalo en el campo de batalla."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOE_009": {
+    "id": "LOE_009",
+    "name": {
+      "enUS": "Obsidian Destroyer",
+      "esMX": "Destructor de obsidiana"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 7,
+    "attack": 7,
+    "health": 7,
+    "text": {
+      "enUS": "At the end of your turn, summon a 1/1 Scarab with <b>Taunt</b>.",
+      "esMX": "Al final de tu turno, invoca a un Escarabajo 1/1 con <b>Provocación</b>."
+    },
+    "flavor": {
+      "enUS": "No obsidian is safe around the Obsidian Destroyer!",
+      "esMX": "Todavía nadie sabe por qué odia tanto la obsidiana."
+    },
+    "artist": "Anton Zemskov",
+    "collectible": true,
+    "playerClass": "Warrior",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_009e": {
+    "id": "LOE_009e",
+    "name": {
+      "enUS": "Sinister Power",
+      "esMX": "Poder siniestro"
+    },
+    "type": "Enchantment",
+    "text": "+4/+4.",
+    "playerClass": "Warlock",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_009t": {
+    "id": "LOE_009t",
+    "name": {
+      "enUS": "Scarab",
+      "esMX": "Escarabajo"
+    },
+    "type": "Minion",
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "text": {
+      "enUS": "<b>Taunt</b>",
+      "esMX": "<b>Provocación</b>"
+    },
+    "artist": "Jaemin Kim",
+    "playerClass": "Warrior",
+    "mechanics": [
+      "Taunt"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_010": {
+    "id": "LOE_010",
+    "name": {
+      "enUS": "Pit Snake",
+      "esMX": "Culebra del foso"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 1,
+    "attack": 2,
+    "health": 1,
+    "text": {
+      "enUS": "Destroy any minion damaged by this minion.",
+      "esMX": "Destruye cualquier esbirro dañado por este esbirro."
+    },
+    "flavor": {
+      "enUS": "It could be worse.  It could be a Snake Pit.",
+      "esMX": "Podría ser mucho peor. Podría ser un Foso de culebras, por ejemplo."
+    },
+    "artist": "Bernie Kang",
+    "collectible": true,
+    "race": "Beast",
+    "playerClass": "Rogue",
+    "mechanics": [
+      "Poisonous"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_011": {
+    "id": "LOE_011",
+    "name": "Reno Jackson",
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 6,
+    "attack": 4,
+    "health": 6,
+    "text": {
+      "enUS": "<b>Battlecry:</b> If your deck contains no more than 1 of any card, fully heal your hero.",
+      "esMX": "<b>Grito de batalla:</b> si tu mazo no tiene más de 1 copia de cada carta, restaura toda la Salud a tu héroe."
+    },
+    "flavor": {
+      "enUS": "Reno is a four-time winner of the 'Best Accessorized Explorer' award.",
+      "esMX": "Reno ha sido galardonado en cuatro ocasiones con el premio al \"Expedicionario con mejores accesorios\"."
+    },
+    "artist": "Tyson Murphy",
+    "collectible": true,
+    "elite": true,
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_012": {
+    "id": "LOE_012",
+    "name": {
+      "enUS": "Tomb Pillager",
+      "esMX": "Saqueador de tumbas"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 4,
+    "attack": 5,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Deathrattle:</b> Add a Coin to your hand.",
+      "esMX": "<b>Estertor:</b> agrega una Moneda a tu mano."
+    },
+    "flavor": {
+      "enUS": "After the guild broke up, he could no longer raid the tombs.",
+      "esMX": "Odia a los que dicen que los saqueadores son arqueólogos frustrados."
+    },
+    "artist": "Dave Allsop",
+    "collectible": true,
+    "playerClass": "Rogue",
+    "mechanics": [
+      "Deathrattle"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_012e": {
+    "id": "LOE_012e",
+    "name": "zzDELETE Tomb Explorer",
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Copied Deathrattle from CARD_NAME",
+      "esMX": "Estertor copiado de CARD_NAME."
+    },
+    "playerClass": "Rogue",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_016": {
+    "id": "LOE_016",
+    "name": {
+      "enUS": "Rumbling Elemental",
+      "esMX": "Elemental resonador"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 4,
+    "attack": 2,
+    "health": 6,
+    "text": {
+      "enUS": "After you play a <b>Battlecry</b> minion, deal 2 damage to a random enemy.",
+      "esMX": "Cuando juegas un esbirro con <b>Grito de batalla</b>, inflige 2 de daño a un enemigo aleatorio."
+    },
+    "flavor": {
+      "enUS": "He's a very hungry elemental.",
+      "esMX": "Sigue practicando, sin éxito, tácticas de ataque sorpresa."
+    },
+    "artist": "Cole Eastburn",
+    "collectible": true,
+    "playerClass": "Shaman",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_016t": {
+    "id": "LOE_016t",
+    "name": {
+      "enUS": "Rock",
+      "esMX": "Roca"
+    },
+    "type": "Minion",
+    "cost": 1,
+    "attack": 0,
+    "health": 6,
+    "text": {
+      "enUS": "<b>Taunt.</b>",
+      "esMX": "<b>Provocación</b>."
+    },
+    "mechanics": [
+      "Taunt"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_017": {
+    "id": "LOE_017",
+    "name": {
+      "enUS": "Keeper of Uldaman",
+      "esMX": "Guardiana de Uldaman"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 4,
+    "attack": 3,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Set a minion's Attack and Health to 3.",
+      "esMX": "<b>Grito de batalla:</b> establece la Salud y el Ataque de un esbirro en 3."
+    },
+    "flavor": {
+      "enUS": "U da man!  No, U da man!",
+      "esMX": "El seguro ideal para las ciudades ancestrales."
+    },
+    "artist": "James Ryman",
+    "collectible": true,
+    "playerClass": "Paladin",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_017e": {
+    "id": "LOE_017e",
+    "name": {
+      "enUS": "Watched",
+      "esMX": "Protegido"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Stats changed to 3/3.",
+      "esMX": "Las estadísticas han cambiado a 3/3."
+    },
+    "playerClass": "Paladin",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_018": {
+    "id": "LOE_018",
+    "name": {
+      "enUS": "Tunnel Trogg",
+      "esMX": "Trogg subterráneo"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 1,
+    "attack": 1,
+    "health": 3,
+    "text": {
+      "enUS": "Whenever you <b>Overload</b>, gain +1 Attack per locked Mana Crystal.",
+      "esMX": "Cuando juegas una carta con <b>Sobrecarga</b>, obtiene +1 de Ataque por cada Cristal de maná bloqueado."
+    },
+    "flavor": {
+      "enUS": "Sure, they're ugly, but they live in tunnels.  You try your beauty routine without natural light.",
+      "esMX": "Nadie puede negar que son feos, pero los pobres viven en túneles. ¿Has probado maquillarte sin luz natural?"
+    },
+    "artist": "Andrew Hou",
+    "collectible": true,
+    "playerClass": "Shaman",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_018e": {
+    "id": "LOE_018e",
+    "name": {
+      "enUS": "Trogg No Stupid",
+      "esMX": "Trogg no estúpido"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Increased Attack.",
+      "esMX": "Ataque aumentado."
+    },
+    "playerClass": "Shaman",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_019": {
+    "id": "LOE_019",
+    "name": {
+      "enUS": "Unearthed Raptor",
+      "esMX": "Raptor desenterrado"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 3,
+    "attack": 3,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Choose a friendly minion. Gain a copy of its <b>Deathrattle</b> effect.",
+      "esMX": "<b>Grito de batalla:</b> elige un esbirro aliado. Obtiene una copia de su efecto de <b>Estertor</b>."
+    },
+    "flavor": {
+      "enUS": "Still hunting for the ones who earthed him.",
+      "esMX": "Aún persigue a los que lo enterraron."
+    },
+    "artist": "Trent Kaniuga",
+    "collectible": true,
+    "playerClass": "Rogue",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_019e": {
+    "id": "LOE_019e",
+    "name": {
+      "enUS": "Unearthed Raptor",
+      "esMX": "Raptor desenterrado"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Copied <b>Deathrattle</b> from CARD_NAME.",
+      "esMX": "<b>Estertor</b> copiado de CARD_NAME."
+    },
+    "playerClass": "Rogue",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_019t": {
+    "id": "LOE_019t",
+    "name": {
+      "enUS": "Map to the Golden Monkey",
+      "esMX": "Mapa de la ruta al Mono dorado"
+    },
+    "type": "Spell",
+    "cost": 2,
+    "text": {
+      "enUS": "Shuffle the Golden Monkey into your deck. Draw a card.",
+      "esMX": "Coloca el Mono dorado en tu mazo. Roba una carta."
+    },
+    "artist": "Milivoj Ceran",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_019t2": {
+    "id": "LOE_019t2",
+    "name": {
+      "enUS": "Golden Monkey",
+      "esMX": "Mono dorado"
+    },
+    "type": "Minion",
+    "cost": 4,
+    "attack": 6,
+    "health": 6,
+    "text": {
+      "enUS": "<b>Taunt</b>\n<b>Battlecry:</b> Replace your hand and deck with <b>Legendary</b> minions.",
+      "esMX": "<b>Provocación</b>\n<b>Grito de batalla:</b> reemplaza tu mano y tu mazo con esbirros <b>legendarios</b>."
+    },
+    "artist": "A.J. Nazzaro",
+    "mechanics": [
+      "Battlecry",
+      "Taunt"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_020": {
+    "id": "LOE_020",
+    "name": {
+      "enUS": "Desert Camel",
+      "esMX": "Camello del desierto"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 3,
+    "attack": 2,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Put a 1-Cost minion from each deck into the battlefield.",
+      "esMX": "<b>Grito de batalla:</b> coloca un esbirro de costo (1) de cada mazo en el campo de batalla."
+    },
+    "flavor": {
+      "enUS": "Dang.  This card is sweet.  Almost as sweet as Dessert Camel.",
+      "esMX": "El mejor amigo del hombre del desierto."
+    },
+    "artist": "Matt Dixon",
+    "collectible": true,
+    "race": "Beast",
+    "playerClass": "Hunter",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_021": {
+    "id": "LOE_021",
+    "name": {
+      "enUS": "Dart Trap",
+      "esMX": "Trampa de dardos"
+    },
+    "type": "Spell",
+    "rarity": "Common",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Secret:</b> When an opposing Hero Power is used, deal 5 damage to a random enemy.",
+      "esMX": "<b>Secreto:</b> cuando el héroe enemigo usa su Poder de héroe, inflige 5 de daño a un enemigo aleatorio."
+    },
+    "flavor": {
+      "enUS": "Five years of tap-dancing lessons are FINALLY going to pay off!",
+      "esMX": "¡AL FIN! ¡Después de cinco años, las clases de tap darán sus frutos!"
+    },
+    "artist": "Zoltan Boros",
+    "collectible": true,
+    "playerClass": "Hunter",
+    "mechanics": [
+      "Secret"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_022": {
+    "id": "LOE_022",
+    "name": {
+      "enUS": "Fierce Monkey",
+      "esMX": "Mono feroz"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 3,
+    "attack": 3,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Taunt</b>",
+      "esMX": "<b>Provocación</b>"
+    },
+    "flavor": {
+      "enUS": "Fierce monkey.  That funky monkey.",
+      "esMX": "No pueden decir que no es una monada..."
+    },
+    "artist": "Peter Stapleton",
+    "collectible": true,
+    "race": "Beast",
+    "playerClass": "Warrior",
+    "mechanics": [
+      "Taunt"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_023": {
+    "id": "LOE_023",
+    "name": {
+      "enUS": "Dark Peddler",
+      "esMX": "Vendedor oscuro"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Battlecry: Discover</b> a\n1-Cost card.",
+      "esMX": "<b>Grito de batalla: Devela </b> una\ncarta de costo 1."
+    },
+    "flavor": {
+      "enUS": "I'm offering you a bargain here!  This amazing vacuum cleaner for your soul!",
+      "esMX": "¡Lo que te ofrezco es una ganga! ¡Esta hermosa aspiradora por tu alma!"
+    },
+    "artist": "George Davis",
+    "collectible": true,
+    "playerClass": "Warlock",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_024t": {
+    "id": "LOE_024t",
+    "name": {
+      "enUS": "Rolling Boulder",
+      "esMX": "Roca arrolladora"
+    },
+    "type": "Minion",
+    "cost": 4,
+    "attack": 0,
+    "health": 4,
+    "text": {
+      "enUS": "At the end of your turn, destroy the minion to the left.",
+      "esMX": "Al final de tu turno, destruye al esbirro que está a la izquierda."
+    },
+    "artist": "Richard Wright",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_026": {
+    "id": "LOE_026",
+    "name": {
+      "enUS": "Anyfin Can Happen",
+      "esMX": "Cantaleta para tu muerte"
+    },
+    "type": "Spell",
+    "rarity": "Rare",
+    "cost": 10,
+    "text": {
+      "enUS": "Summon 7 Murlocs that died this game.",
+      "esMX": "Invoca a 7 Múrlocs que hayan muerto durante esta partida."
+    },
+    "flavor": {
+      "enUS": "Theme song by Ellie Goldfin and Blagghghlrlrl Harris.",
+      "esMX": "Un tema de Ellie Doraleta y Blagghghlrlrl Harris."
+    },
+    "artist": "Ryan Metcalf",
+    "collectible": true,
+    "playerClass": "Paladin",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_027": {
+    "id": "LOE_027",
+    "name": {
+      "enUS": "Sacred Trial",
+      "esMX": "Prueba sagrada"
+    },
+    "type": "Spell",
+    "rarity": "Common",
+    "cost": 1,
+    "text": {
+      "enUS": "<b>Secret:</b> When your opponent has at least 3 minions and plays another, destroy it.",
+      "esMX": "<b>Secreto:</b> cuando tu adversario tiene 3 esbirros o más y juega otro, destrúyelo."
+    },
+    "flavor": {
+      "enUS": "You have chosen poorly.",
+      "esMX": "Tu elección no ha sido la apropiada."
+    },
+    "artist": "Zoltan Boros",
+    "collectible": true,
+    "playerClass": "Paladin",
+    "mechanics": [
+      "Secret"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_029": {
+    "id": "LOE_029",
+    "name": {
+      "enUS": "Jeweled Scarab",
+      "esMX": "Escarabajo con joyas"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 2,
+    "attack": 1,
+    "health": 1,
+    "text": {
+      "enUS": "<b>Battlecry: Discover</b> a\n3-Cost card.",
+      "esMX": "<b>Grito de batalla: Devela</b> una carta de costo 3."
+    },
+    "flavor": {
+      "enUS": "It's amazing what you can do with super glue!",
+      "esMX": "¡Es increíble lo que se puede hacer con un poco de pegamento!"
+    },
+    "artist": "Jaemin Kim",
+    "collectible": true,
+    "race": "Beast",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_030": {
+    "id": "LOE_030",
+    "name": "zzDELETE? Animated Armor",
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 4,
+    "attack": 1,
+    "health": 1,
+    "text": {
+      "enUS": "<b>Taunt</b>\n<b>Battlecry:</b> Copy a friendly minion's Attack and Health.",
+      "esMX": "<b>Provocación.</b>\n<b>Grito de batalla:</b> copia el Ataque y la Salud de un esbirro aliado."
+    },
+    "collectible": false,
+    "mechanics": [
+      "Battlecry",
+      "Taunt"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_030e": {
+    "id": "LOE_030e",
+    "name": {
+      "enUS": "Hollow",
+      "esMX": "Hueco"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Stats copied.",
+      "esMX": "Estadísticas copiadas."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOE_038": {
+    "id": "LOE_038",
+    "name": {
+      "enUS": "Naga Sea Witch",
+      "esMX": "Bruja del mar naga"
+    },
+    "type": "Minion",
+    "rarity": "Epic",
+    "cost": 5,
+    "attack": 5,
+    "health": 5,
+    "text": {
+      "enUS": "Your cards cost (5).",
+      "esMX": "Tus cartas cuestan (5)."
+    },
+    "flavor": {
+      "enUS": "If she had studied harder, she would have been a C+ witch.",
+      "esMX": "No quiere saber naga de naga con las brujas de los ríos."
+    },
+    "artist": "Ben Zhang",
+    "collectible": true,
+    "mechanics": [
+      "Aura"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_039": {
+    "id": "LOE_039",
+    "name": {
+      "enUS": "Gorillabot A-3",
+      "esMX": "Gorilabot A-3"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 4,
+    "attack": 3,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Battlecry:</b> If you control another Mech, <b>Discover</b> a Mech.",
+      "esMX": "<b>Grito de batalla:</b> si controlas otro Meca, <b>Devela</b> un Meca."
+    },
+    "flavor": {
+      "enUS": "A-1 and A-2 went nuts, when they should have gone bolts.",
+      "esMX": "Aunque de robot el gorila se vista, se queda gorila."
+    },
+    "artist": "Skan Srisuwan",
+    "collectible": true,
+    "race": "Mech",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_046": {
+    "id": "LOE_046",
+    "name": {
+      "enUS": "Huge Toad",
+      "esMX": "Sapo gigante"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 2,
+    "attack": 3,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Deathrattle:</b> Deal 1 damage to a random enemy.",
+      "esMX": "<b>Estertor:</b> inflige 1 de daño a un enemigo aleatorio."
+    },
+    "flavor": {
+      "enUS": "Deals damage when he croaks.",
+      "esMX": "Inflige daño cuando croa."
+    },
+    "artist": "Matt Dixon",
+    "collectible": true,
+    "race": "Beast",
+    "mechanics": [
+      "Deathrattle"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_047": {
+    "id": "LOE_047",
+    "name": {
+      "enUS": "Tomb Spider",
+      "esMX": "Araña tumularia"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 4,
+    "attack": 3,
+    "health": 3,
+    "text": {
+      "enUS": "<b>Battlecry: Discover</b> a Beast.",
+      "esMX": "<b>Grito de batalla: Devela</b> una Bestia."
+    },
+    "flavor": {
+      "enUS": "Less serious than its cousin, the Grave Spider.",
+      "esMX": "Cansada de ser la fobia de todos, decidió que los muertos serían su mejor compañía."
+    },
+    "artist": "Turovec Konstantin",
+    "collectible": true,
+    "race": "Beast",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_050": {
+    "id": "LOE_050",
+    "name": {
+      "enUS": "Mounted Raptor",
+      "esMX": "Raptor montado"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 3,
+    "attack": 3,
+    "health": 2,
+    "text": {
+      "enUS": "<b>Deathrattle:</b> Summon a random 1-Cost minion.",
+      "esMX": "<b>Estertor:</b> invoca un esbirro aleatorio con un costo de (1)."
+    },
+    "flavor": {
+      "enUS": "Clever girl!",
+      "esMX": "¡Me pareció ver un lindo raptorcito!"
+    },
+    "artist": "Ben Zhang",
+    "collectible": true,
+    "race": "Beast",
+    "playerClass": "Druid",
+    "mechanics": [
+      "Deathrattle"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_051": {
+    "id": "LOE_051",
+    "name": {
+      "enUS": "Jungle Moonkin",
+      "esMX": "Lechúcico lunar selvático"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 4,
+    "attack": 4,
+    "health": 4,
+    "text": {
+      "enUS": "Both players have\n<b>Spell Damage +2</b>.",
+      "esMX": "Ambos jugadores tienen\n<b>Daño de hechizo +2</b>."
+    },
+    "flavor": {
+      "enUS": "The REAL angry chicken!",
+      "esMX": "¡El VERDADERO Pollo enfadado!"
+    },
+    "artist": "Mike Sass",
+    "collectible": true,
+    "race": "Beast",
+    "playerClass": "Druid",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_053": {
+    "id": "LOE_053",
+    "name": {
+      "enUS": "Djinni of Zephyrs",
+      "esMX": "Djinn de los Céfiros"
+    },
+    "type": "Minion",
+    "rarity": "Epic",
+    "cost": 5,
+    "attack": 4,
+    "health": 6,
+    "text": {
+      "enUS": "Whenever you cast a spell on another friendly minion, cast a copy of it on this one.",
+      "esMX": "Cuando lanzas un hechizo a un esbirro aliado, lanzas otra copia que afecta a este esbirro."
+    },
+    "flavor": {
+      "enUS": "If you want your wish granted, don't rub him the wrong way.",
+      "esMX": "Si quieres que tus deseos se cumplan, no provoques su mal genio."
+    },
+    "artist": "Jakub Kasper",
+    "collectible": true,
+    "deckSet": "League of Explorers"
+  },
+  "LOE_061": {
+    "id": "LOE_061",
+    "name": {
+      "enUS": "Anubisath Sentinel",
+      "esMX": "Centinela anubisath"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 5,
+    "attack": 4,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Deathrattle:</b> Give a random friendly minion +3/+3.",
+      "esMX": "<b>Estertor:</b> otorga +3/+3 a un esbirro aliado aleatorio."
+    },
+    "flavor": {
+      "enUS": "He's actually a 1/1 who picked up the hammer from the last guy.",
+      "esMX": "En realidad es un 1/1 que se robó el martillo del último tipo."
+    },
+    "artist": "Paul Mafayon",
+    "collectible": true,
+    "mechanics": [
+      "Deathrattle"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_061e": {
+    "id": "LOE_061e",
+    "name": {
+      "enUS": "Power of the Titans",
+      "esMX": "Poder de los Titanes"
+    },
+    "type": "Enchantment",
+    "text": "+3/+3.",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_073": {
+    "id": "LOE_073",
+    "name": {
+      "enUS": "Fossilized Devilsaur",
+      "esMX": "Demosaurio fosilizado"
+    },
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 8,
+    "attack": 8,
+    "health": 8,
+    "text": {
+      "enUS": "<b>Battlecry:</b> If you control a Beast, gain <b>Taunt</b>.",
+      "esMX": "<b>Grito de batalla:</b> si controlas una Bestia, obtiene <b>Provocación</b>."
+    },
+    "flavor": {
+      "enUS": "This was the only job he could get after the dinosaur theme park debacle.",
+      "esMX": "Después de todo lo ocurrido en el parque jurásico, este fue el único trabajo que pudo conseguir."
+    },
+    "artist": "Trent Kaniuga",
+    "collectible": true,
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_073e": {
+    "id": "LOE_073e",
+    "name": {
+      "enUS": "Fossilized",
+      "esMX": "Fosilizado"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Has <b>Taunt</b>.",
+      "esMX": "Tiene <b>Provocación</b>."
+    },
+    "deckSet": "League of Explorers"
+  },
+  "LOE_076": {
+    "id": "LOE_076",
+    "name": {
+      "enUS": "Sir Finley Mrrgglton",
+      "esMX": "Sir Aletardo Mrrgglton"
+    },
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 1,
+    "attack": 1,
+    "health": 3,
+    "text": {
+      "enUS": "<b>Battlecry: Discover</b> a new basic Hero Power.",
+      "esMX": "<b>Grito de batalla: Devela</b> un nuevo Poder de héroe básico."
+    },
+    "flavor": {
+      "enUS": "In addition to fluent Common, he also speaks fourteen dialects of 'mrgl'.",
+      "esMX": "Además del idioma común, se jacta de hablar catorce dialectos de mrgl."
+    },
+    "artist": "Matt Dixon",
+    "collectible": true,
+    "elite": true,
+    "race": "Murloc",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_077": {
+    "id": "LOE_077",
+    "name": {
+      "enUS": "Brann Bronzebeard",
+      "esMX": "Brann Barbabronce"
+    },
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 3,
+    "attack": 2,
+    "health": 4,
+    "text": {
+      "enUS": "Your <b>Battlecries</b> trigger twice.",
+      "esMX": "Tus efectos de <b>Grito de batalla</b> se activan dos veces."
+    },
+    "flavor": {
+      "enUS": "Contains 75% more fiber than his brother Magni!",
+      "esMX": "¡Contiene un 75% más de fibra que su hermano Magni!"
+    },
+    "artist": "Sam Nielson",
+    "collectible": true,
+    "elite": true,
+    "mechanics": [
+      "Aura"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_079": {
+    "id": "LOE_079",
+    "name": {
+      "enUS": "Elise Starseeker",
+      "esMX": "Elisa Buscaestelar"
+    },
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 4,
+    "attack": 3,
+    "health": 5,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Shuffle the 'Map to the Golden Monkey'   into your deck.",
+      "esMX": "<b>Grito de batalla:</b> coloca el Mapa de la ruta al Mono dorado en tu mazo."
+    },
+    "flavor": {
+      "enUS": "A large part of her job entails not mixing up the Map to the Golden Monkey with the Map to Monkey Island.",
+      "esMX": "Gran parte de su trabajo es no confundir el Mapa de la ruta al Mono dorado con el Mapa del Planeta de los Simios."
+    },
+    "artist": "Luke Mancini",
+    "collectible": true,
+    "elite": true,
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_086": {
+    "id": "LOE_086",
+    "name": {
+      "enUS": "Summoning Stone",
+      "esMX": "Roca de invocación"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 5,
+    "attack": 0,
+    "health": 6,
+    "text": {
+      "enUS": "Whenever you cast a spell, summon a random minion of the same Cost.",
+      "esMX": "Cada vez que lanzas un hechizo, invoca un esbirro aleatorio del mismo costo."
+    },
+    "flavor": {
+      "enUS": "Sometimes it feels like it's always the same slackers that are waiting for a summon.",
+      "esMX": "A menudo parece que los que esperan la invocación son siempre los mismos haraganes."
+    },
+    "artist": "Jason Kang",
+    "collectible": true,
+    "deckSet": "League of Explorers"
+  },
+  "LOE_089": {
+    "id": "LOE_089",
+    "name": {
+      "enUS": "Wobbling Runts",
+      "esMX": "Pigmeos tambaleantes"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 6,
+    "attack": 2,
+    "health": 6,
+    "text": {
+      "enUS": "<b>Deathrattle:</b> Summon three 2/2 Runts.",
+      "esMX": "<b>Estertor:</b> invoca 3 Pigmeos 2/2."
+    },
+    "flavor": {
+      "enUS": "The fourth one fell off in a tragic accident.  They don't talk about it.",
+      "esMX": "El cuarto se cayó durante un accidente trágico. Es un tema sensible."
+    },
+    "artist": "Sam Nielson",
+    "collectible": true,
+    "mechanics": [
+      "Deathrattle"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_089t": {
+    "id": "LOE_089t",
+    "name": {
+      "enUS": "Rascally Runt",
+      "esMX": "Pigmeo granuja"
+    },
+    "type": "Minion",
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "artist": "Matt Dixon",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_089t2": {
+    "id": "LOE_089t2",
+    "name": {
+      "enUS": "Wily Runt",
+      "esMX": "Pigmeo artero"
+    },
+    "type": "Minion",
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "artist": "Matt Dixon",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_089t3": {
+    "id": "LOE_089t3",
+    "name": {
+      "enUS": "Grumbly Runt",
+      "esMX": "Pigmeo llorón"
+    },
+    "type": "Minion",
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "artist": "Matt Dixon",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_092": {
+    "id": "LOE_092",
+    "name": {
+      "enUS": "Arch-Thief Rafaam",
+      "esMX": "Archiladrón Rafaam"
+    },
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 9,
+    "attack": 7,
+    "health": 8,
+    "text": {
+      "enUS": "<b>Battlecry: Discover</b> a powerful Artifact.",
+      "esMX": "<b>Grito de batalla: Devela</b> un poderoso Artefacto."
+    },
+    "flavor": {
+      "enUS": "He's very good at retrieving artifacts.  From other people's museums.",
+      "esMX": "Es un maestro en recuperar artefactos. De los museos de otras personas, claro."
+    },
+    "artist": "Alex Horley Orlandelli",
+    "collectible": true,
+    "elite": true,
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_104": {
+    "id": "LOE_104",
+    "name": {
+      "enUS": "Entomb",
+      "esMX": "Sepultura"
+    },
+    "type": "Spell",
+    "rarity": "Common",
+    "cost": 6,
+    "text": {
+      "enUS": "Choose an enemy minion.\nShuffle it into your deck.",
+      "esMX": "Elige un esbirro enemigo\ny colócalo en tu mazo."
+    },
+    "flavor": {
+      "enUS": "It's perfectly safe as long as you remember to put in air holes.",
+      "esMX": "Es perfectamente seguro. Siempre que te acuerdes de incluir algún tipo de ventilación."
+    },
+    "artist": "Alex Konstad",
+    "collectible": true,
+    "playerClass": "Priest",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_105": {
+    "id": "LOE_105",
+    "name": {
+      "enUS": "Explorer's Hat",
+      "esMX": "Sombrero de expedicionario"
+    },
+    "type": "Spell",
+    "rarity": "Rare",
+    "cost": 2,
+    "text": {
+      "enUS": "Give a minion +1/+1 and \"<b>Deathrattle:</b> Add an Explorer's Hat to your hand.\"",
+      "esMX": "Otorga a un esbirro +1/+1 y \"<b>Estertor:</b> agrega un Sombrero de expedicionario a tu mano\"."
+    },
+    "flavor": {
+      "enUS": "Harrison Jones was disappointed that he didn't get to be part of the League of Explorers, but his hat did.",
+      "esMX": "Harrison Jones estaba desilusionado porque no lo eligieron para la Liga de Expedicionarios. ¡Pero al menos entró su sombrero!"
+    },
+    "artist": "Joe Wilson",
+    "collectible": true,
+    "playerClass": "Hunter",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_105e": {
+    "id": "LOE_105e",
+    "name": {
+      "enUS": "Explorer's Hat",
+      "esMX": "Sombrero de expedicionario"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "+1/+1. <b>Deathrattle:</b> Add an Explorer's Hat to your hand.",
+      "esMX": "+1/+1. <b>Estertor:</b> agrega un Sombrero de expedicionario a tu mano."
+    },
+    "playerClass": "Hunter",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_107": {
+    "id": "LOE_107",
+    "name": {
+      "enUS": "Eerie Statue",
+      "esMX": "Estatua siniestra"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 4,
+    "attack": 7,
+    "health": 7,
+    "text": {
+      "enUS": "Can’t attack unless it’s the only minion in the battlefield.",
+      "esMX": "Solo ataca cuando es el único esbirro en el campo de batalla."
+    },
+    "flavor": {
+      "enUS": "Don't blink!  Don't turn your back, don't look away, and DON'T BLINK.",
+      "esMX": "¡No pestañees! No le des la espalda, no le quites los ojos de encima... ¡Y NO PESTAÑEES!"
+    },
+    "artist": "Jim Nelson",
+    "collectible": true,
+    "deckSet": "League of Explorers"
+  },
+  "LOE_110": {
+    "id": "LOE_110",
+    "name": {
+      "enUS": "Ancient Shade",
+      "esMX": "Sombra ancestral"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 4,
+    "attack": 7,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Battlecry:</b> Shuffle an 'Ancient Curse' into your deck that deals 7 damage to you when drawn.",
+      "esMX": "<b>Grito de batalla:</b> coloca en tu mazo una copia de Maldición ancestral que inflige 7 de daño cuando la robas."
+    },
+    "flavor": {
+      "enUS": "Warning: Do not expose to direct sunlight.",
+      "esMX": "Advertencia: no exponer a la luz directa del sol."
+    },
+    "artist": "Slawomir Maniak",
+    "collectible": true,
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_110t": {
+    "id": "LOE_110t",
+    "name": {
+      "enUS": "Ancient Curse",
+      "esMX": "Maldición ancestral"
+    },
+    "type": "Spell",
+    "cost": 0,
+    "text": {
+      "enUS": "When you draw this, take 7 damage and draw a card.",
+      "esMX": "Cuando robas esta carta, recibes 7 de daño y robas una carta."
+    },
+    "artist": "Slawomir Maniak",
+    "mechanics": [
+      "ImmuneToSpellpower"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_111": {
+    "id": "LOE_111",
+    "name": {
+      "enUS": "Excavated Evil",
+      "esMX": "Mal desenterrado"
+    },
+    "type": "Spell",
+    "rarity": "Rare",
+    "cost": 5,
+    "text": {
+      "enUS": "Deal $3 damage to all minions.\nShuffle this card into your opponent's deck.",
+      "esMX": "Inflige $3 de daño a todos los esbirros.\nColoca esta carta en el mazo de tu adversario."
+    },
+    "flavor": {
+      "enUS": "MOM! DAD! DON'T TOUCH IT! IT'S EVIL!!!!!!",
+      "esMX": "Algunas cosas nunca deberían desenterrarse."
+    },
+    "artist": "Raymond Swanland",
+    "collectible": true,
+    "playerClass": "Priest",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_113": {
+    "id": "LOE_113",
+    "name": {
+      "enUS": "Everyfin is Awesome",
+      "esMX": "Fortaleta global"
+    },
+    "type": "Spell",
+    "rarity": "Rare",
+    "cost": 7,
+    "text": {
+      "enUS": "Give your minions +2/+2.\nCosts (1) less for each Murloc you control.",
+      "esMX": "Otorga +2/+2 a tus esbirros.\nCuesta (1) menos por cada Múrloc que controles."
+    },
+    "flavor": {
+      "enUS": "Everyfin is cool when you're part of a murloc team!",
+      "esMX": "¡Cuando formas parte de un equipo de múrlocs, la fortaleta es vital!"
+    },
+    "artist": "Andrius Matijoshius",
+    "collectible": true,
+    "playerClass": "Shaman",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_113e": {
+    "id": "LOE_113e",
+    "name": {
+      "enUS": "Mrglllraawrrrglrur!",
+      "esMX": "¡Mrglllraawrrrglrur!"
+    },
+    "type": "Enchantment",
+    "text": "+2/+2.",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_115": {
+    "id": "LOE_115",
+    "name": {
+      "enUS": "Raven Idol",
+      "esMX": "Ídolo Cuervo"
+    },
+    "type": "Spell",
+    "rarity": "Common",
+    "cost": 1,
+    "text": {
+      "enUS": "<b>Choose One -</b>\n<b>Discover</b> a minion; or <b>Discover</b> a spell.",
+      "esMX": "<b>Elige una opción:</b>\n<b>Devela</b> un esbirro o <b>Devela</b> un hechizo."
+    },
+    "flavor": {
+      "enUS": "Was petrified when it found out it didn't make the cut for Azerothean Idol.",
+      "esMX": "Quedó petrificado cuando le dijeron que no le alcanzaba para ser Ídolo de Azeroth."
+    },
+    "artist": "A.J. Nazzaro",
+    "collectible": true,
+    "playerClass": "Druid",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_115a": {
+    "id": "LOE_115a",
+    "name": {
+      "enUS": "Raven Idol",
+      "esMX": "Ídolo Cuervo"
+    },
+    "type": "Spell",
+    "rarity": "Common",
+    "text": {
+      "enUS": "<b>Discover</b> a minion.",
+      "esMX": "<b>Devela</b> un esbirro."
+    },
+    "artist": "A.J. Nazzaro",
+    "playerClass": "Druid",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_115b": {
+    "id": "LOE_115b",
+    "name": {
+      "enUS": "Raven Idol",
+      "esMX": "Ídolo Cuervo"
+    },
+    "type": "Spell",
+    "rarity": "Common",
+    "text": {
+      "enUS": "<b>Discover</b> a spell.",
+      "esMX": "<b>Devela</b> un hechizo."
+    },
+    "artist": "A.J. Nazzaro",
+    "playerClass": "Druid",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_116": {
+    "id": "LOE_116",
+    "name": {
+      "enUS": "Reliquary Seeker",
+      "esMX": "Buscadora del relicario"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "text": {
+      "enUS": "<b>Battlecry:</b> If you have 6 other minions, gain +4/+4.",
+      "esMX": "<b>Grito de batalla:</b> si tienes 6 esbirros más, obtiene +4/+4."
+    },
+    "flavor": {
+      "enUS": "The Reliquary considers itself the equal of the League of Explorers.  The League of Explorers doesn't.",
+      "esMX": "El Relicario se considera la contraparte de la Liga de Expedicionarios. La Liga de Expedicionarios no emite opinión sobre semejantes estupideces."
+    },
+    "artist": "Wayne Reynolds",
+    "collectible": true,
+    "playerClass": "Warlock",
+    "mechanics": [
+      "Battlecry"
+    ],
+    "deckSet": "League of Explorers"
+  },
+  "LOE_118": {
+    "id": "LOE_118",
+    "name": {
+      "enUS": "Cursed Blade",
+      "esMX": "Espada maldita"
+    },
+    "type": "Weapon",
+    "rarity": "Rare",
+    "cost": 1,
+    "attack": 2,
+    "durability": 3,
+    "text": {
+      "enUS": "Double all damage dealt to your hero.",
+      "esMX": "Duplica todo el daño que recibe tu héroe."
+    },
+    "flavor": {
+      "enUS": "The Curse is that you have to listen to \"MMMBop\" on repeat.",
+      "esMX": "La maldición es simple: escuchar reggaeton hasta el día de tu muerte."
+    },
+    "artist": "Craig Mullins",
+    "collectible": true,
+    "playerClass": "Warrior",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_118e": {
+    "id": "LOE_118e",
+    "name": {
+      "enUS": "Cursed Blade",
+      "esMX": "Espada maldita"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Double all damage dealt to your hero.",
+      "esMX": "Duplica todo el daño que recibe tu héroe."
+    },
+    "playerClass": "Warrior",
+    "deckSet": "League of Explorers"
+  },
+  "LOE_119": {
+    "id": "LOE_119",
+    "name": {
+      "enUS": "Animated Armor",
+      "esMX": "Armadura animada"
+    },
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 4,
+    "attack": 4,
+    "health": 4,
+    "text": {
+      "enUS": "Your hero can only take 1 damage at a time.",
+      "esMX": "Tu héroe solo puede recibir 1 de daño a la vez."
+    },
+    "flavor": {
+      "enUS": "Try putting it on.  Wait, let me get my camera.",
+      "esMX": "¿Por qué no te la pruebas? Espera, voy a buscar la cámara."
+    },
+    "artist": "Mike Sass",
+    "collectible": true,
+    "playerClass": "Mage",
+    "deckSet": "League of Explorers"
+  },
   "Mekka1": {
     "id": "Mekka1",
     "name": {
@@ -26576,10 +30754,7 @@
       "enUS": "At the start of your turn, destroy this minion and draw 3 cards.",
       "esMX": "Al comienzo de tu turno, destruye a este esbirro y roba 3 cartas."
     },
-    "inPlayText": {
-      "enUS": "Pecking",
-      "esMX": ""
-    },
+    "inPlayText": "Pecking",
     "race": "Mech",
     "deckSet": "Promotion"
   },
@@ -26815,6 +30990,20 @@
     },
     "deckSet": "Curse of Naxxramas"
   },
+  "NAX11_02H_2_TB": {
+    "id": "NAX11_02H_2_TB",
+    "name": {
+      "enUS": "Poison Cloud",
+      "esMX": "Nube venenosa"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nDeal 1 damage to all enemy minions. If any die, summon a slime.",
+      "esMX": "<b>Poder de héroe</b>\nInflige 1 de daño a todos los esbirros enemigos. Si alguno muere, invoca una babosa."
+    },
+    "deckSet": "Tavern Brawl"
+  },
   "NAX11_03": {
     "id": "NAX11_03",
     "name": {
@@ -26895,6 +31084,34 @@
       "esMX": "<b>Poder de héroe</b>\nCambia la Salud de todos los esbirros enemigos a 1."
     },
     "deckSet": "Curse of Naxxramas"
+  },
+  "NAX12_02H_2_TB": {
+    "id": "NAX12_02H_2_TB",
+    "name": {
+      "enUS": "Decimate",
+      "esMX": "Diezmar"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nChange the Health of enemy minions to 1.",
+      "esMX": "<b>Poder de héroe</b>\nCambia la Salud de todos los esbirros enemigos a 1."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "NAX12_02H_2c_TB": {
+    "id": "NAX12_02H_2c_TB",
+    "name": {
+      "enUS": "Decimate",
+      "esMX": "Diezmar"
+    },
+    "type": "Spell",
+    "cost": 1,
+    "text": {
+      "enUS": "Change the Health of enemy minions to 1.",
+      "esMX": "Cambia la Salud de los esbirros enemigos a 1."
+    },
+    "deckSet": "Tavern Brawl"
   },
   "NAX12_02e": {
     "id": "NAX12_02e",
@@ -27516,6 +31733,20 @@
     },
     "deckSet": "Curse of Naxxramas"
   },
+  "NAX3_02_TB": {
+    "id": "NAX3_02_TB",
+    "name": {
+      "enUS": "Web Wrap",
+      "esMX": "Trampa arácnida"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nReturn a random enemy minion to your opponent's hand.",
+      "esMX": "<b>Poder de héroe</b>\nDevuelve un esbirro enemigo aleatorio a la mano de tu adversario."
+    },
+    "deckSet": "Tavern Brawl"
+  },
   "NAX3_03": {
     "id": "NAX3_03",
     "name": {
@@ -27938,6 +32169,20 @@
       "esMX": "<b>Poder de héroe</b>\nRoba una carta. Obtiene un Cristal de maná."
     },
     "deckSet": "Curse of Naxxramas"
+  },
+  "NAX8_02H_TB": {
+    "id": "NAX8_02H_TB",
+    "name": {
+      "enUS": "Harvest",
+      "esMX": "Cosecha"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nDraw a card. Gain a Mana Crystal.",
+      "esMX": "<b>Poder de héroe</b>\nRoba una carta. Obtiene un Cristal de maná."
+    },
+    "deckSet": "Tavern Brawl"
   },
   "NAX8_03": {
     "id": "NAX8_03",
@@ -28547,10 +32792,7 @@
       "enUS": "Whenever you cast a spell, gain +1 Attack.",
       "esMX": "Cada vez que lanzas un hechizo, obtiene +1 de Ataque."
     },
-    "inPlayText": {
-      "enUS": "Gorging",
-      "esMX": ""
-    },
+    "inPlayText": "Gorging",
     "flavor": {
       "enUS": "These wyrms feed on arcane energies, and while they are generally considered a nuisance rather than a real threat, you really shouldn't leave them alone with a bucket of mana.",
       "esMX": "Estos vermis se alimentan de energías arcanas. Si bien generalmente son más una molestia que una amenaza, no es recomendable dejarlos solos con un cubo de maná."
@@ -28601,6 +32843,20 @@
     ],
     "deckSet": "Classic"
   },
+  "NEW1_014e": {
+    "id": "NEW1_014e",
+    "name": {
+      "enUS": "Disguised",
+      "esMX": "Oculto"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "Stealthed until your next turn.",
+      "esMX": "En sigilo hasta tu próximo turno."
+    },
+    "playerClass": "Rogue",
+    "deckSet": "Classic"
+  },
   "NEW1_016": {
     "id": "NEW1_016",
     "name": {
@@ -28628,7 +32884,7 @@
       "esMX": "Se desbloquea cuando tienes todos los piratas del kit clásico."
     },
     "howToGetGold": {
-      "enUS": "Unlocked when you have all the Golden Pirates from the Expert Set.",
+      "enUS": "Unlocked when you have all the Golden Pirates from the Classic Set.",
       "esMX": "Se desbloquea cuando tienes a todos los piratas dorados del kit experto."
     },
     "mechanics": [
@@ -29264,10 +33520,7 @@
       "enUS": "At the end of each turn, gain +1/+1 .",
       "esMX": "Al final de cada turno, obtiene +1/+1."
     },
-    "inPlayText": {
-      "enUS": "Growth",
-      "esMX": ""
-    },
+    "inPlayText": "Growth",
     "flavor": {
       "enUS": "He's Gruul \"the Dragonkiller\".  He just wanted to cuddle them… he never meant to…",
       "esMX": "Él es Gruul, \"el Asesino de Dragones\". Él solo quería abrazarlos... nunca tuvo la intención de..."
@@ -29590,20 +33843,14 @@
   },
   "PlaceholderCard": {
     "id": "PlaceholderCard",
-    "name": {
-      "enUS": "Placeholder Card",
-      "esMX": ""
-    },
+    "name": "Placeholder Card",
     "type": "Minion",
     "faction": "Neutral",
     "rarity": "Epic",
     "cost": 9,
     "attack": 6,
     "health": 8,
-    "text": {
-      "enUS": "Battlecry: Someone remembers to publish this card.",
-      "esMX": ""
-    },
+    "text": "Battlecry: Someone remembers to publish this card.",
     "playerClass": "Mage",
     "deckSet": "System"
   },
@@ -29891,6 +34138,24 @@
     "type": "Enchantment",
     "deckSet": "Tavern Brawl"
   },
+  "TB_013_PickOnCurve": {
+    "id": "TB_013_PickOnCurve",
+    "name": {
+      "enUS": "Player Choice Enchant On Curve",
+      "esMX": "Encantamiento a la carta (curva)"
+    },
+    "type": "Enchantment",
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_013_PickOnCurve2": {
+    "id": "TB_013_PickOnCurve2",
+    "name": {
+      "enUS": "Player Choice Enchant On Curve2",
+      "esMX": "Encantamiento a la carta (curva2)"
+    },
+    "type": "Enchantment",
+    "deckSet": "Tavern Brawl"
+  },
   "TB_014": {
     "id": "TB_014",
     "name": {
@@ -29918,6 +34183,147 @@
     "race": "Pirate",
     "deckSet": "Tavern Brawl"
   },
+  "TB_AllMinionsTauntCharge": {
+    "id": "TB_AllMinionsTauntCharge",
+    "name": {
+      "enUS": "Give Taunt and Charge",
+      "esMX": "Otorga Provocación y Carga"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "This minion is granted <b>Taunt</b> and <b>Charge</b>.",
+      "esMX": "Este esbirro ha recibido <b>Provocación</b> y <b>Carga</b>."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_CoOpBossSpell_1": {
+    "id": "TB_CoOpBossSpell_1",
+    "name": {
+      "enUS": "Prioritize",
+      "esMX": "Prioridades"
+    },
+    "type": "Spell",
+    "text": {
+      "enUS": "Deal Attack damage to biggest minion.",
+      "esMX": "Inflige el daño de ataque al esbirro más grande."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_CoOpBossSpell_2": {
+    "id": "TB_CoOpBossSpell_2",
+    "name": {
+      "enUS": "Bomb Salvo",
+      "esMX": "Salva de bombas"
+    },
+    "type": "Spell",
+    "text": {
+      "enUS": "Deal Attack damage to up to 3 random targets.",
+      "esMX": "Inflige el daño de ataque a un máximo de 3 objetivos aleatorios."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_CoOpBossSpell_3": {
+    "id": "TB_CoOpBossSpell_3",
+    "name": {
+      "enUS": "Release Coolant",
+      "esMX": "¡Liberar refrigerante!"
+    },
+    "type": "Spell",
+    "text": {
+      "enUS": "Freeze and deal Attack damage to all minions.\nGain 2 Attack.",
+      "esMX": "Congela e inflige daño de ataque a todos los esbirros.\nObtiene 2 de Ataque."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_CoOpBossSpell_4": {
+    "id": "TB_CoOpBossSpell_4",
+    "name": {
+      "enUS": "Overclock",
+      "esMX": "Revolución"
+    },
+    "type": "Spell",
+    "text": {
+      "enUS": "Gain 2 Attack.",
+      "esMX": "Obtiene 2 de ataque."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_CoOpBossSpell_5": {
+    "id": "TB_CoOpBossSpell_5",
+    "name": {
+      "enUS": "Double Zap",
+      "esMX": "Chispazo por la culata"
+    },
+    "type": "Spell",
+    "text": {
+      "enUS": "Deal Attack damage to both players.",
+      "esMX": "Inflige el daño de ataque a ambos jugadores."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_CoOpBossSpell_6": {
+    "id": "TB_CoOpBossSpell_6",
+    "name": {
+      "enUS": "Kill the Lorewalker",
+      "esMX": "Muerte al Eremita"
+    },
+    "type": "Spell",
+    "text": {
+      "enUS": "Destroy Lorewalker Cho.",
+      "esMX": "Destruye al Eremita Cho."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_CoOp_Mechazod": {
+    "id": "TB_CoOp_Mechazod",
+    "name": {
+      "enUS": "Gearmaster Mechazod",
+      "esMX": "Maestro de palancas Mecazod"
+    },
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 10,
+    "attack": 2,
+    "health": 95,
+    "text": {
+      "enUS": "<b>Boss</b>\nMechazod wins if he defeats either of you!",
+      "esMX": "<b>Jefe</b>\n¡Mechazod gana si derrota a cualquiera de los dos!"
+    },
+    "elite": true,
+    "mechanics": [
+      "Taunt"
+    ],
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_CoOp_Mechazod2": {
+    "id": "TB_CoOp_Mechazod2",
+    "name": {
+      "enUS": "Overloaded Mechazod",
+      "esMX": "Mecazod sobrecargado"
+    },
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 10,
+    "attack": 9,
+    "health": 80,
+    "text": {
+      "enUS": "<b>Boss</b>\nAt the beginning of each turn, Mechazod strikes!",
+      "esMX": "<b>Jefe</b>\nAl comienzo de cada turno, ¡Mecazod ataca!"
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_DecreasingCardCost": {
+    "id": "TB_DecreasingCardCost",
+    "name": "TB_DecreasingCardCost",
+    "type": "Enchantment",
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_DecreasingCardCostDebug": {
+    "id": "TB_DecreasingCardCostDebug",
+    "name": "TBDecreasingCardCostDebug",
+    "type": "Spell",
+    "deckSet": "Tavern Brawl"
+  },
   "TB_EndlessMinions01": {
     "id": "TB_EndlessMinions01",
     "name": {
@@ -29926,6 +34332,419 @@
     },
     "type": "Enchantment",
     "text": "+2/+2.",
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_FactionWar_BoomBot": {
+    "id": "TB_FactionWar_BoomBot",
+    "name": "TBFactionWarBoomBot",
+    "type": "Enchantment",
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_FactionWar_BoomBot_Spell": {
+    "id": "TB_FactionWar_BoomBot_Spell",
+    "name": "TBFactionWarBoomBotSpell",
+    "type": "Spell",
+    "cost": 1,
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_FactionWar_Boss_BoomBot": {
+    "id": "TB_FactionWar_Boss_BoomBot",
+    "name": "FactionWar_BoomBot",
+    "type": "Hero",
+    "health": 30,
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_GiftExchange_Enchantment": {
+    "id": "TB_GiftExchange_Enchantment",
+    "name": {
+      "enUS": "Cheap Gift",
+      "esMX": "Regalo barato"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "This card's costs is reduced by (4)",
+      "esMX": "El costo de esta carta se reduce en (4)"
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_GiftExchange_Treasure": {
+    "id": "TB_GiftExchange_Treasure",
+    "name": {
+      "enUS": "Winter's Veil Gift",
+      "esMX": "Regalo del Festival de Invierno"
+    },
+    "type": "Minion",
+    "cost": 0,
+    "attack": 0,
+    "health": 4,
+    "text": {
+      "enUS": "<b>Deathrattle</b> Give attacking player a Treasure.",
+      "esMX": "<b>Estertor</b> Otorga un Tesoro al jugador atacante."
+    },
+    "mechanics": [
+      "Deathrattle"
+    ],
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_GiftExchange_Treasure_Spell": {
+    "id": "TB_GiftExchange_Treasure_Spell",
+    "name": {
+      "enUS": "Stolen Winter's Veil Gift",
+      "esMX": "Regalo robado del Festival de Invierno"
+    },
+    "type": "Spell",
+    "cost": 1,
+    "text": {
+      "enUS": "Find a random Treasure.",
+      "esMX": "Encuentra un Tesoro aleatorio."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_GreatCurves_01": {
+    "id": "TB_GreatCurves_01",
+    "name": "TB_ClockworkCardDealer",
+    "type": "Enchantment",
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_MechWar_Boss1": {
+    "id": "TB_MechWar_Boss1",
+    "name": {
+      "enUS": "Annoy-o-Tron",
+      "esMX": "Molestrón"
+    },
+    "type": "Hero",
+    "faction": "Neutral",
+    "rarity": "Free",
+    "health": 30,
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_MechWar_Boss1_HeroPower": {
+    "id": "TB_MechWar_Boss1_HeroPower",
+    "name": {
+      "enUS": "Hello! Hello! Hello!",
+      "esMX": "¡Hola! ¡Hola! ¡Hola!"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nGive your lowest attack minion <b>Divine Shield</b> and <b>Taunt</b>.",
+      "esMX": "<b>Poder de héroe</b>\nOtorga <b>Escudo divino</b> y <b>Provocación</b> a tu esbirro con menos ataque."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_MechWar_Boss2": {
+    "id": "TB_MechWar_Boss2",
+    "name": {
+      "enUS": "Boom Bot",
+      "esMX": "Robot bum"
+    },
+    "type": "Hero",
+    "faction": "Neutral",
+    "rarity": "Free",
+    "health": 30,
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_MechWar_Boss2_HeroPower": {
+    "id": "TB_MechWar_Boss2_HeroPower",
+    "name": {
+      "enUS": "Boom Bot Jr.",
+      "esMX": "Robot bum junior"
+    },
+    "type": "Hero Power",
+    "cost": 2,
+    "text": {
+      "enUS": "<b>Hero Power</b>\nDeal 1 damage to 2 random enemies.",
+      "esMX": "<b>Poder de héroe</b>\nInflige 1 de daño a 2 enemigos aleatorios."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_MechWar_CommonCards": {
+    "id": "TB_MechWar_CommonCards",
+    "name": "TBMechWarCommonCards",
+    "type": "Enchantment",
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_MechWar_Minion1": {
+    "id": "TB_MechWar_Minion1",
+    "name": {
+      "enUS": "Mech Fan",
+      "esMX": "Mecafanático"
+    },
+    "type": "Minion",
+    "cost": 2,
+    "attack": 1,
+    "health": 1,
+    "text": {
+      "enUS": "<b>Taunt</b>",
+      "esMX": "<b>Provocación</b>"
+    },
+    "mechanics": [
+      "Taunt"
+    ],
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_PickYourFate": {
+    "id": "TB_PickYourFate",
+    "name": {
+      "enUS": "Pick Your Fate Build Around",
+      "esMX": "Elige tu destino"
+    },
+    "type": "Enchantment",
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_PickYourFateRandom": {
+    "id": "TB_PickYourFateRandom",
+    "name": {
+      "enUS": "Pick Your Fate Random",
+      "esMX": "Elige tu destino - Aleatorio"
+    },
+    "type": "Enchantment",
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_PickYourFate_1": {
+    "id": "TB_PickYourFate_1",
+    "name": {
+      "enUS": "Fate 1",
+      "esMX": "Destino 1"
+    },
+    "type": "Spell",
+    "text": {
+      "enUS": "All minions have <b>Taunt</b> and <b>Charge</b>.",
+      "esMX": "Todos los esbirros tienen <b>Provocación</b> y <b>Carga</b>."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_PickYourFate_10": {
+    "id": "TB_PickYourFate_10",
+    "name": {
+      "enUS": "Fate 10",
+      "esMX": "Destino 9"
+    },
+    "type": "Spell",
+    "text": {
+      "enUS": "Battlecry minions get +1/+1",
+      "esMX": "Los esbirros con Grito de batalla obtienen +1/+2."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_PickYourFate_10_Ench": {
+    "id": "TB_PickYourFate_10_Ench",
+    "name": {
+      "enUS": "Fate 10 Ench. Battlecry bonus",
+      "esMX": "Destino 10 - Encantamiento. Bonificación de Grito de batalla."
+    },
+    "type": "Enchantment",
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_PickYourFate_11": {
+    "id": "TB_PickYourFate_11",
+    "name": {
+      "enUS": "Fate 11",
+      "esMX": "Destino 11"
+    },
+    "type": "Spell",
+    "text": {
+      "enUS": "Each turn, you get a 1/1 Murloc",
+      "esMX": "Cada turno, obtienes un Múrloc 1/1."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_PickYourFate_11_Ench": {
+    "id": "TB_PickYourFate_11_Ench",
+    "name": {
+      "enUS": "Fate 11 Ench. Murloc",
+      "esMX": "Destino 11 - Encantamiento. Múrloc."
+    },
+    "type": "Enchantment",
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_PickYourFate_1_Ench": {
+    "id": "TB_PickYourFate_1_Ench",
+    "name": {
+      "enUS": "Pick Your Fate 1 Ench",
+      "esMX": "Elige tu destino 1 - Encantamiento"
+    },
+    "type": "Enchantment",
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_PickYourFate_2": {
+    "id": "TB_PickYourFate_2",
+    "name": {
+      "enUS": "Fate 2",
+      "esMX": "Destino 2"
+    },
+    "type": "Spell",
+    "text": {
+      "enUS": "When a minion dies, its owner gets a (1) mana Banana.",
+      "esMX": "Cuando un esbirro muere, su propietario obtiene una Banana de costo (1)."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_PickYourFate_2_Ench": {
+    "id": "TB_PickYourFate_2_Ench",
+    "name": {
+      "enUS": "Pick Your Fate 2 Ench",
+      "esMX": "Elige tu destino 2 - Encantamiento"
+    },
+    "type": "Enchantment",
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_PickYourFate_3": {
+    "id": "TB_PickYourFate_3",
+    "name": {
+      "enUS": "Fate 3",
+      "esMX": "Destino 3"
+    },
+    "type": "Spell",
+    "text": {
+      "enUS": "All minions have <b>Windfury</b>.",
+      "esMX": "Todos los esbirros tienen <b>Viento furioso</b>."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_PickYourFate_3_Ench": {
+    "id": "TB_PickYourFate_3_Ench",
+    "name": {
+      "enUS": "Pick Your Fate 3 Ench",
+      "esMX": "Elige tu destino 3 - Encantamiento"
+    },
+    "type": "Enchantment",
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_PickYourFate_4": {
+    "id": "TB_PickYourFate_4",
+    "name": {
+      "enUS": "Fate 4",
+      "esMX": "Destino 4"
+    },
+    "type": "Spell",
+    "text": {
+      "enUS": "All minions get +1 Attack.",
+      "esMX": "Todos los esbirros tienen +1 de Ataque."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_PickYourFate_4_Ench": {
+    "id": "TB_PickYourFate_4_Ench",
+    "name": {
+      "enUS": "Pick Your Fate 4 Ench",
+      "esMX": "Elige tu destino 4 - Encantamiento"
+    },
+    "type": "Enchantment",
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_PickYourFate_5": {
+    "id": "TB_PickYourFate_5",
+    "name": {
+      "enUS": "Fate 5",
+      "esMX": "Destino 5"
+    },
+    "type": "Spell",
+    "text": {
+      "enUS": "Spells cost (1) less.",
+      "esMX": "Los hechizos cuestan (1) menos."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_PickYourFate_5_Ench": {
+    "id": "TB_PickYourFate_5_Ench",
+    "name": {
+      "enUS": "Pick You rFate 5 Ench",
+      "esMX": "Elige tu destino 5 - Encantamiento"
+    },
+    "type": "Enchantment",
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_PickYourFate_6": {
+    "id": "TB_PickYourFate_6",
+    "name": {
+      "enUS": "Fate 6",
+      "esMX": "Destino 6"
+    },
+    "type": "Spell",
+    "text": {
+      "enUS": "Shuffle 10 Unstable Portals into your deck.",
+      "esMX": "Coloca 10 Portales inestables en tu mazo."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_PickYourFate_7": {
+    "id": "TB_PickYourFate_7",
+    "name": {
+      "enUS": "Fate 7",
+      "esMX": "Destino 7"
+    },
+    "type": "Spell",
+    "text": {
+      "enUS": "When a minion dies, its owner gets a Coin.",
+      "esMX": "Cuando un esbirro muere, su propietario obtiene la Moneda."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_PickYourFate_7_Ench": {
+    "id": "TB_PickYourFate_7_Ench",
+    "name": {
+      "enUS": "Fate 7 Ench Get a Coin",
+      "esMX": "Destino 7 - Encantamiento - Obtienes la Moneda"
+    },
+    "type": "Enchantment",
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_PickYourFate_8": {
+    "id": "TB_PickYourFate_8",
+    "name": {
+      "enUS": "Fate 8",
+      "esMX": "Destino 8"
+    },
+    "type": "Spell",
+    "text": {
+      "enUS": "Whenever a spell is played, its caster gains 3 armor.",
+      "esMX": "Cuando un jugador juega un hechizo, obtiene 3 de Armadura."
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_PickYourFate_8_Ench": {
+    "id": "TB_PickYourFate_8_Ench",
+    "name": {
+      "enUS": "Fate 8 Get Armor",
+      "esMX": "Destino 8 - Obtienes Armadura"
+    },
+    "type": "Enchantment",
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_PickYourFate_9": {
+    "id": "TB_PickYourFate_9",
+    "name": {
+      "enUS": "Fate 9",
+      "esMX": "Destino 9"
+    },
+    "type": "Spell",
+    "text": {
+      "enUS": "Deathrattle minions get +1/+1",
+      "esMX": "Los esbirros con Estertor obtienen +1/+1"
+    },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_PickYourFate_9_Ench": {
+    "id": "TB_PickYourFate_9_Ench",
+    "name": {
+      "enUS": "Fate 9 Ench. Deathrattle bonus",
+      "esMX": "Destino 9 - Encantamiento. Bonificación de Estertor."
+    },
+    "type": "Enchantment",
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_PickYourFate_Windfury": {
+    "id": "TB_PickYourFate_Windfury",
+    "name": {
+      "enUS": "Windfury",
+      "esMX": "Viento furioso"
+    },
+    "type": "Enchantment",
+    "text": {
+      "enUS": "This minion has <b>Windfury</b>",
+      "esMX": "Este esbirro tiene <b>Viento furioso</b>."
+    },
     "deckSet": "Tavern Brawl"
   },
   "TB_Pilot1": {
@@ -29939,6 +34758,28 @@
       "enUS": "Who could it be?!",
       "esMX": "¿Quién será?"
     },
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_RMC_001": {
+    "id": "TB_RMC_001",
+    "name": "TB_EnchRandomManaCost",
+    "type": "Enchantment",
+    "cost": 0,
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_RandCardCost": {
+    "id": "TB_RandCardCost",
+    "name": "TBRandomCardCost",
+    "type": "Enchantment",
+    "deckSet": "Tavern Brawl"
+  },
+  "TB_RandHero2_001": {
+    "id": "TB_RandHero2_001",
+    "name": {
+      "enUS": "TB_EnchWhosTheBossNow",
+      "esMX": "Boss HP Swapper2"
+    },
+    "type": "Enchantment",
     "deckSet": "Tavern Brawl"
   },
   "TU4a_001": {
@@ -30066,10 +34907,7 @@
       "enUS": "Is something in this barrel?",
       "esMX": "¿Hay algo en este barril?"
     },
-    "inPlayText": {
-      "enUS": "Breakable",
-      "esMX": ""
-    },
+    "inPlayText": "Breakable",
     "mechanics": [
       "Deathrattle"
     ],
@@ -30438,17 +35276,11 @@
   },
   "XXX_001": {
     "id": "XXX_001",
-    "name": {
-      "enUS": "Damage 1",
-      "esMX": ""
-    },
+    "name": "Damage 1",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Deal 1 damage.",
-      "esMX": ""
-    },
+    "text": "Deal 1 damage.",
     "mechanics": [
       "ImmuneToSpellpower"
     ],
@@ -30456,17 +35288,11 @@
   },
   "XXX_002": {
     "id": "XXX_002",
-    "name": {
-      "enUS": "Damage 5",
-      "esMX": ""
-    },
+    "name": "Damage 5",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Deal 5 damage.",
-      "esMX": ""
-    },
+    "text": "Deal 5 damage.",
     "mechanics": [
       "ImmuneToSpellpower"
     ],
@@ -30474,92 +35300,56 @@
   },
   "XXX_003": {
     "id": "XXX_003",
-    "name": {
-      "enUS": "Restore 1",
-      "esMX": ""
-    },
+    "name": "Restore 1",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Restore 1 Health to a character.",
-      "esMX": ""
-    },
+    "text": "Restore 1 Health to a character.",
     "deckSet": "Debug"
   },
   "XXX_004": {
     "id": "XXX_004",
-    "name": {
-      "enUS": "Restore 5",
-      "esMX": ""
-    },
+    "name": "Restore 5",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Restore 5 Health to a character.",
-      "esMX": ""
-    },
+    "text": "Restore 5 Health to a character.",
     "deckSet": "Debug"
   },
   "XXX_005": {
     "id": "XXX_005",
-    "name": {
-      "enUS": "Destroy",
-      "esMX": ""
-    },
+    "name": "Destroy",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Destroy a minion or hero.",
-      "esMX": ""
-    },
+    "text": "Destroy a minion or hero.",
     "deckSet": "Debug"
   },
   "XXX_006": {
     "id": "XXX_006",
-    "name": {
-      "enUS": "Break Weapon",
-      "esMX": ""
-    },
+    "name": "Break Weapon",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Destroy a hero's weapon.",
-      "esMX": ""
-    },
+    "text": "Destroy a hero's weapon.",
     "deckSet": "Debug"
   },
   "XXX_007": {
     "id": "XXX_007",
-    "name": {
-      "enUS": "Enable for Attack",
-      "esMX": ""
-    },
+    "name": "Enable for Attack",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Give a character Charge and make him able to attack!",
-      "esMX": ""
-    },
+    "text": "Give a character Charge and make him able to attack!",
     "deckSet": "Debug"
   },
   "XXX_008": {
     "id": "XXX_008",
-    "name": {
-      "enUS": "Freeze",
-      "esMX": ""
-    },
+    "name": "Freeze",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "<b>Freeze</b> a character.",
-      "esMX": ""
-    },
+    "text": "<b>Freeze</b> a character.",
     "mechanics": [
       "Freeze"
     ],
@@ -30567,194 +35357,116 @@
   },
   "XXX_009": {
     "id": "XXX_009",
-    "name": {
-      "enUS": "Enchant",
-      "esMX": ""
-    },
+    "name": "Enchant",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Enchant a minion with an empty enchant.",
-      "esMX": ""
-    },
+    "text": "Enchant a minion with an empty enchant.",
     "deckSet": "Debug"
   },
   "XXX_009e": {
     "id": "XXX_009e",
-    "name": {
-      "enUS": "Empty Enchant",
-      "esMX": ""
-    },
+    "name": "Empty Enchant",
     "type": "Enchantment",
     "rarity": "Common",
-    "text": {
-      "enUS": "This enchantment does nothing.",
-      "esMX": ""
-    },
+    "text": "This enchantment does nothing.",
     "deckSet": "Debug"
   },
   "XXX_010": {
     "id": "XXX_010",
-    "name": {
-      "enUS": "Silence - debug",
-      "esMX": ""
-    },
+    "name": "Silence - debug",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Remove all enchantments and powers from a minion.",
-      "esMX": ""
-    },
+    "text": "Remove all enchantments and powers from a minion.",
     "deckSet": "Debug"
   },
   "XXX_011": {
     "id": "XXX_011",
-    "name": {
-      "enUS": "Summon a random Secret",
-      "esMX": ""
-    },
+    "name": "Summon a random Secret",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Summon a secret from your deck.",
-      "esMX": ""
-    },
+    "text": "Summon a secret from your deck.",
     "deckSet": "Debug"
   },
   "XXX_012": {
     "id": "XXX_012",
-    "name": {
-      "enUS": "Bounce",
-      "esMX": ""
-    },
+    "name": "Bounce",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Return a minion to its owner's hand.",
-      "esMX": ""
-    },
+    "text": "Return a minion to its owner's hand.",
     "deckSet": "Debug"
   },
   "XXX_013": {
     "id": "XXX_013",
-    "name": {
-      "enUS": "Discard",
-      "esMX": ""
-    },
+    "name": "Discard",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Choose a hero.  That hero's controller discards his hand.",
-      "esMX": ""
-    },
+    "text": "Choose a hero.  That hero's controller discards his hand.",
     "deckSet": "Debug"
   },
   "XXX_014": {
     "id": "XXX_014",
-    "name": {
-      "enUS": "Mill 10",
-      "esMX": ""
-    },
+    "name": "Mill 10",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Put 10 cards from a hero's deck into his graveyard.",
-      "esMX": ""
-    },
+    "text": "Put 10 cards from a hero's deck into his graveyard.",
     "deckSet": "Debug"
   },
   "XXX_015": {
     "id": "XXX_015",
-    "name": {
-      "enUS": "Crash",
-      "esMX": ""
-    },
+    "name": "Crash",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Crash the game.",
-      "esMX": ""
-    },
+    "text": "Crash the game.",
     "deckSet": "Debug"
   },
   "XXX_016": {
     "id": "XXX_016",
-    "name": {
-      "enUS": "Snake Ball",
-      "esMX": ""
-    },
+    "name": "Snake Ball",
     "type": "Spell",
     "cost": 0,
-    "text": {
-      "enUS": "Summon five 1/1 snakes.",
-      "esMX": ""
-    },
+    "text": "Summon five 1/1 snakes.",
     "deckSet": "Debug"
   },
   "XXX_017": {
     "id": "XXX_017",
-    "name": {
-      "enUS": "Draw 3 Cards",
-      "esMX": ""
-    },
+    "name": "Draw 3 Cards",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Draw 3 cards.",
-      "esMX": ""
-    },
+    "text": "Draw 3 cards.",
     "deckSet": "Debug"
   },
   "XXX_018": {
     "id": "XXX_018",
-    "name": {
-      "enUS": "Destroy All Minions",
-      "esMX": ""
-    },
+    "name": "Destroy All Minions",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Destroy all minions.",
-      "esMX": ""
-    },
+    "text": "Destroy all minions.",
     "deckSet": "Debug"
   },
   "XXX_019": {
     "id": "XXX_019",
-    "name": {
-      "enUS": "Molasses",
-      "esMX": ""
-    },
+    "name": "Molasses",
     "type": "Spell",
     "rarity": "Common",
-    "text": {
-      "enUS": "You can take as long as you want on your turn.",
-      "esMX": ""
-    },
+    "text": "You can take as long as you want on your turn.",
     "deckSet": "Debug"
   },
   "XXX_020": {
     "id": "XXX_020",
-    "name": {
-      "enUS": "Damage all but 1",
-      "esMX": ""
-    },
+    "name": "Damage all but 1",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Set the Health of a character to 1.",
-      "esMX": ""
-    },
+    "text": "Set the Health of a character to 1.",
     "mechanics": [
       "ImmuneToSpellpower"
     ],
@@ -30762,181 +35474,109 @@
   },
   "XXX_021": {
     "id": "XXX_021",
-    "name": {
-      "enUS": "Restore All Health",
-      "esMX": ""
-    },
+    "name": "Restore All Health",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Restore all Health to a character.",
-      "esMX": ""
-    },
+    "text": "Restore all Health to a character.",
     "deckSet": "Debug"
   },
   "XXX_022": {
     "id": "XXX_022",
-    "name": {
-      "enUS": "Free Cards",
-      "esMX": ""
-    },
+    "name": "Free Cards",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Your cards cost (0) for the rest of the game.",
-      "esMX": ""
-    },
+    "text": "Your cards cost (0) for the rest of the game.",
     "deckSet": "Debug"
   },
   "XXX_022e": {
     "id": "XXX_022e",
-    "name": {
-      "enUS": "Free Cards",
-      "esMX": ""
-    },
+    "name": "Free Cards",
     "type": "Enchantment",
-    "text": {
-      "enUS": "Your cards cost (0) for the rest of the game.",
-      "esMX": ""
-    },
+    "text": "Your cards cost (0) for the rest of the game.",
     "deckSet": "Debug"
   },
   "XXX_023": {
     "id": "XXX_023",
-    "name": {
-      "enUS": "Destroy All Heroes",
-      "esMX": ""
-    },
+    "name": "Destroy All Heroes",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Destroy all heroes.",
-      "esMX": ""
-    },
+    "text": "Destroy all heroes.",
     "deckSet": "Debug"
   },
   "XXX_024": {
     "id": "XXX_024",
-    "name": {
-      "enUS": "Damage Reflector",
-      "esMX": ""
-    },
+    "name": "Damage Reflector",
     "type": "Minion",
     "rarity": "Common",
     "cost": 0,
     "attack": 3,
     "health": 10,
-    "text": {
-      "enUS": "Whenever this minion takes damage, deal 1 damage to ALL other characters.",
-      "esMX": ""
-    },
+    "text": "Whenever this minion takes damage, deal 1 damage to ALL other characters.",
     "deckSet": "Debug"
   },
   "XXX_025": {
     "id": "XXX_025",
-    "name": {
-      "enUS": "Do Nothing",
-      "esMX": ""
-    },
+    "name": "Do Nothing",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "This does nothing.",
-      "esMX": ""
-    },
+    "text": "This does nothing.",
     "deckSet": "Debug"
   },
   "XXX_026": {
     "id": "XXX_026",
-    "name": {
-      "enUS": "Enable Emotes",
-      "esMX": ""
-    },
+    "name": "Enable Emotes",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Enable emotes for your VS.AI game. (not in tutorials, though)",
-      "esMX": ""
-    },
+    "text": "Enable emotes for your VS.AI game. (not in tutorials, though)",
     "deckSet": "Debug"
   },
   "XXX_027": {
     "id": "XXX_027",
-    "name": {
-      "enUS": "Server Crash",
-      "esMX": ""
-    },
+    "name": "Server Crash",
     "type": "Spell",
-    "text": {
-      "enUS": "Crash the Server.  DON'T BE A FOOL.",
-      "esMX": ""
-    },
+    "text": "Crash the Server.  DON'T BE A FOOL.",
     "deckSet": "Debug"
   },
   "XXX_028": {
     "id": "XXX_028",
-    "name": {
-      "enUS": "Reveal Hand",
-      "esMX": ""
-    },
+    "name": "Reveal Hand",
     "type": "Spell",
     "rarity": "Common",
     "deckSet": "Debug"
   },
   "XXX_029": {
     "id": "XXX_029",
-    "name": {
-      "enUS": "Opponent Concede",
-      "esMX": ""
-    },
+    "name": "Opponent Concede",
     "type": "Spell",
     "cost": 0,
-    "text": {
-      "enUS": "Force your opponent to concede.",
-      "esMX": ""
-    },
+    "text": "Force your opponent to concede.",
     "deckSet": "Debug"
   },
   "XXX_030": {
     "id": "XXX_030",
-    "name": {
-      "enUS": "Opponent Disconnect",
-      "esMX": ""
-    },
+    "name": "Opponent Disconnect",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Force your opponnet to disconnect.",
-      "esMX": ""
-    },
+    "text": "Force your opponnet to disconnect.",
     "deckSet": "Debug"
   },
   "XXX_039": {
     "id": "XXX_039",
-    "name": {
-      "enUS": "Become Hogger",
-      "esMX": ""
-    },
+    "name": "Become Hogger",
     "type": "Spell",
     "cost": 0,
-    "text": {
-      "enUS": "Become Hogger for Video Recording.",
-      "esMX": ""
-    },
+    "text": "Become Hogger for Video Recording.",
     "deckSet": "Debug"
   },
   "XXX_040": {
     "id": "XXX_040",
-    "name": {
-      "enUS": "Hogger",
-      "esMX": ""
-    },
+    "name": "Hogger",
     "type": "Hero",
     "health": 10,
     "playerClass": "Warrior",
@@ -30944,328 +35584,196 @@
   },
   "XXX_041": {
     "id": "XXX_041",
-    "name": {
-      "enUS": "Destroy Hero Power",
-      "esMX": ""
-    },
+    "name": "Destroy Hero Power",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Destroy a player's Hero Power.",
-      "esMX": ""
-    },
+    "text": "Destroy a player's Hero Power.",
     "deckSet": "Debug"
   },
   "XXX_042": {
     "id": "XXX_042",
-    "name": {
-      "enUS": "Hand to Deck",
-      "esMX": ""
-    },
+    "name": "Hand to Deck",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Shuffle a player's hand into his deck.",
-      "esMX": ""
-    },
+    "text": "Shuffle a player's hand into his deck.",
     "deckSet": "Debug"
   },
   "XXX_043": {
     "id": "XXX_043",
-    "name": {
-      "enUS": "Mill 30",
-      "esMX": ""
-    },
+    "name": "Mill 30",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Put 30 cards from a hero's deck into his graveyard.",
-      "esMX": ""
-    },
+    "text": "Put 30 cards from a hero's deck into his graveyard.",
     "deckSet": "Debug"
   },
   "XXX_044": {
     "id": "XXX_044",
-    "name": {
-      "enUS": "Hand Swapper Minion",
-      "esMX": ""
-    },
+    "name": "Hand Swapper Minion",
     "type": "Minion",
     "rarity": "Common",
     "cost": 0,
     "attack": 5,
     "health": 5,
-    "text": {
-      "enUS": "<b>Battlecry:</b> Discard 3 cards, then draw 3 cards.",
-      "esMX": ""
-    },
+    "text": "<b>Battlecry:</b> Discard 3 cards, then draw 3 cards.",
     "deckSet": "Debug"
   },
   "XXX_045": {
     "id": "XXX_045",
-    "name": {
-      "enUS": "Steal Card",
-      "esMX": ""
-    },
+    "name": "Steal Card",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Steal a random card from your opponent.",
-      "esMX": ""
-    },
+    "text": "Steal a random card from your opponent.",
     "deckSet": "Debug"
   },
   "XXX_046": {
     "id": "XXX_046",
-    "name": {
-      "enUS": "Force AI to Use Hero Power",
-      "esMX": ""
-    },
+    "name": "Force AI to Use Hero Power",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Force the AI to use their Hero Power every turn from now on.",
-      "esMX": ""
-    },
+    "text": "Force the AI to use their Hero Power every turn from now on.",
     "deckSet": "Debug"
   },
   "XXX_047": {
     "id": "XXX_047",
-    "name": {
-      "enUS": "Destroy Deck",
-      "esMX": ""
-    },
+    "name": "Destroy Deck",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Delete an opponent's deck",
-      "esMX": ""
-    },
+    "text": "Delete an opponent's deck",
     "deckSet": "Debug"
   },
   "XXX_048": {
     "id": "XXX_048",
-    "name": {
-      "enUS": "-1 Durability",
-      "esMX": ""
-    },
+    "name": "-1 Durability",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Give a player's weapon -1 Durability.",
-      "esMX": ""
-    },
+    "text": "Give a player's weapon -1 Durability.",
     "deckSet": "Debug"
   },
   "XXX_049": {
     "id": "XXX_049",
-    "name": {
-      "enUS": "Destroy all Mana",
-      "esMX": ""
-    },
+    "name": "Destroy all Mana",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Destroy all of a player's Mana Crystals.",
-      "esMX": ""
-    },
+    "text": "Destroy all of a player's Mana Crystals.",
     "deckSet": "Debug"
   },
   "XXX_050": {
     "id": "XXX_050",
-    "name": {
-      "enUS": "Destroy a Mana Crystal",
-      "esMX": ""
-    },
+    "name": "Destroy a Mana Crystal",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Pick a player and destroy one of his Mana Crystals.",
-      "esMX": ""
-    },
+    "text": "Pick a player and destroy one of his Mana Crystals.",
     "deckSet": "Debug"
   },
   "XXX_051": {
     "id": "XXX_051",
-    "name": {
-      "enUS": "Make Immune",
-      "esMX": ""
-    },
+    "name": "Make Immune",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Permanently make a character <b>Immune</b>.",
-      "esMX": ""
-    },
+    "text": "Permanently make a character <b>Immune</b>.",
     "deckSet": "Debug"
   },
   "XXX_052": {
     "id": "XXX_052",
-    "name": {
-      "enUS": "Grant Mega-Windfury",
-      "esMX": ""
-    },
+    "name": "Grant Mega-Windfury",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Give a minion <b>Mega-Windfury</b>.",
-      "esMX": ""
-    },
+    "text": "Give a minion <b>Mega-Windfury</b>.",
     "deckSet": "Debug"
   },
   "XXX_053": {
     "id": "XXX_053",
-    "name": {
-      "enUS": "Armor 100",
-      "esMX": ""
-    },
+    "name": "Armor 100",
     "type": "Spell",
     "cost": 0,
-    "text": {
-      "enUS": "Give target Hero +100 Armor",
-      "esMX": ""
-    },
+    "text": "Give target Hero +100 Armor",
     "deckSet": "Debug"
   },
   "XXX_054": {
     "id": "XXX_054",
-    "name": {
-      "enUS": "Weapon Buff",
-      "esMX": ""
-    },
+    "name": "Weapon Buff",
     "type": "Spell",
     "cost": 0,
-    "text": {
-      "enUS": "Give your Weapon +100/+100",
-      "esMX": ""
-    },
+    "text": "Give your Weapon +100/+100",
     "deckSet": "Debug"
   },
   "XXX_054e": {
     "id": "XXX_054e",
-    "name": {
-      "enUS": "Weapon Buff Enchant",
-      "esMX": ""
-    },
+    "name": "Weapon Buff Enchant",
     "type": "Enchantment",
     "deckSet": "Debug"
   },
   "XXX_055": {
     "id": "XXX_055",
-    "name": {
-      "enUS": "1000 Stats",
-      "esMX": ""
-    },
+    "name": "1000 Stats",
     "type": "Spell",
     "cost": 0,
-    "text": {
-      "enUS": "Give a Minion +1000/+1000",
-      "esMX": ""
-    },
+    "text": "Give a Minion +1000/+1000",
     "deckSet": "Debug"
   },
   "XXX_055e": {
     "id": "XXX_055e",
-    "name": {
-      "enUS": "1000 Stats Enchant",
-      "esMX": ""
-    },
+    "name": "1000 Stats Enchant",
     "type": "Enchantment",
     "deckSet": "Debug"
   },
   "XXX_056": {
     "id": "XXX_056",
-    "name": {
-      "enUS": "Silence Destroy",
-      "esMX": ""
-    },
+    "name": "Silence and Destroy All Minions",
     "type": "Spell",
     "cost": 0,
-    "text": {
-      "enUS": "Silence and Destroy ALL Minions.",
-      "esMX": ""
-    },
+    "text": "Destroy all minions without triggering deathrattles.",
     "deckSet": "Debug"
   },
   "XXX_057": {
     "id": "XXX_057",
-    "name": {
-      "enUS": "Destroy Target Secrets",
-      "esMX": ""
-    },
+    "name": "Destroy Target Secrets",
     "type": "Spell",
     "cost": 0,
-    "text": {
-      "enUS": "Choose a hero. Destroy all <b>Secrets</b> controlled by that hero.",
-      "esMX": ""
-    },
+    "text": "Choose a hero. Destroy all <b>Secrets</b> controlled by that hero.",
     "deckSet": "Debug"
   },
   "XXX_058": {
     "id": "XXX_058",
-    "name": {
-      "enUS": "Weapon Nerf",
-      "esMX": ""
-    },
+    "name": "Weapon Nerf",
     "type": "Spell",
     "rarity": "Common",
     "cost": 0,
-    "text": {
-      "enUS": "Give a weapon a negative enchantment.",
-      "esMX": ""
-    },
+    "text": "Give a weapon a negative enchantment.",
     "deckSet": "Debug"
   },
   "XXX_058e": {
     "id": "XXX_058e",
-    "name": {
-      "enUS": "Weapon Nerf Enchant",
-      "esMX": ""
-    },
+    "name": "Weapon Nerf Enchant",
     "type": "Enchantment",
-    "text": {
-      "enUS": "Red Sparkles!",
-      "esMX": ""
-    },
+    "text": "Red Sparkles!",
     "deckSet": "Debug"
   },
   "XXX_059": {
     "id": "XXX_059",
-    "name": {
-      "enUS": "Destroy Hero's Stuff",
-      "esMX": ""
-    },
+    "name": "Destroy Hero's Stuff",
     "type": "Spell",
     "cost": 0,
-    "text": {
-      "enUS": "Destroy target hero's hero power, weapon, deck, hand, minions, and secrets.",
-      "esMX": ""
-    },
+    "text": "Destroy target hero's hero power, weapon, deck, hand, minions, and secrets.",
     "deckSet": "Debug"
   },
   "XXX_060": {
     "id": "XXX_060",
-    "name": {
-      "enUS": "Damage All",
-      "esMX": ""
-    },
+    "name": "Damage All",
     "type": "Spell",
     "cost": 0,
-    "text": {
-      "enUS": "Set the Health of a character to 0.",
-      "esMX": ""
-    },
+    "text": "Set the Health of a character to 0.",
     "mechanics": [
       "ImmuneToSpellpower"
     ],
@@ -31273,143 +35781,98 @@
   },
   "XXX_061": {
     "id": "XXX_061",
-    "name": {
-      "enUS": "Armor 1",
-      "esMX": ""
-    },
+    "name": "Armor 1",
     "type": "Spell",
     "cost": 0,
-    "text": {
-      "enUS": "Give target Hero +1 Armor",
-      "esMX": ""
-    },
+    "text": "Give target Hero +1 Armor",
     "deckSet": "Debug"
   },
   "XXX_062": {
     "id": "XXX_062",
-    "name": {
-      "enUS": "Armor 5",
-      "esMX": ""
-    },
+    "name": "Armor 5",
     "type": "Spell",
     "cost": 0,
-    "text": {
-      "enUS": "Give target Hero +5 Armor",
-      "esMX": ""
-    },
+    "text": "Give target Hero +5 Armor",
     "deckSet": "Debug"
   },
   "XXX_063": {
     "id": "XXX_063",
-    "name": {
-      "enUS": "Destroy ALL Secrets",
-      "esMX": ""
-    },
+    "name": "Destroy ALL Secrets",
     "type": "Spell",
     "cost": 0,
-    "text": {
-      "enUS": "Destroy all <b>Secrets:</b>.",
-      "esMX": ""
-    },
+    "text": "Destroy all <b>Secrets:</b>.",
+    "deckSet": "Debug"
+  },
+  "XXX_065": {
+    "id": "XXX_065",
+    "name": "Remove All Immune",
+    "type": "Spell",
+    "rarity": "Common",
+    "cost": 0,
+    "text": "Remove <b>Immune</b> from enemy hero",
     "deckSet": "Debug"
   },
   "XXX_094": {
     "id": "XXX_094",
-    "name": {
-      "enUS": "AI Buddy - Blank Slate",
-      "esMX": ""
-    },
+    "name": "AI Buddy - Blank Slate",
     "type": "Minion",
     "attack": 1,
     "health": 1,
-    "text": {
-      "enUS": "Spawn into play to clear the entire board, both hands, both decks, all mana and all secrets.",
-      "esMX": ""
-    },
+    "text": "Spawn into play to clear the entire board, both hands, both decks, all mana and all secrets.",
     "cost": 0,
     "deckSet": "Debug"
   },
   "XXX_095": {
     "id": "XXX_095",
-    "name": {
-      "enUS": "AI Buddy - All Charge!",
-      "esMX": ""
-    },
+    "name": "AI Buddy - All Charge!",
     "type": "Minion",
     "cost": 0,
     "attack": 1,
     "health": 1,
-    "text": {
-      "enUS": "Spawn into play to give all minions <b>Charge</b>.",
-      "esMX": ""
-    },
+    "text": "Spawn into play to give all minions <b>Charge</b>.",
     "deckSet": "Debug"
   },
   "XXX_096": {
     "id": "XXX_096",
-    "name": {
-      "enUS": "AI Buddy - Damage Own Hero 5",
-      "esMX": ""
-    },
+    "name": "AI Buddy - Damage Own Hero 5",
     "type": "Minion",
     "cost": 0,
     "attack": 1,
     "health": 1,
-    "text": {
-      "enUS": "Spawn into play to smack your own hero for 5.",
-      "esMX": ""
-    },
+    "text": "Spawn into play to smack your own hero for 5.",
     "deckSet": "Debug"
   },
   "XXX_097": {
     "id": "XXX_097",
-    "name": {
-      "enUS": "AI Buddy - Destroy Minions",
-      "esMX": ""
-    },
+    "name": "AI Buddy - Destroy Minions",
     "type": "Minion",
     "cost": 0,
     "attack": 1,
     "health": 1,
     "durability": 0,
-    "text": {
-      "enUS": "Spawn into play to destroy all minions.",
-      "esMX": ""
-    },
+    "text": "Spawn into play to destroy all minions.",
     "deckSet": "Debug"
   },
   "XXX_098": {
     "id": "XXX_098",
-    "name": {
-      "enUS": "AI Buddy - No Deck/Hand",
-      "esMX": ""
-    },
+    "name": "AI Buddy - No Deck/Hand",
     "type": "Minion",
     "cost": 0,
     "attack": 1,
     "health": 1,
     "durability": 0,
-    "text": {
-      "enUS": "Spawn into play to destroy the AI's Hand and Deck.",
-      "esMX": ""
-    },
+    "text": "Spawn into play to destroy the AI's Hand and Deck.",
     "deckSet": "Debug"
   },
   "XXX_099": {
     "id": "XXX_099",
-    "name": {
-      "enUS": "AI Helper Buddy",
-      "esMX": ""
-    },
+    "name": "AI Helper Buddy",
     "type": "Minion",
     "cost": 0,
     "attack": 1,
     "health": 1,
     "durability": 0,
-    "text": {
-      "enUS": "Get the AI ready for testing.",
-      "esMX": ""
-    },
+    "text": "Get the AI ready for testing.",
     "elite": false,
     "deckSet": "Debug"
   },
@@ -31495,10 +35958,7 @@
       "enUS": "Whenever a minion dies, gain +1 Attack.",
       "esMX": "Cada vez que un esbirro muere, obtiene +1 de Ataque."
     },
-    "inPlayText": {
-      "enUS": "Cannibalism",
-      "esMX": ""
-    },
+    "inPlayText": "Cannibalism",
     "flavor": {
       "enUS": "'Flesheating' is an unfair name.  It's just that there's not really much else for him to eat.",
       "esMX": "\"Carnívoro\" es un nombre injusto. No es su culpa, es que en verdad no hay muchas otras cosas que pueda comer."
