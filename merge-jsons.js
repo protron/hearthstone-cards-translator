@@ -1,7 +1,6 @@
 var request = require('request');
 var fs = require('fs');
 var AdmZip = require('adm-zip');
-var https = require('https');
 var _ = require('lodash');
 
 var isSkipingDownload = process.argv[2] === '--skipdownload';
@@ -67,7 +66,7 @@ function Downloader(file_url) {
   this.data = [];
   this.dataLen = 0;
   if (file_url.indexOf('http') === 0) {
-    https.get(file_url, this.attachHttp.bind(this));
+    this.attachHttp(request.get(file_url));
   } else {
     fs.readFile(file_url, this.readFile.bind(this));
   }
