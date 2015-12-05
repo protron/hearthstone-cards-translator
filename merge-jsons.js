@@ -4,17 +4,17 @@ var AdmZip = require('adm-zip');
 var _ = require('lodash');
 
 var isSkipingDownload = process.argv[2] === '--skipdownload';
+var langs = ['enUS', 'esMX'];
 
-var zipFiles = !isSkipingDownload ? [
-  'https://hearthstonejson.com/json/AllSets.enUS.json.zip',
-  'https://hearthstonejson.com/json/AllSets.esMX.json.zip'
-] : [
-  'sources/AllSets.enUS.json.zip',
-  'sources/AllSets.esMX.json.zip'
-];
-var langs = _.map(zipFiles, function(f) {
-  return _.takeRight(f.split('.'), 3)[0];
+var zipFilePattern = "AllSets.{0}.json.zip";
+var urlPath = "https://hearthstonejson.com/json/";
+var localZipFolder = 'sources\\';
+
+var pathPrefix = isSkipingDownload ? localZipFolder : urlPath;
+var zipFiles = _.map(langs, function(lang) {
+  return pathPrefix + zipFilePattern.replace(/\{0\}/g, lang);
 });
+
 var cardSets = [];
 
 function writeToFile(filePath, content) {
