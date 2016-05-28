@@ -1,6 +1,6 @@
 {
   "name": "hearthstone-cards-translator",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "license": "MIT",
   "description": "Translates Hearthstone card names from Spanish into English using cards data from [Hearthstone JSON](http://hearthstonejson.com/).",
   "homepage": "https://github.com/protron/hearthstone-cards-translator#readme",
@@ -16,11 +16,9 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "adm-zip": "^0.4.7",
+    "jade": "^1.11.0",
     "lodash": "^3.10.1",
-    "request": "^2.60.0",
-    "jade": "^1.11.0"
+    "request": "^2.60.0"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
