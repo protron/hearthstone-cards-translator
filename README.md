@@ -1,17 +1,29 @@
 # hearthstone-cards-translator
-Translates Hearthstone card names from Spanish into English using cards data from [Hearthstone JSON](http://hearthstonejson.com/).
+Translates Hearthstone card names from Spanish into English using cards data from [HearthstoneJSON](http://hearthstonejson.com/).
 
-## Build
+## What is this?
 
-Having [node.js](https://nodejs.org/) intalled, open a command line, go to the folder in which you cloned the project, and run:
+This is a node program that generates a web page that lets you translate card names.
 
-    node merge-jsons.js && node format-html-from-merged.js
+## How does the web page works?
 
-This generates the output html: [autocomplete.htm](./output/autocomplete.htm)<br>
-<sup><sub>*Note: This process will also generates some intermediate json files, in the output folder, which can be used to get extra data on both languages (in a single json document).*</sub></sup>
+The web page presents an autocomplete input ([awesomplete](https://leaverou.github.io/awesomplete/)) to search for the Latin American Spanish name of that card. Once selected, it will also show the English name of that selected card.
 
-## Usage
+## Online usage:
 
-Open `output/autocomplete.htm` in your web browser, or go to the [last cached version at rawgit](https://cdn.rawgit.com/protron/hearthstone-cards-translator/6b40bfbff46479939bcd647b546da732342c44a0/output/autocomplete.htm)
+Just go to the [online version at rawgit of hearthstone-cards-translator (2016-05-28)](https://cdn.rawgit.com/protron/hearthstone-cards-translator/f08db330bcad51581f4a052e38befdf4a32b4543/output/autocomplete.htm)
 
-You will be presented with an autocomplete input ([awesomplete](https://leaverou.github.io/awesomplete/)) to search for the Latin America Spanish name of that card. Once selected, the page will show the English name of that selected card.
+## Build (to update to latest HearthstoneJSON by yourself)
+
+Having [node.js](https://nodejs.org/) installed, open a command line in the folder in which you cloned the project, and run:
+
+    npm start
+
+That command will perform 2 actions:
+
+1. It downloads the latest `cards.json` from HearthstoneJSON into the `output` folder.
+2. It generates the output html: `output/autocomplete.htm`
+
+Then, just open `output/autocomplete.htm` in your web browser.
+
+You are done! But if did a build (instead of just opening the online version), is probably because the online version is missing some update from HearthstoneJSON. So please consider help me keeping the online version updated by creating a [Pull Request](https://github.com/protron/hearthstone-cards-translator/pulls) (or an [Issue](https://github.com/protron/hearthstone-cards-translator/issues)).
