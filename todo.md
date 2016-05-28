@@ -1,0 +1,5 @@
+- configurable via command-line: https://www.npmjs.com/package/commander
+- improve debugging https://www.npmjs.com/package/debug
+- improve code readability (and maybe performance) with promises: https://www.npmjs.com/package/q
+- automatically notify user when to update: https://github.com/yeoman/update-notifier
+- splitting a subfolder out into a new repository: https://help.github.com/articles/splitting-a-subfolder-out-into-a-new-repository/
