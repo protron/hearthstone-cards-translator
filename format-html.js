@@ -21,6 +21,8 @@ function filterCards(parsedData) {
 
 function getNameTranslations(parsedData) {
   return _.reduce(parsedData, function(result, v, key) {
+    if (!v.name)
+      return result;
     var key = v.name[srcLanguage];
     var val = v.name[dstLanguage];
     result[key] = val;
