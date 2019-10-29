@@ -1,4 +1,4 @@
-var jade = require('jade');
+var pug = require('pug');
 var fs = require('fs');
 var _ = require('lodash');
 var path = require('path');
@@ -8,7 +8,7 @@ var srcLanguage = 'esMX', dstLanguage = 'enUS';
 //var allLanguages = [ "enUS", "frFR", "zhTW", "zhCN", "ruRU", "ptBR", "plPL", "koKR", "itIT", "esMX", "esES", "deDE", "enGB", "jaJP" ];
 
 var inputFileJson = "output/cards.json";
-var inputFileJade = "autocomplete.jade";
+var inputFileTemplate = "autocomplete.pug";
 var outputFileTranslations = "output/translations.js";
 var outputFileHtml = "output/autocomplete.htm";
 
@@ -50,18 +50,18 @@ function copyFile(input, output, done) {
     .on('finish', done);
 }
 
-function compileJade() {
-  console.log("Compiling: " + inputFileJade);
-  var tempJadePath = path.resolve(__dirname, 'output', inputFileJade);
-  copyFile(inputFileJade, tempJadePath, function() {
-    var fn = jade.compileFile(tempJadePath, {
+function compileTemplate() {
+  console.log("Compiling: " + inputFileTemplate);
+  var tempTemplatePath = path.resolve(__dirname, 'output', inputFileTemplate);
+  copyFile(inputFileTemplate, tempTemplatePath, function() {
+    var fn = pug.compileFile(tempTemplatePath, {
       pretty: true
     });
     var html = fn({
       version: pjson.version
     });
     fs.writeFileSync(outputFileHtml, html);
-    fs.unlinkSync(tempJadePath);
+    fs.unlinkSync(tempTemplatePath);
     console.log("DONE!");
   });
 }
@@ -72,7 +72,7 @@ function readJsonInput(err, data) {
   var cards = filterCards(parsedData);
   var nameTranslations = getNameTranslations(cards);
   writeToFile(outputFileTranslations, formatOutputTranslations(nameTranslations),
-    compileJade);
+    compileTemplate);
 }
 
 console.log("Reading: " + inputFileJson);
