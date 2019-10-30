@@ -7,6 +7,17 @@ html(lang='es')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.0.0/awesomplete.min.css')
   body
     div= title
+    table(style="border-spacing: 10px")
+      tr
+        th(rowSpan=2) Languages
+        th Source
+        th Target
+      tr
+        td= srcLanguage
+        td
+          select#targetLanguage
+            each language in allLanguages
+              option(value=language) #{language}
     table
       tr
         td
@@ -19,9 +30,11 @@ html(lang='es')
     script
       include translations.js
     script.
-      function onCardSelected(evt) {
-        var selectedCard = evt.target.value;
-        var translatedName = nameTranslations[selectedCard];
+      function updateResult() {
+        var selectedCard = document.getElementById("cardNames").value;
+        var selectedTargetLang = document.getElementById("targetLanguage").value;
+        var translations = nameTranslations[selectedCard];
+        var translatedName = translations[selectedTargetLang];
         var resultEl = document.getElementById("result");
         resultEl.innerHTML = translatedName;
       }
@@ -31,15 +44,18 @@ html(lang='es')
         awesomplete.minChars = 1;
         awesomplete.autoFirst = true;
         awesomplete.list = optionsArray;
-        input.addEventListener("awesomplete-selectcomplete", onCardSelected, true);
+        input.addEventListener("awesomplete-selectcomplete", updateResult, true);
+      }
+      function getObjectKeys(obj) {
+        var keys = [];
+        for (var key in obj)
+          if (obj.hasOwnProperty(key))
+            keys.push(key);
+        return keys;
       }
       function init() {
-        var cardOptions = [];
-        for (var cardName in nameTranslations) {
-          if (nameTranslations.hasOwnProperty(cardName)) {
-            cardOptions.push(cardName);
-          }
-        }
+        var cardOptions = getObjectKeys(nameTranslations);
         initAwesomplete(cardOptions);
+        document.getElementById("targetLanguage").addEventListener("change", updateResult);
       }
       init();

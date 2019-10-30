@@ -4,8 +4,8 @@ var _ = require('lodash');
 var path = require('path');
 var pjson = require('./package.json');
 
-var srcLanguage = 'esMX', dstLanguage = 'enUS';
-//var allLanguages = [ "enUS", "frFR", "zhTW", "zhCN", "ruRU", "ptBR", "plPL", "koKR", "itIT", "esMX", "esES", "deDE", "enGB", "jaJP" ];
+var srcLanguage = 'esMX';
+var allLanguages = [ "enUS", "frFR", "zhTW", "zhCN", "ruRU", "ptBR", "plPL", "koKR", "itIT", "esMX", "esES", "deDE", "enGB", "jaJP" ];
 
 var inputFileJson = "output/cards.json";
 var inputFileTemplate = "autocomplete.pug";
@@ -24,7 +24,7 @@ function getNameTranslations(parsedData) {
     if (!v.name)
       return result;
     var key = v.name[srcLanguage];
-    var val = v.name[dstLanguage];
+    var val = v.name;
     result[key] = val;
     return result;
   }, {});
@@ -58,7 +58,9 @@ function compileTemplate() {
       pretty: true
     });
     var html = fn({
-      version: pjson.version
+      version: pjson.version,
+      srcLanguage: srcLanguage,
+      allLanguages: allLanguages
     });
     fs.writeFileSync(outputFileHtml, html);
     fs.unlinkSync(tempTemplatePath);

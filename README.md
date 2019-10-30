@@ -1,5 +1,5 @@
 # hearthstone-cards-translator
-Translates Hearthstone card names from Spanish into English using cards data from [HearthstoneJSON](http://hearthstonejson.com/).
+Translates Hearthstone card names from Spanish into English (or other languages) using cards data from [HearthstoneJSON](http://hearthstonejson.com/).
 
 ## What is this?
 
@@ -7,7 +7,7 @@ This is a node program that generates a web page that lets you translate card na
 
 ## How does the web page works?
 
-The web page presents an autocomplete input ([awesomplete](https://leaverou.github.io/awesomplete/)) to search for the Latin American Spanish name of that card. Once selected, it will also show the English name of that selected card.
+The web page presents an autocomplete input ([awesomplete](https://leaverou.github.io/awesomplete/)) to search for the Latin American Spanish name of that card. Once selected, it will also show the name of that selected card in the target language.
 
 ## Online usage:
 
