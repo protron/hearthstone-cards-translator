@@ -11,7 +11,7 @@ The web page presents an autocomplete input ([awesomplete](https://leaverou.gith
 
 ## Online usage:
 
-Just go to the [online version (cards updated on 2021-11-22)](http://protron.github.io/hearthstone-cards-translator/output/autocomplete.htm)
+Just go to the [online version](http://protron.github.io/hearthstone-cards-translator/output/autocomplete.htm)
 
 ## Build (to update to latest HearthstoneJSON by yourself)
 
@@ -26,4 +26,4 @@ That command will perform 2 actions:
 
 Then, just open [output/autocomplete.htm](output/autocomplete.htm) in your web browser.
 
-You are done! But if build it yourself (instead of just opening the online version), it's probably because the online version is missing updates from HearthstoneJSON. In that case, consider creating a [Pull Request](https://github.com/protron/hearthstone-cards-translator/pulls) (or filing an [Issue](https://github.com/protron/hearthstone-cards-translator/issues)) in order keep the online version updated.
+You are done! But if build it yourself (instead of just opening the online version), it might be because the online version is missing an update from HearthstoneJSON. In that case, consider creating a [Pull Request](https://github.com/protron/hearthstone-cards-translator/pulls) (or filing an [Issue](https://github.com/protron/hearthstone-cards-translator/issues)). But notice that the workflow [update-cards.yml](https://github.com/protron/hearthstone-cards-translator/blob/master/.github/workflows/update-cards.yml) should auto-update everything and runs automatically every day (so waiting a day should be enough to get the latests cards from HearthstoneJSON).
