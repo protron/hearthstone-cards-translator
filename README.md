@@ -11,7 +11,7 @@ The web page presents an autocomplete input ([awesomplete](https://leaverou.gith
 
 ## Online usage:
 
-Just go to the [online version (cards updated on 2019-10-29)](http://protron.github.io/hearthstone-cards-translator/output/autocomplete.htm)
+Just go to the [online version (cards updated on 2021-11-22)](http://protron.github.io/hearthstone-cards-translator/output/autocomplete.htm)
 
 ## Build (to update to latest HearthstoneJSON by yourself)
 
