@@ -17,9 +17,9 @@
     "skipdownload": "node index.js --skipdownload"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "lodash": "^4.17.21",
-    "pug": "^3.0.2",
-    "request": "^2.88.0"
+    "pug": "^3.0.2"
   },
   "devDependencies": {}
 }

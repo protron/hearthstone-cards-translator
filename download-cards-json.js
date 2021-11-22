@@ -1,8 +1,10 @@
-var request = require('request');
-var fs = require('fs');
+const axios = require('axios').default;
+const fs = require('fs');
+const stream = require('stream');
+const util = require('util');
 
-var urlToDownload = 'https://api.hearthstonejson.com/v1/latest/all/cards.json';
-var outputPath = 'output/cards.json';
+const urlToDownload = 'https://api.hearthstonejson.com/v1/latest/all/cards.json';
+const outputPath = 'output/cards.json';
 
 function onStart() {
   console.log('Downloading ' + urlToDownload + '...');
@@ -15,15 +17,21 @@ function onFinished() {
   }
 }
 
-function getWriteStream() {
-  var ws = fs.createWriteStream(outputPath);
-  ws.on('finish', onFinished);
-  return ws;
+// downloadFile from https://stackoverflow.com/a/61269447/146513
+const finished = util.promisify(stream.finished);
+function downloadFile(fileUrl, outputLocationPath) {
+  const writer = fs.createWriteStream(outputLocationPath);
+  return axios.get(fileUrl, {
+    responseType: 'stream',
+  }).then(async response => {
+    response.data.pipe(writer);
+    return finished(writer);
+  });
 }
 
 function download() {
   onStart();
-  request.get(urlToDownload).pipe(getWriteStream());
+  downloadFile(urlToDownload, outputPath).then(onFinished);
 }
 
 download();
