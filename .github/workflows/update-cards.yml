@@ -1,0 +1,21 @@
+name: Download latest cards definitions, create new HTML, and commit if there are any changes
+
+on:
+  schedule:
+    - cron:  '30 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '12'
+      - name: Install Dependencies (using package-lock.json)
+        run: npm ci
+      - name: Download updated cards definitions and create new HTML
+        run: npm start
+      - uses: stefanzweifel/git-auto-commit-action@v4
+
