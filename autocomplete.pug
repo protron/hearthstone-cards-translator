@@ -5,28 +5,68 @@ html(lang='es')
     meta(charset='utf-8')
     title= title
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.0.0/awesomplete.min.css')
+    style(type="text/css").
+      body {
+        background: black;
+      }
+      .main-wrapper {
+        background: rgb(233,233,233);
+        max-width: 800px;
+        min-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+        font-size: 1.4em;
+        color: rgb(60, 60, 60);
+      }
+      table {
+        width: 100%;
+      }
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+      }
+      td:first-child {
+        white-space: nowrap;
+      }
+      td:last-child {
+        width: 99%;
+      }
+      footer {
+        text-align: center;
+      }
+      footer a {
+        font-size: 0.6em;
+        color: rgb(150, 150, 150);
+      }
   body
-    div= title
-    table(style="border-spacing: 10px")
-      tr
-        th(rowSpan=2) Languages
-        th Source
-        th Target
-      tr
-        td= srcLanguage
-        td
-          select#targetLanguage
-            each language in allLanguages
-              option(value=language) #{language}
-    table
-      tr
-        td
-          input#cardNames.awesomplete(placeholder='Nombre de la carta a traducir', size='25')
-        td
-          div#result
+    div.main-wrapper
+      h1= title
+      table
+        tr
+          th
+          th Origen
+          th Destino
+        tr
+          td Lenguaje
+          td= srcLanguage
+          td
+            select#targetLanguage
+              each language in allLanguages
+                option(value=language) #{language}
+        tr
+          td Nombre de la carta
+          td
+            input#cardNames.awesomplete(placeholder='Nombre de la carta a traducir', size='25')
+          td
+            div#result
+      footer
+         a(href="https://github.com/protron") Developed by Mariano Desanze
     script(src='https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.0.0/awesomplete.min.js')
-    //- script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js')
-    //- script(src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js')
     script
       include translations.js
     script.
