@@ -17,6 +17,7 @@
     "skipdownload": "node src/index.js --skipdownload"
   },
   "config": {
+    "languages": [ "enUS", "esMX", "esES", "frFR", "zhTW", "zhCN", "ruRU", "ptBR", "plPL", "koKR", "itIT", "deDE", "enGB", "jaJP" ],
     "url_hearthstonejson_allcards": "https://api.hearthstonejson.com/v1/latest/all/cards.json",
     "url_awesomplete_css": "https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.0.0/awesomplete.min.css",
     "url_awesomplete_js": "https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.0.0/awesomplete.min.js"

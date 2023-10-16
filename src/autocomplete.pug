@@ -100,7 +100,7 @@ html(lang='es')
         return keys;
       }
       function getUrlTranslations(sourceLanguage) {
-        return 'translations-' + sourceLanguage + '.js?v=#{version}' // version in url param just for enforce cache expiration
+        return 'translations-' + sourceLanguage + '.json?v=#{version}' // version in url param just for enforce cache expiration
       }
       function clearTexts() {
         awesomplete.input.value = null;
