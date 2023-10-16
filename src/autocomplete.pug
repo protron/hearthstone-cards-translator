@@ -74,12 +74,21 @@ html(lang='es')
       var nameTranslations;
       var awesomplete;
       function updateResult() {
-        var selectedCard = document.getElementById("cardNames").value;
-        var selectedTargetLang = document.getElementById("targetLanguage").value;
-        var translations = nameTranslations[selectedCard];
-        var translatedName = translations[selectedTargetLang];
-        var resultEl = document.getElementById("result");
-        resultEl.innerHTML = translatedName;
+        let translatedName = '';
+        const selectedCard = awesomplete.input.value;
+        if (selectedCard) {
+          const translations = nameTranslations[selectedCard];
+          if (!translations) {
+            console.log(`No entry found for card '${selectedCard}'`);
+          } else {
+            const selectedTargetLang = document.getElementById("targetLanguage").value;
+            translatedName = translations[selectedTargetLang];
+            if (!translatedName) {
+              console.log(`Card '${selectedCard}' found for other languages but not this one.`, translations);
+            }
+          }
+        }
+        document.getElementById("result").innerText = translatedName;
       }
       function initAwesomplete() {
         var input = document.getElementById("cardNames");
@@ -117,10 +126,16 @@ html(lang='es')
         updateAwesomplete(nameTranslations);
         console.log("Loaded translations for " + sourceLanguage);
       }
+      function onSourceLangChange() {
+        loadTranslations();
+      }
+      function onTargetLangChange() {
+        updateResult();
+      }
       async function init() {
         initAwesomplete();
-        document.getElementById("sourceLanguage").addEventListener("change", loadTranslations);
+        document.getElementById("sourceLanguage").addEventListener("change", onSourceLangChange);
         await loadTranslations();
-        document.getElementById("targetLanguage").addEventListener("change", updateResult);
+        document.getElementById("targetLanguage").addEventListener("change", onTargetLangChange);
       }
       init();
