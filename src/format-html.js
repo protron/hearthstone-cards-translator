@@ -4,12 +4,12 @@ var _ = require('lodash');
 var path = require('path');
 var pjson = require('../package.json');
 
-var srcLanguage = 'esMX';
-var allLanguages = [ "enUS", "frFR", "zhTW", "zhCN", "ruRU", "ptBR", "plPL", "koKR", "itIT", "esMX", "esES", "deDE", "enGB", "jaJP" ];
+var defaultSourceLanguage = 'esMX';
+var defaultTargetLanguage = 'enUS';
+var allLanguages = [ "enUS", "esMX", "esES", "frFR", "zhTW", "zhCN", "ruRU", "ptBR", "plPL", "koKR", "itIT", "deDE", "enGB", "jaJP" ];
 
 var inputFileTemplate = "src/autocomplete.pug";
 var inputFileJson = "intermediate-assets/cards.json";
-var outputFileTranslations = "output/translations.js";
 var outputFileHtml = "output/autocomplete.htm";
 
 function filterCards(parsedData) {
@@ -19,7 +19,7 @@ function filterCards(parsedData) {
   });
 }
 
-function getNameTranslations(parsedData) {
+function getNameTranslations(parsedData, srcLanguage) {
   return _.reduce(parsedData, function(result, v, key) {
     if (!v.name)
       return result;
@@ -30,17 +30,13 @@ function getNameTranslations(parsedData) {
   }, {});
 }
 
-function formatOutputTranslations(nameTranslations) {
-  return 'var nameTranslations = ' + JSON.stringify(nameTranslations);
-}
-
 function writeToFile(filePath, content, done) {
   console.log("Writing: " + filePath);
   var stream = fs.createWriteStream(filePath);
   stream.once('open', function(fd) {
     stream.write(content);
     stream.end();
-    done();
+    if (done) done();
   });
 }
 
@@ -53,7 +49,8 @@ function compileTemplate() {
     version: pjson.version,
     url_awesomplete_css: pjson.config.url_awesomplete_css,
     url_awesomplete_js: pjson.config.url_awesomplete_js,
-    srcLanguage: srcLanguage,
+    defaultSourceLanguage: defaultSourceLanguage,
+    defaultTargetLanguage: defaultTargetLanguage,
     allLanguages: allLanguages
   });
   fs.writeFileSync(outputFileHtml, html);
@@ -64,9 +61,12 @@ function readJsonInput(err, data) {
   if (err) throw err;
   var parsedData = JSON.parse(data);
   var cards = filterCards(parsedData);
-  var nameTranslations = getNameTranslations(cards);
-  writeToFile(outputFileTranslations, formatOutputTranslations(nameTranslations),
-    compileTemplate);
+  for (let language of allLanguages) {
+    var nameTranslations = getNameTranslations(cards, language);
+    var json = JSON.stringify(nameTranslations);
+    writeToFile(`output/translations-${language}.js`, json);
+  }
+  compileTemplate();
 }
 
 console.log("Reading: " + inputFileJson);

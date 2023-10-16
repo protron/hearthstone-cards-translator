@@ -1,6 +1,5 @@
 doctype html
 - var title = 'Traductor de cartas de HearthStone v' + version
-- var url_translations = 'translations.js?v=' + version // version in url param just for enforce cache expiration
 html(lang='es')
   head
     meta(charset='utf-8')
@@ -54,11 +53,14 @@ html(lang='es')
           th Destino
         tr
           td Lenguaje
-          td= srcLanguage
+          td
+            select#sourceLanguage
+              each language in allLanguages
+                option(value=language, selected=(language==defaultSourceLanguage)) #{language}
           td
             select#targetLanguage
               each language in allLanguages
-                option(value=language) #{language}
+                option(value=language, selected=(language==defaultTargetLanguage)) #{language}
         tr
           td Nombre de la carta
           td
@@ -68,8 +70,9 @@ html(lang='es')
       footer
          a(href="https://github.com/protron") Developed by Mariano Desanze
     script(src=url_awesomplete_js)
-    script(src=url_translations)
     script.
+      var nameTranslations;
+      var awesomplete;
       function updateResult() {
         var selectedCard = document.getElementById("cardNames").value;
         var selectedTargetLang = document.getElementById("targetLanguage").value;
@@ -78,13 +81,15 @@ html(lang='es')
         var resultEl = document.getElementById("result");
         resultEl.innerHTML = translatedName;
       }
-      function initAwesomplete(optionsArray) {
+      function initAwesomplete() {
         var input = document.getElementById("cardNames");
-        var awesomplete = new Awesomplete(input);
+        awesomplete = new Awesomplete(input);
         awesomplete.minChars = 1;
         awesomplete.autoFirst = true;
-        awesomplete.list = optionsArray;
         input.addEventListener("awesomplete-selectcomplete", updateResult, true);
+      }
+      function updateAwesomplete(optionsArray) {
+        awesomplete.list = optionsArray;
       }
       function getObjectKeys(obj) {
         var keys = [];
@@ -93,9 +98,23 @@ html(lang='es')
             keys.push(key);
         return keys;
       }
-      function init() {
+      function getUrlTranslations(sourceLanguage) {
+        return 'translations-' + sourceLanguage + '.js?v=#{version}' // version in url param just for enforce cache expiration
+      }
+      async function loadTranslations() {
+        let sourceLanguage = document.getElementById("sourceLanguage").value;
+        console.log("Loading translations for " + sourceLanguage);
+        let jsFileContent = await fetch(getUrlTranslations(sourceLanguage));
+        let data = await jsFileContent.json();
+        nameTranslations = data;
         var cardOptions = getObjectKeys(nameTranslations);
-        initAwesomplete(cardOptions);
+        updateAwesomplete(cardOptions);
+        console.log("Loaded translations for " + sourceLanguage);
+      }
+      async function init() {
+        initAwesomplete();
+        document.getElementById("sourceLanguage").addEventListener("change", loadTranslations);
+        await loadTranslations();
         document.getElementById("targetLanguage").addEventListener("change", updateResult);
       }
       init();

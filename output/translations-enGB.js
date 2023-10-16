@@ -1,0 +1,1 @@
+{"undefined":{"deDE":"Mondfang","enUS":"Moonfang","esES":"Dienteluna","esMX":"Dienteluna","frFR":"Croc-de-Lune","itIT":"Zannastrale","jaJP":"ムーンファング","koKR":"달송곳니","plPL":"Lunokieł","ptBR":"Presa Lunar","ruRU":"Лунная волчица","thTH":"มูนแฟง","zhCN":"月牙","zhTW":"月牙"}}
