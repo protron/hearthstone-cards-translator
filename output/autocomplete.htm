@@ -123,8 +123,9 @@
         awesomplete.autoFirst = true;
         input.addEventListener("awesomplete-selectcomplete", updateResult, true);
       }
-      function updateAwesomplete(optionsArray) {
-        awesomplete.list = optionsArray;
+      function updateAwesomplete(nameTranslations) {
+        var cardOptions = getObjectKeys(nameTranslations);
+        awesomplete.list = cardOptions;
       }
       function getObjectKeys(obj) {
         var keys = [];
@@ -136,14 +137,19 @@
       function getUrlTranslations(sourceLanguage) {
         return 'translations-' + sourceLanguage + '.js?v=0.7.0' // version in url param just for enforce cache expiration
       }
+      function clearTexts() {
+        awesomplete.input.value = null;
+        document.getElementById("result").textContent = null;
+      }
       async function loadTranslations() {
+        clearTexts();
         let sourceLanguage = document.getElementById("sourceLanguage").value;
         console.log("Loading translations for " + sourceLanguage);
-        let jsFileContent = await fetch(getUrlTranslations(sourceLanguage));
+        let urlTranslations = getUrlTranslations(sourceLanguage);
+        let jsFileContent = await fetch(urlTranslations);
         let data = await jsFileContent.json();
         nameTranslations = data;
-        var cardOptions = getObjectKeys(nameTranslations);
-        updateAwesomplete(cardOptions);
+        updateAwesomplete(nameTranslations);
         console.log("Loaded translations for " + sourceLanguage);
       }
       async function init() {
