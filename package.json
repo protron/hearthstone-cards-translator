@@ -21,8 +21,6 @@
     "url_awesomplete_css": "https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.0.0/awesomplete.min.css",
     "url_awesomplete_js": "https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.0.0/awesomplete.min.js"
   },
-  "dependencies": {
-  },
   "devDependencies": {
     "axios": "^0.24.0",
     "lodash": "^4.17.21",
