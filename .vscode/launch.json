@@ -8,13 +8,13 @@
             "type": "node",
             "request": "launch",
             "name": "index.js",
-            "program": "${workspaceFolder}\\index.js"
+            "program": "${workspaceFolder}\\src\\index.js"
         },
         {
             "type": "node",
             "request": "launch",
             "name": "index.js --skipdownload",
-            "program": "${workspaceFolder}\\index.js",
+            "program": "${workspaceFolder}\\src\\index.js",
             "args": ["--skipdownload"]
         }
     ]

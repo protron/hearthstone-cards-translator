@@ -11,15 +11,21 @@
     "type": "git",
     "url": "git+https://github.com/protron/hearthstone-cards-translator.git"
   },
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node index.js",
-    "skipdownload": "node index.js --skipdownload"
+    "start": "node src/index.js",
+    "skipdownload": "node src/index.js --skipdownload"
+  },
+  "config": {
+    "url_hearthstonejson_allcards": "https://api.hearthstonejson.com/v1/latest/all/cards.json",
+    "url_awesomplete_css": "https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.0.0/awesomplete.min.css",
+    "url_awesomplete_js": "https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.0.0/awesomplete.min.js"
   },
   "dependencies": {
+  },
+  "devDependencies": {
     "axios": "^0.24.0",
     "lodash": "^4.17.21",
     "pug": "^3.0.2"
-  },
-  "devDependencies": {}
+  }
 }

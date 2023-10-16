@@ -2,13 +2,13 @@ var pug = require('pug');
 var fs = require('fs');
 var _ = require('lodash');
 var path = require('path');
-var pjson = require('./package.json');
+var pjson = require('../package.json');
 
 var srcLanguage = 'esMX';
 var allLanguages = [ "enUS", "frFR", "zhTW", "zhCN", "ruRU", "ptBR", "plPL", "koKR", "itIT", "esMX", "esES", "deDE", "enGB", "jaJP" ];
 
-var inputFileJson = "output/cards.json";
-var inputFileTemplate = "autocomplete.pug";
+var inputFileTemplate = "src/autocomplete.pug";
+var inputFileJson = "intermediate-assets/cards.json";
 var outputFileTranslations = "output/translations.js";
 var outputFileHtml = "output/autocomplete.htm";
 
@@ -44,28 +44,20 @@ function writeToFile(filePath, content, done) {
   });
 }
 
-function copyFile(input, output, done) {
-  fs.createReadStream(input)
-    .pipe(fs.createWriteStream(output))
-    .on('finish', done);
-}
-
 function compileTemplate() {
   console.log("Compiling: " + inputFileTemplate);
-  var tempTemplatePath = path.resolve(__dirname, 'output', inputFileTemplate);
-  copyFile(inputFileTemplate, tempTemplatePath, function() {
-    var fn = pug.compileFile(tempTemplatePath, {
-      pretty: true
-    });
-    var html = fn({
-      version: pjson.version,
-      srcLanguage: srcLanguage,
-      allLanguages: allLanguages
-    });
-    fs.writeFileSync(outputFileHtml, html);
-    fs.unlinkSync(tempTemplatePath);
-    console.log("DONE!");
+  var fn = pug.compileFile(inputFileTemplate, {
+    pretty: true
   });
+  var html = fn({
+    version: pjson.version,
+    url_awesomplete_css: pjson.config.url_awesomplete_css,
+    url_awesomplete_js: pjson.config.url_awesomplete_js,
+    srcLanguage: srcLanguage,
+    allLanguages: allLanguages
+  });
+  fs.writeFileSync(outputFileHtml, html);
+  console.log("DONE!");
 }
 
 function readJsonInput(err, data) {

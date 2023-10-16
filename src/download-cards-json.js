@@ -2,9 +2,10 @@ const axios = require('axios').default;
 const fs = require('fs');
 const stream = require('stream');
 const util = require('util');
+var pjson = require('../package.json');
 
-const urlToDownload = 'https://api.hearthstonejson.com/v1/latest/all/cards.json';
-const outputPath = 'output/cards.json';
+const urlToDownload = pjson.config.url_hearthstonejson_allcards;
+const outputPath = 'intermediate-assets/cards.json';
 
 function onStart() {
   console.log('Downloading ' + urlToDownload + '...');

@@ -29,7 +29,7 @@ or
 
 The first command will perform the following actions (second command will skip the first step):
 
-1. It downloads the latest `cards.json` from HearthstoneJSON into the `output` folder.
+1. It downloads the latest `cards.json` from HearthstoneJSON into the `intermediate-assets` folder.
 2. It generates the `translations.js` with just the texts from the card names.
 3. It generates the output html: `output/autocomplete.htm`.
 

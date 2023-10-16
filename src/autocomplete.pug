@@ -1,10 +1,11 @@
 doctype html
 - var title = 'Traductor de cartas de HearthStone v' + version
+- var url_translations = 'translations.js?v=' + version // version in url param just for enforce cache expiration
 html(lang='es')
   head
     meta(charset='utf-8')
     title= title
-    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.0.0/awesomplete.min.css')
+    link(rel='stylesheet', href=url_awesomplete_css)
     style(type="text/css").
       body {
         background: black;
@@ -66,9 +67,8 @@ html(lang='es')
             div#result
       footer
          a(href="https://github.com/protron") Developed by Mariano Desanze
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.0.0/awesomplete.min.js')
-    script
-      include translations.js
+    script(src=url_awesomplete_js)
+    script(src=url_translations)
     script.
       function updateResult() {
         var selectedCard = document.getElementById("cardNames").value;
