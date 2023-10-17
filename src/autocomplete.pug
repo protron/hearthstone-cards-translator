@@ -1,5 +1,5 @@
 doctype html
-- var title = 'Traductor de cartas de HearthStone v' + version
+- var title = 'Hearthstone Cards Translator v' + version
 html(lang='es')
   head
     meta(charset='utf-8')
@@ -49,10 +49,10 @@ html(lang='es')
       table
         tr
           th
-          th Origen
-          th Destino
+          th Source
+          th Target
         tr
-          td Lenguaje
+          td Language
           td
             select#sourceLanguage
               each language in allLanguages
@@ -62,9 +62,9 @@ html(lang='es')
               each language in allLanguages
                 option(value=language, selected=(language==defaultTargetLanguage)) #{language}
         tr
-          td Nombre de la carta
+          td Card name
           td
-            input#cardNames.awesomplete(placeholder='Nombre de la carta a traducir', size='25')
+            input#cardNames.awesomplete(placeholder='Card name to translate', size='25')
           td
             div#result
       footer
