@@ -9,13 +9,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
         with:
           node-version: '16.15.1'
       - name: Install Dependencies (using package-lock.json)
         run: npm ci
       - name: Download updated cards definitions and create new HTML
         run: npm start
-      - uses: stefanzweifel/git-auto-commit-action@v4
-
+      - uses: stefanzweifel/git-auto-commit-action@v5
