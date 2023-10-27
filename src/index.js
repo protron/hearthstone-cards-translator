@@ -10,5 +10,5 @@ if (isSkipingDownload) {
   global.onDownloadFinished = function() {
     require('./create-source-lang-jsons');
   }
-  require('./download-cards-json');
+  require('./fetch-cards-if-outdated');
 }
