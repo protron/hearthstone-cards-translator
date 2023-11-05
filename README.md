@@ -4,7 +4,7 @@ Translates Hearthstone card names using cards data from [HearthstoneJSON](http:/
 
 ## Online usage
 
-Go to [`http://protron.github.io/hearthstone-cards-translator/output/index.html`](http://protron.github.io/hearthstone-cards-translator/output/index.html)
+Go to [`http://protron.github.io/hearthstone-cards-translator/`](http://protron.github.io/hearthstone-cards-translator/)
 
 ## What is inside this GitHub repository?
 
