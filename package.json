@@ -1,8 +1,8 @@
 {
   "name": "hearthstone-cards-translator",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "license": "MIT",
-  "description": "Translates Hearthstone card names from Spanish into English (or other languages) using cards data from [HearthstoneJSON](http://hearthstonejson.com/).",
+  "description": "Translates Hearthstone card names using cards data from [HearthstoneJSON](http://hearthstonejson.com/).",
   "homepage": "https://github.com/protron/hearthstone-cards-translator#readme",
   "bugs": {
     "url": "https://github.com/protron/hearthstone-cards-translator/issues"
@@ -11,35 +11,16 @@
     "type": "git",
     "url": "git+https://github.com/protron/hearthstone-cards-translator.git"
   },
+  "type": "module",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "skipdownload": "node src/index.js --skipdownload"
-  },
-  "config": {
-    "languages": [
-      "enUS",
-      "esMX",
-      "esES",
-      "frFR",
-      "zhTW",
-      "zhCN",
-      "ruRU",
-      "ptBR",
-      "plPL",
-      "koKR",
-      "itIT",
-      "deDE",
-      "enGB",
-      "jaJP"
-    ],
-    "url_hearthstonejson_allcards": "https://api.hearthstonejson.com/v1/latest/all/cards.json",
-    "url_awesomplete_css": "https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.0.0/awesomplete.min.css",
-    "url_awesomplete_js": "https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.0.0/awesomplete.min.js"
+    "start": "npx http-server output",
+    "build": "node src/index.js",
+    "build-skipdownload": "node src/index.js --skipdownload",
+    "build-compileifneeded": "node src/index.js --compileifneeded"
   },
   "devDependencies": {
     "axios": "^0.24.0",
-    "lodash": "^4.17.21",
     "pug": "^3.0.2",
     "typescript": "^5.2.2"
   }

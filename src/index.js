@@ -1,14 +1,14 @@
-// npm start -- --skipdownload
-var isSkipingDownload = process.argv[2] === '--skipdownload';
+import fetchCardsIfOutdated from './fetch-cards-if-outdated.js';
+import createSourceLangJsons from './create-source-lang-jsons.js';
+import compileHtml from './compile-html.js';
 
-if (isSkipingDownload) {
-  require('./format-html');
-} else {
-  global.onJsonsCreated = function() {
-    require('./format-html');
-  }
-  global.onDownloadFinished = function() {
-    require('./create-source-lang-jsons');
-  }
-  require('./fetch-cards-if-outdated');
+const skipDownload = process.argv[2] === '--skipdownload';
+const compileIfNeeded = process.argv[2] === '--compileifneeded';
+const haveNewVersion = skipDownload ? false :
+  await fetchCardsIfOutdated();
+if (haveNewVersion) {
+  await createSourceLangJsons();
+}
+if (haveNewVersion || skipDownload || !compileIfNeeded) {
+  await compileHtml();
 }

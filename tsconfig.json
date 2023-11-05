@@ -4,8 +4,6 @@
     "compilerOptions": {
       "module": "System",
       "lib": ["DOM", "ES2022"],
-      // "strict": true,
-      // "noImplicitAny": true,
       "removeComments": true,
       "preserveConstEnums": true,
       "outFile": "output/clientside.js",

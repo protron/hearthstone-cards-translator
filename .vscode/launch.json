@@ -7,12 +7,6 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "fetch-cards-if-outdated.js",
-            "program": "${workspaceFolder}/src/fetch-cards-if-outdated.js"
-        },
-        {
-            "type": "node",
-            "request": "launch",
             "name": "index.js",
             "program": "${workspaceFolder}\\src\\index.js"
         },
@@ -22,6 +16,18 @@
             "name": "index.js --skipdownload",
             "program": "${workspaceFolder}\\src\\index.js",
             "args": ["--skipdownload"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "fetch-cards-if-outdated.js",
+            "program": "${workspaceFolder}/src/fetch-cards-if-outdated.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "create-source-lang-jsons.js",
+            "program": "${workspaceFolder}/src/create-source-lang-jsons.js"
         }
     ]
 }

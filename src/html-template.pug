@@ -1,6 +1,6 @@
 doctype html
-- var title = 'Hearthstone Cards Translator v' + version
-html(lang='es')
+- var title = 'Hearthstone Cards Translator'
+html(lang='en')
   head
     meta(charset='utf-8')
     title= title
@@ -8,6 +8,7 @@ html(lang='es')
     style(type="text/css").
       body {
         background: black;
+        font-family: sans-serif;
       }
       .main-wrapper {
         background: rgb(233,233,233);
@@ -20,7 +21,18 @@ html(lang='es')
       h1 {
         text-align: center;
         font-size: 1.4em;
-        color: rgb(60, 60, 60);
+        color: rgb(20, 20, 20);
+      }
+      h2 {
+        text-align: center;
+        font-size: 0.8em;
+        color: rgb(120, 120, 120);
+      }
+      h2 a {
+        color: rgb(90, 90, 90);
+      }
+      h2 .cardsUpdated {
+        color: rgb(20, 20, 20);
       }
       table {
         width: 100%;
@@ -38,14 +50,18 @@ html(lang='es')
       }
       footer {
         text-align: center;
+        font-size: 0.6em;
       }
       footer a {
-        font-size: 0.6em;
         color: rgb(150, 150, 150);
       }
   body
     div.main-wrapper
       h1= title
+      h2
+        a(href="https://hearthstonejson.com/", target="_blank", rel="noreferrer") HearthstoneJSON
+        span #{" "}card names dated#{" "}
+        span.cardsUpdated #{cardsUpdateDate}
       table
         tr
           th
@@ -68,6 +84,6 @@ html(lang='es')
           td
             div#result
       footer
-         a(href="https://github.com/protron") Developed by Mariano Desanze
+        a(href="https://github.com/protron", target="_blank") Developed by Mariano Desanze
     script(src=url_awesomplete_js)
     script(src="clientside.js")

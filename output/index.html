@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Hearthstone Cards Translator v0.9.0</title>
+    <title>Hearthstone Cards Translator</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.0.0/awesomplete.min.css">
     <style type="text/css">
       body {
         background: black;
+        font-family: sans-serif;
       }
       .main-wrapper {
         background: rgb(233,233,233);
@@ -19,7 +20,18 @@
       h1 {
         text-align: center;
         font-size: 1.4em;
-        color: rgb(60, 60, 60);
+        color: rgb(20, 20, 20);
+      }
+      h2 {
+        text-align: center;
+        font-size: 0.8em;
+        color: rgb(120, 120, 120);
+      }
+      h2 a {
+        color: rgb(90, 90, 90);
+      }
+      h2 .cardsUpdated {
+        color: rgb(20, 20, 20);
       }
       table {
         width: 100%;
@@ -37,16 +49,17 @@
       }
       footer {
         text-align: center;
+        font-size: 0.6em;
       }
       footer a {
-        font-size: 0.6em;
         color: rgb(150, 150, 150);
       }
     </style>
   </head>
   <body>
     <div class="main-wrapper">
-      <h1>Hearthstone Cards Translator v0.9.0</h1>
+      <h1>Hearthstone Cards Translator</h1>
+      <h2><a href="https://hearthstonejson.com/" target="_blank" rel="noreferrer">HearthstoneJSON</a><span> card names dated </span><span class="cardsUpdated">Thu, 26 Oct 2023 18:47:19 GMT</span></h2>
       <table>
         <tr>
           <th></th>
@@ -102,7 +115,7 @@
           </td>
         </tr>
       </table>
-      <footer><a href="https://github.com/protron">Developed by Mariano Desanze</a></footer>
+      <footer><a href="https://github.com/protron" target="_blank">Developed by Mariano Desanze</a></footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.0.0/awesomplete.min.js"></script>
     <script src="clientside.js"></script>

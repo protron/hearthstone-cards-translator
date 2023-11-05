@@ -1,24 +1,11 @@
-const axios = require('axios').default;
-const fs = require('fs');
-const stream = require('stream');
-const util = require('util');
-var pjson = require('../package.json');
+import { pathToFileURL } from 'node:url';
+import { createWriteStream } from 'node:fs';
+import { finished } from "node:stream/promises";
+import axios from "axios";
+import { url_hearthstonejson_allcards } from "./settings.js"
+import { CardsLastUpdateIO } from './cards-last-update-io.js';
 
 const outputPath = 'intermediate-assets/cards.json';
-
-class lastUpdateIO {
-  static filePath = "last-update.json";
-  static async read() {
-    const fileContent = await fs.promises.readFile(lastUpdateIO.filePath);
-    const objectRead = JSON.parse(fileContent);
-    return objectRead.cardsLastModified;
-  }
-  static async write(cardsLastModified) {
-    const objectToStore = { cardsLastModified: cardsLastModified };
-    const jsonString = JSON.stringify(objectToStore, null, "\t");
-    await fs.promises.writeFile(lastUpdateIO.filePath, jsonString);
-  }
-}
 
 async function fetchIfModifiedSince(urlToDownload, storedLastModified) {
   try {
@@ -39,32 +26,29 @@ async function fetchIfModifiedSince(urlToDownload, storedLastModified) {
 }
 
 async function writeResponseStreamIntoFile(responseData, outputLocationPath) {
-  const outputFileStreamWriter = fs.createWriteStream(outputLocationPath);
+  const outputFileStreamWriter = createWriteStream(outputLocationPath);
   responseData.pipe(outputFileStreamWriter);
-  const streamFinished = util.promisify(stream.finished);
-  await streamFinished(outputFileStreamWriter);
+  await finished(outputFileStreamWriter);
 }
 
-async function run() {
-  const storedLastModified = await lastUpdateIO.read();
+export default async function fetchCardsIfOutdated() {
+  const storedLastModified = await CardsLastUpdateIO.read();
 
-  const urlToDownload = pjson.config.url_hearthstonejson_allcards;
-  console.log(`Fetch ${urlToDownload}\n  (download only if newer than ${storedLastModified})...`);
-
-  const response = await fetchIfModifiedSince(urlToDownload, storedLastModified);
+  console.log(`Fetch ${url_hearthstonejson_allcards}\n  (download only if newer than ${storedLastModified})...`);
+  const response = await fetchIfModifiedSince(url_hearthstonejson_allcards, storedLastModified);
   if (response == null) {
     console.log('We already have the latest version of the cards.');
-    return;
+    return false;
   }
   await writeResponseStreamIntoFile(response.data, outputPath);
 
   const newLastModified = response.headers['last-modified'];
-  await lastUpdateIO.write(newLastModified);
+  await CardsLastUpdateIO.write(newLastModified);
 
   console.log(`Downloaded newer version of: ${outputPath}\n  (last modified: ${newLastModified})`);
-  if (global.onDownloadFinished) {
-    global.onDownloadFinished();
-  }
+  return true;
 }
 
-run();
+if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+  await fetchCardsIfOutdated();
+}

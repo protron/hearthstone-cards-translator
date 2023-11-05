@@ -1,6 +1,7 @@
-var fs = require('fs');
-var _ = require('lodash');
-var pjson = require('../package.json');
+import { pathToFileURL } from 'node:url';
+import { createWriteStream, promises } from 'node:fs';
+const { readFile } = promises;
+import { allLanguages } from "./settings.js"
 
 var inputFileJson = "intermediate-assets/cards.json";
 
@@ -8,27 +9,27 @@ function getOutputFilePath(language) {
   return `output/translations-${language}.json`
 }
 
-function filterCards(parsedData) {
-  return _.filter(parsedData, function(v) {
-    return v.type !== 'Hero Power' && v.type !== 'Enchantment' && v.deckSet !==
-      'Debug' && v.id.split('_')[0] !== 'GAME';
-  });
+function cardFilter(card) {
+  return card.deckSet !== 'Debug' &&
+    card.type !== 'Hero Power' &&
+    card.type !== 'Enchantment' &&
+    card.id.split('_')[0] !== 'GAME';
 }
 
 function getNameTranslations(parsedData, srcLanguage) {
-  return _.reduce(parsedData, function(result, v, key) {
-    if (!v.name)
-      return result;
-    var key = v.name[srcLanguage];
-    var val = v.name;
-    result[key] = val;
-    return result;
+  return parsedData.reduce(function(accumulator, currentValue) {
+    var cardName = currentValue.name;
+    if (!cardName)
+      return accumulator;
+    var key = cardName[srcLanguage];
+    accumulator[key] = cardName;
+    return accumulator;
   }, {});
 }
 
 async function writeToFile(filePath, content) {
   console.log("Writing: " + filePath);
-  var stream = await fs.createWriteStream(filePath);
+  var stream = await createWriteStream(filePath);
   stream.write(content);
   stream.end();
 }
@@ -40,23 +41,17 @@ function generateFileForLanguage(cards, language) {
   writeToFile(outputPath, jsonContent);
 }
 
-async function createJsonFiles() {
+export default async function createSourceLangJsons() {
   console.log("Reading: " + inputFileJson);
-  let fileContent = await fs.promises.readFile(inputFileJson, 'utf8');
+  let fileContent = await readFile(inputFileJson, 'utf8');
   let parsedCardsJson = await JSON.parse(fileContent);
-  let filteredCards = filterCards(parsedCardsJson);
-  let allLanguages = pjson.config.languages;
+  let filteredCards = parsedCardsJson.filter(cardFilter);
   for (let language of allLanguages) {
     generateFileForLanguage(filteredCards, language);
   }
   console.log(`Generated files for ${allLanguages.length} languages`);
 }
 
-async function run() {
-  await createJsonFiles();
-  if (global.onJsonsCreated) {
-    global.onJsonsCreated();
-  }
+if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+  await createSourceLangJsons();
 }
-
-run();

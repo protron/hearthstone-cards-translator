@@ -1,4 +1,4 @@
-name: Download latest cards definitions, create new HTML, and commit if there are any changes
+name: Download latest cards.json, create json for each lang, and commit
 
 on:
   schedule:
@@ -15,6 +15,6 @@ jobs:
           node-version: '16.15.1'
       - name: Install Dependencies (using package-lock.json)
         run: npm ci
-      - name: Download updated cards definitions and create new HTML
-        run: npm start
+      - name: Download latest cards.json (If-Modified-Since) and create json for each lang
+        run: npm run build-compileifneeded
       - uses: stefanzweifel/git-auto-commit-action@v5
