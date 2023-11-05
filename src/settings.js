@@ -14,7 +14,6 @@ export const allLanguages = [
   "koKR",
   "itIT",
   "deDE",
-  "enGB",
   "jaJP"
 ];
 export const defaultSourceLanguage = 'esMX';
