@@ -20,7 +20,7 @@
     "build-compileifneeded": "node src/index.js --compileifneeded"
   },
   "devDependencies": {
-    "axios": "^0.24.0",
+    "axios": "^1.6.0",
     "pug": "^3.0.2",
     "typescript": "^5.2.2"
   }
