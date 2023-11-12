@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="63.999996"
+   height="63.999996"
+   viewBox="0 0 16.933332 16.933332"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="favicon.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm" />
+  <defs
+     id="defs1">
+    <filter
+       inkscape:label="Button"
+       inkscape:menu="Bevels"
+       inkscape:menu-tooltip="Soft bevel, slightly depressed middle"
+       style="color-interpolation-filters:sRGB"
+       id="filter15"
+       x="-0.21506984"
+       y="-0.22164298"
+       width="1.4301395"
+       height="1.4428415">
+      <feGaussianBlur
+         stdDeviation="2.3"
+         in="SourceAlpha"
+         result="result0"
+         id="feGaussianBlur12" />
+      <feMorphology
+         in="SourceAlpha"
+         radius="6.6"
+         result="result1"
+         id="feMorphology12" />
+      <feGaussianBlur
+         stdDeviation="8.9"
+         in="result1"
+         id="feGaussianBlur13" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.3 0"
+         result="result91"
+         id="feColorMatrix13" />
+      <feComposite
+         in="result0"
+         operator="out"
+         result="result2"
+         in2="result91"
+         id="feComposite13" />
+      <feGaussianBlur
+         stdDeviation="1.7"
+         result="result4"
+         id="feGaussianBlur14" />
+      <feDiffuseLighting
+         surfaceScale="10"
+         id="feDiffuseLighting14">
+        <feDistantLight
+           azimuth="225"
+           elevation="45"
+           id="feDistantLight14" />
+      </feDiffuseLighting>
+      <feBlend
+         in2="SourceGraphic"
+         mode="multiply"
+         id="feBlend14" />
+      <feComposite
+         in2="SourceAlpha"
+         operator="in"
+         result="result3"
+         id="feComposite14" />
+      <feSpecularLighting
+         in="result4"
+         surfaceScale="5"
+         specularExponent="17.89999962"
+         id="feSpecularLighting15">
+        <feDistantLight
+           azimuth="225"
+           elevation="45"
+           id="feDistantLight15" />
+      </feSpecularLighting>
+      <feComposite
+         in2="result3"
+         operator="atop"
+         id="feComposite15" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-23.566233,-68.779477)">
+    <path
+       sodipodi:type="spiral"
+       style="fill:#00ffff;fill-rule:nonzero;stroke:#008000;stroke-width:0.264583;filter:url(#filter15)"
+       id="path1"
+       sodipodi:cx="64.909782"
+       sodipodi:cy="102.64803"
+       sodipodi:expansion="1"
+       sodipodi:revolution="1.5"
+       sodipodi:radius="75.518936"
+       sodipodi:argument="-8.6358461"
+       sodipodi:t0="0"
+       d="m 64.909782,102.64803 c -5.335822,-5.373663 4.611088,-9.843755 8.931386,-8.868484 11.707741,2.642926 13.538279,17.657514 8.805588,26.731254 -8.465673,16.23081 -30.306717,18.05857 -44.531131,8.74269 -20.8749,-13.67142 -22.713542,-43.127776 -8.67979,-62.331 18.704783,-25.594878 56.009881,-27.425954 80.130875,-8.616892 30.35381,23.669285 32.16808,68.921082 8.55399,97.930752"
+       transform="matrix(0.1431789,0,0,0.1431789,20.961216,62.790895)" />
+    <text
+       xml:space="preserve"
+       style="font-size:14.3699px;font-family:STARWARS;-inkscape-font-specification:'STARWARS, Normal';text-align:center;text-anchor:middle;fill:#000000;fill-rule:nonzero;stroke:#ffff00;stroke-width:1.18678;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:stroke fill markers"
+       x="32.058956"
+       y="82.997299"
+       id="text15"
+       transform="scale(0.99918727,1.0008134)"><tspan
+         sodipodi:role="line"
+         id="tspan15"
+         style="fill:#000000;stroke:#ffff00;stroke-width:1.18678;stroke-dasharray:none"
+         x="32.058956"
+         y="82.997299">T</tspan></text>
+  </g>
+</svg>
