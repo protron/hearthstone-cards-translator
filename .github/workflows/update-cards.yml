@@ -18,3 +18,9 @@ jobs:
       - name: Download latest cards.json (If-Modified-Since) and create json for each lang
         run: npm run build-compileifneeded
       - uses: stefanzweifel/git-auto-commit-action@v5
+        id: commit
+      - name: Repository Dispatch
+        if: steps.commit.outputs.changes_detected == 'true'
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          event-type: deploy-static-pages
