@@ -10,9 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '16.15.1'
+      - uses: actions/setup-node@v4
       - name: Install Dependencies (using package-lock.json)
         run: npm ci
       - name: Download latest cards.json (If-Modified-Since) and create json for each lang
@@ -21,6 +19,6 @@ jobs:
         id: commit
       - name: Repository Dispatch
         if: steps.commit.outputs.changes_detected == 'true'
-        uses: peter-evans/repository-dispatch@v2
+        uses: peter-evans/repository-dispatch@v3
         with:
           event-type: deploy-static-pages
