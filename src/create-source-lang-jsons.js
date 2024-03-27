@@ -1,6 +1,6 @@
 import { pathToFileURL } from 'node:url';
-import { createWriteStream, promises } from 'node:fs';
-const { readFile } = promises;
+import { createWriteStream } from 'node:fs';
+import { readFile } from 'node:fs/promises'
 import { allLanguages } from "./settings.js"
 
 var inputFileJson = "intermediate-assets/cards.json";
