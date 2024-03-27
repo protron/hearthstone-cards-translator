@@ -29,9 +29,9 @@ function getNameTranslations(parsedData, srcLanguage) {
 
 async function writeToFile(filePath, content) {
   console.log("Writing: " + filePath);
-  var stream = await createWriteStream(filePath);
-  stream.write(content);
-  stream.end();
+  var stream = createWriteStream(filePath);
+  await stream.write(content);
+  await stream.end();
 }
 
 function generateFileForLanguage(cards, language) {
