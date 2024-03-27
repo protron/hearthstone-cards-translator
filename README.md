@@ -18,9 +18,9 @@ The webpage presents an autocomplete input ([awesomplete](https://leaverou.githu
 
 ## Build
 
-Having [node.js](https://nodejs.org/) v16 installed, open a command line in the folder in which you cloned the project, and run:
+Having [node.js](https://nodejs.org/) v20 installed, open a command line in the folder in which you cloned the project, and run:
 
-    npm build
+    npm run build
 
 That will automatically do the following:
 
