@@ -1,5 +1,5 @@
 import { pathToFileURL } from 'node:url';
-import { writeFileSync } from 'node:fs';
+import { writeFile } from 'node:fs/promises'
 import { compileFile } from 'pug';
 import { CardsLastUpdateIO } from './cards-last-update-io.js';
 import { allLanguages, defaultSourceLanguage, defaultTargetLanguage, 
@@ -22,7 +22,7 @@ export default async function compileHtml() {
     url_awesomplete_css: url_awesomplete_css,
     url_awesomplete_js: url_awesomplete_js
   });
-  writeFileSync(outputFileHtml, html);
+  await writeFile(outputFileHtml, html);
   console.log(`HTML generated: ${outputFileHtml}`);
 }
 
