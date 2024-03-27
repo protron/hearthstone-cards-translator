@@ -1,6 +1,5 @@
 import { pathToFileURL } from 'node:url';
-import { createWriteStream } from 'node:fs';
-import { readFile } from 'node:fs/promises'
+import { readFile, writeFile } from 'node:fs/promises'
 import { allLanguages } from "./settings.js"
 
 var inputFileJson = "intermediate-assets/cards.json";
@@ -27,18 +26,12 @@ function getNameTranslations(parsedData, srcLanguage) {
   }, {});
 }
 
-async function writeToFile(filePath, content) {
-  console.log("Writing: " + filePath);
-  var stream = createWriteStream(filePath);
-  await stream.write(content);
-  await stream.end();
-}
-
-function generateFileForLanguage(cards, language) {
+async function generateFileForLanguage(cards, language) {
   var nameTranslations = getNameTranslations(cards, language);
   var jsonContent = JSON.stringify(nameTranslations);
   var outputPath = getOutputFilePath(language);
-  writeToFile(outputPath, jsonContent);
+  console.log("Writing: " + outputPath);
+  await writeFile(outputPath, jsonContent);
 }
 
 export default async function createSourceLangJsons() {
@@ -47,7 +40,7 @@ export default async function createSourceLangJsons() {
   let parsedCardsJson = await JSON.parse(fileContent);
   let filteredCards = parsedCardsJson.filter(cardFilter);
   for (let language of allLanguages) {
-    generateFileForLanguage(filteredCards, language);
+    await generateFileForLanguage(filteredCards, language);
   }
   console.log(`Generated files for ${allLanguages.length} languages`);
 }
