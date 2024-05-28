@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "axios": "^1.6.0",
-    "pug": "^3.0.2",
+    "pug": "^3.0.3",
     "typescript": "^5.2.2"
   }
 }
