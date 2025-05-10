@@ -1,8 +1,5 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import postcssImport from 'postcss-import';
-import tailwindcss from 'tailwindcss';
-import autoprefixer from 'autoprefixer';
 import { CardsLastUpdateIO } from './cards-last-update-io.js';
 import path from 'path';
 
@@ -25,15 +22,6 @@ export default defineConfig(({ command }) => ({
   define: {
     BUILD_TIMESTAMP: new Date(),
     CARDS_LAST_UPDATE: CardsLastUpdateIO.read(),
-  },
-  css: {
-    postcss: {
-      plugins: [
-        postcssImport(),
-        tailwindcss('../tailwind.config.js'),
-        autoprefixer,
-      ],
-    },
   },
   resolve: {
     alias: {
