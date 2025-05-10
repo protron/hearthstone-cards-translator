@@ -3,6 +3,81 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import { allLanguages, defaultSourceLanguage, defaultTargetLanguage } from '../settings.js';
 
+// Card Name Input Component
+const CardNameInputRow: React.FC = () => {
+  return (
+    <tr>
+      <td>Card name</td>
+      <td>
+        <input 
+          id="cardNames" 
+          className="awesomplete" 
+          placeholder="Card name to translate" 
+          size={25} 
+        />
+      </td>
+      <td>
+        <div id="result"></div>
+      </td>
+    </tr>
+  );
+};
+
+// Language Selector Component
+const LanguageSelectorRow: React.FC = () => {
+  const [sourceLanguage, setSourceLanguage] = useState(defaultSourceLanguage);
+  const [targetLanguage, setTargetLanguage] = useState(defaultTargetLanguage);
+  return (
+    <tr>
+      <td>Language</td>
+      <td>
+        <select 
+          id="sourceLanguage"
+          value={sourceLanguage}
+          onChange={(e) => setSourceLanguage(e.target.value)}
+        >
+          {allLanguages.map((language) => (
+            <option 
+              key={language} 
+              value={language}
+            >
+              {language}
+            </option>
+          ))}
+        </select>
+      </td>
+      <td>
+        <select 
+          id="targetLanguage"
+          value={targetLanguage}
+          onChange={(e) => setTargetLanguage(e.target.value)}
+        >
+          {allLanguages.map((language) => (
+            <option 
+              key={language} 
+              value={language}
+            >
+              {language}
+            </option>
+          ))}
+        </select>
+      </td>
+    </tr>
+  );
+};
+
+// Main Table Component
+const MainTable: React.FC = () => {
+  return (
+    <table>
+      <tbody>
+        <LanguageSelectorRow />
+        <CardNameInputRow />
+      </tbody>
+    </table>
+  );
+};
+
 // Header Component
 const AppHeader: React.FC = () => {
   const [title] = useState('Hearthstone Cards Translator');
@@ -28,68 +103,6 @@ const AppHeader: React.FC = () => {
   );
 };
 
-// Language Selector Component
-const LanguageSelector: React.FC = () => {
-  const [sourceLanguage, setSourceLanguage] = useState(defaultSourceLanguage);
-  const [targetLanguage, setTargetLanguage] = useState(defaultTargetLanguage);
-
-  return (
-    <table>
-      <tbody>
-        <tr>
-          <td>Language</td>
-          <td>
-            <select 
-              id="sourceLanguage"
-              value={sourceLanguage}
-              onChange={(e) => setSourceLanguage(e.target.value)}
-            >
-              {allLanguages.map((language) => (
-                <option 
-                  key={language} 
-                  value={language}
-                >
-                  {language}
-                </option>
-              ))}
-            </select>
-          </td>
-          <td>
-            <select 
-              id="targetLanguage"
-              value={targetLanguage}
-              onChange={(e) => setTargetLanguage(e.target.value)}
-            >
-              {allLanguages.map((language) => (
-                <option 
-                  key={language} 
-                  value={language}
-                >
-                  {language}
-                </option>
-              ))}
-            </select>
-          </td>
-        </tr>
-        <tr>
-          <td>Card name</td>
-          <td>
-            <input 
-              id="cardNames" 
-              className="awesomplete" 
-              placeholder="Card name to translate" 
-              size={25} 
-            />
-          </td>
-          <td>
-            <div id="result"></div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  );
-};
-
 // Footer Component
 const AppFooter: React.FC = () => {
   return (
@@ -106,7 +119,7 @@ const App: React.FC = () => {
   return (
     <div className="main-wrapper">
       <AppHeader />
-      <LanguageSelector />
+      <MainTable />
       <AppFooter />
     </div>
   );
