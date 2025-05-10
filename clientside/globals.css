@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import 'awesomplete/awesomplete.min.css'; */
+
+body {
+    background: black;
+    font-family: sans-serif;
+}
+
+.main-wrapper {
+    background: rgb(233, 233, 233);
+    max-width: 800px;
+    min-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.4em;
+    color: rgb(20, 20, 20);
+}
+
+h2 {
+    text-align: center;
+    font-size: 0.8em;
+    color: rgb(120, 120, 120);
+}
+
+h2 a {
+    color: rgb(90, 90, 90);
+}
+
+h2 .cardsUpdated {
+    color: rgb(20, 20, 20);
+}
+
+table {
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+td:first-child {
+    white-space: nowrap;
+}
+
+td:last-child {
+    width: 99%;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.6em;
+}
+
+footer a {
+    color: rgb(150, 150, 150);
+}

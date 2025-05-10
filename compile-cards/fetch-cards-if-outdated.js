@@ -2,7 +2,6 @@ import { pathToFileURL } from 'node:url';
 import { createWriteStream } from 'node:fs';
 import { finished } from "node:stream/promises";
 import axios from "axios";
-import { url_hearthstonejson_allcards } from "./settings.js"
 import { CardsLastUpdateIO } from './cards-last-update-io.js';
 
 const outputPath = 'intermediate-assets/cards.json';
@@ -33,7 +32,7 @@ async function writeResponseStreamIntoFile(responseData, outputLocationPath) {
 
 export default async function fetchCardsIfOutdated() {
   const storedLastModified = await CardsLastUpdateIO.read();
-
+  const url_hearthstonejson_allcards = "https://api.hearthstonejson.com/v1/latest/all/cards.json";
   console.log(`Fetch ${url_hearthstonejson_allcards}\n  (download only if newer than ${storedLastModified})...`);
   const response = await fetchIfModifiedSince(url_hearthstonejson_allcards, storedLastModified);
   if (response == null) {

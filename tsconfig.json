@@ -1,13 +1,23 @@
 {
-    "include": ["src/*.ts"],
-    "compileOnSave": true,
-    "compilerOptions": {
-      "module": "System",
-      "lib": ["DOM", "ES2022"],
-      "removeComments": true,
-      "preserveConstEnums": true,
-      "outFile": "output/clientside.js",
-      "sourceMap": true
-    }
-  }
-  
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true
+  },
+  "include": ["next-env.d.ts", "clientside/*.ts", "clientside/*.tsx"],
+  "exclude": ["node_modules"]
+}

@@ -1,6 +1,6 @@
 import { pathToFileURL } from 'node:url';
 import { readFile, writeFile } from 'node:fs/promises'
-import { allLanguages } from "./settings.js"
+import { allLanguages } from "../src/settings.js"
 
 var inputFileJson = "intermediate-assets/cards.json";
 
