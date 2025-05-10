@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./clientside/**/*.{js,ts,jsx,tsx}",
-    './clientside/public/index.html',
+    './clientside/index.html',
   ],
   theme: {
     extend: {},

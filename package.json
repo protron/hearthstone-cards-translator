@@ -12,14 +12,14 @@
     "url": "git+https://github.com/protron/hearthstone-cards-translator.git"
   },
   "type": "module",
-  "main": "src/index.js",
+  "main": "clientside/index.tsx",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node src/index.js",
+    "build": "vite build && node clientside/index.tsx",
     "preview": "vite preview",
-    "generate-cards": "node src/index.js",
-    "generate-cards-skipdownload": "node src/index.js --skipdownload",
-    "generate-cards-compileifneeded": "node src/index.js --compileifneeded",
+    "generate-cards": "node compile-cards/index.js",
+    "generate-cards-skipdownload": "node compile-cards/index.js --skipdownload",
+    "generate-cards-compileifneeded": "node compile-cards/index.js --compileifneeded",
     "tailwind:build": "tailwindcss -i ./clientside/globals.css -o ./clientside.css --minify"
   },
   "devDependencies": {

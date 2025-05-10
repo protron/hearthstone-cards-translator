@@ -11,7 +11,7 @@ export default defineConfig(({ command }) => ({
     react()
   ],
   root: path.resolve(__dirname, 'clientside'),
-  base: command === 'build' ? './outdir' : '/',
+  base: command === 'build' ? './' : '/',
   publicDir: path.resolve(__dirname, 'clientside/public'),
   build: {
     outDir: '/clientside/output',
