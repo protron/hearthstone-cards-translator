@@ -8,10 +8,10 @@ export default defineConfig(({ command }) => ({
     react()
   ],
   root: path.resolve(__dirname, 'clientside'),
-  base: command === 'build' ? './' : '/',
+  //base: command === 'build' ? './' : '/',
   publicDir: path.resolve(__dirname, 'clientside/public'),
   build: {
-    outDir: '/clientside/output',
+    outDir: './public',
     emptyOutDir: true,
     rollupOptions: {
       input: {

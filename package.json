@@ -15,7 +15,7 @@
   "main": "clientside/index.tsx",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node clientside/index.tsx",
+    "build": "vite build",
     "preview": "vite preview",
     "generate-cards": "node compile-cards/index.js",
     "generate-cards-skipdownload": "node compile-cards/index.js --skipdownload",
