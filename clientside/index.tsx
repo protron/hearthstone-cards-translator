@@ -151,9 +151,9 @@ const LanguageSelectorRow: React.FC<{
 const AppHeader: React.FC = () => {
   const [title] = useState('Hearthstone Cards Translator');
   return (
-    <div>
-      <h1 className="text-black text-2xl font-bold text-center">{title}</h1>
-      <h2 className="text-gray-500 text-xs font-bold text-center">
+    <>
+      <h1 className="m-2 md:m-4 text-black text-2xl font-bold text-center">{title}</h1>
+      <h2 className="m-1 md:m-2 text-gray-500 text-xs font-bold text-center">
         <a 
           href="https://hearthstonejson.com/" 
           target="_blank" 
@@ -165,7 +165,7 @@ const AppHeader: React.FC = () => {
         {" "}card names dated{" "}
         <span className="cards-updated text-gray-700">{import.meta.env.VITE_CARDS_LAST_UPDATE}</span>
       </h2>
-    </div>
+    </>
   );
 };
 
