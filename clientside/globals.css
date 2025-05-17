@@ -66,3 +66,7 @@ footer {
 footer a {
     color: rgb(150, 150, 150);
 }
+
+footer .buildDate {
+    color: rgb(100, 100, 100);
+}

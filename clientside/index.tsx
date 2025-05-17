@@ -95,10 +95,6 @@ const AppHeader: React.FC = () => {
         {" "}card names dated{" "}
         <span className="cardsUpdated">{import.meta.env.VITE_CARDS_LAST_UPDATE}</span>
       </h2>
-      <h3>
-        Build Date:
-        <span className="cardsUpdated">{import.meta.env.VITE_BUILD_TIMESTAMP}</span>
-      </h3>
     </div>
   );
 };
@@ -110,6 +106,10 @@ const AppFooter: React.FC = () => {
       <a href="https://github.com/protron" target="_blank">
         Developed by Mariano Desanze
       </a>
+      <div className="buildDate">
+        Build Date:
+        <span className="cardsUpdated">{import.meta.env.VITE_BUILD_TIMESTAMP}</span>
+      </div>
     </footer>
   );
 };
