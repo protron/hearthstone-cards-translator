@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import { allLanguages, defaultSourceLanguage, defaultTargetLanguage } from '../settings.js';
 import { AwesompleteInput } from './components/AwesompleteInput';
-import hardcodedTranslations from '../output/translations-esMX.json';
+const LoadTranslation = (lang: string) => import(`../output/translations-${lang}.json`);
 
 // Main Table Component
 const MainTable: React.FC = () => {
@@ -18,10 +18,7 @@ const MainTable: React.FC = () => {
 
   useEffect(() => {
     const loadTranslations = async () => {
-      //const url = `translations-${sourceLanguage}.json`;
-      //const response = await fetch(url);
-      //const data = await response.json();
-      const data = hardcodedTranslations;
+      const data = await LoadTranslation(sourceLanguage);
       setNameTranslations(data);
       setTranslatedName(''); // Clear translated name when language changes
       setSelectedCard(''); // Clear selected card when language changes
@@ -33,7 +30,9 @@ const MainTable: React.FC = () => {
   useEffect(() => {
     const translations = nameTranslations[selectedCard];
     if (!translations) {
-      console.log(`No entry found for card '${selectedCard}'`);
+      if (selectedCard !== '' && selectedCard !== null) {
+        console.log(`No entry found for card '${selectedCard}'`);
+      }
       setTranslatedName('');
       return;
     }
