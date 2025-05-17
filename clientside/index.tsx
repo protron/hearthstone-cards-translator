@@ -81,7 +81,7 @@ const CardNameInputRow: React.FC<{
       <td>Card name</td>
       <td>
         <AwesompleteInput
-          nameTranslations={nameTranslations}
+          list={Object.keys(nameTranslations)}
           onSelect={onCardSelect}
           className="rounded-xs outline-solid outline-1 outline-offset-4 outline-gray-500 tracking-normal"
         />

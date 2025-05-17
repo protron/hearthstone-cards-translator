@@ -3,20 +3,16 @@ import Awesomplete from 'awesomplete';
 
 interface AwesompleteInputProps {
   onSelect: (value: string) => void;
-  nameTranslations: {
-    [key: string]: {
-      [key: string]: string;
-    };
-  };
+  list: string[];
   placeholder?: string;
   className?: string;
 }
 
 export const AwesompleteInput: React.FC<AwesompleteInputProps> = ({
   onSelect,
-  nameTranslations,
+  list,
+  className,
   placeholder = "Card name to translate",
-  className
 }) => {
   const inputRef = useRef<HTMLInputElement>(null);
   const awesompleteRef = useRef<Awesomplete | null>(null);
@@ -27,7 +23,7 @@ export const AwesompleteInput: React.FC<AwesompleteInputProps> = ({
       awesompleteRef.current = new Awesomplete(inputRef.current, {
         minChars: 1,
         autoFirst: true,
-        list: Object.keys(nameTranslations)
+        list: list
       });
 
       // Add select event listener
@@ -49,11 +45,10 @@ export const AwesompleteInput: React.FC<AwesompleteInputProps> = ({
   }, []); // Initialize only once
 
   useEffect(() => {
-    // Update the list when nameTranslations changes
     if (awesompleteRef.current) {
-      awesompleteRef.current.list = Object.keys(nameTranslations);
+      awesompleteRef.current.list = list;
     }
-  }, [nameTranslations]);
+  }, [list]);
 
   return (
     <input
