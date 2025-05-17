@@ -23,7 +23,9 @@ export const AwesompleteInput: React.FC<AwesompleteInputProps> = ({
       awesompleteRef.current = new Awesomplete(inputRef.current, {
         minChars: 1,
         autoFirst: true,
-        list: list
+        list: list,
+        sort: (a, b) => a >= b ? 1 : -1,
+        filter: Awesomplete.FILTER_STARTSWITH,
       });
 
       // Add select event listener
@@ -47,6 +49,9 @@ export const AwesompleteInput: React.FC<AwesompleteInputProps> = ({
   useEffect(() => {
     if (awesompleteRef.current) {
       awesompleteRef.current.list = list;
+      if (inputRef.current) {
+        inputRef.current.value = '';
+      }
     }
   }, [list]);
 
