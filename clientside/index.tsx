@@ -17,15 +17,14 @@ const MainTable: React.FC = () => {
   };
 
   useEffect(() => {
-    const loadTranslations = async () => {
-      const data = await LoadTranslation(sourceLanguage);
+    // Clear the state when source language changes
+    setTranslatedName('');
+    setSelectedCard('');
+    // Load new translations
+    LoadTranslation(sourceLanguage).then(data => {
       setNameTranslations(data);
-      setTranslatedName(''); // Clear translated name when language changes
-      setSelectedCard(''); // Clear selected card when language changes
-    };
-
-    loadTranslations();
-  }, [sourceLanguage]); // Reload translations when source language changes
+    });
+  }, [sourceLanguage]);
 
   useEffect(() => {
     const translations = nameTranslations[selectedCard];
