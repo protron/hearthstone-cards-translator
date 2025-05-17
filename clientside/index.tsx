@@ -1,32 +1,39 @@
 import './globals.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import { allLanguages, defaultSourceLanguage, defaultTargetLanguage } from '../settings.js';
+import { AwesompleteInput } from './components/AwesompleteInput';
+import hardcodedTranslations from '../output/translations-esMX.json';
 
 // Card Name Input Component
-const CardNameInputRow: React.FC = () => {
+const CardNameInputRow: React.FC<{
+  nameTranslations: {[key: string]: {[key: string]: string}};
+  translatedName: string;
+  onCardSelect: (selectedCard: string) => void;
+}> = ({ nameTranslations, translatedName, onCardSelect }) => {
   return (
     <tr>
       <td>Card name</td>
       <td>
-        <input 
-          id="cardNames" 
-          className="awesomplete" 
-          placeholder="Card name to translate" 
-          size={25} 
+        <AwesompleteInput
+          nameTranslations={nameTranslations}
+          onSelect={onCardSelect}
         />
       </td>
       <td>
-        <div id="result"></div>
+        <div id="result">{translatedName}</div>
       </td>
     </tr>
   );
 };
 
 // Language Selector Component
-const LanguageSelectorRow: React.FC = () => {
-  const [sourceLanguage, setSourceLanguage] = useState(defaultSourceLanguage);
-  const [targetLanguage, setTargetLanguage] = useState(defaultTargetLanguage);
+const LanguageSelectorRow: React.FC<{
+  sourceLanguage: string;
+  targetLanguage: string;
+  onSourceLanguageChange: (lang: string) => void;
+  onTargetLanguageChange: (lang: string) => void;
+}> = ({ sourceLanguage, targetLanguage, onSourceLanguageChange, onTargetLanguageChange }) => {
   return (
     <tr>
       <td>Language</td>
@@ -34,7 +41,7 @@ const LanguageSelectorRow: React.FC = () => {
         <select 
           id="sourceLanguage"
           value={sourceLanguage}
-          onChange={(e) => setSourceLanguage(e.target.value)}
+          onChange={(e) => onSourceLanguageChange(e.target.value)}
         >
           {allLanguages.map((language) => (
             <option 
@@ -50,7 +57,7 @@ const LanguageSelectorRow: React.FC = () => {
         <select 
           id="targetLanguage"
           value={targetLanguage}
-          onChange={(e) => setTargetLanguage(e.target.value)}
+          onChange={(e) => onTargetLanguageChange(e.target.value)}
         >
           {allLanguages.map((language) => (
             <option 
@@ -68,11 +75,62 @@ const LanguageSelectorRow: React.FC = () => {
 
 // Main Table Component
 const MainTable: React.FC = () => {
+  const [sourceLanguage, setSourceLanguage] = useState(defaultSourceLanguage);
+  const [targetLanguage, setTargetLanguage] = useState(defaultTargetLanguage);
+  const [nameTranslations, setNameTranslations] = useState<{[key: string]: {[key: string]: string}}>({});
+  const [translatedName, setTranslatedName] = useState('');
+  const [selectedCard, setSelectedCard] = useState('');
+
+  const handleCardSelect = (selectedCard: string) => {
+    setSelectedCard(selectedCard);
+  };
+
+  useEffect(() => {
+    const loadTranslations = async () => {
+      //const url = `translations-${sourceLanguage}.json`;
+      //const response = await fetch(url);
+      //const data = await response.json();
+      const data = hardcodedTranslations;
+      setNameTranslations(data);
+      setTranslatedName(''); // Clear translated name when language changes
+      setSelectedCard(''); // Clear selected card when language changes
+    };
+
+    loadTranslations();
+  }, [sourceLanguage]); // Reload translations when source language changes
+
+  useEffect(() => {
+    const translations = nameTranslations[selectedCard];
+    if (!translations) {
+      console.log(`No entry found for card '${selectedCard}'`);
+      setTranslatedName('');
+      return;
+    }
+
+    const translated = translations[targetLanguage];
+    if (!translated) {
+      console.log(`Card '${selectedCard}' found for other languages but not this one.`, translations);
+      setTranslatedName('');
+      return;
+    }
+
+    setTranslatedName(translated);
+  }, [selectedCard, targetLanguage, nameTranslations]);
+
   return (
     <table>
       <tbody>
-        <LanguageSelectorRow />
-        <CardNameInputRow />
+        <LanguageSelectorRow 
+          sourceLanguage={sourceLanguage}
+          targetLanguage={targetLanguage}
+          onSourceLanguageChange={setSourceLanguage}
+          onTargetLanguageChange={setTargetLanguage}
+        />
+        <CardNameInputRow 
+          nameTranslations={nameTranslations}
+          translatedName={translatedName}
+          onCardSelect={handleCardSelect}
+        />
       </tbody>
     </table>
   );
