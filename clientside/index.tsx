@@ -93,11 +93,11 @@ const AppHeader: React.FC = () => {
           HearthstoneJSON
         </a>
         {" "}card names dated{" "}
-        <span className="cardsUpdated">%CARDS_LAST_UPDATE%</span>
+        <span className="cardsUpdated">{import.meta.env.VITE_CARDS_LAST_UPDATE}</span>
       </h2>
       <h3>
         Build Date:
-        <span className="cardsUpdated">%VITE_BUILD_DATE%</span>
+        <span className="cardsUpdated">{import.meta.env.VITE_BUILD_TIMESTAMP}</span>
       </h3>
     </div>
   );

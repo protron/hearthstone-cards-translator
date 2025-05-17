@@ -5,29 +5,54 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "run DEV",
+            "request": "launch",
+            "runtimeArgs": ["run", "dev"],
+            "runtimeExecutable": "npm",
+            "skipFiles": ["<node_internals>/**", "node_modules/**"],
+            "type": "node",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "run BUILD",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["run", "build"],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "run PREVIEW",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["run", "preview"],
+            "console": "integratedTerminal"
+        },
+        {
             "type": "node",
             "request": "launch",
             "name": "index.js",
-            "program": "${workspaceFolder}\\src\\index.js"
+            "program": "${workspaceFolder}/compile-cards/index.js"
         },
         {
             "type": "node",
             "request": "launch",
             "name": "index.js --skipdownload",
-            "program": "${workspaceFolder}\\src\\index.js",
+            "program": "${workspaceFolder}/compile-cards/index.js",
             "args": ["--skipdownload"]
         },
         {
             "type": "node",
             "request": "launch",
             "name": "fetch-cards-if-outdated.js",
-            "program": "${workspaceFolder}/src/fetch-cards-if-outdated.js"
+            "program": "${workspaceFolder}/compile-cards/fetch-cards-if-outdated.js"
         },
         {
             "type": "node",
             "request": "launch",
             "name": "create-source-lang-jsons.js",
-            "program": "${workspaceFolder}/src/create-source-lang-jsons.js"
+            "program": "${workspaceFolder}/compile-cards/create-source-lang-jsons.js"
         }
     ]
 }
