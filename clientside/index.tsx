@@ -1,4 +1,3 @@
-import './globals.css';
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import { allLanguages, defaultSourceLanguage, defaultTargetLanguage } from '../settings.js';

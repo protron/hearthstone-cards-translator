@@ -1,8 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* @import 'awesomplete/awesomplete.min.css'; */
+@import "tailwindcss";
+@import 'awesomplete/awesomplete.css';
 
 body {
     background: black;

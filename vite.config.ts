@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react';
 import path from 'path';
 import { CardsLastUpdateIO } from './cards-last-update-io.js';
@@ -8,7 +9,8 @@ export default defineConfig(async () => {
   process.env.VITE_BUILD_TIMESTAMP = new Date().toISOString().split('T')[0];
   return {
     plugins: [
-      react()
+      tailwindcss(),
+      react(),
     ],
     base: '/hearthstone-cards-translator/',
     root: path.resolve(__dirname, 'clientside'),
