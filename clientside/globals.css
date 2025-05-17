@@ -1,6 +1,6 @@
 @layer theme, base, components, utilities;
 @import "tailwindcss/theme.css" layer(theme);
-/* @import "tailwindcss/preflight.css" layer(base); */
+@import "tailwindcss/preflight.css" layer(base);
 @import "tailwindcss/utilities.css" layer(utilities);
 
 @import 'awesomplete/awesomplete.css';
@@ -17,26 +17,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
-}
-
-h1 {
-    text-align: center;
-    font-size: 1.4em;
-    color: rgb(20, 20, 20);
-}
-
-h2 {
-    text-align: center;
-    font-size: 0.8em;
-    color: rgb(120, 120, 120);
-}
-
-h2 a {
-    color: rgb(90, 90, 90);
-}
-
-h2 .cardsUpdated {
-    color: rgb(20, 20, 20);
 }
 
 table {
@@ -57,17 +37,4 @@ td:first-child {
 
 td:last-child {
     width: 99%;
-}
-
-footer {
-    text-align: center;
-    font-size: 0.6em;
-}
-
-footer a {
-    color: rgb(150, 150, 150);
-}
-
-footer .buildDate {
-    color: rgb(100, 100, 100);
 }

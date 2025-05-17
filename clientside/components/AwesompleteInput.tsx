@@ -16,7 +16,7 @@ export const AwesompleteInput: React.FC<AwesompleteInputProps> = ({
   onSelect,
   nameTranslations,
   placeholder = "Card name to translate",
-  className = "awesomplete"
+  className
 }) => {
   const inputRef = useRef<HTMLInputElement>(null);
   const awesompleteRef = useRef<Awesomplete | null>(null);
@@ -58,7 +58,7 @@ export const AwesompleteInput: React.FC<AwesompleteInputProps> = ({
   return (
     <input
       ref={inputRef}
-      className={className}
+      className={"awesomplete " + className}
       placeholder={placeholder}
       size={25}
     />

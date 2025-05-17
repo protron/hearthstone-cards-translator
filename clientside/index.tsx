@@ -85,6 +85,7 @@ const CardNameInputRow: React.FC<{
         <AwesompleteInput
           nameTranslations={nameTranslations}
           onSelect={onCardSelect}
+          className="rounded-xs outline-solid outline-1 outline-offset-4 outline-gray-500 tracking-normal"
         />
       </td>
       <td>
@@ -101,6 +102,8 @@ const LanguageSelectorRow: React.FC<{
   onSourceLanguageChange: (lang: string) => void;
   onTargetLanguageChange: (lang: string) => void;
 }> = ({ sourceLanguage, targetLanguage, onSourceLanguageChange, onTargetLanguageChange }) => {
+  var selectClasses = "w-full rounded-xs outline-solid outline-1 outline-offset-4 outline-gray-500 tracking-wider"
+  var optionsClasses = "text-gray-700 bg-gray-100"
   return (
     <tr>
       <td>Language</td>
@@ -109,11 +112,13 @@ const LanguageSelectorRow: React.FC<{
           id="sourceLanguage"
           value={sourceLanguage}
           onChange={(e) => onSourceLanguageChange(e.target.value)}
+          className={selectClasses}
         >
           {allLanguages.map((language) => (
             <option 
               key={language} 
               value={language}
+              className={optionsClasses}
             >
               {language}
             </option>
@@ -125,11 +130,13 @@ const LanguageSelectorRow: React.FC<{
           id="targetLanguage"
           value={targetLanguage}
           onChange={(e) => onTargetLanguageChange(e.target.value)}
+          className={selectClasses}
         >
           {allLanguages.map((language) => (
             <option 
               key={language} 
               value={language}
+              className={optionsClasses}
             >
               {language}
             </option>
@@ -145,17 +152,18 @@ const AppHeader: React.FC = () => {
   const [title] = useState('Hearthstone Cards Translator');
   return (
     <div>
-      <h1 className="text-3xl font-bold">{title}</h1>
-      <h2>
+      <h1 className="text-black text-2xl font-bold text-center">{title}</h1>
+      <h2 className="text-gray-500 text-xs font-bold text-center">
         <a 
           href="https://hearthstonejson.com/" 
           target="_blank" 
           rel="noreferrer"
+          className='text-gray-700 hover:text-gray-900 transition-colors hover:underline no-underline'
         >
           HearthstoneJSON
         </a>
         {" "}card names dated{" "}
-        <span className="cardsUpdated">{import.meta.env.VITE_CARDS_LAST_UPDATE}</span>
+        <span className="cards-updated text-gray-700">{import.meta.env.VITE_CARDS_LAST_UPDATE}</span>
       </h2>
     </div>
   );
@@ -164,13 +172,13 @@ const AppHeader: React.FC = () => {
 // Footer Component
 const AppFooter: React.FC = () => {
   return (
-    <footer>
-      <a href="https://github.com/protron" target="_blank">
+    <footer className='text-gray-500 text-xs mt-4 flex flex-col gap-2 items-center'>
+      <a href="https://github.com/protron" target="_blank" className='text-gray-700 hover:text-gray-900 transition-colors hover:underline no-underline'>
         Developed by Mariano Desanze
       </a>
-      <div className="buildDate">
-        Build Date:
-        <span className="cardsUpdated">{import.meta.env.VITE_BUILD_TIMESTAMP}</span>
+      <div>
+        Build Date:{" "}
+        <span className="build-date text-gray-700">{import.meta.env.VITE_BUILD_TIMESTAMP}</span>
       </div>
     </footer>
   );
