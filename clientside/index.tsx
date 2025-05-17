@@ -51,6 +51,11 @@ const MainTable: React.FC = () => {
   return (
     <table>
       <tbody>
+        <tr>
+          <th></th>
+          <th>Source</th>
+          <th>Target</th>
+        </tr>
         <LanguageSelectorRow 
           sourceLanguage={sourceLanguage}
           targetLanguage={targetLanguage}
@@ -140,7 +145,7 @@ const AppHeader: React.FC = () => {
   const [title] = useState('Hearthstone Cards Translator');
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">{title}</h1>
+      <h1 className="text-3xl font-bold">{title}</h1>
       <h2>
         <a 
           href="https://hearthstonejson.com/" 
