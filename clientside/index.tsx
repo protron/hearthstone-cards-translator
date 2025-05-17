@@ -60,8 +60,9 @@ const MainTable: React.FC = () => {
           onSourceLanguageChange={setSourceLanguage}
           onTargetLanguageChange={setTargetLanguage}
         />
-        <CardNameInputRow 
+        <CardRows
           nameTranslations={nameTranslations}
+          selectedCard={selectedCard}
           translatedName={translatedName}
           onCardSelect={handleCardSelect}
         />
@@ -70,15 +71,26 @@ const MainTable: React.FC = () => {
   );
 };
 
-// Card Name Input Component
-const CardNameInputRow: React.FC<{
+// Card Rows Component
+const CardRows: React.FC<{
   nameTranslations: {[key: string]: {[key: string]: string}};
+  selectedCard: string;
   translatedName: string;
   onCardSelect: (selectedCard: string) => void;
-}> = ({ nameTranslations, translatedName, onCardSelect }) => {
+}> = ({ nameTranslations, selectedCard, translatedName, onCardSelect }) => {
   return (
+    <>
     <tr>
-      <td>Card name</td>
+      <td>Selected Card</td>
+      <td>
+        <div className="selectedCard">{selectedCard}</div>
+      </td>
+      <td>
+        <div id="result">{translatedName}</div>
+      </td>
+    </tr>
+    <tr>
+      <td>Card input</td>
       <td>
         <AwesompleteInput
           list={Object.keys(nameTranslations)}
@@ -86,10 +98,9 @@ const CardNameInputRow: React.FC<{
           className="rounded-xs outline-solid outline-1 outline-offset-4 outline-gray-500 tracking-normal"
         />
       </td>
-      <td>
-        <div id="result">{translatedName}</div>
-      </td>
+      <td></td>
     </tr>
+    </>
   );
 };
 
